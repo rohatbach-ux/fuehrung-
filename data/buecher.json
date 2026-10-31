@@ -1,5 +1,5 @@
 {
- "_hinweis": "Leseliste für Buchreihen aus öffentlichen Quellen (Weg 1: Artikel, Interviews, Vorträge der Autoren, Verlagsseiten, seriöse Rezensionen – keine Raubkopien). Reihenfolge = Abarbeitungsreihenfolge. status: offen | in_arbeit | fertig. Steuerung: research/BUECHER.md.",
+ "_hinweis": "Leseliste für Buchreihen aus öffentlichen Quellen (Weg 1: Artikel, Interviews, Vorträge der Autoren, Verlagsseiten, seriöse Rezensionen – keine Raubkopien). Reihenfolge = Abarbeitungsreihenfolge. status: offen | in_arbeit | fertig. Steuerung: research/BUECHER.md. Titel, die Rohat gekauft und in den Drive-Ordner gelegt hat (The Tyranny of Metrics, Conjectures and Refutations), laufen als Bibliotheks-Reihe und stehen hier nicht mehr.",
  "buecher": [
   {
    "id": "logic-of-failure",
@@ -7,15 +7,6 @@
    "autoren": "Dietrich Dörner",
    "jahr": 1989,
    "modul": "stabil",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "tyranny-of-metrics",
-   "titel": "The Tyranny of Metrics",
-   "autoren": "Jerry Z. Muller",
-   "jahr": 2018,
-   "modul": "umsetzung",
    "status": "offen",
    "plan": []
   },
@@ -88,15 +79,6 @@
    "autoren": "Scott E. Page",
    "jahr": 2018,
    "modul": "strategie",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "conjectures-refutations",
-   "titel": "Conjectures and Refutations",
-   "autoren": "Karl R. Popper",
-   "jahr": 1963,
-   "modul": "kultur",
    "status": "offen",
    "plan": []
   }
