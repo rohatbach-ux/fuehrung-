@@ -489,18 +489,29 @@ Ich schicke dir Screenshots eines Posts (ein oder mehrere Bilder, oft auf Englis
   "autor": "@konto, falls erkennbar, sonst leer",
   "sprache": "en oder de oder …",
   "original": "vollständiger Originaltext aller Bilder",
-  "deutsch": "vollständige, gut lesbare deutsche Übersetzung (bei deutschen Posts: bereinigter Text)",
+  "deutsch": "die vollständige deutsche Fassung, aufbereitet in Markdown (Regeln siehe unten)",
   "kernaussage": "die Kernaussage in einem Satz",
   "modul": "genau eine ID aus der Liste unten",
-  "bezug_ih": "2–3 Sätze: Was heißt das konkret für mich als Leiter Instandhaltung im Netz Hagen?",
+  "bezug_ih": "Markdown, kurz: Was heißt das konkret für mich als Leiter Instandhaltung im Netz Hagen? 2–3 Stichpunkte mit fettem Kernwort",
   "frage": "eine Reflexionsfrage an mich",
-  "experiment": "ein konkreter Vorschlag zum Ausprobieren in den nächsten zwei Wochen",
+  "experiment": "Markdown: ein konkreter Vorschlag für die nächsten zwei Wochen – ein fetter Einleitungssatz, dann 2–4 nummerierte Schritte",
   "karten": [{ "frage": "Lernkarte Vorderseite", "antwort": "Rückseite" }]
 }
 \`\`\`
 
 Modul-IDs:
 ${MODULES.map((m) => `- ${m.id} = ${m.title}`).join("\n")}
+
+So bereitest du „deutsch“ auf – als erfahrener UI/UX-Designer, maximal übersichtlich und gut scannbar:
+- Beginne mit einem Zitatblock (> …), der die Kernbotschaft in einem Satz hervorhebt.
+- Gliedere in 2–4 Abschnitte mit „## “-Überschriften, jeweils mit einem passenden Emoji davor (sparsam, thematisch).
+- Kurze Absätze (höchstens 2–3 Sätze), keine verschachtelten Sätze, luftiger Lesefluss.
+- **Fettungen** gezielt für Schlüsselwörter und Kernaussagen.
+- Aufzählungen („- “) statt Textwüsten; Listenpunkte dürfen mit einem Emoji beginnen.
+- Eine Tabelle („| … |“), wenn es um Vergleiche, Kennzahlen oder Gegenüberstellungen geht.
+- Trenner („---“) zwischen größeren Abschnitten, wo es die Gliederung klarer macht.
+- Inhaltlich vollständig: nichts weglassen, was im Post steht – nur besser strukturiert.
+- Zeilenumbrüche im JSON als \\n schreiben.
 
 Regeln:
 - 1 bis 3 Lernkarten, die das Wesentliche abfragen.

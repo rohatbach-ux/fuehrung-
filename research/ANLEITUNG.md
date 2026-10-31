@@ -27,14 +27,24 @@ Rohat Bach übernimmt zum 01.01.2027 die Leitung der Instandhaltung im Netz Hage
   "quelle": { "name": "Medium – Autor", "url": "https://…" },
   "sprache": "en oder de",
   "kernaussage": "ein Satz",
-  "deutsch": "120–220 Wörter: Worum geht es, was ist die Idee, worauf stützt sie sich?",
+  "deutsch": "Markdown, 150–250 Wörter: Worum geht es, was ist die Idee, worauf stützt sie sich? (Gestaltung siehe unten)",
   "modul": "Modul-ID",
-  "bezug_ih": "2–3 Sätze: Was heißt das konkret für den Leiter Instandhaltung im Netz Hagen in seiner aktuellen Phase?",
-  "frage": "eine Reflexionsfrage",
-  "experiment": "ein konkreter Vorschlag für die nächsten zwei Wochen",
+  "bezug_ih": "Markdown: 2–3 Stichpunkte mit fettem Kernwort – was heißt das konkret für den Leiter IH im Netz Hagen in seiner aktuellen Phase?",
+  "frage": "eine Reflexionsfrage (Klartext, kein Markdown)",
+  "experiment": "Markdown: ein fetter Einleitungssatz, dann 2–4 nummerierte Schritte für die nächsten zwei Wochen",
   "karten": [{ "frage": "…", "antwort": "…" }]
 }
 ```
+
+   **Gestaltung von „deutsch“** (wie ein erfahrener UI/UX-Designer, maximal übersichtlich und scannbar):
+   - Beginnen mit einem Zitatblock (`> **…**`), der die Kernbotschaft in einem Satz hervorhebt.
+   - 2–4 Abschnitte mit `## `-Überschriften, je mit einem passenden Emoji davor (sparsam, thematisch).
+   - Absätze höchstens 2–3 Sätze, keine Schachtelsätze.
+   - **Fettungen** gezielt für Schlüsselwörter und Kernaussagen.
+   - Aufzählungen statt Textwüsten; Listenpunkte dürfen mit einem Emoji beginnen.
+   - Eine Tabelle, wenn es um Kennzahlen, Vergleiche oder Gegenüberstellungen geht.
+   - `---` als Trenner zwischen größeren Abschnitten.
+   - Beispiele für die gewünschte Form: die vorhandenen Einträge in `data/impulse.json`.
 
    1–3 Lernkarten je Impuls. Die neuen Einträge kommen **vorne** in `items`; `updated` auf die aktuelle Zeit (ISO) setzen. Höchstens 120 Einträge behalten (die ältesten fallen weg).
 6. **Prüfen:** `node scripts/validate-impulse.mjs` muss „OK“ melden.

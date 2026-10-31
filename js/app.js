@@ -1,6 +1,7 @@
 import {
   ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT,
 } from "./content.js";
+import { md } from "./md.js";
 
 // ---------- Speicher (nur lokal auf diesem Gerät) ----------
 const KEY = "fk-state-v1";
@@ -13,6 +14,7 @@ function defaultState() {
     speed: 1.5,
     context: "",
     workMail: "",       // dienstliche Adresse für Copilot-Mails
+    plain: false,       // Corporate-Stil: Emojis in aufbereiteten Texten ausblenden
     daily: null,        // { date, ids: [] }
     seen: {},           // impulsId -> Datum zuletzt gezeigt
     down: {},           // impulsId -> true (nicht relevant)
@@ -654,7 +656,7 @@ function feedCard(x) {
         ${isRead(x) ? "" : '<span class="dot" aria-label="neu"></span>'}
       </div>
       <h3>${esc(x.titel)}</h3>
-      <p>${esc(x.kernaussage)}</p>
+      <p>${esc(String(x.kernaussage || "").replace(/\*\*/g, ""))}</p>
       <small class="src">${x.t === "post" ? esc(x.autor || "Instagram") : esc(x.quelle?.name || "")}</small>
     </button>`;
 }
@@ -735,6 +737,26 @@ function parsePostResult(text) {
 }
 
 let pendingImages = [];
+function openReplacePost(id) {
+  const p = state.posts.find((x) => x.id === id);
+  if (!p) return;
+  showSheet("↻ Ergebnis ersetzen", () => `
+    <div class="banner small">${esc(p.titel)}</div>
+    <p class="hint">Den Post im Claude-Projekt neu aufbereiten lassen (z. B. nach geänderter Anweisung), Antwort kopieren und hier einfügen. Screenshots, Notizen und Experimente bleiben erhalten.</p>
+    <button class="btn primary block" data-act="post-paste">📋 Ergebnis einfügen</button>
+    <textarea id="pn-text" rows="5" placeholder="… oder lange tippen → Einsetzen"></textarea>
+    <p><button class="btn primary block" data-act="post-replace-save" data-id="${esc(id)}">Ersetzen & ansehen</button></p>
+  `);
+}
+function replacePost(id) {
+  const p = state.posts.find((x) => x.id === id);
+  let data;
+  try { data = parsePostResult($("#pn-text").value); }
+  catch (e) { toast("Ergebnis nicht lesbar – bitte die ganze Antwort kopieren"); return; }
+  Object.assign(p, data, { updated: Date.now() });
+  save(); closeSheet(); render(); toast("Aktualisiert");
+  openStory("post", id);
+}
 function openNewPost(linkId) {
   pendingImages = [];
   const link = linkId && state.inbox.find((i) => i.id === linkId);
@@ -792,12 +814,12 @@ async function openStory(t, id) {
        <p class="hint">Wischen →</p>
      </div>`,
     ...urls.map((u, i) => `<div class="slide"><div class="slide-h">Original ${urls.length > 1 ? `${i + 1}/${urls.length}` : ""}</div><img class="shot" src="${u}" alt="Screenshot"></div>`),
-    x.deutsch ? `<div class="slide"><div class="slide-h">${t === "post" ? "Auf Deutsch" : "Worum es geht"}</div><div class="slide-text">${nl2br(x.deutsch)}</div>
+    x.deutsch ? `<div class="slide"><div class="slide-h">${t === "post" ? "Auf Deutsch" : "Worum es geht"}</div><div class="slide-text">${md(x.deutsch, { emoji: !state.plain })}</div>
       ${x.original && x.sprache && x.sprache !== "de" ? `<details class="orig"><summary>Originaltext</summary><p>${nl2br(x.original)}</p></details>` : ""}</div>` : "",
-    x.bezug_ih ? `<div class="slide"><div class="slide-h">Bezug zur IH Hagen</div><p class="big">${esc(x.bezug_ih)}</p></div>` : "",
+    x.bezug_ih ? `<div class="slide"><div class="slide-h">Bezug zur IH Hagen</div><div class="slide-text">${md(x.bezug_ih, { emoji: !state.plain })}</div></div>` : "",
     x.frage ? `<div class="slide"><div class="slide-h">Frage an dich</div><p class="big question">${esc(x.frage)}</p>
       <button class="btn block" data-act="note-new" ${refAttrs(ref)}>✍️ Gedanken notieren</button></div>` : "",
-    x.experiment ? `<div class="slide"><div class="slide-h">Zum Ausprobieren</div><p class="big">${esc(x.experiment)}</p>
+    x.experiment ? `<div class="slide"><div class="slide-h">Zum Ausprobieren</div><div class="slide-text">${md(x.experiment, { emoji: !state.plain })}</div>
       <button class="btn primary block" data-act="exp-new" ${refAttrs(ref)} data-suggest="1">🧪 Als Experiment starten</button></div>` : "",
     `<div class="slide"><div class="slide-h">Festigen</div>
       ${(x.karten || []).length ? `<p>${x.karten.length} Lernkarte${x.karten.length > 1 ? "n" : ""} ${x.karten.length > 1 ? "sind" : "ist"} in deinem Stapel:</p>
@@ -806,7 +828,7 @@ async function openStory(t, id) {
       ${actionRow(ref)}
       ${t === "rx" && x.quelle?.url ? `<p><a class="btn block" href="${esc(x.quelle.url)}" target="_blank" rel="noopener">Quelle öffnen: ${esc(x.quelle.name || "")}</a></p>` : ""}
       ${t === "post" && x.url ? `<p><a class="btn block" href="${esc(x.url)}" target="_blank" rel="noopener">📸 In Instagram öffnen</a></p>` : ""}
-      ${t === "post" ? `<p><button class="btn small danger" data-act="post-del" data-id="${esc(id)}">Post entfernen</button></p>` : ""}
+      ${t === "post" ? `<div class="btn-row"><button class="btn small" data-act="post-replace" data-id="${esc(id)}">↻ Neues Ergebnis einfügen</button><button class="btn small danger" data-act="post-del" data-id="${esc(id)}">Post entfernen</button></div>` : ""}
     </div>`,
   ].filter(Boolean);
   showSheet(t === "post" ? "📸 Mein Post" : "🔎 Recherche", () => `
@@ -850,7 +872,7 @@ function openNewExperiment(ref) {
   const info = refInfo(ref);
   const suggestion = info
     ? (ref.t === "imp" && impulseById(ref.id)?.type === "praxis" ? info.text
-      : (ref.t === "post" || ref.t === "rx") ? (feedItem(ref.t, ref.id)?.experiment || "") : "")
+      : (ref.t === "post" || ref.t === "rx") ? String(feedItem(ref.t, ref.id)?.experiment || "").replace(/\*\*|__|^>\s?/gm, "") : "")
     : "";
   showSheet("Experiment anlegen", () => `
     ${info ? `<div class="banner small">${esc(info.label)}<br><span class="hint">${esc(info.text)}</span></div>` : ""}
@@ -1298,6 +1320,7 @@ function openSettings() {
     <div class="seg" id="st-speed">${SPEEDS.map((s) => `<button data-s="${s}" aria-selected="${s === state.speed}">${s}×</button>`).join("")}</div>
     <p class="hint">Mein Kontext (bleibt nur auf diesem Gerät, kann an Copilot-Anfragen angehängt werden)</p>
     <textarea id="st-ctx" rows="5" placeholder="z. B. Größe des Bereichs, Zahl der direkten Führungskräfte, aktuelle Schwerpunkte – nur was du auch an Copilot geben würdest.">${esc(state.context)}</textarea>
+    <label class="check-line"><input type="checkbox" id="st-plain" ${state.plain ? "checked" : ""}> Corporate-Stil: Emojis in aufbereiteten Texten ausblenden</label>
     <p class="hint">Dienstliche E-Mail für Copilot-Anfragen (📤 → „An Diensthandy mailen“)</p>
     <input type="email" id="st-mail" value="${esc(state.workMail)}" placeholder="vorname.nachname@…" autocomplete="email" inputmode="email">
     <p><button class="btn primary block" data-act="set-save">Speichern</button></p>
@@ -1338,6 +1361,7 @@ function saveSettings() {
   if (audio.src) audio.playbackRate = state.speed;
   state.context = $("#st-ctx", sheet).value;
   state.workMail = $("#st-mail", sheet).value.trim();
+  state.plain = $("#st-plain", sheet).checked;
   state.daily = null;
   save(); closeSheet(); render(); toast("Gespeichert");
 }
@@ -1426,6 +1450,8 @@ document.addEventListener("click", async (ev) => {
     case "post-new": openNewPost(el.dataset.link || ""); break;
     case "post-save": savePost(el.dataset.link || ""); break;
     case "post-del": deletePost(id); break;
+    case "post-replace": openReplacePost(id); break;
+    case "post-replace-save": replacePost(id); break;
     case "project-help": openProjectHelp(); break;
     case "rx-reload": rxData = null; await loadResearch(true); toast("Aktualisiert"); break;
     case "copy-prompt":

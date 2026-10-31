@@ -32,7 +32,9 @@ Jeder Impuls, Beitrag, Merker und Eintrag hat dieselben Aktionen: ☆ Merken · 
 
 1. Einmalig: In der App *Entdecken → ⚙️ Claude-Projekt → Anweisung kopieren*. In der Claude-App ein Projekt „Führungskompass-Posts“ anlegen und die Anweisung als Projektanweisung einfügen.
 2. Pro Post: Screenshots machen → Claude-App → Projekt → Bilder anhängen → senden → Antwort kopieren.
-3. In der App: *📸 Post verarbeiten → 📋 Ergebnis einfügen → Speichern*. Screenshots können optional angehängt werden; sie bleiben nur auf dem iPhone (IndexedDB) und sind nicht in der Sicherung enthalten.
+3. In der App: *📸 Post verarbeiten → 📋 Ergebnis einfügen → Speichern*. Ältere Posts lassen sich in der Story unter *↻ Neues Ergebnis einfügen* aktualisieren.
+
+Aufbereitete Texte sind Markdown (Zitatblock, Überschriften mit Emoji, Fettungen, Listen, Tabellen) und werden von `js/md.js` dargestellt. ⚙️ → *Corporate-Stil* blendet die Emojis aus. Screenshots können optional angehängt werden; sie bleiben nur auf dem iPhone (IndexedDB) und sind nicht in der Sicherung enthalten.
 
 ### Tägliche Recherche
 

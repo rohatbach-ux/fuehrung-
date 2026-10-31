@@ -1,11 +1,12 @@
 // Offline-Cache für die App-Dateien. Bei Änderungen VERSION erhöhen.
-const VERSION = "fk-v3";
+const VERSION = "fk-v4";
 const FILES = [
   "./",
   "index.html",
   "css/styles.css",
   "js/app.js",
   "js/content.js",
+  "js/md.js",
   "data/podcasts.json",
   "data/impulse.json",
   "manifest.webmanifest",

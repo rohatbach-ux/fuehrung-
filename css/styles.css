@@ -224,3 +224,23 @@ code { font-size: 12px; }
 .dots { display: flex; justify-content: center; gap: 6px; padding: 12px 0 4px; }
 .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
 .dots i.on { background: var(--accent); }
+
+/* Aufbereitete Texte (Markdown) */
+.md { font-size: 16px; line-height: 1.55; }
+.md > :first-child { margin-top: 0; }
+.md p { margin: 0 0 10px; }
+.md .md-h { margin: 16px 0 6px; line-height: 1.25; letter-spacing: -.01em; }
+.md h3.md-h { font-size: 19px; }
+.md h4.md-h { font-size: 16px; color: var(--accent); }
+.md strong { font-weight: 700; color: var(--text); }
+.md .md-l { margin: 4px 0 12px; padding-left: 20px; }
+.md .md-l li { margin-bottom: 6px; padding-left: 2px; }
+.md ul.md-l { list-style: none; padding-left: 0; }
+.md ul.md-l li { position: relative; padding-left: 18px; }
+.md ul.md-l li::before { content: ""; position: absolute; left: 3px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.md .md-q { margin: 10px 0 14px; padding: 10px 12px; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 0 10px 10px 0; font-weight: 600; }
+.md .md-hr { border: 0; border-top: 1px solid var(--line); margin: 14px 0; }
+.md .md-tw { overflow-x: auto; margin: 8px 0 14px; }
+.md .md-t { border-collapse: collapse; width: 100%; font-size: 14px; }
+.md .md-t th, .md .md-t td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.md .md-t th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
