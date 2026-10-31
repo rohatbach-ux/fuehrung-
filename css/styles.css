@@ -199,3 +199,28 @@ textarea { min-height: 60px; resize: vertical; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 body.has-player .toast { bottom: calc(176px + env(safe-area-inset-bottom)); }
 code { font-size: 12px; }
+
+/* Entdecken */
+.feed-item h3 { margin-top: 2px; }
+.feed-item p { margin: 4px 0; }
+.feed-item.unread { border-left: 4px solid var(--accent); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); align-self: center; }
+.chips.sub button { font-size: 12px; padding: 4px 10px; }
+.thumbs { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+.thumbs img { width: 64px; height: 80px; object-fit: cover; border-radius: 8px; }
+.pre { white-space: pre-wrap; font-size: 12px; line-height: 1.4; margin: 8px 0 0; }
+.slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 12px; margin: 0 -16px; padding: 0 16px; scroll-padding: 0 16px; }
+.slides::-webkit-scrollbar { display: none; }
+.slide { flex: 0 0 100%; scroll-snap-align: start; background: var(--card); border-radius: var(--radius); padding: 18px 16px; min-height: 58vh; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 8px; overflow-y: auto; max-height: 70vh; }
+.slide.cover { justify-content: center; background: linear-gradient(160deg, var(--accent-soft), var(--card)); }
+.slide.cover h2 { font-size: 24px; margin: 6px 0; letter-spacing: -.01em; }
+.slide .big { font-size: 18px; line-height: 1.45; margin: 0; }
+.slide-h { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 700; }
+.slide-text { font-size: 16px; line-height: 1.55; }
+.slide .shot { width: 100%; max-height: 62vh; object-fit: contain; border-radius: 10px; background: var(--bg); }
+.slide .btn { margin-top: auto; }
+.orig summary { font-size: 13px; color: var(--muted); cursor: pointer; }
+.orig p { font-size: 14px; color: var(--muted); }
+.dots { display: flex; justify-content: center; gap: 6px; padding: 12px 0 4px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
+.dots i.on { background: var(--accent); }

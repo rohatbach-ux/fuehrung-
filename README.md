@@ -8,13 +8,13 @@
 |---|---|
 | **Heute** | Phase (0 Vorbereitung → 1 Ankommen & Stabilisieren → 2 Richtung & WHY → 3 Verankern), Leitfrage, drei Impulse pro Tag (Wissen, Frage, Ausprobieren), „Mehr Impulse“ auf Abruf, laufende Experimente, fällige Lernkarten, neue Podcast-Folgen, Wochenrückblick (Fr–So). |
 | **Lernen** | 12 Module mit Kerngedanke, Bezug zur IH, Modellen, Praxisvorschlägen, Reflexionsfragen und Quellen. Lernkarten mit Wiederholung in wachsenden Abständen. Gemerkte Impulse. |
-| **Inbox** | Gespeicherte Instagram-Posts und Links. Je Beitrag: Kernaussage in einem Satz, Modul-Zuordnung, daraus Experiment oder Copilot-Anfrage. |
+| **Entdecken** | Feed zum Wischen: deine aufbereiteten Instagram-Posts (aus Screenshots, übersetzt) und täglich 3 recherchierte Impulse. Je Eintrag: Kernaussage, deutscher Text, Bezug zur IH, Frage, Experiment, Lernkarten. Dazu der Merkzettel für Links. |
 | **Hören** | Podcasts mit Standard-Tempo 1,5×, Position wird gemerkt, 📍 Merker mit Zeitstempel und Notiz, Sprung zur Stelle aus dem Journal. |
 | **Journal** | Experimente mit Auswertung, Notizen, WHY-Bausteine, Podcast-Merker, Wochenrückblicke. |
 
 Jeder Impuls, Beitrag, Merker und Eintrag hat dieselben Aktionen: ☆ Merken · ✍️ Notiz · 🧪 Testen (Experiment) · 📤 Copilot · 👎 Weniger.
 
-**📤 Copilot:** Die App baut eine fertige Anfrage (Rolle, Ziele, Phase, Impuls, deine Gedanken, gewählte Vertiefungsart) und gibt sie über das iOS-Teilen-Menü weiter oder kopiert sie. Die Vertiefung im konkreten DB-Kontext passiert damit in Copilot, innerhalb der Unternehmensrichtlinien.
+**📤 Copilot:** Hauptweg ist „📧 An Diensthandy mailen“ an die in ⚙️ hinterlegte dienstliche Adresse (nur lokal gespeichert). Die App baut eine fertige Anfrage (Rolle, Ziele, Phase, Impuls, deine Gedanken, gewählte Vertiefungsart) und gibt sie über das iOS-Teilen-Menü weiter oder kopiert sie. Die Vertiefung im konkreten DB-Kontext passiert damit in Copilot, innerhalb der Unternehmensrichtlinien.
 
 ## Datenschutz
 
@@ -28,7 +28,17 @@ Jeder Impuls, Beitrag, Merker und Eintrag hat dieselben Aktionen: ☆ Merken · 
 2. **Auf dem iPhone:** URL in Safari öffnen → *Teilen* → *Zum Home-Bildschirm*.
 3. **Podcasts:** Der Workflow *Podcasts aktualisieren* (`.github/workflows/podcasts.yml`) läuft täglich und bei Änderungen an `feeds/`. Unter *Actions* lässt er sich auch von Hand starten (*Run workflow*). Er schreibt `data/podcasts.json`.
 
-### Instagram-Posts in die App bringen
+### Instagram-Posts verarbeiten (über dein Claude-Abo, ohne Zusatzkosten)
+
+1. Einmalig: In der App *Entdecken → ⚙️ Claude-Projekt → Anweisung kopieren*. In der Claude-App ein Projekt „Führungskompass-Posts“ anlegen und die Anweisung als Projektanweisung einfügen.
+2. Pro Post: Screenshots machen → Claude-App → Projekt → Bilder anhängen → senden → Antwort kopieren.
+3. In der App: *📸 Post verarbeiten → 📋 Ergebnis einfügen → Speichern*. Screenshots können optional angehängt werden; sie bleiben nur auf dem iPhone (IndexedDB) und sind nicht in der Sicherung enthalten.
+
+### Tägliche Recherche
+
+Eine geplante Claude-Code-Aufgabe recherchiert jeden Morgen 3 Impulse und schreibt sie nach `data/impulse.json`. Regeln und Format: `research/ANLEITUNG.md`. Prüfung: `node scripts/validate-impulse.mjs`.
+
+### Links als Merkzettel
 
 Instagram gibt gespeicherte Posts an keine fremde App heraus. Es gibt zwei Wege:
 

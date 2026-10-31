@@ -1,0 +1,83 @@
+{
+ "updated": "2026-10-31T17:24:55+00:00",
+ "items": [
+  {
+   "id": "20261031-1",
+   "date": "2026-10-31",
+   "titel": "Feuerwehr-Modus: Warum er sich selbst verstärkt",
+   "quelle": {
+    "name": "MIT Sloan – Black & Repenning: Why Firefighting Is Never Enough",
+    "url": "https://dspace.mit.edu/handle/1721.1/3804"
+   },
+   "sprache": "en",
+   "kernaussage": "Wer Kapazität immer wieder ungeplant in akute Probleme umlenkt, kippt die Organisation irgendwann in dauerhafte Feuerwehr – obwohl alle wissen, dass sie schadet.",
+   "deutsch": "Forschende um Nelson Repenning am MIT haben untersucht, warum Organisationen im Feuerwehr-Modus feststecken, obwohl praktisch alle Beteiligten ihn für leistungsschädlich halten. Ihr Befund aus Systemdynamik-Modellen und Fallstudien: Jedes Mal, wenn Leute ungeplant von vorbeugender Arbeit abgezogen werden, um ein akutes Problem zu lösen, entstehen an anderer Stelle neue Probleme – die später wieder Leute abziehen. Ab einem Kipppunkt wird daraus ein sich selbst verstärkender Kreislauf, und das ganze System arbeitet nur noch reaktiv. Als Gegenmittel nennen die Arbeiten unter anderem: Heldentum beim Löschen nicht übermäßig belohnen, Ursachenanalyse statt Verschieben, und Kapazität für Vorbeugung bewusst schützen – auch wenn es kurzfristig wehtut. Die Studien stammen aus der Produktentwicklung, das Muster ist aber auf Instandhaltung übertragbar: Störungsbeseitigung frisst die Zeit für Inspektion und Vorbeugung, was die nächsten Störungen erzeugt.",
+   "modul": "stabil",
+   "bezug_ih": "Für das Netz Hagen heißt das: Ruhe entsteht nicht durch schnelleres Löschen, sondern dadurch, dass ein fester Anteil der Kapazität für Vorbeugung und Ursachenbeseitigung unantastbar bleibt. Prüfe früh, ob das Netz schon jenseits des Kipppunkts arbeitet – und wer heute für Feuerwehr-Einsätze die meiste Anerkennung bekommt.",
+   "frage": "Welche vorbeugende Arbeit wird im Netz am häufigsten verschoben, wenn es brennt – und was kostet uns das drei Monate später?",
+   "experiment": "Lass dir in den ersten Wochen zeigen, wie viele geplante Inspektions- und Vorbeugestunden pro Woche tatsächlich stattfinden, und vereinbare mit dem Führungskreis einen Mindestanteil, der nicht für Störungen abgezogen wird.",
+   "karten": [
+    {
+     "frage": "Warum hält sich der Feuerwehr-Modus laut Repenning, obwohl alle ihn für schädlich halten?",
+     "antwort": "Ungeplantes Umlenken von Kapazität in akute Probleme erzeugt neue Probleme; ab einem Kipppunkt verstärkt sich der Kreislauf selbst."
+    },
+    {
+     "frage": "Nenne zwei Gegenmittel gegen dauerhafte Feuerwehr.",
+     "antwort": "Heldentum beim Löschen nicht überbelohnen; Ursachenanalyse statt Verschieben; Kapazität für Vorbeugung schützen."
+    }
+   ]
+  },
+  {
+   "id": "20261031-2",
+   "date": "2026-10-31",
+   "titel": "Sinn ist selten – und hängt am Auftrag",
+   "quelle": {
+    "name": "Gallup & Stand Together – The Power of Purpose (2025)",
+    "url": "https://news.gallup.com/poll/697403/purposeful-work-boosts-engagement-few-experience.aspx"
+   },
+   "sprache": "en",
+   "kernaussage": "Nur eine Minderheit erlebt ihre Arbeit als sinnvoll – wer aber sieht, wie der Auftrag der Organisation die eigene Arbeit wichtig macht, hat um ein Vielfaches häufiger ein starkes Sinnerleben.",
+   "deutsch": "Gallup und Stand Together haben 2025 rund 4.500 Berufstätige in den USA befragt und dafür einen Index für Sinnerleben bei der Arbeit entwickelt. Zentrale Ergebnisse: Nur 18 Prozent sagen, ihr Job habe einen Sinn, an den sie glauben. Wer stark zustimmt, dass der Auftrag des Unternehmens die eigene Arbeit wichtig macht, hat 3,6-mal so häufig ein starkes Sinnerleben (58 gegenüber 16 Prozent). Menschen mit starkem Sinnerleben berichten deutlich seltener von häufigem Ausbrennen (13 gegenüber 38 Prozent) und suchen seltener einen neuen Job. Gallup folgert: Sinn entsteht vor allem, wenn Beschäftigte erkennen, wie ihre Rolle mit dem größeren Auftrag zusammenhängt und warum dieser Auftrag bedeutsam ist. Einschränkung: Die Daten stammen aus den USA; die Größenordnungen sind ein Hinweis, keine Prognose für Deutschland.",
+   "modul": "why",
+   "bezug_ih": "Für dein WHY-Vorhaben heißt das: Der Satz allein reicht nicht – entscheidend ist, dass jede Gruppe im Netz die Verbindung zwischen ihrer konkreten Tätigkeit und dem Auftrag sieht. In der Instandhaltung fällt Arbeit oft nur auf, wenn etwas schiefgeht; genau deshalb lohnt es sich, diese Verbindung sichtbar zu machen.",
+   "frage": "Könnte jemand aus einem Instandhaltungstrupp heute in einem Satz sagen, wofür seine Arbeit gut ist – über ‚damit nichts kaputtgeht‘ hinaus?",
+   "experiment": "Frag in den nächsten zwei Wochen in drei Gesprächen: ‚Wann hat deine Arbeit zuletzt für Fahrgäste oder Kollegen einen spürbaren Unterschied gemacht?‘ und halte die Antworten als WHY-Bausteine fest.",
+   "karten": [
+    {
+     "frage": "Wie viel Prozent der Befragten (Gallup 2025, USA) sagen, ihr Job habe einen Sinn, an den sie glauben?",
+     "antwort": "18 Prozent."
+    },
+    {
+     "frage": "Was erhöht laut Gallup das Sinnerleben besonders?",
+     "antwort": "Wenn Beschäftigte sehen, wie ihre Rolle mit dem Auftrag der Organisation zusammenhängt und warum dieser bedeutsam ist (3,6-mal häufiger starkes Sinnerleben)."
+    }
+   ]
+  },
+  {
+   "id": "20261031-3",
+   "date": "2026-10-31",
+   "titel": "90 Tage zuhören – oder 90 Stunden handeln?",
+   "quelle": {
+    "name": "Harvard Business School Working Knowledge – The First 90 Hours",
+    "url": "https://www.library.hbs.edu/working-knowledge/the-first-90-hours-what-new-ceos-should-and-shouldnt-do"
+   },
+   "sprache": "en",
+   "kernaussage": "Zuhören bleibt Pflicht, aber neue Führungskräfte haben oft nicht 90 Tage Schonfrist: Die ersten Stunden und Signale prägen das Bild schon mit.",
+   "deutsch": "Der klassische Rat für neue Führungskräfte – bekannt durch Michael Watkins’ ‚The First 90 Days‘ – lautet: erst systematisch lernen und zuhören, dann handeln, und so schnell den Punkt erreichen, ab dem man mehr Wert schafft, als man Aufmerksamkeit bindet. Ein Beitrag der Harvard Business School mit John Quelch setzt einen Kontrapunkt: Neue Leiter hätten heute oft nicht mehr den Luxus einer 90-tägigen Zuhör-Tour; schon die ersten 90 Stunden zählten. Beides schließt sich nicht aus. Die Synthese für die Praxis: Zuhören ist kein Stillhalten. Wer in den ersten Tagen bewusst wenige, klare Signale setzt – wofür er steht, wie er mit schlechten Nachrichten umgeht, wo er zuerst hinschaut – und parallel strukturiert lernt, verbindet Orientierung mit Glaubwürdigkeit.",
+   "modul": "uebergang",
+   "bezug_ih": "Bei einem unruhigen Netz wird niemand 90 Tage warten. Plane deshalb für deine erste Woche drei bewusste Signale (z. B. Präsenz vor Ort, ein klares Lagebild-Format, deine Reaktion auf die erste Störung) und kommuniziere zugleich, dass du die großen Weichen erst nach dem Zuhören stellst.",
+   "frage": "Welche drei Signale sollen die Leute im Netz Hagen nach meiner ersten Woche über mich erzählen?",
+   "experiment": "Schreib bis Mitte Dezember auf einer Seite deinen Plan für die ersten 90 Stunden: wen du triffst, wo du vor Ort bist, welche zwei Botschaften du setzt – und was du ausdrücklich noch nicht entscheidest.",
+   "karten": [
+    {
+     "frage": "Welchen Kontrapunkt setzt John Quelch zum 90-Tage-Ansatz?",
+     "antwort": "Neue Leiter haben oft keinen Luxus einer 90-tägigen Zuhör-Tour; schon die ersten 90 Stunden prägen das Bild."
+    },
+    {
+     "frage": "Wie lassen sich Zuhören und frühes Handeln verbinden?",
+     "antwort": "Strukturiert lernen und gleichzeitig wenige, klare Signale setzen (Haltung, Umgang mit schlechten Nachrichten, Präsenz) – große Weichen erst nach dem Zuhören."
+    }
+   ]
+  }
+ ]
+}

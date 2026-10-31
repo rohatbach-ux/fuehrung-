@@ -1,5 +1,5 @@
 import {
-  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN,
+  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT,
 } from "./content.js";
 
 // ---------- Speicher (nur lokal auf diesem Gerät) ----------
@@ -20,6 +20,8 @@ function defaultState() {
     journal: [],        // { id, ts, kind: notiz|why|reflexion|merker|copilot, text, ref }
     experiments: [],    // { id, title, plan, ref, start, due, status: aktiv|fertig|verworfen, review }
     inbox: [],          // { id, url, title, note, mod, status: neu|verarbeitet|archiv, added, src }
+    posts: [],          // aufbereitete eigene Posts (Ergebnis aus dem Claude-Projekt)
+    read: {},           // gelesene Post-/Recherche-IDs -> Zeitstempel
     cards: {},          // cardId -> { box, due }
     newCards: null,     // { date, n }
     listen: {},         // episodeId -> { pos, dur, done, ts }
@@ -38,8 +40,9 @@ function save() {
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { toast("Speichern nicht möglich"); }
 }
 
-const ui = { tab: "heute", lern: "module", inbox: "neu", pod: "alle", journal: "experimente" };
+const ui = { tab: "heute", lern: "module", inbox: "neu", feed: "alle", pod: "alle", journal: "experimente" };
 let podData = null; // geladene data/podcasts.json
+let rxData = null;  // geladene data/impulse.json (tägliche Recherche)
 
 // ---------- Helfer ----------
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -197,6 +200,16 @@ function refInfo(ref) {
     const j = state.journal.find((x) => x.id === ref.id);
     return j ? { label: KIND[j.kind]?.label || "Notiz", text: j.text, source: "mein Journal", short: j.text.slice(0, 60) } : null;
   }
+  if (ref.t === "post" || ref.t === "rx") {
+    const x = feedItem(ref.t, ref.id);
+    if (!x) return null;
+    return {
+      label: x.titel,
+      text: `${x.kernaussage}${x.deutsch ? ` Inhalt: ${x.deutsch.length > 500 ? x.deutsch.slice(0, 497) + "…" : x.deutsch}` : ""}`,
+      source: ref.t === "post" ? `Instagram-Post${x.autor ? ` von ${x.autor}` : ""}` : `${x.quelle?.name || "Recherche"}${x.quelle?.url ? `, ${x.quelle.url}` : ""}`,
+      short: x.titel,
+    };
+  }
   if (ref.t === "phase") {
     const p = PHASES.find((x) => x.id === ref.id) || currentPhase();
     return { label: `Leitfrage der Phase „${p.name}“`, text: p.leitfrage, source: "Phasenfokus", short: p.leitfrage };
@@ -209,7 +222,7 @@ const sameRef = (a, b) => a && b && a.t === b.t && a.id === b.id;
 const notesFor = (ref) => state.journal.filter((j) => sameRef(j.ref, ref) && (j.kind === "notiz" || j.kind === "why"));
 
 // ---------- Rendering ----------
-const TITLES = { heute: "Heute", lernen: "Lernen", inbox: "Inbox", hoeren: "Hören", journal: "Journal" };
+const TITLES = { heute: "Heute", lernen: "Lernen", inbox: "Entdecken", hoeren: "Hören", journal: "Journal" };
 
 function render() {
   $("#view-title").textContent = TITLES[ui.tab];
@@ -286,9 +299,12 @@ function renderHeute() {
     <div class="section-title">Dranbleiben</div>
     <div class="card list-group">
       <button class="row" data-act="practice"><span>🃏 Lernkarten</span><b>${due.length ? `${due.length} fällig` : "alles wiederholt"}</b></button>
-      <button class="row" data-act="inbox-next" ${open.length ? "" : "disabled"}><span>📥 Gespeicherte Beiträge ohne Kernaussage</span><b>${open.length}</b></button>
+      <button class="row" data-act="tab" data-tab="inbox"><span>✨ Entdecken: neue Posts & Recherche</span><b>${feedItems().filter((x) => !isRead(x)).length}</b></button>
+      ${open.length ? `<button class="row" data-act="inbox-next"><span>🔗 Gespeicherte Links</span><b>${open.length}</b></button>` : ""}
       <button class="row" data-act="tab" data-tab="lernen"><span>📚 Module</span><b>${MODULES.length}</b></button>
     </div>
+
+    ${(() => { const nu = feedItems().filter((x) => !isRead(x)).slice(0, 3); return nu.length ? `<div class="section-title">Neu entdeckt</div>${nu.map(feedCard).join("")}` : ""; })()}
 
     ${fresh.length ? `<div class="section-title">Neu im Ohr</div><div class="card list-group">${fresh.map(epRow).join("")}</div>` : ""}
   `;
@@ -307,13 +323,13 @@ function renderLernen() {
     return chips + (list.length ? list.map(impulseCard).join("") : `<div class="empty">Noch nichts gemerkt. Tippe bei einem Impuls auf ☆.</div>`);
   }
   if (ui.lern === "karten") {
-    const sure = CARDS.filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
-    const seen = CARDS.filter((c) => state.cards[c.id]).length;
+    const sure = allCards().filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
+    const seen = allCards().filter((c) => state.cards[c.id]).length;
     return chips + `
       <div class="card">
         <div class="stats">
           <div class="stat"><b>${due.length}</b><span>heute fällig</span></div>
-          <div class="stat"><b>${seen}/${CARDS.length}</b><span>begonnen</span></div>
+          <div class="stat"><b>${seen}/${allCards().length}</b><span>begonnen</span></div>
           <div class="stat"><b>${sure}</b><span>sicher</span></div>
         </div>
         <p><button class="btn primary block" data-act="practice" ${due.length ? "" : "disabled"}>Fällige Karten üben</button></p>
@@ -321,7 +337,7 @@ function renderLernen() {
         <p class="hint">Wiederholung in wachsenden Abständen (1, 2, 4, 8, 16, 32 Tage). Pro Tag kommen bis zu fünf neue Karten dazu.</p>
       </div>
       ${MODULES.map((m) => {
-        const cs = CARDS.filter((c) => c.mod === m.id);
+        const cs = allCards().filter((c) => c.mod === m.id);
         const ok = cs.filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
         return `<button class="card mod-row" data-act="practice" data-mod="${m.id}"><span class="mi">${m.icon}</span><span class="mb"><b>${esc(m.title)}</b><small>${ok}/${cs.length} sicher</small></span><span class="chev">›</span></button>`;
       }).join("")}`;
@@ -331,7 +347,7 @@ function renderLernen() {
   return chips + `
     <p class="hint">Sortiert nach Bedeutung für deine aktuelle Phase „${esc(ph.name)}“.</p>
     ${sorted.map((m) => {
-      const cs = CARDS.filter((c) => c.mod === m.id);
+      const cs = allCards().filter((c) => c.mod === m.id);
       const ok = cs.filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
       const hot = m.w[ph.nr] >= 2.5;
       return `
@@ -383,15 +399,15 @@ function openModule(id) {
 const INTERVALS = [0, 1, 2, 4, 8, 16, 32];
 function dueCards() {
   const d = today();
-  const scheduled = CARDS.filter((c) => state.cards[c.id] && state.cards[c.id].due <= d);
+  const scheduled = allCards().filter((c) => state.cards[c.id] && state.cards[c.id].due <= d);
   const usedNew = state.newCards?.date === d ? state.newCards.n : 0;
-  const fresh = CARDS.filter((c) => !state.cards[c.id]).slice(0, Math.max(0, 5 - usedNew));
+  const fresh = allCards().filter((c) => !state.cards[c.id]).slice(0, Math.max(0, 5 - usedNew));
   return [...scheduled, ...fresh];
 }
 function practice({ mod, mix } = {}) {
   let deck;
-  if (mod) deck = CARDS.filter((c) => c.mod === mod);
-  else if (mix) deck = [...CARDS].sort(() => Math.random() - 0.5).slice(0, 10);
+  if (mod) deck = allCards().filter((c) => c.mod === mod);
+  else if (mix) deck = [...allCards()].sort(() => Math.random() - 0.5).slice(0, 10);
   else deck = dueCards();
   if (!deck.length) { toast("Heute ist nichts fällig 👍"); return; }
   const session = { deck: [...deck], i: 0, shown: false, ok: 0 };
@@ -401,9 +417,9 @@ function practice({ mod, mix } = {}) {
         <button class="btn primary block" data-act="sheet-close">Fertig</button></div>`;
     }
     const c = session.deck[session.i];
-    const m = moduleById(c.mod);
+    const m = moduleById(c.mod) || { icon: "✨", title: "" };
     return `
-      <p class="hint">${session.i + 1} / ${session.deck.length} · ${m.icon} ${esc(m.title)}</p>
+      <p class="hint">${session.i + 1} / ${session.deck.length} · ${m.icon} ${esc(c.src || m.title)}</p>
       <div class="card flash"><p class="q">${esc(c.q)}</p>
         ${session.shown ? `<hr><p class="a">${esc(c.a)}</p>` : ""}</div>
       ${session.shown
@@ -481,7 +497,7 @@ function parseInstagramExport(text) {
   return found.filter((f) => !isInsta(f.url) || /instagram\.com\/(p|reel|tv)\//.test(f.url));
 }
 
-function renderInbox() {
+function renderLinks() {
   const counts = { neu: 0, verarbeitet: 0, archiv: 0 };
   state.inbox.forEach((i) => counts[i.status]++);
   const list = state.inbox.filter((i) => i.status === ui.inbox);
@@ -492,9 +508,9 @@ function renderInbox() {
         <button class="btn" data-act="inbox-paste" title="Aus Zwischenablage">📋</button>
         <button class="btn primary" data-act="inbox-add">+</button>
       </div>
-      <p class="hint">In Instagram: Teilen → „Link kopieren“, dann hier 📋 tippen. Viele auf einmal: <button class="btn ghost small" data-act="inbox-import">Sammelimport / Instagram-Export</button></p>
+      <p class="hint">Links sind dein Merkzettel. Verarbeitet werden Posts über Screenshots (oben „📸 Post verarbeiten“). Viele Links auf einmal: <button class="btn ghost small" data-act="inbox-import">Sammelimport / Instagram-Export</button></p>
     </div>
-    <div class="chips">
+    <div class="chips sub">
       ${[["neu", "Neu"], ["verarbeitet", "Verarbeitet"], ["archiv", "Archiv"]]
         .map(([k, l]) => `<button data-act="inbox-filter" data-k="${k}" aria-pressed="${ui.inbox === k}">${l} (${counts[k]})</button>`).join("")}
     </div>
@@ -522,6 +538,7 @@ function openInboxItem(id) {
     <p class="hint">Passt zu Modul</p>
     <select id="ib-mod"><option value="">– ohne –</option>${MODULES.map((m) => `<option value="${m.id}" ${x.mod === m.id ? "selected" : ""}>${m.icon} ${esc(m.title)}</option>`).join("")}</select>
     <p><button class="btn primary block" data-act="inbox-save" data-id="${x.id}">Speichern</button></p>
+    <p><button class="btn block" data-act="post-new" data-link="${x.id}">📸 Screenshots dieses Posts verarbeiten</button></p>
     ${actionRow({ t: "inbox", id: x.id })}
     <div class="btn-row" style="margin-top:14px">
       <button class="btn small" data-act="inbox-archive" data-id="${x.id}">${x.status === "archiv" ? "↩︎ Zurückholen" : "🗄 Archivieren"}</button>
@@ -560,9 +577,254 @@ function openImport() {
     const f = e.target.files[0];
     if (!f) return;
     const n = addToInbox(parseInstagramExport(await f.text()));
-    closeSheet(); ui.tab = "inbox"; ui.inbox = "neu"; render();
+    closeSheet(); ui.tab = "inbox"; ui.feed = "links"; ui.inbox = "neu"; render();
     toast(n ? `${n} Beiträge importiert` : "Keine neuen Beiträge gefunden");
   });
+}
+
+// ----- Entdecken: eigene Posts (Screenshots) + tägliche Recherche -----
+const idb = {
+  _db: null,
+  open() {
+    if (this._db) return Promise.resolve(this._db);
+    return new Promise((res, rej) => {
+      const r = indexedDB.open("fk-bilder", 1);
+      r.onupgradeneeded = () => r.result.createObjectStore("img");
+      r.onsuccess = () => { this._db = r.result; res(r.result); };
+      r.onerror = () => rej(r.error);
+    });
+  },
+  async run(mode, fn) {
+    const db = await this.open();
+    return new Promise((res, rej) => {
+      const tx = db.transaction("img", mode);
+      const req = fn(tx.objectStore("img"));
+      tx.oncomplete = () => res(req?.result);
+      tx.onerror = () => rej(tx.error);
+    });
+  },
+  put(k, v) { return this.run("readwrite", (s) => s.put(v, k)); },
+  get(k) { return this.run("readonly", (s) => s.get(k)); },
+  del(k) { return this.run("readwrite", (s) => s.delete(k)); },
+};
+async function shrinkImage(file) {
+  try {
+    const bmp = await createImageBitmap(file);
+    const scale = Math.min(1, 1200 / Math.max(bmp.width, bmp.height));
+    const c = document.createElement("canvas");
+    c.width = Math.round(bmp.width * scale); c.height = Math.round(bmp.height * scale);
+    c.getContext("2d").drawImage(bmp, 0, 0, c.width, c.height);
+    return await new Promise((r) => c.toBlob(r, "image/jpeg", 0.82));
+  } catch (e) { return file; }
+}
+
+async function loadResearch(force) {
+  try {
+    const res = await fetch(`data/impulse.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
+    if (!res.ok) throw new Error(res.status);
+    rxData = await res.json();
+  } catch (e) { rxData = rxData || { updated: null, items: [] }; }
+  if (["inbox", "heute", "lernen"].includes(ui.tab)) render();
+}
+function feedItem(t, id) {
+  return t === "post" ? state.posts.find((p) => p.id === id) : (rxData?.items || []).find((x) => x.id === id);
+}
+function feedItems() {
+  const posts = state.posts.map((p) => ({ ...p, t: "post", sort: p.added }));
+  const rx = (rxData?.items || []).map((x) => ({ ...x, t: "rx", sort: x.date ? parseIso(x.date.slice(0, 10)).getTime() + 12 * 36e5 : 0 }));
+  return [...posts, ...rx].sort((a, b) => b.sort - a.sort);
+}
+const isRead = (x) => !!state.read[`${x.t}:${x.id}`];
+function feedCards() {
+  const out = [];
+  for (const p of state.posts) (p.karten || []).forEach((k, i) => out.push({ id: `post-${p.id}-k${i}`, mod: p.modul, q: k.frage, a: k.antwort, src: `Mein Post: ${p.titel}` }));
+  for (const x of rxData?.items || []) (x.karten || []).forEach((k, i) => out.push({ id: `rx-${x.id}-k${i}`, mod: x.modul, q: k.frage, a: k.antwort, src: `Recherche: ${x.titel}` }));
+  return out.filter((c) => c.q && c.a);
+}
+function allCards() { return [...CARDS, ...feedCards()]; }
+
+function feedCard(x) {
+  const m = moduleById(x.modul);
+  return `
+    <button class="card feed-item ${isRead(x) ? "" : "unread"}" data-act="story" data-t="${x.t}" data-id="${esc(x.id)}">
+      <div class="tags">
+        <span class="tag ${x.t === "post" ? "t-praxis" : "t-wissen"}">${x.t === "post" ? "📸 Mein Post" : "🔎 Recherche"}</span>
+        ${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}
+        <span class="tag">${x.t === "post" ? fmtShort(x.added) : x.date ? fmtShort(parseIso(x.date.slice(0, 10))) : ""}</span>
+        ${isRead(x) ? "" : '<span class="dot" aria-label="neu"></span>'}
+      </div>
+      <h3>${esc(x.titel)}</h3>
+      <p>${esc(x.kernaussage)}</p>
+      <small class="src">${x.t === "post" ? esc(x.autor || "Instagram") : esc(x.quelle?.name || "")}</small>
+    </button>`;
+}
+
+function renderInbox() {
+  if (!rxData) loadResearch();
+  const items = feedItems();
+  const unread = items.filter((x) => !isRead(x)).length;
+  const links = state.inbox.filter((i) => i.status === "neu").length;
+  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["links", `Links (${links})`]];
+  const head = `
+    <div class="btn-row">
+      <button class="btn primary" data-act="post-new">📸 Post verarbeiten</button>
+      <button class="btn" data-act="project-help">⚙️ Claude-Projekt</button>
+    </div>
+    <div class="chips">${filters.map(([k, l]) => `<button data-act="feed-filter" data-k="${k}" aria-pressed="${ui.feed === k}">${l}</button>`).join("")}</div>`;
+  if (ui.feed === "links") return head + renderLinks();
+  let list = items;
+  if (ui.feed === "neu") list = items.filter((x) => !isRead(x));
+  if (ui.feed === "posts") list = items.filter((x) => x.t === "post");
+  if (ui.feed === "recherche") list = items.filter((x) => x.t === "rx");
+  const empty = ui.feed === "posts"
+    ? "Noch keine Posts verarbeitet. Tippe auf „📸 Post verarbeiten“."
+    : ui.feed === "recherche" ? "Die tägliche Recherche liefert jeden Morgen drei neue Impulse." : "Hier ist noch nichts.";
+  return head + (list.length ? list.map(feedCard).join("") : `<div class="empty">${empty}</div>`) +
+    (rxData?.updated ? `<p class="hint">Recherche zuletzt aktualisiert: ${new Date(rxData.updated).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })} <button class="btn ghost small" data-act="rx-reload">↻</button></p>` : "");
+}
+
+function openProjectHelp() {
+  showSheet("Claude-Projekt einrichten", () => `
+    <p>Einmalig in der <b>Claude-App</b>:</p>
+    <ol class="steps">
+      <li>Seitenmenü → <b>Projekte</b> → <b>+ Neues Projekt</b>, Name: <i>Führungskompass-Posts</i>.</li>
+      <li>Im Projekt auf <b>Anweisungen</b> (Projektanweisungen) tippen.</li>
+      <li>Hier unten <b>„Anweisung kopieren“</b> tippen und dort einfügen → Speichern.</li>
+    </ol>
+    <p><button class="btn primary block" data-act="copy-prompt">📋 Anweisung kopieren</button></p>
+    <details class="card model"><summary><b>Anweisung ansehen</b></summary><pre class="pre">${esc(PROJECT_PROMPT)}</pre></details>
+    <div class="section-title">Danach für jeden Post</div>
+    <ol class="steps">
+      <li>In Instagram von jeder Seite des Posts einen <b>Screenshot</b> machen (Seitentaste + Lauter).</li>
+      <li>Claude-App → Projekt <i>Führungskompass-Posts</i> → neuer Chat → <b>Bilder anhängen</b> → senden. Du musst nichts schreiben.</li>
+      <li>Unter der Antwort auf <b>Kopieren</b> tippen.</li>
+      <li>Hier: <b>📸 Post verarbeiten</b> → <b>📋 Ergebnis einfügen</b> → <b>Speichern</b>.</li>
+    </ol>
+    <p class="hint">Läuft über dein Claude-Abo, ohne Zusatzkosten. Die Screenshots kannst du optional auch hier anhängen – sie bleiben nur auf diesem iPhone.</p>
+  `);
+}
+
+function parsePostResult(text) {
+  const a = text.indexOf("{"), b = text.lastIndexOf("}");
+  if (a < 0 || b <= a) throw new Error("Kein Ergebnisblock gefunden");
+  let raw = text.slice(a, b + 1);
+  let data;
+  try { data = JSON.parse(raw); }
+  catch (e) {
+    raw = raw.replace(/[“”]/g, '"').replace(/,\s*([}\]])/g, "$1");
+    data = JSON.parse(raw);
+  }
+  const str = (v) => (typeof v === "string" ? v.trim() : "");
+  const mod = str(data.modul).toLowerCase();
+  const m = MODULES.find((x) => x.id === mod) || MODULES.find((x) => x.title.toLowerCase() === mod);
+  const out = {
+    titel: str(data.titel) || "Instagram-Post",
+    autor: str(data.autor),
+    sprache: str(data.sprache),
+    original: str(data.original),
+    deutsch: str(data.deutsch),
+    kernaussage: str(data.kernaussage),
+    modul: m ? m.id : "",
+    bezug_ih: str(data.bezug_ih),
+    frage: str(data.frage),
+    experiment: str(data.experiment),
+    karten: (Array.isArray(data.karten) ? data.karten : []).map((k) => ({ frage: str(k.frage), antwort: str(k.antwort) })).filter((k) => k.frage && k.antwort).slice(0, 3),
+  };
+  if (!out.kernaussage && !out.deutsch) throw new Error("Ergebnis ohne Inhalt");
+  return out;
+}
+
+let pendingImages = [];
+function openNewPost(linkId) {
+  pendingImages = [];
+  const link = linkId && state.inbox.find((i) => i.id === linkId);
+  showSheet("📸 Post verarbeiten", () => `
+    ${link ? `<div class="banner small">Zu: ${esc(inboxLabel(link))}</div>` : ""}
+    <p class="hint">Antwort aus dem Claude-Projekt <i>Führungskompass-Posts</i> hier einfügen:</p>
+    <button class="btn primary block" data-act="post-paste">📋 Ergebnis einfügen</button>
+    <textarea id="pn-text" rows="5" placeholder="… oder lange tippen → Einsetzen"></textarea>
+    <p class="hint">Screenshots anhängen (optional, bleiben nur auf diesem iPhone)</p>
+    <label class="btn block">🖼 Bilder wählen<input type="file" id="pn-img" accept="image/*" multiple hidden></label>
+    <div id="pn-thumbs" class="thumbs"></div>
+    <p><button class="btn primary block" data-act="post-save" data-link="${esc(linkId || "")}">Speichern & ansehen</button></p>
+    <p class="hint">Noch kein Projekt eingerichtet? <button class="btn ghost small" data-act="project-help">So geht's</button></p>
+  `);
+  $("#pn-img").addEventListener("change", async (e) => {
+    const files = [...e.target.files];
+    for (const f of files) pendingImages.push(await shrinkImage(f));
+    $("#pn-thumbs").innerHTML = pendingImages.map((b) => `<img src="${URL.createObjectURL(b)}" alt="">`).join("");
+  });
+}
+async function savePost(linkId) {
+  const text = $("#pn-text").value;
+  let data;
+  try { data = parsePostResult(text); }
+  catch (e) { toast("Ergebnis nicht lesbar – bitte die ganze Antwort kopieren"); return; }
+  const id = uid();
+  const link = linkId && state.inbox.find((i) => i.id === linkId);
+  const post = { id, added: Date.now(), url: link?.url || "", images: pendingImages.length, ...data };
+  if (pendingImages.length) {
+    try { await idb.put(id, pendingImages); } catch (e) { post.images = 0; toast("Bilder konnten nicht gespeichert werden"); }
+  }
+  state.posts.unshift(post);
+  if (link) { link.status = "verarbeitet"; link.note = link.note || data.kernaussage; link.mod = link.mod || data.modul; }
+  pendingImages = [];
+  save(); closeSheet(); ui.tab = "inbox"; ui.feed = "alle"; render();
+  toast(`Gespeichert${data.karten.length ? ` · ${data.karten.length} Lernkarte${data.karten.length > 1 ? "n" : ""} dazu` : ""}`);
+  openStory("post", id);
+}
+
+async function openStory(t, id) {
+  const x = feedItem(t, id);
+  if (!x) return;
+  state.read[`${t}:${id}`] = Date.now(); save();
+  const ref = { t, id };
+  const m = moduleById(x.modul);
+  let imgs = [];
+  if (t === "post" && x.images) { try { imgs = (await idb.get(id)) || []; } catch (e) { imgs = []; } }
+  const urls = imgs.map((b) => URL.createObjectURL(b));
+  const slides = [
+    `<div class="slide cover">
+       <div class="tags"><span class="tag ${t === "post" ? "t-praxis" : "t-wissen"}">${t === "post" ? "📸 Mein Post" : "🔎 Recherche"}</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
+       <h2>${esc(x.titel)}</h2>
+       <p class="big">${esc(x.kernaussage)}</p>
+       <p class="src">${t === "post" ? esc(x.autor || "") : esc(x.quelle?.name || "")}${x.sprache && x.sprache !== "de" ? ` · übersetzt aus „${esc(x.sprache)}“` : ""}</p>
+       <p class="hint">Wischen →</p>
+     </div>`,
+    ...urls.map((u, i) => `<div class="slide"><div class="slide-h">Original ${urls.length > 1 ? `${i + 1}/${urls.length}` : ""}</div><img class="shot" src="${u}" alt="Screenshot"></div>`),
+    x.deutsch ? `<div class="slide"><div class="slide-h">${t === "post" ? "Auf Deutsch" : "Worum es geht"}</div><div class="slide-text">${nl2br(x.deutsch)}</div>
+      ${x.original && x.sprache && x.sprache !== "de" ? `<details class="orig"><summary>Originaltext</summary><p>${nl2br(x.original)}</p></details>` : ""}</div>` : "",
+    x.bezug_ih ? `<div class="slide"><div class="slide-h">Bezug zur IH Hagen</div><p class="big">${esc(x.bezug_ih)}</p></div>` : "",
+    x.frage ? `<div class="slide"><div class="slide-h">Frage an dich</div><p class="big question">${esc(x.frage)}</p>
+      <button class="btn block" data-act="note-new" ${refAttrs(ref)}>✍️ Gedanken notieren</button></div>` : "",
+    x.experiment ? `<div class="slide"><div class="slide-h">Zum Ausprobieren</div><p class="big">${esc(x.experiment)}</p>
+      <button class="btn primary block" data-act="exp-new" ${refAttrs(ref)} data-suggest="1">🧪 Als Experiment starten</button></div>` : "",
+    `<div class="slide"><div class="slide-h">Festigen</div>
+      ${(x.karten || []).length ? `<p>${x.karten.length} Lernkarte${x.karten.length > 1 ? "n" : ""} ${x.karten.length > 1 ? "sind" : "ist"} in deinem Stapel:</p>
+        <ul class="refs">${x.karten.map((k) => `<li>${esc(k.frage)}</li>`).join("")}</ul>` : ""}
+      ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
+      ${actionRow(ref)}
+      ${t === "rx" && x.quelle?.url ? `<p><a class="btn block" href="${esc(x.quelle.url)}" target="_blank" rel="noopener">Quelle öffnen: ${esc(x.quelle.name || "")}</a></p>` : ""}
+      ${t === "post" && x.url ? `<p><a class="btn block" href="${esc(x.url)}" target="_blank" rel="noopener">📸 In Instagram öffnen</a></p>` : ""}
+      ${t === "post" ? `<p><button class="btn small danger" data-act="post-del" data-id="${esc(id)}">Post entfernen</button></p>` : ""}
+    </div>`,
+  ].filter(Boolean);
+  showSheet(t === "post" ? "📸 Mein Post" : "🔎 Recherche", () => `
+    <div class="slides" id="slides">${slides.join("")}</div>
+    <div class="dots" id="dots">${slides.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div>
+  `);
+  const el = $("#slides");
+  el.addEventListener("scroll", () => {
+    const i = Math.round(el.scrollLeft / el.clientWidth);
+    document.querySelectorAll("#dots i").forEach((d, j) => d.classList.toggle("on", i === j));
+  }, { passive: true });
+  if (ui.tab === "inbox" || ui.tab === "heute") render();
+}
+async function deletePost(id) {
+  if (!confirm("Post wirklich entfernen? Notizen bleiben im Journal.")) return;
+  state.posts = state.posts.filter((p) => p.id !== id);
+  try { await idb.del(id); } catch (e) { /* egal */ }
+  save(); closeSheet(); render(); toast("Entfernt");
 }
 
 // ----- Experimente -----
@@ -586,7 +848,10 @@ function expCard(e) {
 }
 function openNewExperiment(ref) {
   const info = refInfo(ref);
-  const suggestion = info ? (ref.t === "imp" && impulseById(ref.id)?.type === "praxis" ? info.text : "") : "";
+  const suggestion = info
+    ? (ref.t === "imp" && impulseById(ref.id)?.type === "praxis" ? info.text
+      : (ref.t === "post" || ref.t === "rx") ? (feedItem(ref.t, ref.id)?.experiment || "") : "")
+    : "";
   showSheet("Experiment anlegen", () => `
     ${info ? `<div class="banner small">${esc(info.label)}<br><span class="hint">${esc(info.text)}</span></div>` : ""}
     <p class="hint">Was probierst du konkret aus?</p>
@@ -1045,7 +1310,7 @@ function openSettings() {
     </div>
 
     <div class="section-title">Über die App</div>
-    <p class="hint">${IMPULSES.length} Impulse in ${MODULES.length} Modulen und ${PHASES.length} Phasen · ${CARDS.length} Lernkarten. Inhalte allgemein formuliert, ohne interne Informationen. Vertiefung für den konkreten DB-Kontext über Copilot (📤).</p>
+    <p class="hint">${IMPULSES.length} Impulse in ${MODULES.length} Modulen und ${PHASES.length} Phasen · ${allCards().length} Lernkarten. Inhalte allgemein formuliert, ohne interne Informationen. Vertiefung für den konkreten DB-Kontext über Copilot (📤). Screenshots sind nicht in der Sicherung enthalten.</p>
   `);
   const seg = $("#st-speed");
   seg.addEventListener("click", (e) => {
@@ -1156,6 +1421,25 @@ document.addEventListener("click", async (ev) => {
     case "card-show": practice.session.shown = true; refreshSheet(); break;
     case "card-rate": rateCard(el.dataset.ok === "1"); break;
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
+    case "feed-filter": ui.feed = el.dataset.k; render(); break;
+    case "story": openStory(el.dataset.t, id); break;
+    case "post-new": openNewPost(el.dataset.link || ""); break;
+    case "post-save": savePost(el.dataset.link || ""); break;
+    case "post-del": deletePost(id); break;
+    case "project-help": openProjectHelp(); break;
+    case "rx-reload": rxData = null; await loadResearch(true); toast("Aktualisiert"); break;
+    case "copy-prompt":
+      try { await navigator.clipboard.writeText(PROJECT_PROMPT); toast("Anweisung kopiert ✓"); }
+      catch (e) { toast("Kopieren nicht möglich – Text unter „Anweisung ansehen“ markieren"); }
+      break;
+    case "post-paste":
+      try {
+        const t = await navigator.clipboard.readText();
+        $("#pn-text").value = t;
+        parsePostResult(t);
+        toast("Ergebnis erkannt ✓");
+      } catch (e) { toast($("#pn-text").value ? "Eingefügt – Format bitte prüfen" : "Bitte lange ins Feld tippen → Einsetzen"); }
+      break;
     case "inbox-paste": {
       try {
         const t = await navigator.clipboard.readText();
@@ -1177,7 +1461,7 @@ document.addEventListener("click", async (ev) => {
     case "inbox-import": openImport(); break;
     case "import-text": {
       const n = addToInbox(extractUrls($("#imp-text").value).map((url) => ({ url })));
-      closeSheet(); ui.tab = "inbox"; ui.inbox = "neu"; render();
+      closeSheet(); ui.tab = "inbox"; ui.feed = "links"; ui.inbox = "neu"; render();
       toast(n ? `${n} Links übernommen` : "Keine neuen Links gefunden");
       break;
     }
@@ -1233,11 +1517,12 @@ document.addEventListener("keydown", (e) => {
   if (add) {
     const urls = extractUrls(add);
     const n = addToInbox(urls.map((url) => ({ url, title: p.get("title") || "" })));
-    ui.tab = "inbox";
+    ui.tab = "inbox"; ui.feed = "links";
     setTimeout(() => toast(n ? "Beitrag gespeichert ✓" : "War schon in der Inbox"), 300);
     history.replaceState(null, "", location.pathname);
   }
 })();
 render();
 loadPodcasts();
+loadResearch();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

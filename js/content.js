@@ -472,3 +472,38 @@ export const DEEPEN = [
   { id: "fk", label: "Für den Führungskreis aufbereiten", ask: "Bereite den Impuls als 15-Minuten-Input für meinen Führungskreis auf: Kernidee, Bezug zu uns, eine kurze Übung, eine Diskussionsfrage." },
   { id: "ziel", label: "Bezug zu Ruhe & WHY", ask: "Wie zahlt dieser Impuls auf meine beiden Ziele ein – das Netz in ruhigere Fahrwasser bringen und unser WHY herausarbeiten? Wo gibt es Zielkonflikte?" },
 ];
+
+// ---------- Aufbereitung von Posts und Recherche ----------
+export const RESULT_FIELDS = ["titel", "kernaussage", "deutsch", "modul", "bezug_ih", "frage", "experiment", "karten"];
+
+// Anweisung für das Claude-Projekt „Führungskompass-Posts“ (wird in der App zum Kopieren angeboten)
+export const PROJECT_PROMPT = `Du bereitest Instagram-Posts für meine Lern-App „Führungskompass“ auf.
+
+Kontext: Ich übernehme zum 01.01.2027 die Leitung der Instandhaltung im Netz Hagen (DB InfraGO). Meine Ziele: ${GOALS}.
+
+Ich schicke dir Screenshots eines Posts (ein oder mehrere Bilder, oft auf Englisch). Lies allen Text auf den Bildern, auch in Grafiken. Antworte AUSSCHLIESSLICH mit einem einzigen JSON-Codeblock in genau diesem Format, ohne Text davor oder danach:
+
+\`\`\`json
+{
+  "titel": "kurzer deutscher Titel, max. 60 Zeichen",
+  "autor": "@konto, falls erkennbar, sonst leer",
+  "sprache": "en oder de oder …",
+  "original": "vollständiger Originaltext aller Bilder",
+  "deutsch": "vollständige, gut lesbare deutsche Übersetzung (bei deutschen Posts: bereinigter Text)",
+  "kernaussage": "die Kernaussage in einem Satz",
+  "modul": "genau eine ID aus der Liste unten",
+  "bezug_ih": "2–3 Sätze: Was heißt das konkret für mich als Leiter Instandhaltung im Netz Hagen?",
+  "frage": "eine Reflexionsfrage an mich",
+  "experiment": "ein konkreter Vorschlag zum Ausprobieren in den nächsten zwei Wochen",
+  "karten": [{ "frage": "Lernkarte Vorderseite", "antwort": "Rückseite" }]
+}
+\`\`\`
+
+Modul-IDs:
+${MODULES.map((m) => `- ${m.id} = ${m.title}`).join("\n")}
+
+Regeln:
+- 1 bis 3 Lernkarten, die das Wesentliche abfragen.
+- Nichts erfinden. Unleserliches als [unleserlich] markieren.
+- Kritisch bleiben: Ist die Aussage des Posts verkürzt, fragwürdig oder ohne Beleg, sag das in „bezug_ih“.
+- Innerhalb der Werte keine doppelten Anführungszeichen verwenden, stattdessen ' oder „ “.`;
