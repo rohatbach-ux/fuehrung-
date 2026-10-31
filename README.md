@@ -42,7 +42,7 @@ Eine geplante Claude-Code-Aufgabe recherchiert jeden Morgen 3 Impulse und schrei
 
 ### Bibliothek aus Google Drive
 
-Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff verarbeitet Rohats Drive-Ordner (inkl. Unterordner) **in Buchreihen**: Für jedes Dokument entsteht zuerst ein Lesekonzept aus Lerneinheiten, dann erscheinen täglich 2 Teile („📖 Teil x/y“), bei längeren Büchern mit Synthese am Ende. Regeln: `research/DRIVE.md`. Register mit Plänen: `data/drive-processed.json` (Dateien nur als Kürzel, keine Drive-Links).
+Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff verarbeitet Rohats Drive-Ordner (inkl. Unterordner) **in Buchreihen**: Für jedes Dokument entsteht zuerst ein Lesekonzept aus Lerneinheiten, dann erscheinen täglich 2 Teile aus zwei verschiedenen Büchern (bis zu 3 Bücher im Wechsel, „📖 Teil x/y“), bei längeren Büchern mit Synthese am Ende. Regeln: `research/DRIVE.md`. Register mit Plänen: `data/drive-processed.json` (Dateien nur als Kürzel, keine Drive-Links).
 
 ### Links als Merkzettel
 

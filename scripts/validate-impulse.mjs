@@ -21,11 +21,19 @@ for (const [i, x] of (d.items || []).entries()) {
   if (ids.has(x.id)) w("doppelte id"); ids.add(x.id);
   if (x.quelle?.url && urls.has(x.quelle.url)) w("doppelte Quelle"); urls.add(x.quelle?.url);
 }
+const perDay = {};
+for (const x of d.items || []) {
+  if (x.herkunft !== "drive" || !x.reihe) continue;
+  const k = `${x.date}|${x.reihe.buch}`;
+  if (perDay[k]) err.push(`${x.id}: zweiter Teil von „${x.reihe.buch}“ am ${x.date} – pro Buch höchstens ein Teil pro Tag`);
+  perDay[k] = true;
+}
 if ((d.items || []).length > 200) err.push("mehr als 200 Einträge");
 try {
   const dp = JSON.parse(await readFile("data/drive-processed.json", "utf8"));
   const ids = new Set((d.items || []).map((x) => x.id));
   if (!Array.isArray(dp.dateien)) err.push("drive-processed: dateien fehlt");
+  let activeBooks = 0;
   for (const f of dp.dateien || []) {
     const w = (m) => err.push(`drive-processed ${f.h}: ${m}`);
     if (!/^[0-9a-f]{12}$/.test(f.h || "")) w("ungültiger Hash");
@@ -37,9 +45,11 @@ try {
       if (s.impuls && !ids.has(s.impuls)) w(`Impuls ${s.impuls} fehlt in impulse.json`);
     });
     const done = f.plan.every((s) => s.impuls);
+    if (f.status === "in_arbeit") activeBooks++;
     if (f.status === "fertig" && !done) w("als fertig markiert, aber Teile offen");
     if (f.status === "in_arbeit" && done) w("alle Teile erledigt – Status auf fertig setzen");
   }
+  if (activeBooks > 3) err.push(`drive-processed: ${activeBooks} Bücher in Arbeit – höchstens 3`);
 } catch (e) { if (e.code !== "ENOENT") err.push("drive-processed.json nicht lesbar: " + e.message); }
 if (err.length) { console.error("FEHLER:\n" + err.join("\n")); process.exit(1); }
 console.log(`OK – ${d.items.length} Einträge`);
