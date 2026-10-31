@@ -1,0 +1,58 @@
+{
+ "_hinweis": "Verarbeitete Dateien aus Rohats Drive-Ordner. Nur SHA-1-Kürzel der Datei-ID (12 Zeichen), keine IDs oder Links. Übersprungene Dateien (dienstlich, Audio) ohne Titel.",
+ "dateien": [
+  {
+   "h": "e838e38f93ab",
+   "titel": "die-ersten-100-tage-in-der-neuen-chefposition.pdf",
+   "datum": "2026-10-31",
+   "status": "impuls",
+   "impulse": [
+    "drive-20261031-1"
+   ]
+  },
+  {
+   "h": "858870d4673c",
+   "titel": "fhren-in-der-sandwich-position.pdf",
+   "datum": "2026-10-31",
+   "status": "impuls",
+   "impulse": [
+    "drive-20261031-2"
+   ]
+  },
+  {
+   "h": "60cfe1a4ecdf",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "fa1a6887d991",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "ae274df49004",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "32d617f60ade",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "dc84b5433e69",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "2c1e10bc861a",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  },
+  {
+   "h": "64cedc003fae",
+   "datum": "2026-10-31",
+   "status": "uebersprungen"
+  }
+ ]
+}

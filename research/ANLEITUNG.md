@@ -46,7 +46,7 @@ Rohat Bach übernimmt zum 01.01.2027 die Leitung der Instandhaltung im Netz Hage
    - `---` als Trenner zwischen größeren Abschnitten.
    - Beispiele für die gewünschte Form: die vorhandenen Einträge in `data/impulse.json`.
 
-   1–3 Lernkarten je Impuls. Die neuen Einträge kommen **vorne** in `items`; `updated` auf die aktuelle Zeit (ISO) setzen. Höchstens 120 Einträge behalten (die ältesten fallen weg).
+   1–3 Lernkarten je Impuls. Die neuen Einträge kommen **vorne** in `items`; `updated` auf die aktuelle Zeit (ISO) setzen. Höchstens 200 Einträge behalten (die ältesten fallen weg; Einträge mit `"herkunft": "drive"` dabei nicht bevorzugt löschen).
 6. **Prüfen:** `node scripts/validate-impulse.mjs` muss „OK“ melden.
 7. **Veröffentlichen** auf `main` (Freigabe von Rohat liegt vor):
    `git add data/impulse.json && git commit -m "Recherche: 3 Impulse (JJJJ-MM-TT)"`, dann `git pull --rebase origin main` und `git push origin main`. Bei Netzwerkfehlern bis zu 4-mal mit Pause wiederholen.

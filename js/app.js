@@ -208,7 +208,7 @@ function refInfo(ref) {
     return {
       label: x.titel,
       text: `${x.kernaussage}${x.deutsch ? ` Inhalt: ${x.deutsch.length > 500 ? x.deutsch.slice(0, 497) + "…" : x.deutsch}` : ""}`,
-      source: ref.t === "post" ? `Instagram-Post${x.autor ? ` von ${x.autor}` : ""}` : `${x.quelle?.name || "Recherche"}${x.quelle?.url ? `, ${x.quelle.url}` : ""}`,
+      source: ref.t === "post" ? `Instagram-Post${x.autor ? ` von ${x.autor}` : ""}` : `${isLib(x) ? "Fachbuch: " : ""}${x.quelle?.name || "Recherche"}${x.quelle?.url ? `, ${x.quelle.url}` : ""}`,
       short: x.titel,
     };
   }
@@ -301,7 +301,7 @@ function renderHeute() {
     <div class="section-title">Dranbleiben</div>
     <div class="card list-group">
       <button class="row" data-act="practice"><span>🃏 Lernkarten</span><b>${due.length ? `${due.length} fällig` : "alles wiederholt"}</b></button>
-      <button class="row" data-act="tab" data-tab="inbox"><span>✨ Entdecken: neue Posts & Recherche</span><b>${feedItems().filter((x) => !isRead(x)).length}</b></button>
+      <button class="row" data-act="tab" data-tab="inbox"><span>✨ Entdecken: Posts, Recherche & Bibliothek</span><b>${feedItems().filter((x) => !isRead(x)).length}</b></button>
       ${open.length ? `<button class="row" data-act="inbox-next"><span>🔗 Gespeicherte Links</span><b>${open.length}</b></button>` : ""}
       <button class="row" data-act="tab" data-tab="lernen"><span>📚 Module</span><b>${MODULES.length}</b></button>
     </div>
@@ -637,6 +637,9 @@ function feedItems() {
   return [...posts, ...rx].sort((a, b) => b.sort - a.sort);
 }
 const isRead = (x) => !!state.read[`${x.t}:${x.id}`];
+const isLib = (x) => x?.herkunft === "drive";
+const kindLabel = (t, x) => (t === "post" ? "📸 Mein Post" : isLib(x) ? "📁 Bibliothek" : "🔎 Recherche");
+const kindClass = (t, x) => (t === "post" ? "t-praxis" : isLib(x) ? "t-phase" : "t-wissen");
 function feedCards() {
   const out = [];
   for (const p of state.posts) (p.karten || []).forEach((k, i) => out.push({ id: `post-${p.id}-k${i}`, mod: p.modul, q: k.frage, a: k.antwort, src: `Mein Post: ${p.titel}` }));
@@ -650,7 +653,7 @@ function feedCard(x) {
   return `
     <button class="card feed-item ${isRead(x) ? "" : "unread"}" data-act="story" data-t="${x.t}" data-id="${esc(x.id)}">
       <div class="tags">
-        <span class="tag ${x.t === "post" ? "t-praxis" : "t-wissen"}">${x.t === "post" ? "📸 Mein Post" : "🔎 Recherche"}</span>
+        <span class="tag ${kindClass(x.t, x)}">${kindLabel(x.t, x)}</span>
         ${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}
         <span class="tag">${x.t === "post" ? fmtShort(x.added) : x.date ? fmtShort(parseIso(x.date.slice(0, 10))) : ""}</span>
         ${isRead(x) ? "" : '<span class="dot" aria-label="neu"></span>'}
@@ -666,7 +669,7 @@ function renderInbox() {
   const items = feedItems();
   const unread = items.filter((x) => !isRead(x)).length;
   const links = state.inbox.filter((i) => i.status === "neu").length;
-  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["links", `Links (${links})`]];
+  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["links", `Links (${links})`]];
   const head = `
     <div class="btn-row">
       <button class="btn primary" data-act="post-new">📸 Post verarbeiten</button>
@@ -677,10 +680,12 @@ function renderInbox() {
   let list = items;
   if (ui.feed === "neu") list = items.filter((x) => !isRead(x));
   if (ui.feed === "posts") list = items.filter((x) => x.t === "post");
-  if (ui.feed === "recherche") list = items.filter((x) => x.t === "rx");
+  if (ui.feed === "recherche") list = items.filter((x) => x.t === "rx" && !isLib(x));
+  if (ui.feed === "bibliothek") list = items.filter((x) => isLib(x));
   const empty = ui.feed === "posts"
     ? "Noch keine Posts verarbeitet. Tippe auf „📸 Post verarbeiten“."
-    : ui.feed === "recherche" ? "Die tägliche Recherche liefert jeden Morgen drei neue Impulse." : "Hier ist noch nichts.";
+    : ui.feed === "recherche" ? "Die tägliche Recherche liefert jeden Morgen drei neue Impulse."
+    : ui.feed === "bibliothek" ? "Aus deinem Google-Drive-Ordner kommen täglich zwei Impulse dazu." : "Hier ist noch nichts.";
   return head + (list.length ? list.map(feedCard).join("") : `<div class="empty">${empty}</div>`) +
     (rxData?.updated ? `<p class="hint">Recherche zuletzt aktualisiert: ${new Date(rxData.updated).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })} <button class="btn ghost small" data-act="rx-reload">↻</button></p>` : "");
 }
@@ -827,7 +832,7 @@ async function openStory(t, id) {
   const urls = imgs.map((b) => URL.createObjectURL(b));
   const slides = [
     `<div class="slide cover">
-       <div class="tags"><span class="tag ${t === "post" ? "t-praxis" : "t-wissen"}">${t === "post" ? "📸 Mein Post" : "🔎 Recherche"}</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
+       <div class="tags"><span class="tag ${kindClass(t, x)}">${kindLabel(t, x)}</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
        <h2>${esc(x.titel)}</h2>
        <p class="big">${esc(x.kernaussage)}</p>
        <p class="src">${t === "post" ? esc(x.autor || "") : esc(x.quelle?.name || "")}${x.sprache && x.sprache !== "de" ? ` · übersetzt aus „${esc(x.sprache)}“` : ""}</p>
@@ -846,12 +851,13 @@ async function openStory(t, id) {
         <ul class="refs">${x.karten.map((k) => `<li>${esc(k.frage)}</li>`).join("")}</ul>` : ""}
       ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
       ${actionRow(ref)}
+      ${t === "rx" && isLib(x) ? `<p class="hint">📁 Quelle: ${esc(x.quelle?.name || "")} – liegt in deinem Google-Drive-Ordner „Führung DB“.</p>` : ""}
       ${t === "rx" && x.quelle?.url ? `<p><a class="btn block" href="${esc(x.quelle.url)}" target="_blank" rel="noopener">Quelle öffnen: ${esc(x.quelle.name || "")}</a></p>` : ""}
       ${t === "post" && x.url ? `<p><a class="btn block" href="${esc(x.url)}" target="_blank" rel="noopener">📸 In Instagram öffnen</a></p>` : ""}
       ${t === "post" ? `<div class="btn-row"><button class="btn small" data-act="post-replace" data-id="${esc(id)}">↻ Neues Ergebnis einfügen</button><button class="btn small danger" data-act="post-del" data-id="${esc(id)}">Post entfernen</button></div>` : ""}
     </div>`,
   ].filter(Boolean);
-  showSheet(t === "post" ? "📸 Mein Post" : "🔎 Recherche", () => `
+  showSheet(kindLabel(t, x), () => `
     <div class="slides" id="slides">${slides.join("")}</div>
     <div class="dots" id="dots">${slides.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div>
   `);

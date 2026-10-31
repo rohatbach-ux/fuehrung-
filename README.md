@@ -40,6 +40,10 @@ Aufbereitete Texte sind Markdown (Zitatblock, Überschriften mit Emoji, Fettunge
 
 Eine geplante Claude-Code-Aufgabe recherchiert jeden Morgen 3 Impulse und schreibt sie nach `data/impulse.json`. Regeln und Format: `research/ANLEITUNG.md`. Prüfung: `node scripts/validate-impulse.mjs`.
 
+### Bibliothek aus Google Drive
+
+Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff macht täglich 2 Impulse aus Rohats Drive-Ordner (inkl. Unterordner). Regeln: `research/DRIVE.md`. Verarbeitete Dateien stehen nur als Kürzel in `data/drive-processed.json`; dienstliche Unterlagen und Audio werden übersprungen, Drive-Links kommen nie ins Repo.
+
 ### Links als Merkzettel
 
 Instagram gibt gespeicherte Posts an keine fremde App heraus. Es gibt zwei Wege:
