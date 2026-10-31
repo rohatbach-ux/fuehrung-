@@ -1,6 +1,58 @@
 {
- "updated": "2026-10-31T17:24:55+00:00",
+ "updated": "2026-10-31T17:58:57+00:00",
  "items": [
+  {
+   "id": "20261031-4",
+   "date": "2026-10-31",
+   "titel": "Kultur entsteht durch das, was du beachtest",
+   "quelle": {
+    "name": "Edgar H. Schein – Organizational Culture and Leadership, Kap. 10 (How Leaders Embed and Transmit Culture)",
+    "url": "https://www.oreilly.com/library/view/organizational-culture-and/9781119212041/c10.xhtml"
+   },
+   "sprache": "en",
+   "kernaussage": "Führungskräfte prägen Kultur weniger durch Leitbilder als durch das, was sie systematisch beachten, messen, belohnen und wie sie auf kritische Vorfälle reagieren.",
+   "deutsch": "Edgar Schein beschreibt Kultur auf drei Ebenen: sichtbare Artefakte, erklärte Werte und die tiefsten, meist unbewussten Grundannahmen. Heikel wird es, wenn erklärte Werte und gelebte Grundannahmen auseinanderfallen. Im Buch zeigt er, wie Führungskräfte Kultur tatsächlich verankern. Zu den wichtigsten Mechanismen zählen: worauf sie systematisch achten, was sie messen und kontrollieren, wie sie auf kritische Vorfälle und Krisen reagieren, wie sie Ressourcen verteilen, wo sie als Vorbild lehren und coachen, wer Belohnungen und Status erhält und nach welchen Kriterien Menschen eingestellt, befördert oder entlassen werden. Daneben wirken sekundäre Mechanismen wie Organisationsstruktur, Systeme und Verfahren sowie Rituale. Die Kernidee: Mitarbeitende lesen aus dem Verhalten der Führung ab, was wirklich zählt – unabhängig davon, was auf Plakaten steht. Aufmerksamkeit ist dabei ein besonders starkes Signal, weil sie täglich und ohne große Worte sendet.",
+   "modul": "kultur",
+   "bezug_ih": "Als neuer Leiter Instandhaltung wirst du in den ersten Wochen genau beobachtet: Worüber sprichst du zuerst in Runden, wonach fragst du bei Störungen, was lobst du? Das setzt früh Maßstäbe, noch bevor ein WHY formuliert ist. Nutze die Vorbereitungszeit, um bewusst zu wählen, was du zu deinem festen Aufmerksamkeitsthema machen willst.",
+   "frage": "Welche zwei Dinge soll mein Team in den ersten Wochen an meinem Verhalten ablesen können – und was würde ich dafür konkret anders als bisher beachten?",
+   "experiment": "Schreibe in den nächsten zwei Wochen nach jedem Führungstermin auf, worauf du reagiert hast (Fragen, Lob, Ärger). Prüfe am Ende, ob dieses Muster zu der Kultur passt, die du aufbauen willst.",
+   "karten": [
+    {
+     "frage": "Welche drei Ebenen unterscheidet Schein bei Kultur?",
+     "antwort": "Artefakte (sichtbar), erklärte Werte und Grundannahmen (tief, meist unbewusst)."
+    },
+    {
+     "frage": "Nenne drei Mechanismen, mit denen Führung Kultur verankert.",
+     "antwort": "Z. B. worauf sie systematisch achtet, wie sie auf kritische Vorfälle reagiert, wer Belohnungen und Status erhält."
+    }
+   ]
+  },
+  {
+   "id": "20261031-5",
+   "date": "2026-10-31",
+   "titel": "Psychologische Sicherheit: Fehler früh sichtbar machen",
+   "quelle": {
+    "name": "Lean Blog – Interview mit Amy C. Edmondson zu „The Fearless Organization“",
+    "url": "https://www.leanblog.org/356"
+   },
+   "sprache": "en",
+   "kernaussage": "Angst im Team verhindert, dass Probleme und Fehler früh auf den Tisch kommen; Führung kann ein Klima schaffen, in dem Lernen möglich ist.",
+   "deutsch": "Amy Edmondson, Professorin an der Harvard Business School, stieß auf das Konzept der psychologischen Sicherheit, als sie in Krankenhäusern den Zusammenhang zwischen Teamarbeit und Fehlerraten untersuchte. Psychologische Sicherheit bezeichnet die gemeinsame Überzeugung eines Teams, dass man sich ohne Angst vor Bloßstellung oder Strafe äußern darf – etwa mit Fragen, Bedenken oder eigenen Fehlern. In ihrem Buch „The Fearless Organization“ beschreibt sie anhand von Beispielen aus mehr als 20 Organisationen, welche negativen Folgen angstgetriebene Arbeitskulturen haben und wie Führungskräfte ein Klima schaffen können, das Lernen, Innovation und Wachstum erlaubt. Wichtig: Es geht nicht um Kuschelkurs oder niedrige Ansprüche, sondern darum, dass Probleme und Beinahe-Fehler überhaupt gemeldet werden. Gerade in Bereichen mit hohen Sicherheitsanforderungen ist das die Voraussetzung dafür, aus Abweichungen zu lernen, bevor etwas passiert.",
+   "modul": "sicherheit",
+   "bezug_ih": "In der Instandhaltung hängt viel davon ab, dass Auffälligkeiten, Beinahe-Ereignisse und Zweifel offen gemeldet werden. Wie du in den ersten Wochen auf schlechte Nachrichten reagierst, entscheidet mit darüber, ob dein Team dir künftig die ganze Wahrheit sagt.",
+   "frage": "Wie habe ich zuletzt reagiert, als mir jemand eine unangenehme Nachricht überbracht hat – und was hat das beim Überbringer ausgelöst?",
+   "experiment": "Übe in den nächsten zwei Wochen eine feste Reaktion auf schlechte Nachrichten: erst danken, dann nachfragen, erst danach bewerten. Beobachte, ob mehr oder offenere Meldungen kommen.",
+   "karten": [
+    {
+     "frage": "Was bedeutet psychologische Sicherheit?",
+     "antwort": "Die geteilte Überzeugung im Team, dass man sich ohne Angst vor Strafe oder Bloßstellung äußern und Fehler ansprechen kann."
+    },
+    {
+     "frage": "Woher kam Edmondsons Entdeckung des Konzepts?",
+     "antwort": "Aus ihrer Untersuchung von Teamarbeit und Fehlerraten in Krankenhäusern."
+    }
+   ]
+  },
   {
    "id": "20261031-1",
    "date": "2026-10-31",
