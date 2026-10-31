@@ -1,6 +1,6 @@
 // Prüft data/impulse.json auf das Format, das die App erwartet.
 import { readFile } from "node:fs/promises";
-const MODS = ["uebergang", "stabil", "why", "strategie", "umsetzung", "kultur", "sicherheit", "fk", "gespraeche", "selbst", "change", "schnittstellen"];
+const MODS = ["uebergang", "stabil", "why", "strategie", "umsetzung", "kultur", "sicherheit", "fk", "gespraeche", "selbst", "change", "schnittstellen", "urteil"];
 const d = JSON.parse(await readFile("data/impulse.json", "utf8"));
 const err = [];
 if (!Array.isArray(d.items)) err.push("items fehlt");
@@ -11,7 +11,9 @@ for (const [i, x] of (d.items || []).entries()) {
   if (!MODS.includes(x.modul)) w(`unbekanntes Modul ${x.modul}`);
   if (!/^\d{4}-\d{2}-\d{2}/.test(x.date || "")) w("Datum ungültig");
   const lib = x.herkunft === "drive";
-  if (x.herkunft && !lib) w("unbekannte herkunft");
+  if (x.herkunft && !["drive", "buch"].includes(x.herkunft)) w("unbekannte herkunft");
+  if (x.herkunft === "buch" && !x.reihe) w("Buch-Teil ohne reihe");
+  if (x.herkunft === "buch" && /libgen|library\.lol|pdfdrive|annas-archive|z-lib|zlibrary/i.test(x.quelle?.url || "")) w("unzulässige Quelle (Raubkopie-Seite)");
   if (x.reihe && (!x.reihe.buch || !(x.reihe.teil >= 1) || !(x.reihe.von >= x.reihe.teil))) w("reihe unvollständig (buch, teil, von)");
   if (!x.quelle || !x.quelle.name) w("Quelle ohne Namen");
   else if (!lib && !/^https:\/\//.test(x.quelle.url || "")) w("Quelle ohne https-Link");
@@ -23,11 +25,29 @@ for (const [i, x] of (d.items || []).entries()) {
 }
 const perDay = {};
 for (const x of d.items || []) {
-  if (x.herkunft !== "drive" || !x.reihe) continue;
+  if (!["drive", "buch"].includes(x.herkunft) || !x.reihe) continue;
   const k = `${x.date}|${x.reihe.buch}`;
   if (perDay[k]) err.push(`${x.id}: zweiter Teil von „${x.reihe.buch}“ am ${x.date} – pro Buch höchstens ein Teil pro Tag`);
   perDay[k] = true;
 }
+try {
+  const bl = JSON.parse(await readFile("data/buecher.json", "utf8"));
+  const ids = new Set((d.items || []).map((x) => x.id));
+  let active = 0;
+  for (const b of bl.buecher || []) {
+    const w = (m) => err.push(`buecher ${b.id}: ${m}`);
+    if (!b.id || !b.titel || !b.autoren || !MODS.includes(b.modul)) w("id/titel/autoren/modul unvollständig");
+    if (!["offen", "in_arbeit", "fertig"].includes(b.status)) w(`Status ${b.status}`);
+    if (b.status === "in_arbeit") active++;
+    if (b.status !== "offen" && (!Array.isArray(b.plan) || b.plan.length < 3 || b.plan.length > 6)) w("Plan mit 3–6 Teilen fehlt");
+    (b.plan || []).forEach((s, i) => {
+      if (s.teil !== i + 1 || !s.thema) w(`Plan-Teil ${i + 1} unvollständig`);
+      if (s.impuls && !ids.has(s.impuls)) w(`Impuls ${s.impuls} fehlt in impulse.json`);
+    });
+    if (b.status === "fertig" && (b.plan || []).some((s) => !s.impuls)) w("fertig, aber Teile offen");
+  }
+  if (active > 2) err.push(`buecher: ${active} Bücher in Arbeit – höchstens 2`);
+} catch (e) { if (e.code !== "ENOENT") err.push("buecher.json nicht lesbar: " + e.message); }
 if ((d.items || []).length > 200) err.push("mehr als 200 Einträge");
 try {
   const dp = JSON.parse(await readFile("data/drive-processed.json", "utf8"));

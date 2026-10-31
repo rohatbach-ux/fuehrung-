@@ -638,7 +638,8 @@ function feedItems() {
 }
 const isRead = (x) => !!state.read[`${x.t}:${x.id}`];
 const isLib = (x) => x?.herkunft === "drive";
-const kindLabel = (t, x) => (t === "post" ? "📸 Mein Post" : isLib(x) ? "📁 Bibliothek" : "🔎 Recherche");
+const isBook = (x) => x?.herkunft === "buch";
+const kindLabel = (t, x) => (t === "post" ? "📸 Mein Post" : isLib(x) ? "📁 Bibliothek" : isBook(x) ? "📚 Buch kompakt" : "🔎 Recherche");
 const seriesTag = (x) => (x?.reihe ? `<span class="tag">📖 Teil ${x.reihe.teil}/${x.reihe.von}</span>` : "");
 function seriesBlock(x) {
   if (!x?.reihe) return "";
@@ -650,7 +651,7 @@ function seriesBlock(x) {
       : `<button class="series-row" data-act="story" data-t="rx" data-id="${esc(y.id)}"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)} ${isRead({ ...y, t: "rx" }) ? "✓" : ""}</button>`).join("")}
     ${open > 0 ? `<div class="hint">${open} weitere${open === 1 ? "r Teil folgt" : " Teile folgen"} in den nächsten Tagen.</div>` : ""}</div>`;
 }
-const kindClass = (t, x) => (t === "post" ? "t-praxis" : isLib(x) ? "t-phase" : "t-wissen");
+const kindClass = (t, x) => (t === "post" ? "t-praxis" : isLib(x) || isBook(x) ? "t-phase" : "t-wissen");
 function feedCards() {
   const out = [];
   for (const p of state.posts) (p.karten || []).forEach((k, i) => out.push({ id: `post-${p.id}-k${i}`, mod: p.modul, q: k.frage, a: k.antwort, src: `Mein Post: ${p.titel}` }));
@@ -681,7 +682,7 @@ function renderInbox() {
   const items = feedItems();
   const unread = items.filter((x) => !isRead(x)).length;
   const links = state.inbox.filter((i) => i.status === "neu").length;
-  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["links", `Links (${links})`]];
+  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["buecher", "Bücher"], ["links", `Links (${links})`]];
   const head = `
     <div class="btn-row">
       <button class="btn primary" data-act="post-new">📸 Post verarbeiten</button>
@@ -692,12 +693,14 @@ function renderInbox() {
   let list = items;
   if (ui.feed === "neu") list = items.filter((x) => !isRead(x));
   if (ui.feed === "posts") list = items.filter((x) => x.t === "post");
-  if (ui.feed === "recherche") list = items.filter((x) => x.t === "rx" && !isLib(x));
+  if (ui.feed === "recherche") list = items.filter((x) => x.t === "rx" && !isLib(x) && !isBook(x));
+  if (ui.feed === "buecher") list = items.filter((x) => isBook(x));
   if (ui.feed === "bibliothek") list = items.filter((x) => isLib(x));
   const empty = ui.feed === "posts"
     ? "Noch keine Posts verarbeitet. Tippe auf „📸 Post verarbeiten“."
     : ui.feed === "recherche" ? "Die tägliche Recherche liefert jeden Morgen drei neue Impulse."
-    : ui.feed === "bibliothek" ? "Aus deinem Google-Drive-Ordner kommen täglich zwei Impulse dazu." : "Hier ist noch nichts.";
+    : ui.feed === "bibliothek" ? "Aus deinem Google-Drive-Ordner kommen täglich zwei Impulse dazu."
+    : ui.feed === "buecher" ? "Jeden Morgen kommt ein Teil aus deiner Leseliste – zusammengestellt aus öffentlichen Quellen zum Buch." : "Hier ist noch nichts.";
   return head + (list.length ? list.map(feedCard).join("") : `<div class="empty">${empty}</div>`) +
     (rxData?.updated ? `<p class="hint">Recherche zuletzt aktualisiert: ${new Date(rxData.updated).toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })} <button class="btn ghost small" data-act="rx-reload">↻</button></p>` : "");
 }

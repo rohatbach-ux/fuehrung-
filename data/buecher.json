@@ -1,0 +1,104 @@
+{
+ "_hinweis": "Leseliste für Buchreihen aus öffentlichen Quellen (Weg 1: Artikel, Interviews, Vorträge der Autoren, Verlagsseiten, seriöse Rezensionen – keine Raubkopien). Reihenfolge = Abarbeitungsreihenfolge. status: offen | in_arbeit | fertig. Steuerung: research/BUECHER.md.",
+ "buecher": [
+  {
+   "id": "logic-of-failure",
+   "titel": "Die Logik des Mißlingens (The Logic of Failure)",
+   "autoren": "Dietrich Dörner",
+   "jahr": 1989,
+   "modul": "stabil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "tyranny-of-metrics",
+   "titel": "The Tyranny of Metrics",
+   "autoren": "Jerry Z. Muller",
+   "jahr": 2018,
+   "modul": "umsetzung",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "intelligence-trap",
+   "titel": "The Intelligence Trap",
+   "autoren": "David Robson",
+   "jahr": 2019,
+   "modul": "urteil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "halo-effect",
+   "titel": "The Halo Effect",
+   "autoren": "Phil Rosenzweig",
+   "jahr": 2007,
+   "modul": "urteil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "superforecasting",
+   "titel": "Superforecasting",
+   "autoren": "Philip E. Tetlock & Dan Gardner",
+   "jahr": 2015,
+   "modul": "urteil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "knowledge-illusion",
+   "titel": "The Knowledge Illusion",
+   "autoren": "Steven Sloman & Philip Fernbach",
+   "jahr": 2017,
+   "modul": "fk",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "enigma-of-reason",
+   "titel": "The Enigma of Reason",
+   "autoren": "Hugo Mercier & Dan Sperber",
+   "jahr": 2017,
+   "modul": "gespraeche",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "calling-bullshit",
+   "titel": "Calling Bullshit",
+   "autoren": "Carl T. Bergstrom & Jevin D. West",
+   "jahr": 2020,
+   "modul": "urteil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "book-of-why",
+   "titel": "The Book of Why",
+   "autoren": "Judea Pearl & Dana Mackenzie",
+   "jahr": 2018,
+   "modul": "urteil",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "model-thinker",
+   "titel": "The Model Thinker",
+   "autoren": "Scott E. Page",
+   "jahr": 2018,
+   "modul": "strategie",
+   "status": "offen",
+   "plan": []
+  },
+  {
+   "id": "conjectures-refutations",
+   "titel": "Conjectures and Refutations",
+   "autoren": "Karl R. Popper",
+   "jahr": 1963,
+   "modul": "kultur",
+   "status": "offen",
+   "plan": []
+  }
+ ]
+}

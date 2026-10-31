@@ -440,6 +440,37 @@ export const MODULES = [
     ],
     quellen: ["Stephen R. Covey – The 7 Habits of Highly Effective People (1989)", "John J. Gabarro & John P. Kotter – Managing Your Boss (HBR 1980)"],
   },
+  {
+    id: "urteil", icon: "🧠", title: "Klar denken & entscheiden", w: [2, 2.5, 2, 1.5],
+    kurz: "Urteilskraft in komplexen Lagen: Denkfallen erkennen, Kennzahlen richtig lesen.",
+    kern: "In unruhigen Lagen entscheidet die Qualität des Denkens mehr als die Menge der Informationen. Kluge, erfahrene Menschen sind vor Denkfehlern nicht geschützt – oft sind sie sogar besser darin, ihre Irrtümer zu begründen. Urteilskraft lässt sich trainieren: durch das Prüfen von Annahmen, das Denken in Wahrscheinlichkeiten, den kritischen Blick auf Kennzahlen und eine Kultur, in der Widerspruch erwünscht ist.",
+    hagen: "Wer ein Netz mit Brandherden übernimmt, steht unter Druck, schnell zu deuten und zu handeln. Gerade dann drohen typische Fehler: Symptome statt Ursachen bekämpfen, Nebenwirkungen übersehen, Kennzahlen mit der Wirklichkeit verwechseln. Ein paar feste Denkroutinen im Führungskreis wirken hier wie eine Sicherung.",
+    modelle: [
+      { name: "Fehler im Umgang mit Komplexität", text: "Der Psychologe Dietrich Dörner ließ Menschen komplexe Systeme in Simulationen steuern. Typische Fehler: Ziele werden nicht geklärt, Nebenwirkungen und Zeitverzögerungen übersehen, Probleme einzeln statt im Zusammenhang behandelt, und unter Druck wird übersteuert oder in Aktionismus verfallen. Erfolgreiche Steuerer fragen mehr, prüfen Annahmen und beobachten die Wirkung ihrer Eingriffe.", quelle: "Dörner – Die Logik des Mißlingens" },
+      { name: "Goodharts Gesetz", text: "Wird eine Kennzahl zum Ziel, hört sie auf, eine gute Kennzahl zu sein. Menschen optimieren die Zahl statt der Sache – durch Umdeuten, Verschieben oder Weglassen. Jerry Muller beschreibt, wie übertriebene Messung („Metric Fixation“) Urteilskraft verdrängt. Kennzahlen bleiben nützlich, wenn sie Gespräche anstoßen statt Urteile ersetzen.", quelle: "Muller – The Tyranny of Metrics" },
+      { name: "Halo-Effekt", text: "Ein Gesamteindruck färbt das Urteil über Einzelmerkmale: Läuft es gut, wirken Führung, Strategie und Kultur im Nachhinein brillant; läuft es schlecht, wirken dieselben Dinge mangelhaft. Phil Rosenzweig zeigt, wie dieser Effekt viele Erfolgsstudien der Managementliteratur verzerrt. Gegenmittel: Entscheidungen nach Qualität des Vorgehens beurteilen, nicht nur nach dem Ergebnis.", quelle: "Rosenzweig – The Halo Effect" },
+      { name: "In Wahrscheinlichkeiten denken", text: "Philip Tetlocks Forschung zeigt: Gute Prognostiker denken in Wahrscheinlichkeiten statt in Gewissheiten, beginnen mit Basisraten („Wie oft passiert so etwas üblicherweise?“), aktualisieren ihr Urteil in kleinen Schritten und messen ihre Treffsicherheit. Breit interessierte „Füchse“ schneiden dabei besser ab als „Igel“ mit einer großen Theorie.", quelle: "Tetlock & Gardner – Superforecasting" },
+      { name: "Die Illusion des Wissens", text: "Menschen glauben, Dinge besser zu verstehen, als sie es tun – bis sie erklären sollen, wie etwas genau funktioniert. Steven Sloman und Philip Fernbach zeigen: Wissen liegt großenteils in der Gemeinschaft, nicht im einzelnen Kopf. Für Führung heißt das: Expertise im Team aktiv abrufen und um Erklärungen bitten statt um Meinungen.", quelle: "Sloman & Fernbach – The Knowledge Illusion" },
+    ],
+    praxis: [
+      "Stelle vor der nächsten wichtigen Entscheidung drei Fragen: Was ist das eigentliche Ziel? Welche Nebenwirkungen sind möglich? Woran würden wir merken, dass wir falsch liegen?",
+      "Schau dir eine Kennzahl an, die im Netz besonders beachtet wird, und frag: Wie könnte man sie verbessern, ohne dass sich in der Sache etwas verbessert?",
+      "Bitte in einer Besprechung jemanden, eine Annahme Schritt für Schritt zu erklären statt nur zu bewerten – und beobachte, was dabei ans Licht kommt.",
+      "Formuliere eine Erwartung für die nächsten Wochen als Wahrscheinlichkeit (z. B. „70 %, dass …“) und prüfe sie später nach.",
+    ],
+    fragen: [
+      "Welche meiner Überzeugungen über das Netz habe ich noch nie ernsthaft geprüft?",
+      "Wo verwechseln wir eine gute Zahl mit einer guten Lage?",
+      "Wer in meinem Umfeld widerspricht mir – und höre ich wirklich hin?",
+    ],
+    karten: [
+      { q: "Nenne drei typische Fehler im Umgang mit komplexen Systemen nach Dörner.", a: "Ziele nicht klären, Nebenwirkungen und Zeitverzögerungen übersehen, unter Druck übersteuern bzw. in Aktionismus verfallen." },
+      { q: "Was besagt Goodharts Gesetz?", a: "Wird eine Kennzahl zum Ziel, hört sie auf, eine gute Kennzahl zu sein." },
+      { q: "Was ist der Halo-Effekt im Management?", a: "Der Gesamteindruck (z. B. Erfolg) färbt das Urteil über Einzelmerkmale wie Strategie, Führung oder Kultur." },
+      { q: "Was zeichnet gute Prognostiker nach Tetlock aus?", a: "Denken in Wahrscheinlichkeiten, Start bei Basisraten, schrittweises Aktualisieren, Messen der eigenen Treffsicherheit." },
+    ],
+    quellen: ["Dietrich Dörner – Die Logik des Mißlingens (1989)", "Jerry Z. Muller – The Tyranny of Metrics (2018)", "Phil Rosenzweig – The Halo Effect (2007)", "Philip E. Tetlock & Dan Gardner – Superforecasting (2015)", "Steven Sloman & Philip Fernbach – The Knowledge Illusion (2017)"],
+  },
 ];
 
 export const moduleById = (id) => MODULES.find((m) => m.id === id);
