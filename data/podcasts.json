@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T12:58:26.392Z",
+ "updated": "2026-10-31T12:58:59.657Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -374,9 +374,381 @@
    ]
   },
   {
+   "id": "chefgespraech",
+   "name": "Chefgespräch (WirtschaftsWoche)",
+   "short": "Chefgespräch",
+   "category": "fuehrung",
+   "author": "Varinia Bernau, Konrad Fischer",
+   "image": "https://images.podigee-cdn.net/0x,sy_7r6WVtu9EEu7Bv07C-bE10slTHcsUWeCEg7ZoWaCI=/https://main.podigee-cdn.net/uploads/u6264/b01ef81c-b3f1-48ee-9de8-d4e9c12ea77c.jpg",
+   "link": "https://www.wiwo.de/podcast/",
+   "feed": "https://wiwo-chefgespraech.podigee.io/feed/mp3",
+   "episodes": [
+    {
+     "id": "chefgespraech-9e68e97efc",
+     "title": "Jedem Ende wohnt ein Zauber inne",
+     "date": "2026-06-03T11:00:00.000Z",
+     "duration": 347,
+     "audio": "https://audio.podigee-cdn.net/2505708-m-d5622751b2802f275e618904e0af0375.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/370-neue-episode",
+     "desc": "Konrad Fischer und Varinia Bernau erklären, warum das Chefgespräch eine Pause macht, wie‘s im Herbst weitergeht - und weshalb dabei auch die Wünsche unserer treuen Hörerinnen und Hörer eine besondere Rolle spielen. Das exklusive Abo-Angebot für alle Hörerinnen und Hörer des WiWo Chefgesprächs: https://www.wiwo.de/kennenlernen Weitere Informationen zu Werbeeinblendungen"
+    },
+    {
+     "id": "chefgespraech-8c5859aefc",
+     "title": "Braun-Büffel-Chefin Brunk: „Mein ursprünglicher Plan war, Pyramiden auszugraben“",
+     "date": "2026-05-29T01:00:00.000Z",
+     "duration": 2928,
+     "audio": "https://audio.podigee-cdn.net/2462539-m-00d2721f471c8983ac80486fb4d0f295.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/369-neue-episode",
+     "desc": "Christiane Brunk erzählt, welche Rolle Tradition in ihrem Unternehmen spielt, wieso sie als Kind Lederherzen sortierte – und wie sie ihre unternehmerische Midlife Crisis überwand."
+    },
+    {
+     "id": "chefgespraech-74758f18f4",
+     "title": "Insolvenzverwalter Flöther: „Liquidieren kann auch ein dressierter Schimpanse“",
+     "date": "2026-05-22T01:00:00.000Z",
+     "duration": 3363,
+     "audio": "https://audio.podigee-cdn.net/2462537-m-92e07f1a1f8ee93a49fe369f0f91af8e.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/368-neue-episode",
+     "desc": "Lukas Flöther ist einer der wichtigsten Insolvenzverwalter im Land. Er erzählt im Podcast, warum ihn „Zombie-Unternehmen“ mehr schrecken als die reine Zahl der Pleiten."
+    },
+    {
+     "id": "chefgespraech-5075419d0b",
+     "title": "Hengstenberg-Chef Fouchardière: „In Frankreich sitzt der Chef immer in der Mitte – wie bei Napoleon“",
+     "date": "2026-05-15T02:00:00.000Z",
+     "duration": 2705,
+     "audio": "https://audio.podigee-cdn.net/2462535-m-b55ad3cb583aba612011d194262cd73b.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/367-neue-episode",
+     "desc": "Der Hengstenberg-Chef spricht über die unerwartete Sauerkraut-Werbung durch den US-Gesundheitsminister – und erklärt, weshalb die Büro-Kaffeemaschine ein Ort der Kreativität ist."
+    },
+    {
+     "id": "chefgespraech-fefcacdaaa",
+     "title": "Rock-Tech-Chef Wojnarowicz: „Ich bin wahrscheinlich der Ein-Mann-Wanderzirkus“",
+     "date": "2026-05-08T01:00:00.000Z",
+     "duration": 2786,
+     "audio": "https://audio.podigee-cdn.net/2462534-m-e543cbae46f3878ace383f5db2f7b7d1.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/366-neue-episode",
+     "desc": "Rock-Tech-Chef Wojnarowicz erzählt, warum an China in der Lithiumverarbeitung kaum ein Weg vorbeiführt und woher sein Unternehmen die Rohmaterialien bekommt."
+    },
+    {
+     "id": "chefgespraech-68414ef9ae",
+     "title": "PWO-Chef Lazzarini: „Was wir brauchen, ist eine Vision für Deutschland“",
+     "date": "2026-05-01T01:00:00.000Z",
+     "duration": 2955,
+     "audio": "https://audio.podigee-cdn.net/2462532-m-4b7208eacbdfee1f34c5906c236546e7.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/365-neue-episode",
+     "desc": "Carlo Lazzarini erzählt, welche Reformideen er für den hiesigen Standort hat und was Deutschland sich von China abschauen sollte."
+    },
+    {
+     "id": "chefgespraech-24d1c59482",
+     "title": "Apetito-Chef Laabs: „Für viele Senioren sind wir der einzige Sozialkontakt“",
+     "date": "2026-04-24T01:00:00.000Z",
+     "duration": 2906,
+     "audio": "https://audio.podigee-cdn.net/2462529-m-3cad354c9bf65167bfab5bb728055da3.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/364-neue-episode",
+     "desc": "Jan-Peer Laabs erzählt, welche Kantinenbesonderheit er in den USA bemerkte und warum man die wichtigsten Gespräche am besten beim Essen führt."
+    },
+    {
+     "id": "chefgespraech-fb848b3fc3",
+     "title": "Einhell-Chef Kroiss: „Wenn vorne die Tür zugemacht wurde, bin ich hinten wieder rein“",
+     "date": "2026-04-17T01:00:00.000Z",
+     "duration": 3240,
+     "audio": "https://audio.podigee-cdn.net/2440112-m-340dd39ccd253a35518cb1d9ddd9f75d.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/363-neue-episode",
+     "desc": "Andreas Kroiss erzählt, wie ihn Australien auf seine Akku-Strategie brachte – und wie ein klärendes Gespräch vor einer Messe seiner Karriere den entscheidenden Schubs gab."
+    },
+    {
+     "id": "chefgespraech-c68913bec1",
+     "title": "Rentenbank-Chefin Steinbock: „Alle sind ins Schwimmbad gegangen – und ich in die Abendschicht“",
+     "date": "2026-04-10T01:00:00.000Z",
+     "duration": 2585,
+     "audio": "https://audio.podigee-cdn.net/2416263-m-1a1db1154f48dbaf000b951e8f498d45.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/362-neue-episode",
+     "desc": "Im Podcast mit Rentenbank-Chefin Nikola Steinbock geht es um die Marktmacht der Discounter und fehlende Planungssicherheit für Landwirte."
+    },
+    {
+     "id": "chefgespraech-3673b95b46",
+     "title": "Alpecin-Chef Dörrenberg: „Haarausfall ist in Asien mit Schwäche verbunden“",
+     "date": "2026-03-27T02:00:00.000Z",
+     "duration": 3488,
+     "audio": "https://audio.podigee-cdn.net/2353958-m-e1dfcffbf38aa879952e7f510fed8a69.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/361-neue-episode",
+     "desc": "Eduard Dörrenberg will gegen die, wie er sie nennt, „mafiaartigen“ Zustände bei Zahngesundheit angehen – und erklärt, was den US-Markt besonders schwierig macht."
+    },
+    {
+     "id": "chefgespraech-7b563d3f67",
+     "title": "Liqid-Chef Schneider-Sickert: „Was man studiert, ist egal. Man muss denken lernen“",
+     "date": "2026-03-20T02:00:00.000Z",
+     "duration": 3261,
+     "audio": "https://audio.podigee-cdn.net/2353957-m-468e6de85cfeb4c466d20dddc7302213.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/360-neue-episode",
+     "desc": "Christian Schneider-Sickert erzählt, warum er schon vor dem Antritt seines ersten Jobs um ein Sabbatical bat – und wie er mit Mitte 20 in Syrien ein Business aufzog."
+    },
+    {
+     "id": "chefgespraech-000881a02c",
+     "title": "a&o-Hostel-Chef Winter: „Wir sind ein bisschen wie McDonald’s“",
+     "date": "2026-03-13T02:00:00.000Z",
+     "duration": 3077,
+     "audio": "https://audio.podigee-cdn.net/2353956-m-04af2e9a3946781e6e9c637d14ce196d.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/359-neue-episode",
+     "desc": "Oliver Winter erzählt, was er unter der Demokratisierung des Reisens versteht – und wie er an Gästen, die 15 Euro pro Nacht bezahlen, Geld verdient."
+    },
+    {
+     "id": "chefgespraech-e8300f99c8",
+     "title": "Frank Ferchau: „Die Unsicherheit ist der natürliche Zustand“",
+     "date": "2026-03-06T02:00:00.000Z",
+     "duration": 2864,
+     "audio": "https://audio.podigee-cdn.net/2353954-m-f54f92d190ef84f4f2ff9750f5d428ab.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/358-neue-episode",
+     "desc": "Was ist der Dipl.-Ing. heute noch wert? Frank Ferchau spricht im Podcast über Ingenieursgeist, Freiheit als Kernwert – und 180 schlaflose Nächte."
+    },
+    {
+     "id": "chefgespraech-41e1fb9057",
+     "title": "Brainlab-Gründer Vilsmeier: „Ich hasse Evolution, das ist mir viel zu langweilig“",
+     "date": "2026-02-27T02:00:00.000Z",
+     "duration": 3532,
+     "audio": "https://audio.podigee-cdn.net/2353950-m-e2ae6e62e72bf4837f253ac251fc8660.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/357-neue-episode",
+     "desc": "Stefan Vilsmeier erklärt, warum Brainlab auf „digitale Zwillinge“ setzt, welche Rolle Robotik dabei spielt – und weshalb Unternehmen öfter eine Kulturrevolution brauchen."
+    },
+    {
+     "id": "chefgespraech-1a2b166565",
+     "title": "Brabus-Chef Buschmann: „Ein denkender Mensch ersetzt jeden Prozess“",
+     "date": "2026-02-20T02:00:00.000Z",
+     "duration": 3103,
+     "audio": "https://audio.podigee-cdn.net/2328778-m-5f5ad4439c2adaadb051e87b60aef567.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/356-neue-episode",
+     "desc": "Constantin Buschmann erzählt, weshalb er als Familienunternehmer nur eine Work-Work-Balance kennt – und was seine Autos mit Haute-Couture-Kleidern gemeinsam haben."
+    },
+    {
+     "id": "chefgespraech-11f8351de8",
+     "title": "Bastei-Lübbe-Chef Dastyari: „Das Buch ist ein Safe Space“",
+     "date": "2026-02-13T02:00:00.000Z",
+     "duration": 3038,
+     "audio": "https://audio.podigee-cdn.net/2328776-m-40fc2a6580649cda8b9822fcbb78a6ba.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/355-neue-episode",
+     "desc": "Soheil Dastyari erzählt, wie sein Verlag die Welt der Bücher und die der sozialen Medien zusammenbringt und ob die KI die Arbeit der Autoren übernimmt."
+    },
+    {
+     "id": "chefgespraech-4c55c3ef34",
+     "title": "Choco-Chef Khachab: „Bin ich mit einer Idee verheiratet, habe ich ein Problem“",
+     "date": "2026-02-06T02:00:00.000Z",
+     "duration": 2822,
+     "audio": "https://audio.podigee-cdn.net/2328771-m-e0013d7e6e87fc683b6bf756015973f6.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/354-neue-episode",
+     "desc": "Daniel Khachab erzählt, was er bei Rocket Internet gelernt hat – und warum das größte KI-Risiko ist, sie nicht einzusetzen."
+    },
+    {
+     "id": "chefgespraech-65dc40262e",
+     "title": "HVV-Chefin Korbutt: „Es gibt so Jobs in Deutschland, da verkaufen Sie Ihre Seele an den Teufel“",
+     "date": "2026-01-30T02:00:00.000Z",
+     "duration": 3180,
+     "audio": "https://audio.podigee-cdn.net/2262794-m-8db2e5e4ce8d2074d77f04caadd3b0fb.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/353-neue-episode",
+     "desc": "Anna Theresa Korbutt erzählt, wie sie den HVV mit KI-Assistenten umbauen will – und wieso sie sagt: Das Leben ist nicht linear, Management auch nicht."
+    },
+    {
+     "id": "chefgespraech-449dea57ca",
+     "title": "Doctolib-Deutschlandchef Kolev: „Für jedes neue Gesetz müssen zehn andere wegfallen“",
+     "date": "2026-01-23T02:00:00.000Z",
+     "duration": 3121,
+     "audio": "https://audio.podigee-cdn.net/2262791-m-392c07d681a56087ba34554f0901d653.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/352-neue-episode",
+     "desc": "Im Gespräch erklärt Kolev, warum er den Fokus auf Vorsorge setzen würde, wie KI in Praxen und Kliniken helfen kann – und warum ihm Karriere nie wichtig war."
+    },
+    {
+     "id": "chefgespraech-d69d1a3236",
+     "title": "Harry-Brot-Chef Kleiner: „Erstmal muss das Ei gelegt werden – dann wird gegackert“",
+     "date": "2026-01-16T02:00:00.000Z",
+     "duration": 3527,
+     "audio": "https://audio.podigee-cdn.net/2262789-m-cb7e6fad8939ae91eeca058924f99486.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/351-neue-episode",
+     "desc": "Die Deutschen schimpfen über Supermarktbrot und kaufen trotzdem immer mehr davon. Warum das so ist und welche Innovationen es auf dem Brotmarkt gibt, erzählt Frank Kleiner."
+    },
+    {
+     "id": "chefgespraech-2d8fcbc45a",
+     "title": "Westwing-Chef Hoerning: „Definitiv ging es auch ums Überleben“",
+     "date": "2026-01-09T02:00:00.000Z",
+     "duration": 2622,
+     "audio": "https://audio.podigee-cdn.net/2262785-m-669e3ea6fdc0694d76a4a2e583d74e19.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/350-neue-episode",
+     "desc": "Andreas Hoerning erzählt, warum er ausgerechnet jetzt auf Expansion setzt und Internationalität für ihn als Halb-Australier eine Haltung ist."
+    },
+    {
+     "id": "chefgespraech-786c7e56fe",
+     "title": "Auterion-Chef Meier: „Wo Ekstase und Verzweiflung nah beieinanderliegen, entstehen neue Produkte“",
+     "date": "2025-12-19T02:00:00.000Z",
+     "duration": 2469,
+     "audio": "https://audio.podigee-cdn.net/2228392-m-e533ed151092b3a6cd2c222518332aa1.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/347-neue-episode",
+     "desc": "Lorenz Meier erzählt, weshalb ihm der persönliche Austausch besonders wichtig ist und wieso Europa weniger Perfektion und mehr Tempo braucht."
+    },
+    {
+     "id": "chefgespraech-f6b5f93417",
+     "title": "Scheer-Gründer: „Man muss ein wenig blauäugig sein, um solch einen Weg zu gehen“",
+     "date": "2025-12-12T02:00:00.000Z",
+     "duration": 3067,
+     "audio": "https://audio.podigee-cdn.net/2228391-m-4edb24be88663e79358b458c703027c8.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/346-neue-episode",
+     "desc": "Der Digitalunternehmer August-Wilhelm Scheer erzählt, wie es um die digitale Zukunft Europas bestellt ist – und was Jazz-Sessions für ihn und seine Arbeit bedeuten."
+    },
+    {
+     "id": "chefgespraech-68ac5e37ce",
+     "title": "Sonderfolge: Behind the scenes",
+     "date": "2025-12-05T02:00:00.000Z",
+     "duration": 2274,
+     "audio": "https://audio.podigee-cdn.net/2228388-m-679518c5bbb3a0f3bc93c249c06302fa.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/345-neue-episode",
+     "desc": "In dieser etwas anderen Episode blicken die Hosts auf das vergangene Jahr zurück: Welche Gäste hatten besonders spannende Biografien? Und wie entsteht ein Chefgespräch überhaupt?"
+    },
+    {
+     "id": "chefgespraech-df3f4d0297",
+     "title": "Cewe-Chef Mehls: „Der Kaufmann, der sich keine Sorgen macht, bekommt welche“",
+     "date": "2025-11-28T02:00:00.000Z",
+     "duration": 3341,
+     "audio": "https://audio.podigee-cdn.net/2175194-m-10d2c1c818841eaa56ea10fcbd384474.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/344-neue-episode",
+     "desc": "Thomas Mehls erzählt, wie in dieser Jahreszeit Arbeiter, die sonst Maschinen bedienen, zu Führungskräften werden – und warum Fotobücher gerade bei Jüngeren so beliebt sind."
+    },
+    {
+     "id": "chefgespraech-12a72b1adb",
+     "title": "Nivea-Chefin Loebsack: „Nivea ist wie Nutella“",
+     "date": "2025-11-21T02:00:00.000Z",
+     "duration": 3301,
+     "audio": "https://audio.podigee-cdn.net/2175191-m-0bd04bae290db04302534f7f45905e17.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/343-neue-episode",
+     "desc": "Grita Loebsack erzählt, was sie mit der Marke Nivea noch vorhat, ob die blaue Dose mit der weißen Schrift sakrosankt ist – und was Nivea mit Nutella gemein hat."
+    },
+    {
+     "id": "chefgespraech-66fc49e1c9",
+     "title": "Statista-Chef Berg: „Dieses Ruhrgebiets-Gen, sehr ehrlich zu sein, hab ich immer durchgezogen“",
+     "date": "2025-11-14T02:00:00.000Z",
+     "duration": 3373,
+     "audio": "https://audio.podigee-cdn.net/2175190-m-95a3f489f247d706d84edf695aca9900.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/342-neue-episode",
+     "desc": "Marc Berg erzählt, wie man eine Belegschaft von den Chancen der KI überzeugt, wenn diese eine Bedrohung ist – und Golf ihn lehrte, Fehler bei sich selbst zu suchen."
+    },
+    {
+     "id": "chefgespraech-3719ecec73",
+     "title": "Cantourage-Chef Schetter: „Selbst in Berlin wissen überraschend wenige, dass es medizinisches Cannabis gibt“",
+     "date": "2025-11-07T02:00:00.000Z",
+     "duration": 3051,
+     "audio": "https://audio.podigee-cdn.net/2175188-m-8dee34a2d35b1a1acfc7a21892783d2d.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/341-neue-episode",
+     "desc": "Philipp Schetter ist Chef des größten deutschen Cannabishändlers. Er erklärt die „Bohne-zu-Filterkaffee“-Logik bei Extrakten – und wo Medizin endet und Genuss beginnt."
+    },
+    {
+     "id": "chefgespraech-cf55e1f9fc",
+     "title": "Endress+Hauser-Chef Selders: „Nervös werde ich eigentlich nie“",
+     "date": "2025-10-31T02:00:00.000Z",
+     "duration": 3044,
+     "audio": "https://audio.podigee-cdn.net/2100598-m-a10753dc89b6c4693a356b9788af0121.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/340-neue-episode",
+     "desc": "Peter Selders, CEO des Messtechnik-Unternehmens Endress+Hauser, erzählt, was er über Wettbewerber aus China denkt, welche seine Lieblingsantwort auf Fragen ist und wieso er trotz Zollstreitereien „eigentlich nie nervös“ werde."
+    },
+    {
+     "id": "chefgespraech-e3c87fe44b",
+     "title": "Babor-Verwaltungsrätin Bonacker: „Die zehn Gebote meines Großvaters gelten immer noch“",
+     "date": "2025-10-24T01:00:00.000Z",
+     "duration": 2966,
+     "audio": "https://audio.podigee-cdn.net/2100597-m-542b2e8b16d36fe35799b1d2aad7475e.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/339-neue-episode",
+     "desc": "Macherin, Modernisiererin, Mutter: Isabel Bonacker erzählt, wie sie ihr Unternehmen Babor aufs nächste Level hebt, wie sich ihre Mosaikkarriere zusammensetzt und was ihr Meditationsersatz ist."
+    },
+    {
+     "id": "chefgespraech-f81866f44a",
+     "title": "Engel-und-Völkers-Chef Barna: „Wenn ein Bauturbo greifen würde, sähen wir die Effekte erst Ende 2027 oder später“",
+     "date": "2025-10-17T01:00:00.000Z",
+     "duration": 3117,
+     "audio": "https://audio.podigee-cdn.net/2100596-m-9798eecdc916e66ae46dce316f8d90e5.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/338-neue-episode",
+     "desc": "Jawed Barna erzählt, für wie aussichtsreich er den sogenannten Bauturbo hält – und was wirklich hilft, um an die Traumimmobilie zu kommen."
+    },
+    {
+     "id": "chefgespraech-b8f4e84b49",
+     "title": "Thalia-Chef Kretzschmar: „Wir sind für den Mainstream da – und das wird gern zerrissen“",
+     "date": "2025-10-10T01:00:00.000Z",
+     "duration": 3003,
+     "audio": "https://audio.podigee-cdn.net/2100595-m-cf8bb934ff4eaf58f92de018fb9e4f4a.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/337-neue-episode",
+     "desc": "Ingo Kretzschmar erzählt, wie sich der Buchhandel entwickelt, was das über unsere Gesellschaft verrät – und warum er selbst Bücher nicht mehr auf Papier liest."
+    },
+    {
+     "id": "chefgespraech-e6a22879ec",
+     "title": "Otto-Group-Chefin: „Handels-Chatbots werden schneller und größer disruptieren als der E-Commerce-Shift“",
+     "date": "2025-10-03T01:00:00.000Z",
+     "duration": 2952,
+     "audio": "https://audio.podigee-cdn.net/2100593-m-bd09af9093003a009eacea6629997b6b.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/336-neue-episode",
+     "desc": "Petra Scharner-Wolff erzählt im Podcast, wie künstliche Intelligenz unser Kaufverhalten ändert – und ob sie den alten Otto-Katalog vermisst."
+    },
+    {
+     "id": "chefgespraech-6a842e8058",
+     "title": "Redcare-Pharmacy-Chef Heinrich: „Der Patient steht im deutschen Gesundheitssystem immer hinten an“",
+     "date": "2025-09-26T01:00:00.000Z",
+     "duration": 2800,
+     "audio": "https://audio.podigee-cdn.net/2070860-m-38200f7f6605d9db6bef4b884114ebc5.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/335-neue-episode",
+     "desc": "Olaf Heinrich erzählt, wie die Digitalisierung das Gesundheitssystem verbessern und die Arzneimittelversorgung sichern soll."
+    },
+    {
+     "id": "chefgespraech-2536da9724",
+     "title": "Mister-Spex-Chef Krauss: „Gleitsichtmodelle sind der 911er unter den Brillen“",
+     "date": "2025-09-19T02:00:00.000Z",
+     "duration": 3285,
+     "audio": "https://audio.podigee-cdn.net/2070858-m-b6d753b56fe572b68fbab9743b6a734a.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/334-neue-episode",
+     "desc": "Tobias Krauss erzählt, wieso sich der Online-Optiker Mister Spex vom Digitalen abwendet und wie das Unternehmen seine einst so dominante Rolle verspielen konnte."
+    },
+    {
+     "id": "chefgespraech-3fc8a4f936",
+     "title": "Philip-Morris-Deutschlandchefin Rost: „Alles einmal ausprobieren ist meine Devise – außer rauchen“",
+     "date": "2025-09-12T01:00:00.000Z",
+     "duration": 2464,
+     "audio": "https://audio.podigee-cdn.net/2070857-m-919a3561dcec27e2f8c96fbd6a0877df.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/333-neue-episode",
+     "desc": "Veronika Rost erzählt, warum sie in der als anrüchig geltenden Tabakbranche arbeitet – und ob man einen Job überhaupt nach moralischen Gesichtspunkten wählen sollte."
+    },
+    {
+     "id": "chefgespraech-a750b2c811",
+     "title": "Ifa-Chef Lindner: „Viele Dinge wurden so gemacht, weil sie immer schon so gemacht wurden“",
+     "date": "2025-09-05T01:00:00.000Z",
+     "duration": 2713,
+     "audio": "https://audio.podigee-cdn.net/2070854-m-c97785e4262970a86a308ee314352517.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/332-neue-episode",
+     "desc": "Leif Lindner erzählt, wie er sich langfristig gegenüber Konkurrenten wie dem Mobile World Congress behaupten will und warum er jede Woche ein Heavy-Metal-Konzert besucht."
+    },
+    {
+     "id": "chefgespraech-6350d29996",
+     "title": "SRH-Chef Hettich: „Biotechnologie ist etwas, wo du zehn Jahre lang verhindern musst, Misserfolge zu haben“",
+     "date": "2025-08-29T01:00:00.000Z",
+     "duration": 2884,
+     "audio": "https://audio.podigee-cdn.net/2028238-m-8c3d5109647c073c0d564afe6dd9c706.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/331-neue-episode",
+     "desc": "Christof Hettich erzählt, weshalb seine Tochter für ihn ein Korrektiv ist, was für ihn Führung bedeutet – und welches Verhältnis er zu Dietmar Hopp hat."
+    },
+    {
+     "id": "chefgespraech-8ed7b8ffd0",
+     "title": "Kalypso-Media-Chefin Thun: „Die Fehler, die ein CEO macht, sind in der Regel die teuersten“",
+     "date": "2025-08-22T01:00:00.000Z",
+     "duration": 2938,
+     "audio": "https://audio.podigee-cdn.net/2028237-m-aed9e1836394e1b7dd2c08c004dcb934.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/330-neue-episode",
+     "desc": "Anika Thun erzählt, wie es ihr globales Unternehmen nach Worms verschlagen hat und warum die andernorts so wichtige Branche für Computerspiele in Deutschland ein Schattendasein fristet."
+    },
+    {
+     "id": "chefgespraech-41cebd0096",
+     "title": "Karls-Erlebnisdorf-Chef Dahl: „Niemand kommt auf die Welt mit dem großen Traum, Erdbeerpflücker zu werden“",
+     "date": "2025-08-15T01:00:00.000Z",
+     "duration": 3434,
+     "audio": "https://audio.podigee-cdn.net/2028234-m-184bb13d123ca88a550fd7b62242109f.mp3?source=feed",
+     "link": "https://wiwo-chefgespraech.podigee.io/329-neue-episode",
+     "desc": "Robert Dahl erzählt, warum es so schwierig ist, die Erdbeerernte zu automatisieren – und er sich als überzeugter Mikromanager selbst um die Frikadellen in seinen Freizeitparks kümmert."
+    }
+   ]
+  },
+  {
    "id": "hardt",
-   "name": "Peter Hardt",
-   "short": "Hardt",
+   "name": "10 Minuten für Führung (Peter Hardt)",
+   "short": "10 Min Führung",
    "category": "fuehrung",
    "author": "Peter Hardt",
    "image": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/40910313/40910313-1712406263548-9573e0370cf0d.jpg",
@@ -950,7 +1322,5 @@
    ]
   }
  ],
- "missing": [
-  "Chefgespräch (WirtschaftsWoche)"
- ]
+ "missing": []
 }
