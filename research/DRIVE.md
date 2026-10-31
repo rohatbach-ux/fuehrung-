@@ -22,6 +22,8 @@ Google-Drive-Ordner „Führung DB“ (ID `1WhbUTR8qVYNXGpeRFzjAv8_8lJCS564t`) *
    - Vorrang: Neuzugänge (jüngstes `createdTime`), sonst das Dokument, das am besten zur aktuellen Phase passt (Phasen siehe `research/ANLEITUNG.md`).
    - Audio- und Videodateien als `uebersprungen` vermerken (ohne Titel, `"grund": "audio"`).
    - **Dateien aus Raubkopie-Quellen nie verarbeiten:** Enthält der Dateiname oder der Inhalt Hinweise wie „libgen“, „library.lol“, „z-lib“, „Anna’s Archive“, „pdfdrive“ oder eine typische LibGen-Kennung (z. B. „{12345678} libgen.li“), Inhalt nicht lesen, als `uebersprungen` mit `"grund": "quelle"` vermerken (ohne Titel) und es Rohat in der Zusammenfassung melden.
+   - **Umbenannte Kopien erkennen:** Hat eine Datei exakt dieselbe Dateigröße (`fileSize`) wie ein Eintrag mit `"grund": "quelle"`, gilt sie als dieselbe Datei – ebenfalls überspringen (mit `groesse` vermerken) und melden.
+   - Einträge mit `"grund": "herkunft_ungeklaert"` nicht verarbeiten. Sie werden erst freigegeben, wenn Rohat die rechtmäßige Herkunft bestätigt hat; dann entfernt die Sitzung den Eintrag aus dem Register.
    - Trägt ein Dokument selbst eine Kennzeichnung wie „vertraulich“, „streng vertraulich“ oder „nur für den Dienstgebrauch“: nicht verarbeiten, als `uebersprungen` (ohne Titel) vermerken und es Rohat in der Zusammenfassung melden.
 4. **Lesekonzept für ein neues Buch erstellen** (bevor der erste Teil geschrieben wird):
    - Das ganze Dokument lesen (`read_file_content`; große Dateien in Abschnitten auswerten). Inhaltsverzeichnis, alle Kapitel, Tabellen, Checklisten, Beispiele und Übungen erfassen.

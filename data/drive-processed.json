@@ -145,7 +145,29 @@
    "h": "e1d9fe3d2476",
    "datum": "2026-10-31",
    "status": "uebersprungen",
-   "grund": "quelle"
+   "grund": "quelle",
+   "groesse": 4988760
+  },
+  {
+   "h": "31337dd1f9e8",
+   "datum": "2026-10-31",
+   "status": "uebersprungen",
+   "grund": "quelle",
+   "groesse": 4988760
+  },
+  {
+   "h": "0698843d04db",
+   "datum": "2026-10-31",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 1466285
+  },
+  {
+   "h": "88c4a47b7b66",
+   "datum": "2026-10-31",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 2289965
   }
  ]
 }
