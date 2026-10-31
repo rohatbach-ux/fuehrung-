@@ -1,6 +1,84 @@
 {
- "updated": "2026-10-31T17:58:57+00:00",
+ "updated": "2026-10-31T19:51:58+00:00",
  "items": [
+  {
+   "id": "20261031-6",
+   "date": "2026-10-31",
+   "titel": "Strategie scheitert an Schnittstellen, nicht an Disziplin",
+   "quelle": {
+    "name": "Harvard Business Review – Donald Sull, Rebecca Homkes, Charles Sull",
+    "url": "https://hbr.org/2015/03/why-strategy-execution-unravels-and-what-to-do-about-it"
+   },
+   "sprache": "en",
+   "kernaussage": "Umsetzung bricht seltener an fehlender Ausrichtung von oben nach unten als an mangelnder Koordination zwischen Einheiten und fehlender Anpassungsfähigkeit.",
+   "deutsch": "Donald Sull, Rebecca Homkes und Charles Sull haben über mehrere Jahre Tausende Manager in mehreren hundert Unternehmen befragt, wie Strategien umgesetzt werden. Ihr Befund widerspricht verbreiteten Annahmen. Viele Führungskräfte glauben, Umsetzung sei vor allem eine Frage der Ausrichtung: Ziele sauber herunterbrechen, Pläne einhalten, oft genug kommunizieren, Leistung belohnen. Die Studie zeigt ein anderes Bild. Innerhalb der eigenen Berichtslinie verlassen sich die meisten Befragten gut auf Vorgesetzte und Mitarbeitende. Gegenüber Kolleginnen und Kollegen anderer Bereiche sagt dagegen nur eine kleine Minderheit (laut Zusammenfassungen rund 9 %), sie könne sich jederzeit auf sie verlassen. Zudem konnte nur etwa die Hälfte der befragten mittleren Führungskräfte überhaupt eine der fünf wichtigsten Prioritäten ihres Unternehmens nennen – trotz häufiger Kommunikation. Die Autoren beschreiben fünf Mythen: Umsetzung gleich Ausrichtung, Umsetzung gleich Planeinhaltung, Kommunikation gleich Verständnis, Leistungskultur treibt Umsetzung, Umsetzung ist Top-down. Ihre Gegenvorschläge: Koordination über Bereichsgrenzen gezielt stärken, wenige klare Prioritäten setzen, Anpassung an veränderte Lagen erlauben und Zusammenarbeit genauso anerkennen wie Einzelleistung.",
+   "modul": "strategie",
+   "bezug_ih": "In der Instandhaltung entscheiden die Übergaben zu Betrieb, Planung, Bau und Fremdfirmen oft mehr über Verfügbarkeit als der eigene Plan. Für die Vorbereitung heißt das: Frag nicht nur, ob dein Team die Ziele kennt, sondern wo die Zusammenarbeit mit Nachbarbereichen heute regelmäßig hakt.",
+   "frage": "Auf welche Nachbarbereiche ist mein künftiger Bereich am stärksten angewiesen – und wie verlässlich erlebt mein Team diese Zusammenarbeit heute wirklich?",
+   "experiment": "Frage in den nächsten zwei Wochen drei künftige Teammitglieder und zwei Partner aus Nachbarbereichen: Welche zwei Prioritäten hat die Instandhaltung im Netz – und wo hakt die Abstimmung am häufigsten? Vergleiche die Antworten.",
+   "karten": [
+    {
+     "frage": "Woran scheitert Strategieumsetzung laut Sull/Homkes/Sull häufiger: an Ausrichtung oder an Koordination?",
+     "antwort": "An Koordination zwischen Einheiten und fehlender Anpassung – die Ausrichtung innerhalb der Linie funktioniert meist besser."
+    },
+    {
+     "frage": "Nenne drei der fünf Mythen der Umsetzung.",
+     "antwort": "Umsetzung = Ausrichtung, Umsetzung = Plan einhalten, Kommunikation = Verständnis (außerdem: Leistungskultur treibt Umsetzung, Umsetzung ist Top-down)."
+    }
+   ]
+  },
+  {
+   "id": "20261031-7",
+   "date": "2026-10-31",
+   "titel": "Deine Teamleiter prägen das Engagement am stärksten",
+   "quelle": {
+    "name": "Gallup Business Journal – Randall Beck, Jim Harter",
+    "url": "https://news.gallup.com/businessjournal/182792/managers-account-variance-employee-engagement.aspx"
+   },
+   "sprache": "en",
+   "kernaussage": "Laut Gallup erklärt die direkte Führungskraft mindestens 70 % der Unterschiede im Mitarbeiterengagement zwischen Arbeitseinheiten.",
+   "deutsch": "Gallup hat über viele Jahre Engagement-Daten von Arbeitseinheiten in zahlreichen Unternehmen ausgewertet. In der Studie „State of the American Manager“ schätzen Randall Beck und Jim Harter, dass die direkte Führungskraft mindestens 70 % der Varianz im Engagement zwischen Einheiten erklärt. Gemeint ist: Ob ein Team engagiert ist oder nicht, hängt weit stärker vom unmittelbaren Vorgesetzten ab als von Unternehmensprogrammen, Leitbildern oder der Zentrale. Gallup leitet daraus ab, dass die Auswahl und Entwicklung von Führungskräften einer der stärksten Hebel für Leistung ist – und dass viele Organisationen Führungsrollen zu oft nach fachlicher Leistung oder Dienstzeit vergeben statt nach Führungseignung. Vorsicht bei der Weitergabe: Manche Blogs überdehnen die Zahl. Sie beschreibt Unterschiede zwischen Einheiten, keine Vorhersage für einzelne Personen. Gallup selbst formuliert die Zahl an verschiedenen Stellen leicht unterschiedlich.",
+   "modul": "fk",
+   "bezug_ih": "Als Leiter Instandhaltung erreichst du die meisten Mitarbeitenden nicht direkt, sondern über deine Teamleitungen und Meister. Wenn du das Netz beruhigen und ein gemeinsames WHY entwickeln willst, liegt der größte Hebel darin, diese Führungsebene zu stärken – nicht in eigenen Auftritten vor der ganzen Mannschaft.",
+   "frage": "Wie viel meiner geplanten Zeit in den ersten 100 Tagen fließt gezielt in meine direkten Führungskräfte – und wie viel in Brandherde, die eigentlich sie lösen könnten?",
+   "experiment": "Plane für jede deiner künftigen direkten Führungskräfte ein erstes Einzelgespräch mit drei Fragen: Was läuft in deinem Team gut? Was raubt dir Energie? Wobei kann ich dich am meisten unterstützen? Halte die Antworten fest.",
+   "karten": [
+    {
+     "frage": "Welchen Anteil der Engagement-Unterschiede zwischen Einheiten führt Gallup auf die direkte Führungskraft zurück?",
+     "antwort": "Mindestens 70 % (Schätzung aus „State of the American Manager“)."
+    },
+    {
+     "frage": "Welche Fehlinterpretation der 70-%-Zahl solltest du vermeiden?",
+     "antwort": "Sie beschreibt Unterschiede zwischen Arbeitseinheiten, keine sichere Vorhersage für einzelne Mitarbeitende."
+    }
+   ]
+  },
+  {
+   "id": "20261031-8",
+   "date": "2026-10-31",
+   "titel": "Zusammenarbeit überlastet oft die Falschen",
+   "quelle": {
+    "name": "Harvard Business Review – Rob Cross, Reb Rebele, Adam Grant",
+    "url": "https://hbr.org/2016/01/collaborative-overload"
+   },
+   "sprache": "en",
+   "kernaussage": "Ein kleiner Teil der Beschäftigten trägt einen großen Teil der wertvollen Zusammenarbeit – und brennt dabei leicht aus, wenn Führung das nicht sieht und steuert.",
+   "deutsch": "Rob Cross, Reb Rebele und Adam Grant zeigen, dass die Zeit für Meetings, Abstimmungen und Anfragen in vielen Organisationen über zwei Jahrzehnte stark gewachsen ist. Ihre Netzwerkanalysen in mehreren hundert Organisationen ergaben: Ein großer Teil der wertschöpfenden Zusammenarbeit (je nach Darstellung ein Fünftel bis ein Drittel) geht von nur 3 bis 5 % der Beschäftigten aus. Diese Menschen sind gefragt, hilfsbereit und kompetent – und genau deshalb laufen sie Gefahr, zum Engpass zu werden und auszubrennen. Die Autoren unterscheiden drei Arten von Ressourcen, die man in Zusammenarbeit gibt: Informationen, soziale Kontakte und persönliche Ressourcen wie Zeit und Energie. Problematisch ist, dass Anfragen meist auf die persönliche Ressource zielen („Kannst du kurz mitmachen?“), obwohl oft eine Information oder ein Kontakt reichen würde. Vorschläge: Lasten sichtbar machen, Anfragen bündeln und priorisieren, Wissen so teilen, dass es ohne die Person zugänglich ist, und hilfsbereites Verhalten anerkennen, ohne es auszunutzen.",
+   "modul": "selbst",
+   "bezug_ih": "In einem unruhigen Netz landen Störungen und Rückfragen schnell bei wenigen Erfahrenen – und bei dir als neuem Leiter. Wenn du dich und deine Schlüsselpersonen nicht schützt, wirst du selbst zum Nadelöhr und hast keine Zeit mehr für Richtung und WHY.",
+   "frage": "Bei welchen Anfragen genügt eigentlich eine Information oder ein Kontakt von mir – und wo gebe ich aus Gewohnheit meine Zeit?",
+   "experiment": "Notiere eine Woche lang jede Anfrage an dich mit dem Vermerk I (Information), K (Kontakt) oder Z (Zeit/Mitarbeit). Lege danach für die häufigsten I- und K-Anfragen eine Lösung ohne dich fest (Ablage, Ansprechpartner, Regel).",
+   "karten": [
+    {
+     "frage": "Welche drei Ressourcen geben Menschen laut Cross/Rebele/Grant in Zusammenarbeit?",
+     "antwort": "Informationen, soziale Kontakte und persönliche Ressourcen (Zeit und Energie)."
+    },
+    {
+     "frage": "Welcher kleine Teil der Beschäftigten trägt einen großen Teil der wertvollen Zusammenarbeit?",
+     "antwort": "Etwa 3 bis 5 % der Beschäftigten."
+    }
+   ]
+  },
   {
    "id": "20261031-4",
    "date": "2026-10-31",
