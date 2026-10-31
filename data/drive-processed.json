@@ -1,58 +1,143 @@
 {
- "_hinweis": "Verarbeitete Dateien aus Rohats Drive-Ordner. Nur SHA-1-Kürzel der Datei-ID (12 Zeichen), keine IDs oder Links. Übersprungene Dateien (dienstlich, Audio) ohne Titel.",
+ "_hinweis": "Register der Bibliothek. Datei nur als SHA-1-Kürzel der Drive-ID (12 Zeichen), keine IDs oder Links. status: in_arbeit | fertig | uebersprungen (nur Audio/Video, ohne Titel). plan = Lerneinheiten des Buchs; impuls = veröffentlichte ID oder null.",
  "dateien": [
   {
    "h": "e838e38f93ab",
    "titel": "die-ersten-100-tage-in-der-neuen-chefposition.pdf",
-   "datum": "2026-10-31",
-   "status": "impuls",
-   "impulse": [
-    "drive-20261031-1"
+   "buch": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019)",
+   "status": "in_arbeit",
+   "begonnen": "2026-10-31",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Der souveräne Start: drei Drittel, zwei Fehlstarts, Werkzeuge",
+     "kapitel": "1–3, 7, 9",
+     "impuls": "drive-20261031-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Persönliche Führungs-Charta: vier Grundsätze mit je vier Handlungen",
+     "kapitel": "4",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Gespräch mit dem eigenen Vorgesetzten und Wunschzettel fürs erste Einzelgespräch – vertieft",
+     "kapitel": "2, 6",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Der 13-Wochen-Plan für den systematischen Chefstart – übertragen auf die IH",
+     "kapitel": "8",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Achtung und Akzeptanz verschaffen – was trägt, was nicht",
+     "kapitel": "5, 10",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Bilanz nach 100 Tagen: Selbstbewertung, Feedback-Rat, Teambeurteilung",
+     "kapitel": "11",
+     "impuls": null
+    },
+    {
+     "teil": 7,
+     "thema": "Motivierendes Führungsverhalten, Vision und Demotivatoren erkennen",
+     "kapitel": "12–14",
+     "impuls": null
+    }
    ]
   },
   {
    "h": "858870d4673c",
    "titel": "fhren-in-der-sandwich-position.pdf",
-   "datum": "2026-10-31",
-   "status": "impuls",
-   "impulse": [
-    "drive-20261031-2"
+   "buch": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019)",
+   "status": "in_arbeit",
+   "begonnen": "2026-10-31",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Was die Sandwich-Position ausmacht – Überblick und fünf Kernkompetenzen",
+     "kapitel": "1, Übersicht 2",
+     "impuls": "drive-20261031-2"
+    },
+    {
+     "teil": 2,
+     "thema": "Menschenbild: McGregors Theorie X und Y",
+     "kapitel": "2.1.1",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Tugenden als Werte-Kompass",
+     "kapitel": "2.1.2",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Gefühle als Bedürfnis-Kompass",
+     "kapitel": "2.1.3",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Beziehungsgestaltung: Aufgaben- vs. Beziehungsorientierung, von Jürgen Klopp lernen",
+     "kapitel": "2.2.1–2.2.2",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Gesten und Rituale der Wertschätzung, positive und verbindliche Kommunikation",
+     "kapitel": "2.2.3–2.2.4",
+     "impuls": null
+    },
+    {
+     "teil": 7,
+     "thema": "Entscheiden, Konsequenz und Vorbild",
+     "kapitel": "2.3",
+     "impuls": null
+    },
+    {
+     "teil": 8,
+     "thema": "Delegieren, Priorisieren und Zutrauen",
+     "kapitel": "2.4",
+     "impuls": null
+    },
+    {
+     "teil": 9,
+     "thema": "Mikropolitik: Machtspiele oben, Kontakt zur Basis, Selbstvermarktung",
+     "kapitel": "2.5",
+     "impuls": null
+    },
+    {
+     "teil": 10,
+     "thema": "Führungskompetenz entwickeln: Feedback, Action Learning, Coaching, Selbststudium",
+     "kapitel": "3, 4",
+     "impuls": null
+    }
    ]
-  },
-  {
-   "h": "60cfe1a4ecdf",
-   "datum": "2026-10-31",
-   "status": "uebersprungen"
-  },
-  {
-   "h": "fa1a6887d991",
-   "datum": "2026-10-31",
-   "status": "uebersprungen"
-  },
-  {
-   "h": "ae274df49004",
-   "datum": "2026-10-31",
-   "status": "uebersprungen"
-  },
-  {
-   "h": "32d617f60ade",
-   "datum": "2026-10-31",
-   "status": "uebersprungen"
   },
   {
    "h": "dc84b5433e69",
    "datum": "2026-10-31",
-   "status": "uebersprungen"
+   "status": "uebersprungen",
+   "grund": "audio"
   },
   {
    "h": "2c1e10bc861a",
    "datum": "2026-10-31",
-   "status": "uebersprungen"
+   "status": "uebersprungen",
+   "grund": "audio"
   },
   {
    "h": "64cedc003fae",
    "datum": "2026-10-31",
-   "status": "uebersprungen"
+   "status": "uebersprungen",
+   "grund": "audio"
   }
  ]
 }

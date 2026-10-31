@@ -26,7 +26,12 @@
      "frage": "Welche zwei Fehlstarts neuer Chefs nennt De Micheli – und was haben sie gemeinsam?",
      "antwort": "Der liebe Neue und die Axt im Walde; beide sind Zeichen von Unsicherheit."
     }
-   ]
+   ],
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 1,
+    "von": 7
+   }
   },
   {
    "id": "drive-20261031-2",
@@ -53,7 +58,12 @@
      "frage": "Nenne die fünf Kernkompetenzen für die mittlere Ebene nach Frerichs.",
      "antwort": "Positives Menschenbild, Beziehungsgestaltung, Entscheiden und konsequent handeln, Delegieren/Empowerment, Mikropolitik verstehen."
     }
-   ]
+   ],
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 1,
+    "von": 10
+   }
   },
   {
    "id": "20261031-6",

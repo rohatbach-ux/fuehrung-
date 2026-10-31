@@ -639,6 +639,17 @@ function feedItems() {
 const isRead = (x) => !!state.read[`${x.t}:${x.id}`];
 const isLib = (x) => x?.herkunft === "drive";
 const kindLabel = (t, x) => (t === "post" ? "📸 Mein Post" : isLib(x) ? "📁 Bibliothek" : "🔎 Recherche");
+const seriesTag = (x) => (x?.reihe ? `<span class="tag">📖 Teil ${x.reihe.teil}/${x.reihe.von}</span>` : "");
+function seriesBlock(x) {
+  if (!x?.reihe) return "";
+  const parts = (rxData?.items || []).filter((y) => y.reihe?.buch === x.reihe.buch).sort((a, b) => a.reihe.teil - b.reihe.teil);
+  const open = x.reihe.von - parts.length;
+  return `<div class="series"><div class="slide-h">📖 Reihe: ${esc(x.reihe.buch)}</div>
+    ${parts.map((y) => y.id === x.id
+      ? `<div class="series-row cur"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)}</div>`
+      : `<button class="series-row" data-act="story" data-t="rx" data-id="${esc(y.id)}"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)} ${isRead({ ...y, t: "rx" }) ? "✓" : ""}</button>`).join("")}
+    ${open > 0 ? `<div class="hint">${open} weitere${open === 1 ? "r Teil folgt" : " Teile folgen"} in den nächsten Tagen.</div>` : ""}</div>`;
+}
 const kindClass = (t, x) => (t === "post" ? "t-praxis" : isLib(x) ? "t-phase" : "t-wissen");
 function feedCards() {
   const out = [];
@@ -654,6 +665,7 @@ function feedCard(x) {
     <button class="card feed-item ${isRead(x) ? "" : "unread"}" data-act="story" data-t="${x.t}" data-id="${esc(x.id)}">
       <div class="tags">
         <span class="tag ${kindClass(x.t, x)}">${kindLabel(x.t, x)}</span>
+        ${seriesTag(x)}
         ${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}
         <span class="tag">${x.t === "post" ? fmtShort(x.added) : x.date ? fmtShort(parseIso(x.date.slice(0, 10))) : ""}</span>
         ${isRead(x) ? "" : '<span class="dot" aria-label="neu"></span>'}
@@ -832,7 +844,7 @@ async function openStory(t, id) {
   const urls = imgs.map((b) => URL.createObjectURL(b));
   const slides = [
     `<div class="slide cover">
-       <div class="tags"><span class="tag ${kindClass(t, x)}">${kindLabel(t, x)}</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
+       <div class="tags"><span class="tag ${kindClass(t, x)}">${kindLabel(t, x)}</span>${seriesTag(x)}${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
        <h2>${esc(x.titel)}</h2>
        <p class="big">${esc(x.kernaussage)}</p>
        <p class="src">${t === "post" ? esc(x.autor || "") : esc(x.quelle?.name || "")}${x.sprache && x.sprache !== "de" ? ` · übersetzt aus „${esc(x.sprache)}“` : ""}</p>
@@ -851,6 +863,7 @@ async function openStory(t, id) {
         <ul class="refs">${x.karten.map((k) => `<li>${esc(k.frage)}</li>`).join("")}</ul>` : ""}
       ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
       ${actionRow(ref)}
+      ${seriesBlock(x)}
       ${t === "rx" && isLib(x) ? `<p class="hint">📁 Quelle: ${esc(x.quelle?.name || "")} – liegt in deinem Google-Drive-Ordner „Führung DB“.</p>` : ""}
       ${t === "rx" && x.quelle?.url ? `<p><a class="btn block" href="${esc(x.quelle.url)}" target="_blank" rel="noopener">Quelle öffnen: ${esc(x.quelle.name || "")}</a></p>` : ""}
       ${t === "post" && x.url ? `<p><a class="btn block" href="${esc(x.url)}" target="_blank" rel="noopener">📸 In Instagram öffnen</a></p>` : ""}
