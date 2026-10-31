@@ -45,6 +45,6 @@ Abspielbar sind nur Podcasts mit öffentlichem RSS-Feed. Exklusive Inhalte von A
 
 ## Technik
 
-Statische Dateien ohne Build-Schritt: `index.html`, `css/styles.css`, `js/app.js` (UI, Speicher, Player), `js/content.js` (Phasen, Module, Impulse, Lernkarten, Copilot-Vorlagen), `sw.js` (Offline-Cache, bei Updates `VERSION` erhöhen), `scripts/fetch-feeds.mjs` (Feed-Abruf, Node 20, ohne Abhängigkeiten).
+Statische Dateien ohne Build-Schritt: `index.html`, `css/styles.css`, `js/app.js` (UI, Speicher, Player), `js/content.js` (Phasen, Module, Impulse, Lernkarten, Copilot-Vorlagen), `sw.js` (Offline-Cache, bei Updates `VERSION` erhöhen), `scripts/fetch-feeds.mjs` (Feed-Abruf, Node 22, ohne Abhängigkeiten).
 
 Inhalte erweitern: in `js/content.js` einem Modul weitere `modelle`, `praxis`, `fragen` oder `karten` hinzufügen. Daraus entstehen automatisch neue Impulse.

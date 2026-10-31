@@ -1,5 +1,5 @@
 // Lädt die Podcast-Feeds aus feeds/sources.json und schreibt data/podcasts.json.
-// Läuft in GitHub Actions (Node 20+, keine Abhängigkeiten).
+// Läuft in GitHub Actions (Node 22, keine Abhängigkeiten).
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
 

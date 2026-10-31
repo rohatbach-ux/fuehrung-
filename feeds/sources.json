@@ -1,10 +1,52 @@
 {
   "_hinweis": "Podcasts für die App. Ohne 'feed' sucht das Skript die Feed-Adresse über das Apple-Podcast-Verzeichnis (search + match). Gefundene Adressen stehen im Log des GitHub-Workflows. category: fuehrung | allgemein | entdecken. max = Zahl der Folgen.",
   "podcasts": [
-    { "id": "souveraen", "name": "Souverän!", "short": "Souverän", "search": "Souverän Oliver Walter Rhetorik", "match": "walter", "category": "fuehrung", "max": 40 },
-    { "id": "chefgespraech", "name": "Chefgespräch (WirtschaftsWoche)", "short": "Chefgespräch", "search": "Chefgespräch WirtschaftsWoche", "match": "wirtschaftswoche|wiwo", "category": "fuehrung", "max": 40 },
-    { "id": "hardt", "name": "Peter Hardt", "short": "Hardt", "search": "Peter Hardt", "match": "hardt", "category": "fuehrung", "max": 40 },
-    { "id": "morningbriefing", "name": "Handelsblatt Morning Briefing", "short": "Morning Briefing", "search": "Handelsblatt Morning Briefing", "match": "morning briefing", "category": "allgemein", "max": 5 },
-    { "id": "ideacast", "name": "HBR IdeaCast", "short": "HBR IdeaCast", "search": "HBR IdeaCast", "match": "ideacast", "category": "entdecken", "country": "us", "max": 15 }
+    {
+      "id": "souveraen",
+      "name": "Souverän!",
+      "short": "Souverän",
+      "search": "Souverän Oliver Walter Rhetorik",
+      "match": "walter",
+      "category": "fuehrung",
+      "max": 40
+    },
+    {
+      "id": "chefgespraech",
+      "name": "Chefgespräch (WirtschaftsWoche)",
+      "short": "Chefgespräch",
+      "search": "Chefgespräch WirtschaftsWoche",
+      "match": "wirtschaftswoche|wiwo",
+      "category": "fuehrung",
+      "max": 40,
+      "feed": "https://wiwo-chefgespraech.podigee.io/feed/mp3"
+    },
+    {
+      "id": "hardt",
+      "name": "10 Minuten für Führung (Peter Hardt)",
+      "short": "10 Min Führung",
+      "search": "Peter Hardt",
+      "match": "hardt",
+      "category": "fuehrung",
+      "max": 40
+    },
+    {
+      "id": "morningbriefing",
+      "name": "Handelsblatt Morning Briefing",
+      "short": "Morning Briefing",
+      "search": "Handelsblatt Morning Briefing",
+      "match": "morning briefing",
+      "category": "allgemein",
+      "max": 5
+    },
+    {
+      "id": "ideacast",
+      "name": "HBR IdeaCast",
+      "short": "HBR IdeaCast",
+      "search": "HBR IdeaCast",
+      "match": "ideacast",
+      "category": "entdecken",
+      "country": "us",
+      "max": 15
+    }
   ]
 }
