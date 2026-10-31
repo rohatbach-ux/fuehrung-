@@ -1,5 +1,5 @@
 // Offline-Cache für die App-Dateien. Bei Änderungen VERSION erhöhen.
-const VERSION = "fk-v1";
+const VERSION = "fk-v2";
 const FILES = [
   "./",
   "index.html",

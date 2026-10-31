@@ -12,6 +12,7 @@ function defaultState() {
     roleStart: DEFAULT_START,
     speed: 1.5,
     context: "",
+    workMail: "",       // dienstliche Adresse für Copilot-Mails
     daily: null,        // { date, ids: [] }
     seen: {},           // impulsId -> Datum zuletzt gezeigt
     down: {},           // impulsId -> true (nicht relevant)
@@ -781,11 +782,16 @@ function openCopilot(ref) {
     ${state.context.trim() ? `<label class="check-line"><input type="checkbox" id="cp-ctx" checked> „Mein Kontext“ mitschicken</label>` : ""}
     <p class="hint">Vorschau</p>
     <textarea id="cp-preview" rows="9" readonly></textarea>
+    ${state.workMail
+      ? `<button class="btn primary block" data-act="cp-mail">📧 An Diensthandy mailen</button>
+         <p class="hint">Geht an ${esc(state.workMail)}. Auf dem Diensthandy: Mail öffnen → Text lange drücken → „Alles auswählen“ → Kopieren → in Copilot einfügen.</p>`
+      : `<button class="btn primary block" data-act="settings">📧 Dienstliche E-Mail hinterlegen</button>
+         <p class="hint">Einmal in den Einstellungen eintragen, dann geht die Anfrage per Mail an dein Diensthandy.</p>`}
     <div class="btn-row">
-      <button class="btn primary" data-act="cp-share">Teilen …</button>
       <button class="btn" data-act="cp-copy">Kopieren</button>
+      <button class="btn" data-act="cp-share">Teilen …</button>
     </div>
-    <p class="hint">Teilen öffnet das iOS-Menü – z. B. Outlook, Teams oder die Copilot-App. Für Unternehmensinhalte gelten die Richtlinien der DB; die Anfrage enthält nur, was du hier siehst.</p>
+    <p class="hint">Die Anfrage enthält nur, was du in der Vorschau siehst.</p>
   `);
   const sheet = $("#sheet");
   const upd = () => {
@@ -801,7 +807,13 @@ async function copilotSend(share) {
   const text = $("#cp-preview", sheet).value;
   const label = DEEPEN.find((d) => d.id === sheet.querySelector("[name=deepen]:checked").value).label;
   let ok = false;
-  if (share && navigator.share) {
+  if (share === "mail") {
+    const info0 = refInfoAny(openCopilot.ref);
+    const subject = `Copilot: ${info0 ? info0.label : label}`.slice(0, 120);
+    location.href = `mailto:${encodeURIComponent(state.workMail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    ok = true;
+  }
+  if (!ok && share && navigator.share) {
     try { await navigator.share({ text }); ok = true; } catch (e) { if (e.name === "AbortError") return; }
   }
   if (!ok) {
@@ -1021,6 +1033,8 @@ function openSettings() {
     <div class="seg" id="st-speed">${SPEEDS.map((s) => `<button data-s="${s}" aria-selected="${s === state.speed}">${s}×</button>`).join("")}</div>
     <p class="hint">Mein Kontext (bleibt nur auf diesem Gerät, kann an Copilot-Anfragen angehängt werden)</p>
     <textarea id="st-ctx" rows="5" placeholder="z. B. Größe des Bereichs, Zahl der direkten Führungskräfte, aktuelle Schwerpunkte – nur was du auch an Copilot geben würdest.">${esc(state.context)}</textarea>
+    <p class="hint">Dienstliche E-Mail für Copilot-Anfragen (📤 → „An Diensthandy mailen“)</p>
+    <input type="email" id="st-mail" value="${esc(state.workMail)}" placeholder="vorname.nachname@…" autocomplete="email" inputmode="email">
     <p><button class="btn primary block" data-act="set-save">Speichern</button></p>
 
     <div class="section-title">Sicherung</div>
@@ -1058,6 +1072,7 @@ function saveSettings() {
   audio.defaultPlaybackRate = state.speed;
   if (audio.src) audio.playbackRate = state.speed;
   state.context = $("#st-ctx", sheet).value;
+  state.workMail = $("#st-mail", sheet).value.trim();
   state.daily = null;
   save(); closeSheet(); render(); toast("Gespeichert");
 }
@@ -1130,6 +1145,7 @@ document.addEventListener("click", async (ev) => {
       if (confirm("Experiment wirklich entfernen?")) { state.experiments = state.experiments.filter((e) => e.id !== id); save(); render(); }
       break;
     case "copilot": openCopilot(readRef(el)); break;
+    case "cp-mail": copilotSend("mail"); break;
     case "cp-share": copilotSend(true); break;
     case "cp-copy": copilotSend(false); break;
     case "weekly": openWeekly(); break;
