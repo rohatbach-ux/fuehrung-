@@ -709,13 +709,33 @@ function openProjectHelp() {
 function parsePostResult(text) {
   const a = text.indexOf("{"), b = text.lastIndexOf("}");
   if (a < 0 || b <= a) throw new Error("Kein Ergebnisblock gefunden");
-  let raw = text.slice(a, b + 1);
-  let data;
-  try { data = JSON.parse(raw); }
-  catch (e) {
-    raw = raw.replace(/[“”]/g, '"').replace(/,\s*([}\]])/g, "$1");
-    data = JSON.parse(raw);
-  }
+  const raw = text.slice(a, b + 1);
+  // Reparaturen für häufige Formatfehler: echte Zeilenumbrüche in Strings, Komma vor } oder ],
+  // typografische Anführungszeichen um Feldnamen. „ “ innerhalb von Texten bleiben unangetastet.
+  const fixNewlines = (r) => {
+    let out = "", inStr = false, escNext = false;
+    for (const ch of r) {
+      if (inStr) {
+        if (escNext) { escNext = false; out += ch; continue; }
+        if (ch === "\\") { escNext = true; out += ch; continue; }
+        if (ch === '"') { inStr = false; out += ch; continue; }
+        if (ch === "\n") { out += "\\n"; continue; }
+        if (ch === "\r") continue;
+        if (ch === "\t") { out += "\\t"; continue; }
+        out += ch;
+      } else { if (ch === '"') inStr = true; out += ch; }
+    }
+    return out;
+  };
+  const noTrailing = (r) => r.replace(/,\s*([}\]])/g, "$1");
+  const attempts = [
+    (r) => r,
+    (r) => noTrailing(fixNewlines(r)),
+    (r) => noTrailing(fixNewlines(r.replace(/[“”„](\w+)[“”]\s*:/g, '"$1":'))),
+  ];
+  let data, lastErr;
+  for (const f of attempts) { try { data = JSON.parse(f(raw)); break; } catch (e) { lastErr = e; } }
+  if (!data) throw lastErr;
   const str = (v) => (typeof v === "string" ? v.trim() : "");
   const mod = str(data.modul).toLowerCase();
   const m = MODULES.find((x) => x.id === mod) || MODULES.find((x) => x.title.toLowerCase() === mod);
