@@ -7,8 +7,31 @@
    "autoren": "Dietrich Dörner",
    "jahr": 1989,
    "modul": "stabil",
-   "status": "offen",
-   "plan": []
+   "status": "in_arbeit",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Merkmale komplexer Lagen und die Planspiele (Lohhausen, Tanaland)",
+     "impuls": "buch-20261101-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Typische Denkfehler: vage Ziele, ungeprüfte Hypothesen, nur Erfolge testen",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Zeit, exponentielle Entwicklungen und Neben- und Fernwirkungen",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Transfer auf die IH im Netz Hagen",
+     "impuls": null
+    }
+   ],
+   "begonnen": "2026-11-01",
+   "zuletzt": "2026-11-01"
   },
   {
    "id": "intelligence-trap",

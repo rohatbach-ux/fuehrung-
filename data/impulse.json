@@ -1,6 +1,90 @@
 {
- "updated": "2026-10-31T20:30:10+00:00",
+ "updated": "2026-11-01T03:37:42+00:00",
  "items": [
+  {
+   "id": "20261101-1",
+   "date": "2026-11-01",
+   "titel": "Nachfragen macht dich zugänglicher",
+   "quelle": {
+    "name": "Harvard Business School Working Knowledge – Huang, Yeomans, Brooks, Minson, Gino",
+    "url": "https://www.library.hbs.edu/working-knowledge/asking-questions-can-get-you-a-better-job-or-a-second-date"
+   },
+   "sprache": "en",
+   "kernaussage": "Wer im Gespräch mehr Fragen stellt – vor allem Nachfragen zum Gesagten – wird vom Gegenüber als sympathischer erlebt, weil er Interesse und Verständnis zeigt.",
+   "deutsch": "> **Die wirksamste Frage ist oft die zweite: die Nachfrage zu dem, was das Gegenüber gerade gesagt hat.**\n\n## 🔬 Die Studie\nForschende um **Karen Huang, Alison Wood Brooks und Francesca Gino** werteten **echte Gespräche** aus, darunter Speed-Dating-Runden (veröffentlicht 2017).\n- ❓ Wer **mehr Fragen** stellte, wurde vom Gegenüber **besser bewertet**.\n- 🔁 Am stärksten wirkten **Nachfragen**, also Fragen, die direkt an das Gesagte anknüpfen.\n\n## 🧠 Warum das wirkt\nNachfragen zeigen **Zuhören und Eingehen auf das Gegenüber**. Genau dieses Gefühl, verstanden zu werden, erklärt laut den Autoren den Effekt.\n\n---\n\n## ⚠️ Grenzen\n| Gut | Riskant |\n|---|---|\n| Nachfragen zum Gesagten | Fragenkanonade ohne eigene Offenheit |\n| Echtes Interesse | Wiederholende oder unhöfliche Fragen |\n\nDie Studie untersuchte **soziale Gespräche, nicht Führungssituationen**. Die Übertragung auf Führung liegt nahe, ist aber nicht direkt belegt.",
+   "modul": "gespraeche",
+   "bezug_ih": "- **Kennenlerngespräche:** In den ersten Wochen führst du viele Gespräche mit Menschen, die vorsichtig sind. Nachfragen zeigen, dass du wirklich zuhörst und nicht nur abfragst.\n- **Selbst etwas preisgeben:** Teile auch, was dich bewegt. Sonst wirkt das Fragen wie ein Verhör.",
+   "frage": "Wie oft frage ich in Gesprächen nach dem, was mein Gegenüber gerade gesagt hat – und wie oft springe ich zum nächsten Punkt meiner Liste?",
+   "experiment": "**Übe bewusst die Nachfrage.**\n1. Nimm dir in den nächsten zwei Wochen in drei Gesprächen vor, auf jede wichtige Aussage mindestens eine Nachfrage zu stellen (z. B. „Wie meinst du das genau?“, „Was war da der Auslöser?“).\n2. Erzähl in jedem Gespräch auch eine Sache von dir.\n3. Notier danach, was du durch die Nachfragen erfahren hast, das du sonst verpasst hättest.",
+   "karten": [
+    {
+     "frage": "Welche Art von Fragen erhöhte in der Studie von Huang et al. die Sympathie am stärksten?",
+     "antwort": "Nachfragen, also Fragen, die direkt an das Gesagte des Gegenübers anknüpfen."
+    },
+    {
+     "frage": "Warum wirken Nachfragen laut den Autoren?",
+     "antwort": "Sie zeigen Zuhören und Eingehen auf das Gegenüber; dieses Gefühl erklärt den Effekt."
+    }
+   ]
+  },
+  {
+   "id": "20261101-2",
+   "date": "2026-11-01",
+   "titel": "Grenzen überbrücken: fünf Arten von Trennlinien",
+   "quelle": {
+    "name": "Center for Creative Leadership – Jeffrey Yip, Chris Ernst, Michael Campbell: Boundary Spanning Leadership (White Paper)",
+    "url": "https://www.ccl.org/wp-content/uploads/2016/09/boundary-spanning-leadership-center-for-creative-leadership.pdf"
+   },
+   "sprache": "en",
+   "kernaussage": "Führung muss heute Richtung, Abstimmung und Verbindlichkeit über Grenzen hinweg schaffen – am häufigsten über die Grenzen zwischen Funktionen und Fachgebieten.",
+   "deutsch": "> **Die schwierigsten Probleme liegen selten mitten im eigenen Bereich, sondern an seinen Rändern.**\n\n## 🔍 Der Ansatz\nDas **Center for Creative Leadership (CCL)** beschreibt Führung über Grenzen hinweg als Aufgabe, **Richtung, Abstimmung und Verbindlichkeit** zwischen Gruppen herzustellen. Grundlage sind Befragungen und Fallstudien mit Führungskräften.\n\n## 🧱 Fünf Arten von Grenzen\n| Grenze | Beispiel |\n|---|---|\n| **Vertikal** | Ebene, Rang, Entscheidungsbefugnis |\n| **Horizontal** | Funktion, Fachgebiet, Abteilung |\n| **Stakeholder** | Externe Partner, Kunden, Behörden |\n| **Demografisch** | Alter, Herkunft, Ausbildung |\n| **Geografisch** | Standort, Region, Entfernung |\n\nIn der CCL-Befragung waren **horizontale Grenzen** die häufigste Herausforderung.\n\n---\n\n## 🛠️ Sechs Praktiken\nCCL nennt sechs Praktiken, von **Buffering** (Grenzen klar ziehen, damit Gruppen Sicherheit haben) bis **Transforming** (Grenzen querdenken, um Neues zu ermöglichen). Dazwischen liegen Reflecting, Connecting, Mobilizing und Weaving.\n- 💡 Erst **Grenzen respektieren**, dann **Gemeinsames suchen**, dann **Neues schaffen**.",
+   "modul": "schnittstellen",
+   "bezug_ih": "- **Horizontal zuerst:** Die meisten Reibungen entstehen zwischen Instandhaltung, Betrieb, Planung und Bau. Lege dort früh deinen Schwerpunkt für Beziehungen.\n- **Erst sichern, dann verbinden:** Ein unruhiges Team braucht zuerst klare Zuständigkeiten (Buffering), bevor du es in neue Kooperationen schickst.",
+   "frage": "An welcher Grenze – Ebene, Funktion, externer Partner – entstehen in meinem künftigen Bereich die meisten Reibungen?",
+   "experiment": "**Kartiere deine wichtigsten Grenzen.**\n1. Schreib für jede der fünf Grenzarten die zwei wichtigsten Partner oder Gruppen deines künftigen Bereichs auf.\n2. Bewerte jede Beziehung von 1 (angespannt) bis 5 (verlässlich), soweit du sie schon kennst.\n3. Vereinbare mit den zwei schwächsten Beziehungen ein Kennenlerngespräch vor dem 01.01.2027.",
+   "karten": [
+    {
+     "frage": "Welche fünf Grenzarten unterscheidet das Center for Creative Leadership?",
+     "antwort": "Vertikal, horizontal, Stakeholder, demografisch und geografisch."
+    },
+    {
+     "frage": "Welche Grenzart war in der CCL-Befragung die häufigste Herausforderung?",
+     "antwort": "Horizontale Grenzen zwischen Funktionen und Fachgebieten."
+    }
+   ]
+  },
+  {
+   "id": "buch-20261101-1",
+   "date": "2026-11-01",
+   "herkunft": "buch",
+   "reihe": {
+    "buch": "Die Logik des Mißlingens (The Logic of Failure)",
+    "teil": 1,
+    "von": 4
+   },
+   "titel": "Warum gute Absichten in komplexen Lagen scheitern",
+   "quelle": {
+    "name": "Universität Heidelberg, Psychologie – Enzyklopädie-Beitrag (Schaub) zum Umgang mit Komplexität (Bezug: Die Logik des Mißlingens)",
+    "url": "https://www.psychologie.uni-heidelberg.de/ae/allg/enzykl_denken/Enz_09_Schaub.pdf"
+   },
+   "sprache": "de",
+   "kernaussage": "Komplexe Lagen sind vernetzt, undurchsichtig, entwickeln sich von selbst weiter und verfolgen mehrere Ziele zugleich – wer das übersieht, erzeugt mit jeder Lösung neue, oft größere Probleme.",
+   "deutsch": "> **In vernetzten Systemen ist die naheliegende Lösung oft der Anfang des nächsten Problems.**\n\n## 📚 Worum es geht\nDieser Teil beruht auf **öffentlichen Quellen zum Buch** (Fachbeiträge und Rezensionen), nicht auf dem Buchtext selbst. Der Psychologe **Dietrich Dörner** ließ Menschen in **Computer-Planspielen** über Jahre simulierter Zeit Gemeinden oder Regionen steuern. Sein Buch *Die Logik des Mißlingens* (1989) fasst zusammen, **warum sie dabei so oft scheiterten**.\n\n## 🧪 Die Planspiele\n| Planspiel | Aufgabe | Typisches Ergebnis |\n|---|---|---|\n| **Lohhausen** | 48 Teilnehmende führen als Bürgermeister zehn Jahre lang eine fiktive Kleinstadt | Schwierigkeiten mit **Zeitverläufen, exponentiellen Entwicklungen und Nebenwirkungen** |\n| **Tanaland / Moros** | Entwicklungshilfe für eine fiktive Region bzw. einen Stamm | Gut gemeinte Eingriffe führen zu **Folgeproblemen bis hin zu Hungersnöten** |\n\n---\n\n## 🕸️ Was komplexe Lagen ausmacht\n- 🔗 **Vernetztheit:** Viele Größen hängen voneinander ab – ein Eingriff wirkt an mehreren Stellen.\n- 🌫️ **Intransparenz:** Vieles ist nicht direkt sichtbar und muss erst erfragt werden.\n- ⏩ **Eigendynamik:** Die Lage entwickelt sich weiter, auch wenn niemand eingreift.\n- 🎯 **Mehrere Ziele zugleich:** Teilziele widersprechen sich und müssen **abgewogen** werden.\n\n## ⚖️ Einordnung\nDie Merkmalsliste wird in der Forschung breit übernommen, ist aber laut Kritikern **kaum systematisch geprüft**. Rezensenten bemängeln zudem, dass manche Planspiele **sehr vereinfacht** sind. Teil 2 geht auf die **typischen Denkfehler** ein.",
+   "modul": "stabil",
+   "bezug_ih": "- **Netz als System:** Instandhaltung, Betrieb, Bauprojekte, Personal und Material hängen eng zusammen. Eine schnelle Lösung an einem Brandherd kann Kapazität an anderer Stelle binden.\n- **Unruhe hat Eigendynamik:** Rückstände und Störungen wachsen auch ohne neue Fehler weiter. Ruhe entsteht nicht durch Abwarten.\n- **Einordnung:** Die vier Merkmale sind als Denkraster nützlich und gut verbreitet. Wie gut sich die Laborbefunde auf echte Organisationen übertragen lassen, ist umstritten.",
+   "frage": "Welcher Brandherd in meinem künftigen Netz ist vermutlich die Nebenwirkung einer früheren, gut gemeinten Lösung?",
+   "experiment": "**Zeichne vor dem Start eine einfache Wirkungskarte deines Netzes.**\n1. Schreib die 5–7 Größen auf, die die Ruhe im Netz am stärksten bestimmen (z. B. Störungen, Rückstände, Personal, Sperrpausen).\n2. Zieh Pfeile: Was verstärkt was, was bremst was?\n3. Markier eine Stelle, an der ein schneller Eingriff wahrscheinlich Nebenwirkungen hätte.\n4. Prüf die Karte im Gespräch mit einer erfahrenen Person aus dem künftigen Team.",
+   "karten": [
+    {
+     "frage": "Welche vier Merkmale komplexer Lagen werden nach Dörner häufig genannt?",
+     "antwort": "Vernetztheit, Intransparenz, Eigendynamik und mehrere, teils widersprüchliche Ziele (dazu oft: hohe Zahl an Variablen)."
+    },
+    {
+     "frage": "Was zeigten Dörners Planspiele wie Lohhausen und Tanaland?",
+     "antwort": "Viele Teilnehmende scheiterten an Nebenwirkungen, Zeitverläufen und exponentiellen Entwicklungen – gut gemeinte Eingriffe erzeugten neue Probleme."
+    }
+   ]
+  },
   {
    "id": "drive-20261031-1",
    "date": "2026-10-31",
