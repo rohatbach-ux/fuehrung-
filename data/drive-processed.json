@@ -18,7 +18,7 @@
      "teil": 2,
      "thema": "Persönliche Führungs-Charta: vier Grundsätze mit je vier Handlungen",
      "kapitel": "4",
-     "impuls": null
+     "impuls": "drive-20261101-2"
     },
     {
      "teil": 3,
@@ -51,7 +51,7 @@
      "impuls": null
     }
    ],
-   "zuletzt": "2026-10-31"
+   "zuletzt": "2026-11-01"
   },
   {
    "h": "858870d4673c",
@@ -122,6 +122,82 @@
     }
    ],
    "zuletzt": "2026-10-31"
+  },
+  {
+   "h": "0698843d04db",
+   "titel": "The Tyranny of Metrics.pdf",
+   "buch": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018)",
+   "status": "in_arbeit",
+   "begonnen": "2026-11-01",
+   "zuletzt": "2026-11-01",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Messfixierung: Begriff, drei Überzeugungen, Campbell und Goodhart, wann Messen hilft",
+     "kapitel": "Einleitung, 1",
+     "impuls": "drive-20261101-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Wiederkehrende Fehler: Informationsverzerrung und Formen des Gaming",
+     "kapitel": "2",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Woher der Messwahn kommt: Taylorismus, Leistungslohn, New Public Management, Gründe der Verbreitung",
+     "kapitel": "3–4",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Motivation: Prinzipal-Agent-Denken, intrinsische und extrinsische Motivation, philosophische Kritik",
+     "kapitel": "5–6",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Fallstudie Medizin: wo Kennzahlen helfen und wo sie schaden",
+     "kapitel": "9",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Fallstudien Polizei und Militär: Zahlen in Lagen mit hohem Risiko",
+     "kapitel": "10–11",
+     "impuls": null
+    },
+    {
+     "teil": 7,
+     "thema": "Fallstudie Wirtschaft und Finanzen: Boni, Quartalszahlen, Kennzahlen in Unternehmen",
+     "kapitel": "12",
+     "impuls": null
+    },
+    {
+     "teil": 8,
+     "thema": "Fallstudien Bildung, Hochschule, Entwicklungshilfe: Rankings und ihre Nebenwirkungen",
+     "kapitel": "7–8, 13",
+     "impuls": null
+    },
+    {
+     "teil": 9,
+     "thema": "Wenn Transparenz Leistung verhindert",
+     "kapitel": "14",
+     "impuls": null
+    },
+    {
+     "teil": 10,
+     "thema": "Unbeabsichtigte, aber vorhersehbare Folgen – und die Checkliste: wann und wie messen",
+     "kapitel": "15–16",
+     "impuls": null
+    },
+    {
+     "teil": 11,
+     "thema": "Synthese: Kennzahlen im Netz Hagen klug nutzen",
+     "kapitel": "gesamt",
+     "impuls": null
+    }
+   ]
   },
   {
    "h": "dc84b5433e69",

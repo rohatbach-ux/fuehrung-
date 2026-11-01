@@ -1,6 +1,74 @@
 {
- "updated": "2026-11-01T03:37:42+00:00",
+ "updated": "2026-11-01T04:09:06+00:00",
  "items": [
+  {
+   "id": "drive-20261101-1",
+   "date": "2026-11-01",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 1,
+    "von": 11
+   },
+   "titel": "Messen ja – Messfixierung nein",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), Einleitung und Kapitel 1",
+    "url": ""
+   },
+   "sprache": "en",
+   "kernaussage": "Das Problem ist nicht das Messen, sondern die Überzeugung, Urteilskraft durch Kennzahlen ersetzen zu können – und daran festzuhalten, obwohl die Nebenwirkungen sichtbar sind.",
+   "deutsch": "> **„Nicht alles, was zählt, lässt sich zählen – und vieles, was sich zählen lässt, zählt nicht.“ Muller nennt das Gegenmittel Urteilskraft.**\n\n## 📏 Worum es Muller geht\nDer Historiker **Jerry Z. Muller** stieß als Institutsleiter auf immer neue Berichtspflichten, die Zeit von Lehre und Forschung abzogen. Daraus wurde eine Analyse über viele Branchen hinweg.\n\nSein Begriff: **Metric Fixation – Messfixierung.** Sie besteht aus drei Überzeugungen:\n- 🔢 Urteilskraft aus Erfahrung lasse sich durch **standardisierte Kennzahlen** ersetzen.\n- 📢 Werden die Zahlen **veröffentlicht**, sei sichergestellt, dass Organisationen ihren Zweck erfüllen.\n- 💰 Menschen motiviere man am besten, indem man **Belohnung und Strafe** an gemessene Leistung koppelt – über Geld oder Rankings.\n\nFixierung heißt: an diesen Überzeugungen **festhalten, obwohl die Nebenwirkungen bekannt sind.**\n\n---\n\n## 🎭 Wie Zahlen die Arbeit verbiegen\n| Beispiel aus dem Buch | Was passierte |\n|---|---|\n| Polizei (Serie *The Wire*, nach realen Erfahrungen) | Aufklärungsquote schönen statt Verbrechen aufklären – „juking the stats“ |\n| Chirurgen mit Erfolgsquote | Riskante Patienten werden abgelehnt („creaming“) |\n| Kliniken mit 30-Tage-Sterblichkeit | Patienten werden bis Tag 31 am Leben gehalten |\n| Englische Notaufnahmen mit 4-Stunden-Ziel | Patienten warten im Krankenwagen vor der Tür, bis die Uhr passt |\n\n## ⚖️ Zwei Gesetze, ein Muster\n- **Campbells Gesetz:** Je stärker eine Kennzahl für Entscheidungen genutzt wird, desto mehr gerät sie unter Verzerrungsdruck – und desto mehr verzerrt sie die Arbeit, die sie abbilden soll.\n- **Goodharts Gesetz:** Jedes Maß, das zur Steuerung dient, wird unzuverlässig.\n\nTypische Folgen: Was gemessen wird, verdrängt andere Ziele. Organisationen reagieren mit **noch mehr Kennzahlen** – eine Datenflut, die Zeit frisst. Kurzfristiges schlägt Langfristiges, Innovation leidet, die **Moral der Fachleute sinkt**.\n\n---\n\n## ✅ Wann Messen hilft\n- Bei **seltenen Fällen**, für die einzelne Erfahrung nicht reicht.\n- Bei **Checklisten** für Routineabläufe – bewährt etwa in Luftfahrt und Medizin.\n- Wenn die Zahl ein **brauchbarer Stellvertreter** für das Gemeinte ist und **mit Urteilskraft kombiniert** wird.\n\nKritisch wird es, sobald Kennzahlen zur Grundlage von **Belohnung und Bestrafung** werden.",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Doppelter Sinn von „Accountability“:** Verantwortung tragen ist nicht dasselbe wie zählbar sein – achte darauf, welches Verständnis im Netz vorherrscht.\n- **Fachleute und Zahlen:** Muller beschreibt die Spannung zwischen Kennzahlen-Steuerung und dem Berufsethos von Fachleuten; in der Instandhaltung prallen genau diese Welten aufeinander. Gut geführt ergänzen sie sich, gegeneinander gestellt sinkt die Moral.\n- **Einordnung:** Muller argumentiert vor allem mit Fallbeispielen aus Bildung, Medizin und Polizei in den USA und Großbritannien. Die Muster sind gut belegt, der Übertrag auf eine Instandhaltung im deutschen Bahnsystem ist eine Analogie, kein Befund.",
+   "frage": "Welche Kennzahl im Netz würde ich spontan als Erfolgsmaßstab nehmen – und welches wichtige Ziel würde dabei unsichtbar?",
+   "experiment": "**Mach eine Bestandsaufnahme der Kennzahlen, bevor du sie bewertest.**\n1. Lass dir alle regelmäßig berichteten Kennzahlen des Bereichs zeigen.\n2. Notiere zu jeder: Wer nutzt sie, wofür – und ist sie an Bewertung oder Anerkennung gekoppelt?\n3. Markiere die, bei denen du Verzerrungsdruck im Sinne von Campbell vermutest.\n4. Bewerte noch nichts – nimm die Liste als Grundlage für spätere Teile dieser Reihe.",
+   "karten": [
+    {
+     "frage": "Aus welchen drei Überzeugungen besteht Mullers „Metric Fixation“?",
+     "antwort": "Kennzahlen können Urteilskraft ersetzen; Veröffentlichung sichert Zweckerfüllung; Belohnung/Strafe für gemessene Leistung motiviert am besten."
+    },
+    {
+     "frage": "Was besagt Campbells Gesetz?",
+     "antwort": "Je stärker eine Kennzahl für Entscheidungen genutzt wird, desto mehr wird sie verzerrt – und desto mehr verzerrt sie die Arbeit, die sie abbilden soll."
+    },
+    {
+     "frage": "Wann ist Messen laut Muller hilfreich?",
+     "antwort": "Bei seltenen Fällen, Checklisten für Routinen und wenn die Zahl ein brauchbarer Stellvertreter ist und mit Urteilskraft kombiniert wird."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261101-2",
+   "date": "2026-11-01",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 2,
+    "von": 7
+   },
+   "titel": "Deine Führungs-Charta auf einer Seite",
+   "quelle": {
+    "name": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019), Kapitel 4",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Vier persönliche Führungsgrundsätze mit je vier konkreten Handlungen – auf einer Seite festgehalten – machen aus guten Vorsätzen einen Vertrag mit dir selbst.",
+   "deutsch": "> **Grundsätze werden erst wirksam, wenn sie in beobachtbare Handlungen übersetzt sind.**\n\n## 🧭 Anschluss an Teil 1\nTeil 1 zeigte, wie ein souveräner Start gelingt. Jetzt geht es um die Frage: **Wofür willst du als Führungskraft stehen** – und woran merkt man das?\n\n## 📄 Die Idee der Charta\nDe Micheli schlägt vor, auf **einer A4-Seite** die vier wichtigsten Führungsgrundsätze festzuhalten. Zu jedem gehören **vier konkrete Handlungen**. So entsteht eine Art **Vertrag mit sich selbst** für den Chefstart.\n\n---\n\n## ✍️ Das Beispiel aus dem Buch\n| Grundsatz | Konkrete Handlungen |\n|---|---|\n| 🗣️ **Gute Kommunikation** | Täglich ein Mitarbeitergespräch · häufig Feedback auf Leistungen · auch Privates hat Platz · Interesse an der Arbeit zeigen |\n| 🔥 **Motivation** | Täglich eine Leistung anerkennen · Qualität der Arbeit ernst nehmen · Erfolge mit dem Team feiern · für Erfolgserlebnisse sorgen |\n| 🌱 **Positive Grundhaltung** | Menschen und Leistungen positiv sehen · diese Haltung im Team fördern · auf Stärken und Chancen schauen · Respekt vor Menschen und Leistung |\n| 🎯 **Führen mit Zielen und Begeisterung** | Konsequent mit Zielvereinbarungen führen · erreichbare, aber ehrgeizige Ziele · Begeisterung für die gemeinsame Arbeit zeigen · bei Erfolgen anspornen und Gefühle zeigen |\n\n## 🔁 Wie man sie nutzt\n- In der **Vorbereitung** formulieren – das Buch nennt es ausdrücklich als ersten Schritt vor dem Start.\n- Im **Führungstagebuch** regelmäßig abgleichen: Was davon habe ich diese Woche getan?\n- Nach **100 Tagen** prüfen und nachschärfen.",
+   "modul": "selbst",
+   "bezug_ih": "- **Eigene Charta statt Vorlage:** Das Beispiel ist ein Muster. Deine Grundsätze sollten zu deinen Zielen passen – Ruhe ins Netz bringen und das WHY gemeinsam erarbeiten.\n- **Machbarkeit im Schichtbetrieb:** „Täglich ein Gespräch“ ist bei verteilten Teams und Nachtschichten nicht immer realistisch. Wähle Handlungen, die du wirklich durchhältst.\n- **Einordnung:** Die Charta ist Erfahrungswissen, kein geprüftes Modell. Sie passt gut zur Idee beobachtbarer Führungsleitsätze aus dem Modul „Führungskultur prägen“. Beim Punkt „Privates hat Platz“ gilt: Angebot, keine Pflicht – Grenzen der Mitarbeitenden respektieren.",
+   "frage": "Welche vier Grundsätze sollen Menschen im Netz Hagen nach einem Jahr mit meinem Führungsstil verbinden?",
+   "experiment": "**Schreib deine Führungs-Charta, bevor du startest.**\n1. Notiere vier Grundsätze, die zu deinen Zielen im Netz passen.\n2. Ergänze zu jedem vier Handlungen, die man **beobachten** kann.\n3. Streiche alles, was du im Alltag nicht durchhalten wirst.\n4. Leg die Charta als Notiz im Journal ab und prüfe sie im Wochenrückblick.",
+   "karten": [
+    {
+     "frage": "Wie ist die Führungs-Charta nach De Micheli aufgebaut?",
+     "antwort": "Eine A4-Seite mit vier persönlichen Führungsgrundsätzen und je vier konkreten Handlungen."
+    },
+    {
+     "frage": "Welche vier Grundsätze nennt das Beispiel?",
+     "antwort": "Gute Kommunikation, Mitarbeiter-Motivation, positive Grundhaltung, Führen mit Zielen und Begeisterung."
+    }
+   ]
+  },
   {
    "id": "20261101-1",
    "date": "2026-11-01",
