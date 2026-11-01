@@ -1499,12 +1499,12 @@ function openSettings() {
     <div class="section-title">Copilot-Notizbuch</div>
     <p class="hint">Damit Copilot deine Anfragen und Wochenpakete im Zusammenhang auswertet, bekommt dein Notizbuch „${esc(NOTEBOOK_NAME)}“ eine feste Anweisung.</p>
     <ol class="steps">
-      <li>Hier <b>„Anweisung kopieren“</b> tippen und per Mail ans Diensthandy schicken oder dort einfügen.</li>
+      <li>Hier <b>„An Diensthandy mailen“</b> tippen (dafür oben die dienstliche E-Mail eintragen und speichern) – oder kopieren.</li>
       <li>Copilot → <b>Notebooks</b> → <i>${esc(NOTEBOOK_NAME)}</i> öffnen.</li>
       <li>Gibt es dort ein Feld für <b>Anweisungen</b>, den Text dort einfügen. Sonst als <b>erste Seite</b> bzw. erste Nachricht ablegen mit dem Satz „Bitte bei allen weiteren Anfragen in diesem Notizbuch beachten“.</li>
       <li>Ab dann Einzelanfragen (📤) und Wochenpakete (📦) immer <b>in diesem Notizbuch</b> einfügen.</li>
     </ol>
-    <div class="btn-row"><button class="btn" data-act="nb-copy">📋 Anweisung kopieren</button></div>
+    <div class="btn-row">${state.workMail ? `<button class="btn primary" data-act="nb-mail">📧 An Diensthandy mailen</button>` : ""}<button class="btn" data-act="nb-copy">📋 Kopieren</button></div>
     <details class="card model"><summary><b>Anweisung ansehen</b></summary><pre class="pre">${esc(COPILOT_NOTEBOOK_PROMPT)}</pre></details>
 
     <div class="section-title">Sicherung</div>
@@ -1634,6 +1634,9 @@ document.addEventListener("click", async (ev) => {
     case "wp-mail": weekPacketSend("mail"); break;
     case "wp-copy": weekPacketSend("copy"); break;
     case "wp-share": weekPacketSend("share"); break;
+    case "nb-mail":
+      location.href = `mailto:${encodeURIComponent(state.workMail)}?subject=${encodeURIComponent(`Anweisung für Copilot-Notizbuch „${NOTEBOOK_NAME}“`)}&body=${encodeURIComponent(COPILOT_NOTEBOOK_PROMPT)}`;
+      break;
     case "nb-copy":
       try { await navigator.clipboard.writeText(COPILOT_NOTEBOOK_PROMPT); toast("Anweisung kopiert ✓"); }
       catch (e) { toast("Kopieren nicht möglich – Text unter „Anweisung ansehen“ markieren"); }
