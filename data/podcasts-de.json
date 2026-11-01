@@ -1,0 +1,65 @@
+{
+ "_hinweis": "Deutsche Übersetzungen von Titel und Beschreibung englischsprachiger Podcast-Folgen (Schlüssel = Folgen-ID aus data/podcasts.json). Gepflegt vom täglichen Recherche-Lauf.",
+ "folgen": {
+  "ideacast-e7c14697df": {
+   "titel": "Prinzipientreu bleiben in unsicheren Zeiten",
+   "desc": "Wie führt man durch eine Krise, baut ein innovatives Unternehmen auf und bereitet eine Organisation auf langfristigen Erfolg vor? Für Kenneth Chenault, ehemaliger CEO von American Express und heute Chairman bei General Catalyst, beginnt wirksame Führung mit zwei Aufgaben: die Wirklichkeit benennen und Menschen Hoffnung geben. Chenault, der Amex von 2001 bis 2018 führte und das Unternehmen durch 9/11 und die Finanzkrise 2008 steuerte, teilt die Prinzipien und Praktiken, mit denen er Unsicherheit bewältigte, Innovation förderte und eine Kultur der Verantwortlichkeit aufbaute. Chenault erklärt, wie …"
+  },
+  "ideacast-a6cbff35f3": {
+   "titel": "Neid in etwas Produktives verwandeln",
+   "desc": "Neid kann Arbeitsbeziehungen beschädigen, ungesunden Wettbewerb anheizen und Beschäftigte lähmen. Er kann aber auch zeigen, was Menschen sich von ihrer Laufbahn wünschen – und Führungskräften die Chance geben, Rivalität in Wachstum zu verwandeln. Das sagt Executive Coach Stacy Kim. Sie unterscheidet zwischen zerstörerischem Neid und einer konstruktiven Reaktion, die hilft, von anderen zu lernen. Sie stellt ein Modell vor, um zu verstehen, was einem der Neid sagt, wie man ihn in Handeln übersetzt und wie Führungskräfte in ihren Teams Zusammenarbeit statt Konkurrenz fördern. Kim ist Autorin von …"
+  },
+  "ideacast-e200228d14": {
+   "titel": "Warum großartige Teams sich nicht mögen müssen",
+   "desc": "Was macht ein großartiges Team aus? Vielleicht weniger, ob sich die Kollegen mögen, als ob sie ein gemeinsames Ziel teilen. Der Organisationspsychologe und Wharton-Professor Adam Grant sagt, Führungskräfte können stärkere Verbindungen schaffen, produktiven Konflikt fördern und Kulturen aufbauen, in denen Menschen sich trauen, ihre Meinung zu sagen. Er erklärt, warum Aufgabenzusammenhalt wichtiger ist als sozialer Zusammenhalt, wie man Unterschiede zum Vorteil macht und warum Führungskräfte Menschen belohnen sollten, die den Status quo infrage stellen – und gibt praktische Anregungen, das Onboarding neu zu denken …"
+  },
+  "ideacast-5565d0da85": {
+   "titel": "Wie KI Strategie verändert: neu denken, wofür ein Unternehmen gebaut ist",
+   "desc": "KI entwickelt sich so schnell, dass Unternehmen sie nicht als bloßes Produktivitätswerkzeug behandeln können – sie verändert Strategie grundlegend. In der letzten Folge einer vierteiligen Sonderreihe darüber, wie KI Führung verändert, erklärt Wharton-Professor und KI-Experte Ethan Mollick, warum Führungskräfte neu durchdenken müssen, wofür ihre Organisation gebaut ist und wie Arbeit erledigt wird. Er spricht darüber, wie KI-Agenten die Rolle von Managern verändern, warum Unternehmen experimentieren statt auf erprobte Rezepte warten sollten und wie man Wettbewerbsvorteile schafft, wenn alle Zugang zu denselben …"
+  },
+  "ideacast-1e60fd37ce": {
+   "titel": "Optimismus ist heute eine zentrale Führungskompetenz",
+   "desc": "Optimismus heißt nicht, Probleme zu ignorieren oder so zu tun, als ginge alles gut. Es heißt, Herausforderungen anzuerkennen und trotzdem zu glauben, dass das eigene Handeln etwas bewirkt. Die Psychologin und Forscherin Michelle Gielan sagt, Führungskräfte können diese Haltung bei sich und in ihren Teams entwickeln – und dass daraus ein deutlicher Leistungsvorteil entsteht. Auf Basis eines Datensatzes über elf Jahre mit mehr als 25.000 Berufstätigen zeigt sie Zusammenhänge zwischen Optimismus und höherer Produktivität, mehr Umsatz, mehr Engagement und weniger Burnout. Sie erklärt Techniken wie „Power …“"
+  },
+  "ideacast-f42d6e11c3": {
+   "titel": "Wie KI Innovation verändert: Tempo allein ist keine Strategie",
+   "desc": "KI macht es schneller und billiger denn je, aus Ideen Prototypen, Produkte und Geschäfte zu machen – doch dieser Überfluss bringt neue Herausforderungen für Führungskräfte. In Folge 3 der vierteiligen Sonderreihe zu KI und Führung geht es darum, wie Unternehmen KI nutzen, um sich echte Vorteile zu verschaffen. Cisco-Produktchef Jeetu Patel erklärt, wie KI Tempo und Art von Innovation verändert, warum menschliches Urteil und Geschmack wichtiger werden, wenn alle dieselben Werkzeuge haben, und wie Unternehmen KI für Probleme nutzen können, die sie …"
+  },
+  "ideacast-47ee191cb6": {
+   "titel": "Was Ron Johnson aus dem Erfolg bei Apple und dem Scheitern bei JCPenney gelernt hat",
+   "desc": "Woran erkennt man in einer Transformation, wann man auf die eigene Erfahrung vertrauen kann – und wann man zuhören, beobachten und sich anpassen muss? Ron Johnson half, den Apple Store aufzubauen und Target zu einem designorientierten Händler zu machen. Als er seinen Ansatz zu JCPenney mitnahm, scheiterte die Transformation. Er erklärt, warum Führungskräfte sich nicht zu sehr auf Daten verlassen sollten, wenn sie etwas noch nie Dagewesenes schaffen, wie Steve Jobs mit Geduld und unterschiedlichen Perspektiven Innovation vorantrieb und warum gute Kundenerlebnisse davon abhängen, dass Mitarbeitende Probleme selbst lösen dürfen …"
+  },
+  "ideacast-77dc1816b1": {
+   "titel": "Wie KI Kommunikation verändert: Effizienz gegen Wirkung abwägen",
+   "desc": "KI verändert rasant, wie Führungskräfte mit Beschäftigten, Kunden, Aufsichtsgremien und untereinander kommunizieren. In Folge 2 der vierteiligen Sonderreihe zu KI und Führung geht es darum, wie man KI für bessere Kommunikation nutzt, ohne Denken, Urteil und Empathie auszulagern. Stanford-Professor Matt Abrahams und Zapier-CEO Wade Foster erklären, wie Führungskräfte KI nutzen, um Informationen zu bündeln, Gedanken zu strukturieren, schwierige Gespräche vorzubereiten und für wichtige Momente zu üben. Sie erklären auch, warum man vorsichtig sein sollte, KI schreiben zu lassen …"
+  },
+  "ideacast-91fa32cee3": {
+   "titel": "Was neue CEOs an ihrer Aufgabe falsch verstehen",
+   "desc": "CEO zu werden, kann wie der Höhepunkt einer Laufbahn wirken. Doch die Fähigkeiten, die jemanden nach oben bringen, sind nicht unbedingt die, mit denen er dort erfolgreich ist. Nitin Nohria, ehemaliger Dekan der Harvard Business School, erforscht seit drei Jahrzehnten CEOs und begleitet neue Führungskräfte beim Rollenwechsel. Eine der größten Überraschungen für neue CEOs sei die Erkenntnis, dass sie das Unternehmen nicht selbst führen können – und es auch nicht sollten. Ihre Aufgabe sei es, die Bedingungen dafür zu schaffen, dass ihr Führungsteam es gut führt. Er erklärt auch, wie CEOs in Verbindung bleiben …"
+  },
+  "ideacast-f74b84c115": {
+   "titel": "Wie KI Talente verändert, nicht nur Aufgaben: wo menschliches Urteil am meisten zählt",
+   "desc": "Die Entscheidungen, die Führungskräfte heute zu KI treffen, gehen weit über die Wahl von Plattformen hinaus: KI verändert Organisationskultur und Führung dauerhaft. In Folge 1 der vierteiligen Sonderreihe zu KI und Führung geht es darum, wie die Technik die Zusammenarbeit verändert, welche neue Kultur entsteht und wie Führungskräfte klug mit Talentmanagement und Strategie umgehen. Paula Goldman, bei Salesforce zuständig für den ethischen und menschenwürdigen Einsatz von KI, sieht eine große Chance, Arbeit rund um die sich ergänzenden Stärken von …"
+  },
+  "ideacast-9e2ca39b91": {
+   "titel": "Was es braucht, um voranzukommen, wenn die Zukunft außer Kontrolle scheint",
+   "desc": "Wenn sich die Zukunft immer weniger kontrollierbar anfühlt – wie können Führungskräfte und Organisationen trotzdem vorankommen? Martin Seligman, Psychologe an der University of Pennsylvania und Pionier der Forschung zu Optimismus, Resilienz und menschlichem Gedeihen, sagt: durch Handlungsfähigkeit (Agency) – die Überzeugung, Ergebnisse beeinflussen und Positives bewirken zu können. Er beschreibt sie als Verbindung dreier Fähigkeiten: Selbstwirksamkeit – der Glaube, ein Ziel jetzt erreichen zu können; Optimismus – der Glaube, es künftig zu erreichen; und Vorstellungskraft – die Fähigkeit, sich noch nicht vorhandene Möglichkeiten auszumalen. Und er erklärt …"
+  },
+  "ideacast-fd19e03a9c": {
+   "titel": "Ein Spitzengastronom darüber, wie man eine erfolgreiche Kultur skaliert",
+   "desc": "Solange ein Unternehmen klein ist, wirkt eine starke Kultur leicht zu halten. Mit dem Wachstum machen Führungsebenen, räumliche Entfernung und Effizienzdruck es viel schwerer, das Besondere zu bewahren. Der Gastronom Danny Meyer beschäftigt sich seit Jahrzehnten damit. Er gründete das Union Square Cafe und die Union Square Hospitality Group und half, Shake Shack von einem einzigen Standort in New York zu einer weltweiten Kette zu machen. Dabei hat er gelernt, dass Kultur nicht das ist, was passiert, wenn der CEO im …"
+  },
+  "ideacast-d3c5862bbe": {
+   "titel": "Sind große Führungspersönlichkeiten wirklich groß – oder nur glücklich?",
+   "desc": "Wie viel trägt eine Führungskraft tatsächlich zum Erfolg einer Organisation bei? Wir schreiben CEOs, Gründern und anderen Mächtigen gern zu, ihre Institutionen geprägt zu haben. Der Historiker Jared Diamond meint, wir unterschätzen dabei oft Zeitpunkt, Umstände, Branche und schlichtes Glück. Diamond erklärt seinen „Hamlet-Test“: Hätte jemand anderes dasselbe Ergebnis erreichen können, oder war genau diese Person dafür unverzichtbar? Er zeigt, wie sich der Test auf viele Unternehmenslenker anwenden lässt, warum manche Führungskräfte einen flüchtigen Moment der Gelegenheit nutzen können und warum Gründer …"
+  },
+  "ideacast-bcf7a89478": {
+   "titel": "Wie Menschen ohne formale Macht Einfluss gewinnen",
+   "desc": "In zunehmend dezentralen Organisationen müssen Führungskräfte oft Dinge erreichen, ohne direkte Weisungsbefugnis über die Menschen zu haben, auf die sie angewiesen sind. Wie beeinflusst man Kollegen, Kunden, Lieferanten und sogar das Topmanagement, ohne einfach Anweisungen zu geben? Pamela Meyer, Gründerin und CEO von Calibrate, sagt: indem man lernt, die Lage zu lesen – und die informellen Netzwerke, emotionalen Dynamiken und verborgenen Machtquellen versteht, die Entscheidungen prägen. Sie erklärt fünf Wege zu indirektem Einfluss: Einflussquellen erkennen, Hintergrundgespräche führen, gezielt handeln, verbinden …"
+  },
+  "ideacast-c5fbd083a2": {
+   "titel": "Leben und Arbeiten im Zeitalter der Langlebigkeit",
+   "desc": "Menschen leben länger und gesünder als je zuvor. Doch viele unserer Annahmen über Führungslaufbahnen – vom Aufstieg auf der Karriereleiter bis zum Ruhestand mit 65 – haben damit nicht Schritt gehalten. Lynda Gratton, Professorin an der London Business School, fordert ein neues Verständnis von Arbeit und Leben. Klassische Laufbahnen weichen flexibleren Wegen mit mehreren Lebensphasen, die mehr Eigenverantwortung, kontinuierliches Lernen und einen langen Atem erfordern. Sie erklärt, warum Führungskräfte ihr Leben weniger als Leiter und mehr als Gewebe sehen sollten, das sie aktiv knüpfen, und …"
+  }
+ }
+}

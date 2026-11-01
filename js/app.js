@@ -45,6 +45,7 @@ function save() {
 const ui = { tab: "heute", lern: "module", inbox: "neu", feed: "alle", pod: "alle", journal: "experimente" };
 let podData = null; // geladene data/podcasts.json
 let rxData = null;  // geladene data/impulse.json (tägliche Recherche)
+let podDe = null;   // data/podcasts-de.json: deutsche Titel/Beschreibungen englischer Folgen
 
 // ---------- Helfer ----------
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -166,11 +167,16 @@ function moreImpulses() {
 }
 
 // ---------- Referenzen (Impuls, Inbox, Episode, Eintrag, Phase) ----------
+// Übersetzung einblenden: title/desc auf Deutsch, Original bleibt in orig_title/orig_desc
+function withDe(e, p) {
+  const de = podDe?.folgen?.[e.id];
+  return de ? { ...e, pod: p, title: de.titel || e.title, desc: de.desc || e.desc, orig_title: e.title, orig_desc: e.desc, translated: true } : { ...e, pod: p };
+}
 function findEpisode(id) {
   if (!podData) return null;
   for (const p of podData.podcasts) {
     const e = p.episodes.find((x) => x.id === id);
-    if (e) return { ...e, pod: p };
+    if (e) return withDe(e, p);
   }
   return null;
 }
@@ -1163,12 +1169,16 @@ async function loadPodcasts(force) {
   } catch (e) {
     podData = podData || { updated: null, podcasts: [] };
   }
+  try {
+    const r2 = await fetch(`data/podcasts-de.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
+    if (r2.ok) podDe = await r2.json();
+  } catch (e) { /* ohne Übersetzungen weiter */ }
   if (["hoeren", "heute"].includes(ui.tab)) render();
 }
 const CAT_LABEL = { fuehrung: "Führung", allgemein: "Allgemeinbildung", entdecken: "Entdecken" };
 function allEpisodes() {
   if (!podData) return [];
-  return podData.podcasts.flatMap((p) => p.episodes.map((e) => ({ ...e, pod: p }))).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  return podData.podcasts.flatMap((p) => p.episodes.map((e) => withDe(e, p))).sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 }
 function freshEpisodes() {
   const eps = allEpisodes();
@@ -1190,7 +1200,7 @@ function epRow(e) {
     <div class="ep ${l?.done ? "done" : ""}">
       <button class="play" data-act="ep-play" data-id="${esc(e.id)}" aria-label="${playing ? "Pause" : "Abspielen"}">${playing ? "⏸" : "▶"}</button>
       <button class="mb" data-act="ep-open" data-id="${esc(e.id)}">
-        <b>${esc(e.title)}</b>
+        <b>${esc(e.title)}${e.translated ? ' <span class="tag">🇩🇪 übersetzt</span>' : ""}</b>
         <small>${esc(e.pod.name)} · ${e.date ? fmtShort(e.date) : ""}${e.duration ? ` · ${fmtDur(e.duration)} (${fmtDur(e.duration / state.speed)} bei ${state.speed}×)` : ""}${l?.done ? " · ✓ gehört" : ""}${marks ? ` · 📍${marks}` : ""}</small>
         ${pct && !l?.done ? `<span class="pbar"><i style="width:${pct}%"></i></span>` : ""}
       </button>
@@ -1226,6 +1236,8 @@ function openEpisode(id) {
     <p class="hint">${e.date ? fmtShort(e.date) : ""}${e.duration ? ` · ${fmtDur(e.duration)}` : ""}${l?.pos ? ` · bei ${fmtTime(l.pos)}` : ""}</p>
     <p><button class="btn primary block" data-act="ep-play" data-id="${esc(id)}">▶ ${l?.pos && !l.done ? "Weiterhören" : "Abspielen"}</button></p>
     ${e.desc ? `<p>${esc(e.desc)}</p>` : ""}
+    ${e.translated ? `<details class="orig"><summary>Original (Englisch)</summary><p><b>${esc(e.orig_title)}</b></p><p>${esc(e.orig_desc || "")}</p></details>
+      <p class="hint">Die Folge selbst ist auf Englisch. Übersetzt sind Titel und Beschreibung.</p>` : ""}
     ${marks.length ? `<div class="section-title">Deine Merker</div>${marks.map(entryCard).join("")}` : ""}
     <div class="btn-row">
       <button class="btn small" data-act="ep-done" data-id="${esc(id)}">${l?.done ? "Als ungehört markieren" : "✓ Als gehört markieren"}</button>

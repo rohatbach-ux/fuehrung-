@@ -96,7 +96,7 @@ for (const src of sources) {
     const feed = parseFeed(await get(r.feed, "application/rss+xml, application/xml, text/xml"), src);
     if (!feed.episodes.length) throw new Error("Feed ohne Folgen");
     out.podcasts.push({
-      id: src.id, name: src.name, short: src.short || src.name, category: src.category,
+      id: src.id, name: src.name, short: src.short || src.name, category: src.category, lang: src.lang || "de",
       author: feed.author || r.author || "", image: feed.image || r.image || "", link: feed.link || r.apple || "", feed: r.feed,
       episodes: feed.episodes,
     });

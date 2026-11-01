@@ -46,7 +46,8 @@
       "match": "ideacast",
       "category": "entdecken",
       "country": "us",
-      "max": 15
+      "max": 15,
+      "lang": "en"
     }
   ]
 }
