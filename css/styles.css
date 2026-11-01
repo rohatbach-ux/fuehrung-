@@ -252,3 +252,5 @@ code { font-size: 12px; }
 .series-row b { color: var(--accent); margin-right: 4px; }
 .series-row.cur { font-weight: 600; }
 .own-card .q { margin: 0 0 4px; }
+.sheet .sheet-head .back { font-size: 28px; line-height: 1; padding: 0 8px 2px 0; color: var(--accent); }
+.sheet .sheet-head h2 { flex: 1; }

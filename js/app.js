@@ -809,7 +809,7 @@ function replacePost(id) {
   catch (e) { toast("Ergebnis nicht lesbar – bitte die ganze Antwort kopieren"); return; }
   Object.assign(p, data, { updated: Date.now() });
   save(); closeSheet(); render(); toast("Aktualisiert");
-  openStory("post", id);
+  refreshSheet();
 }
 function openNewPost(linkId) {
   pendingImages = [];
@@ -850,7 +850,7 @@ async function savePost(linkId) {
   openStory("post", id);
 }
 
-async function openStory(t, id) {
+async function openStory(t, id, replace) {
   const x = feedItem(t, id);
   if (!x) return;
   state.read[`${t}:${id}`] = Date.now(); save();
@@ -859,7 +859,7 @@ async function openStory(t, id) {
   let imgs = [];
   if (t === "post" && x.images) { try { imgs = (await idb.get(id)) || []; } catch (e) { imgs = []; } }
   const urls = imgs.map((b) => URL.createObjectURL(b));
-  const slides = [
+  const makeSlides = () => [
     `<div class="slide cover">
        <div class="tags"><span class="tag ${kindClass(t, x)}">${kindLabel(t, x)}</span>${seriesTag(x)}${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}</div>
        <h2>${esc(x.titel)}</h2>
@@ -887,15 +887,22 @@ async function openStory(t, id) {
       ${t === "post" ? `<div class="btn-row"><button class="btn small" data-act="post-replace" data-id="${esc(id)}">↻ Neues Ergebnis einfügen</button><button class="btn small danger" data-act="post-del" data-id="${esc(id)}">Post entfernen</button></div>` : ""}
     </div>`,
   ].filter(Boolean);
-  showSheet(kindLabel(t, x), () => `
+  showSheet(kindLabel(t, x), () => {
+    const slides = makeSlides();
+    return `
     <div class="slides" id="slides">${slides.join("")}</div>
-    <div class="dots" id="dots">${slides.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div>
-  `);
-  const el = $("#slides");
-  el.addEventListener("scroll", () => {
-    const i = Math.round(el.scrollLeft / el.clientWidth);
-    document.querySelectorAll("#dots i").forEach((d, j) => d.classList.toggle("on", i === j));
-  }, { passive: true });
+    <div class="dots" id="dots">${slides.map((_, i) => `<i class="${i ? "" : "on"}"></i>`).join("")}</div>`;
+  }, {
+    replace,
+    onShow: (d) => {
+      const el = $("#slides", d);
+      if (!el) return;
+      el.addEventListener("scroll", () => {
+        const i = slideIndex(el);
+        d.querySelectorAll("#dots i").forEach((dot, j) => dot.classList.toggle("on", i === j));
+      }, { passive: true });
+    },
+  });
   if (ui.tab === "inbox" || ui.tab === "heute") render();
 }
 async function deletePost(id) {
@@ -1244,15 +1251,17 @@ function openCopilot(ref) {
       <button class="btn" data-act="cp-share">Teilen …</button>
     </div>
     <p class="hint">Die Anfrage enthält nur, was du in der Vorschau siehst.</p>
-  `);
-  const sheet = $("#sheet");
-  const upd = () => {
-    $("#cp-preview", sheet).value = buildPrompt(ref, sheet.querySelector("[name=deepen]:checked").value, $("#cp-thoughts", sheet).value.trim(), $("#cp-ctx", sheet)?.checked);
-  };
-  sheet.querySelectorAll("[name=deepen], #cp-ctx").forEach((x) => x.addEventListener("change", upd));
-  $("#cp-thoughts", sheet).addEventListener("input", upd);
-  upd();
-  openCopilot.ref = ref;
+  `, {
+    onShow: (sheet) => {
+      const upd = () => {
+        $("#cp-preview", sheet).value = buildPrompt(ref, sheet.querySelector("[name=deepen]:checked").value, $("#cp-thoughts", sheet).value.trim(), $("#cp-ctx", sheet)?.checked);
+      };
+      sheet.querySelectorAll("[name=deepen], #cp-ctx").forEach((x) => x.addEventListener("change", upd));
+      $("#cp-thoughts", sheet).addEventListener("input", upd);
+      upd();
+      openCopilot.ref = ref;
+    },
+  });
 }
 async function copilotSend(share) {
   const sheet = $("#sheet");
@@ -1562,39 +1571,82 @@ async function exportBackup() {
 }
 
 // ---------- Sheet ----------
+function slideIndex(el) {
+  if (!el || !el.children.length) return 0;
+  const x = el.scrollLeft;
+  let best = 0, dist = Infinity;
+  [...el.children].forEach((c, i) => { const dd = Math.abs(c.offsetLeft - el.children[0].offsetLeft - x); if (dd < dist) { dist = dd; best = i; } });
+  return best;
+}
+function goToSlide(el, i) {
+  const c = el?.children[i];
+  if (!c) return;
+  el.scrollLeft = c.offsetLeft - el.children[0].offsetLeft;
+  el.dispatchEvent(new Event("scroll"));
+}
+// Fensterstapel: Ein Unterfenster (Notiz, Experiment, Copilot, Karte …) legt sich über das offene Fenster.
+// Schließen oder Speichern führt zurück zum vorigen Fenster – mit Scrollposition, Folie und offenen Abschnitten.
 let sheetView = null;
-function showSheet(title, view) {
+const sheetStack = [];
+function paintSheet(entry) {
   const d = $("#sheet");
-  sheetView = { title, view };
-  d.innerHTML = `<div class="sheet-head"><h2>${esc(title)}</h2><button class="icon-btn" data-act="sheet-close" aria-label="Schließen">✕</button></div><div class="sheet-body">${view()}</div>`;
+  const back = sheetStack.length > 0;
+  d.innerHTML = `<div class="sheet-head">${back ? `<button class="icon-btn back" data-act="sheet-close" aria-label="Zurück">‹</button>` : ""}<h2>${esc(entry.title)}</h2><button class="icon-btn" data-act="sheet-close-all" aria-label="Schließen">✕</button></div><div class="sheet-body">${entry.view()}</div>`;
   if (!d.open) d.showModal();
+  entry.onShow?.(d);
+}
+function showSheet(title, view, opts = {}) {
+  const d = $("#sheet");
+  if (!d.open) sheetStack.length = 0;
+  else if (sheetView && !opts.replace) {
+    sheetStack.push({ ...sheetView, scrollTop: d.scrollTop, open: [...d.querySelectorAll("details")].map((x) => x.open), slide: slideIndex($("#slides", d)) });
+  }
+  sheetView = { title, view, onShow: opts.onShow };
+  paintSheet(sheetView);
   d.scrollTop = 0;
 }
 function refreshSheet() {
   const d = $("#sheet");
   if (!d.open || !sheetView) return;
   const top = d.scrollTop;
-  // offene <details> merken
   const open = [...d.querySelectorAll("details")].map((x) => x.open);
+  const slide = slideIndex($("#slides", d));
   $(".sheet-body", d).innerHTML = sheetView.view();
   d.querySelectorAll("details").forEach((x, i) => (x.open = !!open[i]));
+  sheetView.onShow?.(d);
+  goToSlide($("#slides", d), slide);
   d.scrollTop = top;
 }
-function closeSheet() { const d = $("#sheet"); if (d.open) d.close(); sheetView = null; }
+function closeSheet(all) {
+  const d = $("#sheet");
+  if (!all && d.open && sheetStack.length) {
+    const prev = sheetStack.pop();
+    sheetView = { title: prev.title, view: prev.view, onShow: prev.onShow };
+    paintSheet(sheetView);
+    d.querySelectorAll("details").forEach((x, i) => (x.open = !!prev.open[i]));
+    goToSlide($("#slides", d), prev.slide);
+    d.scrollTop = prev.scrollTop;
+    return;
+  }
+  sheetStack.length = 0;
+  if (d.open) d.close();
+  sheetView = null;
+}
 
 // ---------- Ereignisse ----------
 document.addEventListener("click", async (ev) => {
   const sheet = $("#sheet");
-  if (ev.target === sheet) { closeSheet(); return; }
+  if (ev.target === sheet) { closeSheet(true); render(); return; }
   const el = ev.target.closest("[data-act], .tabbar button[data-tab]");
   if (!el) return;
   if (el.dataset.tab && !el.dataset.act) { ui.tab = el.dataset.tab; render(); window.scrollTo(0, 0); return; }
   const id = el.dataset.id;
   const inSheet = sheet.contains(el);
   switch (el.dataset.act) {
-    case "tab": closeSheet(); ui.tab = el.dataset.tab; render(); window.scrollTo(0, 0); break;
+    case "tab": closeSheet(true); ui.tab = el.dataset.tab; render(); window.scrollTo(0, 0); break;
     case "settings": openSettings(); break;
     case "sheet-close": closeSheet(); render(); break;
+    case "sheet-close-all": closeSheet(true); render(); break;
     case "more-imp": moreImpulses(); break;
     case "star":
       if (state.starred[id]) delete state.starred[id]; else { state.starred[id] = Date.now(); toast("Gemerkt – unter Lernen → Gemerkt"); }
@@ -1645,7 +1697,7 @@ document.addEventListener("click", async (ev) => {
     case "card-rate": rateCard(el.dataset.ok === "1"); break;
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
     case "feed-filter": ui.feed = el.dataset.k; render(); break;
-    case "story": openStory(el.dataset.t, id); break;
+    case "story": openStory(el.dataset.t, id, inSheet); break;
     case "post-new": openNewPost(el.dataset.link || ""); break;
     case "post-save": savePost(el.dataset.link || ""); break;
     case "post-del": deletePost(id); break;
@@ -1708,7 +1760,7 @@ document.addEventListener("click", async (ev) => {
       break;
     case "pod-filter": ui.pod = el.dataset.k; render(); break;
     case "pod-reload": podData = null; render(); await loadPodcasts(true); toast("Liste aktualisiert"); break;
-    case "ep-play": playEpisode(id); if (inSheet) closeSheet(); break;
+    case "ep-play": playEpisode(id); if (inSheet) closeSheet(true); break;
     case "ep-open": openEpisode(id); break;
     case "ep-done": {
       const l = (state.listen[id] ||= {});
@@ -1716,7 +1768,7 @@ document.addEventListener("click", async (ev) => {
     }
     case "merker-play": {
       const j = state.journal.find((x) => x.id === id);
-      if (j?.ref) { closeSheet(); playEpisode(j.ref.id, Math.max(0, (j.ref.time || 0) - 10)); }
+      if (j?.ref) { closeSheet(true); playEpisode(j.ref.id, Math.max(0, (j.ref.time || 0) - 10)); }
       break;
     }
     case "pl-toggle": if (audio.src) { audio.paused ? audio.play() : audio.pause(); } else playEpisode(state.current); break;
@@ -1730,7 +1782,7 @@ document.addEventListener("click", async (ev) => {
     case "backup-export": exportBackup(); break;
   }
 });
-$("#sheet").addEventListener("close", () => { sheetView = null; });
+$("#sheet").addEventListener("close", () => { sheetView = null; sheetStack.length = 0; });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && e.target.id === "in-url") { e.preventDefault(); $("[data-act='inbox-add']").click(); }
 });
