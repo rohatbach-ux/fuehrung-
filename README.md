@@ -16,6 +16,12 @@ Jeder Impuls, Beitrag, Merker und Eintrag hat dieselben Aktionen: ☆ Merken · 
 
 **📤 Copilot:** Hauptweg ist „📧 An Diensthandy mailen“ an die in ⚙️ hinterlegte dienstliche Adresse (nur lokal gespeichert). Die App baut eine fertige Anfrage (Rolle, Ziele, Phase, Impuls, deine Gedanken, gewählte Vertiefungsart) und gibt sie über das iOS-Teilen-Menü weiter oder kopiert sie. Die Vertiefung im konkreten DB-Kontext passiert damit in Copilot, innerhalb der Unternehmensrichtlinien.
 
+## Festigen und Copilot
+
+- **🃏 Eigene Lernkarten:** Im Journal macht 🃏 aus einer Notiz eine Lernkarte (Vorder-/Rückseite, Modul). Sie läuft mit den übrigen Karten in der Wiederholung; verwalten unter *Lernen → Lernkarten*.
+- **📦 Wochenpaket:** Im Journal (oder nach dem Wochenrückblick) bündelt die App alle Einträge der letzten 7 Tage – Rückblick, Notizen, WHY-Bausteine, Merker, Experimente, Gelesenes, Gemerktes, neue Karten – zu einer Mail ans Diensthandy.
+- **Copilot-Notizbuch:** Einzelanfragen und Wochenpakete werden im Copilot-Notizbuch „Rohat Führung Notizbuch“ eingefügt. Die feste Anweisung dafür steht unter ⚙️ → *Copilot-Notizbuch* (Text in `js/content.js`, `COPILOT_NOTEBOOK_PROMPT`).
+
 ## Datenschutz
 
 - Das Repo ist **öffentlich**. Es enthält deshalb nur allgemeine Inhalte, keine Interna, Namen oder Organigramme.

@@ -251,3 +251,4 @@ code { font-size: 12px; }
 .series-row:last-of-type { border-bottom: 0; }
 .series-row b { color: var(--accent); margin-right: 4px; }
 .series-row.cur { font-weight: 600; }
+.own-card .q { margin: 0 0 4px; }

@@ -1,5 +1,5 @@
 import {
-  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT,
+  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT, NOTEBOOK_NAME, COPILOT_NOTEBOOK_PROMPT,
 } from "./content.js";
 import { md } from "./md.js";
 
@@ -15,6 +15,7 @@ function defaultState() {
     context: "",
     workMail: "",       // dienstliche Adresse für Copilot-Mails
     plain: false,       // Corporate-Stil: Emojis in aufbereiteten Texten ausblenden
+    ownCards: [],       // eigene Lernkarten aus Notizen { id, q, a, mod, from, ts }
     daily: null,        // { date, ids: [] }
     seen: {},           // impulsId -> Datum zuletzt gezeigt
     down: {},           // impulsId -> true (nicht relevant)
@@ -342,8 +343,13 @@ function renderLernen() {
         </div>
         <p><button class="btn primary block" data-act="practice" ${due.length ? "" : "disabled"}>Fällige Karten üben</button></p>
         <button class="btn block" data-act="practice" data-mix="1">Zehn zufällige Karten</button>
+        ${(state.ownCards || []).length ? `<p><button class="btn block" data-act="practice" data-own="1">🃏 Eigene Karten üben (${state.ownCards.length})</button></p>` : ""}
         <p class="hint">Wiederholung in wachsenden Abständen (1, 2, 4, 8, 16, 32 Tage). Pro Tag kommen bis zu fünf neue Karten dazu.</p>
       </div>
+      ${(state.ownCards || []).length ? `<div class="section-title">Eigene Karten</div>${state.ownCards.map((c) => `
+        <div class="card own-card"><p class="q"><b>${esc(c.q)}</b></p><p class="hint">${esc(c.a)}</p>
+          <div class="acts"><button data-act="card-edit" data-id="${c.id}">✏️<span>Bearbeiten</span></button><button data-act="card-del" data-id="${c.id}">🗑<span>Entfernen</span></button></div></div>`).join("")}
+        <div class="section-title">Nach Modul</div>` : `<p class="hint">Eigene Karten legst du im Journal an: bei einer Notiz auf 🃏 tippen.</p>`}
       ${MODULES.map((m) => {
         const cs = allCards().filter((c) => c.mod === m.id);
         const ok = cs.filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
@@ -412,9 +418,10 @@ function dueCards() {
   const fresh = allCards().filter((c) => !state.cards[c.id]).slice(0, Math.max(0, 5 - usedNew));
   return [...scheduled, ...fresh];
 }
-function practice({ mod, mix } = {}) {
+function practice({ mod, mix, own } = {}) {
   let deck;
-  if (mod) deck = allCards().filter((c) => c.mod === mod);
+  if (own) deck = ownCards();
+  else if (mod) deck = allCards().filter((c) => c.mod === mod);
   else if (mix) deck = [...allCards()].sort(() => Math.random() - 0.5).slice(0, 10);
   else deck = dueCards();
   if (!deck.length) { toast("Heute ist nichts fällig 👍"); return; }
@@ -664,7 +671,8 @@ function feedCards() {
   for (const x of rxData?.items || []) (x.karten || []).forEach((k, i) => out.push({ id: `rx-${x.id}-k${i}`, mod: x.modul, q: k.frage, a: k.antwort, src: `Recherche: ${x.titel}` }));
   return out.filter((c) => c.q && c.a);
 }
-function allCards() { return [...CARDS, ...feedCards()]; }
+const ownCards = () => (state.ownCards || []).map((c) => ({ id: `own-${c.id}`, mod: c.mod, q: c.q, a: c.a, src: "Eigene Karte" }));
+function allCards() { return [...CARDS, ...feedCards(), ...ownCards()]; }
 
 function feedCard(x) {
   const m = moduleById(x.modul);
@@ -1017,6 +1025,7 @@ function openWeekly() {
   showSheet("Wochenrückblick", () => `
     ${WEEKLY_REVIEW.map((q, i) => `<p class="hint">${esc(q)}</p><textarea id="wr-${i}" rows="2"></textarea>`).join("")}
     <p><button class="btn primary block" data-act="weekly-save">Speichern</button></p>
+    <p><button class="btn block" data-act="weekly-save" data-packet="1">Speichern & Wochenpaket an Copilot</button></p>
   `);
 }
 function saveWeekly() {
@@ -1025,9 +1034,10 @@ function saveWeekly() {
     const a = $(`#wr-${i}`, sheet).value.trim();
     return a ? `${q}\n→ ${a}` : "";
   }).filter(Boolean).join("\n\n");
-  if (!text) { toast("Mindestens eine Frage beantworten"); return; }
+  if (!text) { toast("Mindestens eine Frage beantworten"); return false; }
   state.journal.unshift({ id: uid(), ts: Date.now(), kind: "reflexion", text, ref: null });
   save(); closeSheet(); render(); toast("Wochenrückblick gespeichert");
+  return true;
 }
 
 function renderJournal() {
@@ -1049,6 +1059,7 @@ function renderJournal() {
       <button class="btn" data-act="note-new">✍️ Neue Notiz</button>
       ${ui.journal === "notizen" ? `<button class="btn" data-act="weekly">📓 Wochenrückblick</button>` : ""}
     </div>
+    <button class="btn block" data-act="week-packet">📦 Wochenpaket an Copilot</button>
     ${ui.journal === "why" ? `<p class="hint">Sammle Stolz-Geschichten, Formulierungen und Beobachtungen. Daraus entsteht mit dem Team euer WHY.</p>` : ""}
     ${list.length ? list.map(entryCard).join("") : `<div class="empty">Noch keine Einträge.</div>`}`;
 }
@@ -1064,10 +1075,116 @@ function entryCard(j) {
         ${isEp ? `<button data-act="merker-play" data-id="${j.id}">▶<span>Ab hier hören</span></button>` : ""}
         ${j.kind !== "copilot" ? `<button data-act="note-edit" data-id="${j.id}">✏️<span>Bearbeiten</span></button>` : ""}
         ${j.kind !== "copilot" ? `<button data-act="copilot" ${refAttrs({ t: "entry", id: j.id })}>📤<span>Copilot</span></button>` : ""}
-        ${j.kind !== "copilot" ? `<button data-act="exp-new" ${refAttrs({ t: "entry", id: j.id })}>🧪<span>Ausprobieren</span></button>` : ""}
+        ${j.kind !== "copilot" ? `<button data-act="exp-new" ${refAttrs({ t: "entry", id: j.id })}>🧪<span>Testen</span></button>` : ""}
+        ${j.kind !== "copilot" ? `<button data-act="card-from-entry" data-id="${j.id}">🃏<span>Karte</span></button>` : ""}
         <button data-act="note-del" data-id="${j.id}">🗑<span>Entfernen</span></button>
       </div>
     </div>`;
+}
+
+// ----- Eigene Lernkarten -----
+function openCardEditor({ entryId, cardId }) {
+  const card = cardId && (state.ownCards || []).find((c) => c.id === cardId);
+  const entry = entryId && state.journal.find((j) => j.id === entryId);
+  const info = entry ? refInfo(entry.ref) : null;
+  let mod = card?.mod || "";
+  if (!mod && entry?.ref?.t === "imp") mod = impulseById(entry.ref.id)?.mod || "";
+  if (!mod && entry?.ref && (entry.ref.t === "post" || entry.ref.t === "rx")) mod = feedItem(entry.ref.t, entry.ref.id)?.modul || "";
+  if (!mod && entry?.kind === "why") mod = "why";
+  const q = card?.q || (info ? `Was ist meine wichtigste Erkenntnis zu „${info.label}“?` : "");
+  const a = card?.a || entry?.text || "";
+  showSheet(card ? "Karte bearbeiten" : "🃏 Eigene Lernkarte", () => `
+    ${info ? `<div class="banner small">${esc(info.label)}</div>` : ""}
+    <p class="hint">Vorderseite – die Frage, die du dir stellen willst</p>
+    <textarea id="oc-q" rows="2">${esc(q)}</textarea>
+    <p class="hint">Rückseite – deine Antwort in eigenen Worten (kurz halten)</p>
+    <textarea id="oc-a" rows="4">${esc(a)}</textarea>
+    <p class="hint">Modul</p>
+    <select id="oc-mod"><option value="">– ohne –</option>${MODULES.map((m) => `<option value="${m.id}" ${mod === m.id ? "selected" : ""}>${m.icon} ${esc(m.title)}</option>`).join("")}</select>
+    <p><button class="btn primary block" data-act="card-save" data-card="${esc(card?.id || "")}" data-entry="${esc(entryId || "")}">Speichern</button></p>
+    <p class="hint">Die Karte kommt in deinen Stapel und wird in wachsenden Abständen wiederholt.</p>
+  `);
+}
+function saveOwnCard(cardId, entryId) {
+  const sheet = $("#sheet");
+  const q = $("#oc-q", sheet).value.trim(), a = $("#oc-a", sheet).value.trim(), mod = $("#oc-mod", sheet).value;
+  if (!q || !a) { toast("Bitte Vorder- und Rückseite ausfüllen"); return; }
+  state.ownCards ||= [];
+  const c = cardId && state.ownCards.find((x) => x.id === cardId);
+  if (c) Object.assign(c, { q, a, mod });
+  else state.ownCards.unshift({ id: uid(), q, a, mod, from: entryId || null, ts: Date.now() });
+  save(); closeSheet(); render(); toast(c ? "Karte aktualisiert" : "Karte im Stapel ✓");
+}
+
+// ----- Wochenpaket an Copilot -----
+function isoWeek(d) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const day = t.getUTCDay() || 7;
+  t.setUTCDate(t.getUTCDate() + 4 - day);
+  const y = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  return Math.ceil(((t - y) / 864e5 + 1) / 7);
+}
+function buildWeekPacket() {
+  const since = Date.now() - 7 * 864e5;
+  const kw = isoWeek(new Date());
+  const ph = currentPhase();
+  const recent = state.journal.filter((j) => j.ts >= since && j.kind !== "copilot");
+  const by = (k) => recent.filter((j) => j.kind === k);
+  const line = (j) => {
+    const info = refInfo(j.ref);
+    const where = info ? ` (zu: ${info.label}${j.ref?.t === "ep" && j.ref.time != null ? `, bei ${fmtTime(j.ref.time)}` : ""})` : "";
+    return `- ${fmtShort(j.ts)}${where}: ${j.text.replace(/\n+/g, " / ")}`;
+  };
+  const exps = state.experiments.filter((e) => e.status === "aktiv" || (e.review && parseIso(e.start).getTime() >= since - 21 * 864e5));
+  const read = feedItems().filter((x) => (state.read[`${x.t}:${x.id}`] || 0) >= since);
+  const starred = Object.entries(state.starred).filter(([, ts]) => ts >= since).map(([id]) => impulseById(id)).filter(Boolean);
+  const cardsNew = (state.ownCards || []).filter((c) => c.ts >= since);
+  const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
+  const parts = [
+    `# Wochenpaket KW ${kw} – Führungskompass`,
+    `Bitte im Notizbuch „${NOTEBOOK_NAME}“ nach der festen Struktur für Wochenpakete auswerten. Kontext: ${ROLE}, Antritt ${fmtD(state.roleStart)}, aktuelle Phase „${ph.name}“. Ziele: ${GOALS}.`,
+    sec("Wochenrückblick", by("reflexion").map((j) => j.text)),
+    sec("Notizen", by("notiz").map(line)),
+    sec("WHY-Bausteine", by("why").map(line)),
+    sec("Podcast-Merker", by("merker").map(line)),
+    sec("Experimente", exps.map((e) => `- ${e.title} – ${e.status === "aktiv" ? `läuft bis ${fmtD(e.due)}` : `abgeschlossen, Entscheidung: ${e.review?.weiter}`}${e.plan ? `; Erfolgskriterium: ${e.plan}` : ""}${e.review ? `; Ergebnis: ${e.review.passiert}; gelernt: ${e.review.gelernt}` : ""}`)),
+    sec("Gelesen in Entdecken", read.map((x) => `- ${x.titel}: ${String(x.kernaussage || "").replace(/\*\*/g, "")}`)),
+    sec("Gemerkte Impulse", starred.map((x) => `- ${x.title}: ${x.text}`)),
+    sec("Neue eigene Lernkarten", cardsNew.map((c) => `- ${c.q} → ${c.a}`)),
+  ].filter(Boolean);
+  return { kw, text: parts.join("\n\n"), empty: parts.length <= 2 };
+}
+function openWeekPacket() {
+  const p = buildWeekPacket();
+  showSheet(`📦 Wochenpaket KW ${p.kw}`, () => `
+    ${p.empty ? `<div class="note">In den letzten 7 Tagen gibt es noch keine Notizen, Merker oder Experimente. Das Paket wäre fast leer.</div>` : ""}
+    <p class="hint">Enthält alles aus den letzten 7 Tagen: Wochenrückblick, Notizen, WHY-Bausteine, Podcast-Merker, Experimente, Gelesenes, Gemerktes und neue eigene Karten. Du kannst den Text vor dem Senden anpassen.</p>
+    <textarea id="wp-text" rows="12">${esc(p.text)}</textarea>
+    ${state.workMail ? `<button class="btn primary block" data-act="wp-mail">📧 An Diensthandy mailen</button>`
+      : `<button class="btn primary block" data-act="settings">📧 Dienstliche E-Mail hinterlegen</button>`}
+    <div class="btn-row"><button class="btn" data-act="wp-copy">Kopieren</button><button class="btn" data-act="wp-share">Teilen …</button></div>
+    <p class="hint">Auf dem Diensthandy im Copilot-Notizbuch „${esc(NOTEBOOK_NAME)}“ einfügen. Die Notizbuch-Anweisung findest du unter ⚙️.</p>
+  `);
+  openWeekPacket.kw = p.kw;
+}
+async function weekPacketSend(mode) {
+  const text = $("#wp-text").value;
+  const subject = `Führungskompass – Wochenpaket KW ${openWeekPacket.kw}`;
+  let ok = false;
+  if (mode === "mail") {
+    const url = `mailto:${encodeURIComponent(state.workMail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    if (url.length > 16000) { toast("Paket sehr lang – wird kopiert, bitte in die Mail einfügen"); mode = "copy"; }
+    else { location.href = url; ok = true; }
+  }
+  if (!ok && mode === "share" && navigator.share) {
+    try { await navigator.share({ title: subject, text }); ok = true; } catch (e) { if (e.name === "AbortError") return; }
+  }
+  if (!ok) {
+    try { await navigator.clipboard.writeText(text); ok = true; toast("Kopiert – im Notizbuch einfügen"); }
+    catch (e) { $("#wp-text").select(); toast("Text markiert – bitte kopieren"); return; }
+  }
+  state.journal.unshift({ id: uid(), ts: Date.now(), kind: "copilot", text: `Wochenpaket KW ${openWeekPacket.kw}`, ref: null });
+  save(); closeSheet(); render();
 }
 
 // ----- Copilot-Brücke -----
@@ -1119,7 +1236,7 @@ function openCopilot(ref) {
     <textarea id="cp-preview" rows="9" readonly></textarea>
     ${state.workMail
       ? `<button class="btn primary block" data-act="cp-mail">📧 An Diensthandy mailen</button>
-         <p class="hint">Geht an ${esc(state.workMail)}. Auf dem Diensthandy: Mail öffnen → Text lange drücken → „Alles auswählen“ → Kopieren → in Copilot einfügen.</p>`
+         <p class="hint">Geht an ${esc(state.workMail)}. Auf dem Diensthandy: Mail öffnen → Text lange drücken → „Alles auswählen“ → Kopieren → in Copilot im Notizbuch „${esc(NOTEBOOK_NAME)}“ einfügen.</p>`
       : `<button class="btn primary block" data-act="settings">📧 Dienstliche E-Mail hinterlegen</button>
          <p class="hint">Einmal in den Einstellungen eintragen, dann geht die Anfrage per Mail an dein Diensthandy.</p>`}
     <div class="btn-row">
@@ -1379,6 +1496,17 @@ function openSettings() {
     <input type="email" id="st-mail" value="${esc(state.workMail)}" placeholder="vorname.nachname@…" autocomplete="email" inputmode="email">
     <p><button class="btn primary block" data-act="set-save">Speichern</button></p>
 
+    <div class="section-title">Copilot-Notizbuch</div>
+    <p class="hint">Damit Copilot deine Anfragen und Wochenpakete im Zusammenhang auswertet, bekommt dein Notizbuch „${esc(NOTEBOOK_NAME)}“ eine feste Anweisung.</p>
+    <ol class="steps">
+      <li>Hier <b>„Anweisung kopieren“</b> tippen und per Mail ans Diensthandy schicken oder dort einfügen.</li>
+      <li>Copilot → <b>Notebooks</b> → <i>${esc(NOTEBOOK_NAME)}</i> öffnen.</li>
+      <li>Gibt es dort ein Feld für <b>Anweisungen</b>, den Text dort einfügen. Sonst als <b>erste Seite</b> bzw. erste Nachricht ablegen mit dem Satz „Bitte bei allen weiteren Anfragen in diesem Notizbuch beachten“.</li>
+      <li>Ab dann Einzelanfragen (📤) und Wochenpakete (📦) immer <b>in diesem Notizbuch</b> einfügen.</li>
+    </ol>
+    <div class="btn-row"><button class="btn" data-act="nb-copy">📋 Anweisung kopieren</button></div>
+    <details class="card model"><summary><b>Anweisung ansehen</b></summary><pre class="pre">${esc(COPILOT_NOTEBOOK_PROMPT)}</pre></details>
+
     <div class="section-title">Sicherung</div>
     <p class="hint">Alle Daten liegen nur auf diesem Gerät. Exportiere regelmäßig eine Sicherung (z. B. in iCloud Drive).</p>
     <div class="btn-row">
@@ -1492,10 +1620,24 @@ document.addEventListener("click", async (ev) => {
     case "cp-share": copilotSend(true); break;
     case "cp-copy": copilotSend(false); break;
     case "weekly": openWeekly(); break;
-    case "weekly-save": saveWeekly(); break;
+    case "weekly-save": if (saveWeekly() && el.dataset.packet) openWeekPacket(); break;
     case "open-module": openModule(id); break;
     case "lern-sub": ui.lern = el.dataset.k; render(); break;
-    case "practice": practice({ mod: el.dataset.mod, mix: el.dataset.mix }); break;
+    case "practice": practice({ mod: el.dataset.mod, mix: el.dataset.mix, own: el.dataset.own }); break;
+    case "card-from-entry": openCardEditor({ entryId: id }); break;
+    case "card-edit": openCardEditor({ cardId: id }); break;
+    case "card-save": saveOwnCard(el.dataset.card || "", el.dataset.entry || ""); break;
+    case "card-del":
+      if (confirm("Eigene Karte wirklich entfernen?")) { state.ownCards = state.ownCards.filter((c) => c.id !== id); delete state.cards[`own-${id}`]; save(); render(); }
+      break;
+    case "week-packet": openWeekPacket(); break;
+    case "wp-mail": weekPacketSend("mail"); break;
+    case "wp-copy": weekPacketSend("copy"); break;
+    case "wp-share": weekPacketSend("share"); break;
+    case "nb-copy":
+      try { await navigator.clipboard.writeText(COPILOT_NOTEBOOK_PROMPT); toast("Anweisung kopiert ✓"); }
+      catch (e) { toast("Kopieren nicht möglich – Text unter „Anweisung ansehen“ markieren"); }
+      break;
     case "card-show": practice.session.shown = true; refreshSheet(); break;
     case "card-rate": rateCard(el.dataset.ok === "1"); break;
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
