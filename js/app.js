@@ -1142,7 +1142,7 @@ function buildWeekPacket() {
   const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
   const parts = [
     `# Wochenpaket KW ${kw} – Führungskompass`,
-    `Bitte im Notizbuch „${NOTEBOOK_NAME}“ nach der festen Struktur für Wochenpakete auswerten. Kontext: ${ROLE}, Antritt ${fmtD(state.roleStart)}, aktuelle Phase „${ph.name}“. Ziele: ${GOALS}.`,
+    `Bitte nach der festen Struktur für Wochenpakete auswerten (siehe Notizbuch-Anweisung). Aktuelle Phase: „${ph.name}“${roleDay() >= 1 ? `, Tag ${roleDay()} im Amt` : `, Antritt am ${fmtD(state.roleStart)}`}.`,
     sec("Wochenrückblick", by("reflexion").map((j) => j.text)),
     sec("Notizen", by("notiz").map(line)),
     sec("WHY-Bausteine", by("why").map(line)),
@@ -1207,7 +1207,7 @@ function buildPrompt(ref, deepenId, thoughts, withContext) {
   const ph = currentPhase();
   const blocks = [
     [
-      `Kontext: ${started ? `Ich bin seit dem ${fmtD(state.roleStart)}` : `Ich werde ab dem ${fmtD(state.roleStart)}`} ${ROLE}. Meine Ziele: ${GOALS}. Aktuell bin ich in der Phase „${ph.name}“ (${ph.fokus})`,
+      `Kontext: Anfrage aus dem Führungskompass für mein Notizbuch „${NOTEBOOK_NAME}“ (Rolle und Ziele siehe Notizbuch-Anweisung). Aktuelle Phase: „${ph.name}“${started ? `, Tag ${roleDay()} im Amt` : `, Antritt am ${fmtD(state.roleStart)}`}.`,
       withContext && state.context.trim() ? `Weiterer Kontext: ${state.context.trim()}` : "",
     ],
     [
@@ -1497,11 +1497,11 @@ function openSettings() {
     <p><button class="btn primary block" data-act="set-save">Speichern</button></p>
 
     <div class="section-title">Copilot-Notizbuch</div>
-    <p class="hint">Damit Copilot deine Anfragen und Wochenpakete im Zusammenhang auswertet, bekommt dein Notizbuch „${esc(NOTEBOOK_NAME)}“ eine feste Anweisung.</p>
+    <p class="hint">Damit Copilot deine Anfragen und Wochenpakete im Zusammenhang auswertet, bekommt dein Notizbuch „${esc(NOTEBOOK_NAME)}“ eine feste Anweisung. Rolle, Ziele und Arbeitsweise stehen dann dort – die Anfragen aus der App bleiben kurz.</p>
     <ol class="steps">
       <li>Hier <b>„An Diensthandy mailen“</b> tippen (dafür oben die dienstliche E-Mail eintragen und speichern) – oder kopieren.</li>
       <li>Copilot → <b>Notebooks</b> → <i>${esc(NOTEBOOK_NAME)}</i> öffnen.</li>
-      <li>Gibt es dort ein Feld für <b>Anweisungen</b>, den Text dort einfügen. Sonst als <b>erste Seite</b> bzw. erste Nachricht ablegen mit dem Satz „Bitte bei allen weiteren Anfragen in diesem Notizbuch beachten“.</li>
+      <li>Den Text in das Feld <b>Anweisungen</b> des Notizbuchs einfügen und speichern.</li>
       <li>Ab dann Einzelanfragen (📤) und Wochenpakete (📦) immer <b>in diesem Notizbuch</b> einfügen.</li>
     </ol>
     <div class="btn-row">${state.workMail ? `<button class="btn primary" data-act="nb-mail">📧 An Diensthandy mailen</button>` : ""}<button class="btn" data-act="nb-copy">📋 Kopieren</button></div>

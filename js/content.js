@@ -596,7 +596,7 @@ Dies ist mein Lern- und Reflexionsraum als künftiger ${ROLE} (Antritt 01.01.202
 Hier darfst du – im Rahmen der DB-Richtlinien – mein dienstliches Wissen und die Unterlagen in diesem Notizbuch einbeziehen.
 
 # Was ich dir schicke
-1. **Einzelanfragen** aus meiner Lern-App „Führungskompass“. Sie beginnen mit „Kontext:“ und enden mit „Auftrag:“ – ein Impuls, den ich vertiefen will.
+1. **Einzelanfragen** aus meiner Lern-App „Führungskompass“. Sie beginnen mit „Kontext:“ (aktuelle Phase), enthalten einen Impuls und meine Gedanken und enden mit „Auftrag:“ – der Art, wie ich vertiefen will. Rolle und Ziele stehen hier in der Anweisung und werden in den Anfragen nicht wiederholt.
 2. **Wochenpakete** mit der Überschrift „Wochenpaket KW …“: meine Notizen, WHY-Bausteine, Experimente, Podcast-Merker und der Wochenrückblick einer Woche.
 
 # Wie du arbeitest
