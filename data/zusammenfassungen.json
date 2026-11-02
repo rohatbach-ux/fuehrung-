@@ -1,7 +1,95 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T14:56:03+00:00",
+ "updated": "2026-11-02T14:58:08+00:00",
  "items": [
+  {
+   "id": "zf-conjectures-refutations",
+   "date": "2026-11-02",
+   "titel": "Conjectures and Refutations",
+   "autoren": "Karl R. Popper",
+   "jahr": 1963,
+   "verlag": "Routledge (Routledge Classics)",
+   "basis": "buch",
+   "drive_h": "88c4a47b7b66",
+   "reihe": "Conjectures and Refutations",
+   "modul": "urteil",
+   "kernthese": "Wissen wächst nicht durch Bestätigung, sondern durch kühne Vermutungen, die wir ernsthaft zu widerlegen versuchen – entscheidend ist nicht, woher eine Idee stammt, sondern ob sie der Kritik standhält.",
+   "kern": {
+    "aussagen": [
+     "Es gibt keine letzten, unfehlbaren Wissensquellen; statt nach der besten Quelle zu fragen, sollten wir fragen, wie wir Fehler finden und beseitigen.",
+     "Bestätigungen findet man für fast jede Theorie, wenn man sie sucht; Gewicht haben nur riskante Vorhersagen, die hätten scheitern können.",
+     "Eine Theorie, die nichts verbietet und durch nichts widerlegbar ist, ist nicht stark, sondern unwissenschaftlich.",
+     "Traditionen sind unverzichtbar, aber nicht heilig – die wichtigste Tradition ist die der Kritik.",
+     "In Politik und Gesellschaft heißt das: konkrete Missstände Schritt für Schritt beseitigen statt Utopien durchsetzen, und unbeabsichtigte Folgen des Handelns ernst nehmen."
+    ],
+    "original": "Das Buch ist eine Aufsatzsammlung von rund 400 Seiten, teils sehr technisch. Im Original lohnen die Einleitung, Kapitel 1 und Kapitel 18; die Kapitel 7 bis 15 sind für Nicht-Philosophen verzichtbar."
+   },
+   "text": "## 🎯 Worum es geht\nDer österreichisch-britische Philosoph **Karl Popper** bündelt Vorträge und Aufsätze aus drei Jahrzehnten zu einem Grundthema: Wir lernen aus unseren Fehlern. Er entwickelt daraus eine Theorie des Wissens, der Vernunft und der offenen Gesellschaft. Das Buch erschien 1963 und gilt als zugänglichste Darstellung seines **kritischen Rationalismus**.\n\n## 🧭 Kapitel für Kapitel\n**Über die Quellen des Wissens und des Unwissens (Einleitung).** Popper verwirft die Suche nach einer unfehlbaren Wissensquelle, sei es die Vernunft oder die Beobachtung. Beide Lager, so sein Befund, machten aus der Wahrheit etwas Offensichtliches – und damit jeden Irrenden verdächtig. Die richtige Frage lautet daher, wie sich Fehler entdecken und beseitigen lassen. Wichtigste Quelle unseres Wissens ist die Überlieferung; sie muss aber jederzeit kritisch prüfbar bleiben. Wissen beginnt nie bei null, sondern verändert früheres Wissen.\n\n**Wissenschaft als Vermutung und Widerlegung (Kapitel 1).** Popper erzählt, wie er 1919 den Unterschied zwischen Einsteins Relativitätstheorie und den Lehren von Marx, Freud und Adler bemerkte. Letztere ließen sich durch jeden Fall bestätigen – gerade das machte sie verdächtig. Einstein dagegen wagte eine Vorhersage, die hätte scheitern können. Daraus folgt das **Abgrenzungskriterium der Falsifizierbarkeit**. Zugleich verwirft Popper die Vorstellung, Wissenschaft schließe von vielen Beobachtungen auf Gesetze: Wir beginnen mit Erwartungen und Theorien, nicht mit nackten Daten.\n\n**Philosophische Probleme und die Sicht auf Theorien (Kapitel 2 und 3).** Echte philosophische Probleme wurzeln in Fragen außerhalb der Philosophie, etwa in der Wissenschaft. Popper unterscheidet drei Sichtweisen auf Theorien: als endgültige Erklärung durch Wesenheiten, als bloßes Rechenwerkzeug und – seine eigene – als Vermutungen über eine wirkliche Welt, die wahr oder falsch sein können.\n\n**Eine rationale Theorie der Tradition (Kapitel 4).** Traditionen schaffen Ordnung und Erwartbarkeit, ohne die Zusammenleben nicht funktioniert. Rational ist nicht ihre Abschaffung, sondern ein kritisches Verhältnis zu ihnen. Die Vorsokratiker begründeten eine Tradition zweiter Ordnung: Schüler durften und sollten ihre Lehrer kritisieren (Kapitel 5).\n\n**Kant, Logik und Wahrheitsnähe (Kapitel 6 bis 10).** Mehrere Aufsätze vertiefen Erkenntnistheorie und Logik. Kapitel 10 führt die **Wahrheitsnähe** ein: Eine Theorie kann der Wahrheit näher sein als eine andere, auch wenn beide falsch sind. Für den Fortschritt nennt Popper drei Anforderungen an eine neue Theorie: eine einfache, verbindende Idee, unabhängige Prüfbarkeit und das Bestehen neuer, strenger Tests.\n\n**Widerlegungen (Kapitel 11 bis 15).** Popper setzt sich mit dem logischen Positivismus um Carnap, dem Leib-Seele-Problem und der Dialektik Hegels und seiner Nachfolger auseinander. Die Dialektik, so sein Einwand, macht Widersprüche zur Tugend und entzieht sich damit jeder Kritik.\n\n**Gesellschaft und Politik (Kapitel 16 bis 20).** Langfristige Prophezeiungen über den Lauf der Geschichte sind unwissenschaftlich. Aufgabe der Sozialwissenschaften ist es, die unbeabsichtigten Folgen absichtsvollen Handelns zu verstehen. Freie Diskussion ist wichtiger als die angeblich weise „öffentliche Meinung“. Utopien führen zu Gewalt, weil sich über letzte Ziele nicht rational streiten lässt. Daher: konkrete Übel bekämpfen statt abstrakte Ideale verwirklichen.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Verschiebung von der Frage nach der Herkunft einer Idee zur Frage nach ihrer Prüfung. Sie macht Kritik zur zentralen Aufgabe – in der Wissenschaft wie in Institutionen – und hat die Wissenschaftstheorie nachhaltig geprägt.\n\n**Am schwächsten** ist die saubere Logik der Widerlegung im Forschungsalltag. Nach Duhem und Quine trifft ein gescheiterter Test immer ein ganzes Bündel von Annahmen, nicht nur die Theorie. Kuhn und Lakatos zeigten, dass Forscher Theorien trotz Widersprüchen oft mit gutem Grund beibehalten. Poppers Definition der Wahrheitsnähe gilt zudem als formal gescheitert, wie die Stanford Encyclopedia of Philosophy festhält.\n\n## 🗣️ Rezeption\nDas Buch gilt als Klassiker der Wissenschaftsphilosophie und wird bis heute in Wissenschaft, Politik und Management zitiert, oft verkürzt auf das Schlagwort der Falsifizierbarkeit. Kritische Rationalisten verteidigen Popper gegen die Einwände mit dem Hinweis, er habe Widerlegungen selbst nie für endgültig gehalten.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n| Begriff | Bedeutung |\n|---|---|\n| **Falsifizierbarkeit** | wissenschaftlich ist, was an Beobachtungen scheitern kann |\n| **Riskante Vorhersage** | eine Prognose, die ohne die Theorie unwahrscheinlich wäre |\n| **Bewährung** | eine Theorie hat ernsthafte Widerlegungsversuche überstanden – mehr nicht |\n| **Immunisierung** | Theorie durch nachträgliche Zusatzannahmen vor Widerlegung retten |\n| **Wahrheitsnähe** | eine falsche Theorie kann der Wahrheit näher sein als eine andere |\n| **Drei Sichten auf Theorien** | Wesenserklärung · Werkzeug · überprüfbare Vermutung |\n| **Tradition zweiter Ordnung** | eine Überlieferung, die Kritik an ihr selbst ausdrücklich vorsieht |\n| **Stückwerk statt Utopie** | konkrete Übel schrittweise beseitigen, statt einen Idealzustand zu erzwingen |\n\n## ✅ Listen und Fragen\n**Sieben Merksätze zur Wissenschaft (Kapitel 1, sinngemäß):**\n1. Bestätigungen gibt es für fast alles, wenn man sie sucht.\n2. Zählen sollten nur Bestätigungen aus riskanten Vorhersagen.\n3. Eine gute Theorie verbietet etwas – je mehr, desto besser.\n4. Unwiderlegbarkeit ist eine Schwäche, keine Stärke.\n5. Jeder echte Test ist ein Widerlegungsversuch; Theorien sind unterschiedlich gut prüfbar.\n6. Belege zählen nur, wenn sie aus einem ernsthaften, gescheiterten Widerlegungsversuch stammen.\n7. Wer eine widerlegte Theorie durch Zusatzannahmen rettet, senkt ihren wissenschaftlichen Wert.\n\n**Thesen zum Wissen (Einleitung, verdichtet):** keine letzten Quellen, jede Quelle ist willkommen und prüfbar · die Aussage prüfen, nicht die Herkunft · Überlieferung ist die wichtigste Quelle, aber nicht unantastbar · Wissen verändert früheres Wissen · Klarheit ist kein Wahrheitsbeweis · jede Lösung erzeugt neue Probleme · unser Unwissen ist grenzenlos.\n\n**Drei Anforderungen an eine neue Theorie (Kapitel 10):** eine einfache, verbindende Idee · unabhängig prüfbar mit neuen Vorhersagen · besteht einige neue, strenge Tests.\n\n**Prüffragen für den Alltag:** Was müsste geschehen, damit ich meine Annahme aufgebe? · Habe ich nach Bestätigung oder nach Widerlegung gesucht? · Rette ich gerade eine Annahme mit einer Ausnahme?\n\n## 🔬 Belege und ihr Stand\n| Position | Stand |\n|---|---|\n| Falsifizierbarkeit als Abgrenzungskriterium | **einflussreich, aber umstritten** – kein allgemein anerkanntes Kriterium |\n| Kritik der Induktion | **breit diskutiert**, Gegenpositionen etwa im Bayesianismus |\n| Wahrheitsnähe nach Popper | **formal widerlegt** (Miller, Tichý 1974), Nachfolgeansätze existieren |\n| Einwand gegen Geschichtsprophetie | **weithin geteilt** |",
+   "karten": [
+    {
+     "frage": "Was ist nach Popper die richtige erkenntnistheoretische Frage?",
+     "antwort": "Nicht „Woher stammt das Wissen?“, sondern „Wie können wir Fehler entdecken und beseitigen?“"
+    },
+    {
+     "frage": "Was ist das Falsifizierbarkeitskriterium?",
+     "antwort": "Wissenschaftlich ist eine Theorie, die an Beobachtungen scheitern kann – sie muss etwas verbieten."
+    },
+    {
+     "frage": "Wann zählt eine Bestätigung nach Popper?",
+     "antwort": "Nur wenn sie aus einer riskanten Vorhersage stammt, also aus einem ernsthaften Versuch, die Theorie zu widerlegen."
+    },
+    {
+     "frage": "Was meint Immunisierung einer Theorie?",
+     "antwort": "Sie durch nachträgliche Zusatzannahmen oder Umdeutung vor Widerlegung retten – das senkt ihren wissenschaftlichen Wert."
+    },
+    {
+     "frage": "Wie sieht Popper Traditionen?",
+     "antwort": "Als unverzichtbar für Ordnung und Wissen, aber offen für Kritik – die wichtigste ist die Tradition der Kritik selbst."
+    },
+    {
+     "frage": "Was setzt Popper Utopien entgegen?",
+     "antwort": "Konkrete Übel Schritt für Schritt beseitigen statt abstrakte Ideale zu erzwingen – Utopien führen zu Gewalt."
+    }
+   ],
+   "bezuege": [
+    {
+     "id": "zf-superforecasting",
+     "titel": "Philip E. Tetlock & Dan Gardner – Superforecasting",
+     "art": "stuetzt",
+     "text": "Setzt Poppers Fehlerlernen praktisch um: präzise, überprüfbare Prognosen, laufend nachjustiert und ehrlich ausgewertet."
+    },
+    {
+     "id": "zf-intelligence-trap",
+     "titel": "David Robson – The Intelligence Trap",
+     "art": "ergaenzt",
+     "text": "Zeigt psychologisch, warum gerade Kluge Bestätigung suchen und Widerlegung meiden – das Gegenteil von Poppers Methode."
+    },
+    {
+     "titel": "Judea Pearl & Dana Mackenzie – The Book of Why",
+     "art": "widerspricht",
+     "text": "Pearl hält Ursachenwissen für mathematisch fassbar und aus Daten plus Modell ableitbar; Popper betont die bleibende Vorläufigkeit jeder Theorie."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: Karl R. Popper – Conjectures and Refutations (Routledge Classics, Erstausgabe 1963)",
+     "url": ""
+    },
+    {
+     "name": "Stanford Encyclopedia of Philosophy – Karl Popper",
+     "url": "https://plato.stanford.edu/entries/popper/"
+    },
+    {
+     "name": "Critical Rationalism – Short rejoinder to standard criticisms of CR and Popperism",
+     "url": "https://criticalrationalism.net/2012/10/27/short-rejoinder-to-standard-crits-of-cr-and-popperism"
+    },
+    {
+     "name": "An Analysis of the Falsification Criterion of Karl Popper: A Critical Review, Tattva Journal of Philosophy",
+     "url": "https://journals.christuniversity.in/index.php/tattva/article/view/2229"
+    }
+   ]
+  },
   {
    "id": "zf-knowledge-illusion",
    "date": "2026-11-02",
