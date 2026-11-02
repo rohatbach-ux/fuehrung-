@@ -30,7 +30,7 @@ Rahmen:
 
 ## Arbeitsweise
 
-1. Das Buch vollständig lesen (`read_file_content`; bricht der Text ab, PDF mit `download_file_content` laden, mit `pdftotext` lokal auslesen und die lokale Kopie danach löschen).
+1. Das Buch vollständig lesen: PDF mit `download_file_content` laden, mit `pdftotext` lokal auslesen und die lokale Kopie danach löschen. **Grenze des Drive-Zugriffs:** PDFs über etwa 5 MB lassen sich nicht herunterladen, und `read_file_content` liefert bei langen Büchern nur rund das erste Viertel. Dann den gelieferten Teil vollständig auswerten, die übrigen Kapitel aus Inhaltsverzeichnis und öffentlichen Quellen erschließen und das in der ersten Quelle vermerken („Kapitel x–y im Volltext ausgewertet, übrige aus …“). Liefert die Datei gar keinen Text (Bild-PDF), `"basis": "oeffentlich"` setzen und es in `kern.original` sagen.
 2. Mit der Websuche **öffentliche Zusammenfassungen und Interpretationen** suchen: Rezensionen großer Zeitungen und Fachzeitschriften, wissenschaftliche Besprechungen, Interviews und Vorträge der Autoren. Keine Raubkopie-Seiten, keine bezahlten Zusammenfassungsdienste abschreiben.
 3. Zusammenfassen **in eigenen Worten**. Kurze, markierte Zitate sind erlaubt; keine längeren wörtlichen Passagen.
 4. Nichts erfinden. Was weder im Buch noch in den Quellen steht, nicht behaupten.
