@@ -15,7 +15,7 @@ Rohat will sich das vollständige Lesen eines Buchs sparen können. Je Titel ent
 2. Als **Literatur** gelten Bücher, E-Books und buchartige Leitfäden. Keine Stellenbeschreibungen, Organigramme, Folienvorlagen oder Audio.
 3. Erledigt ist ein Titel, wenn sein Kürzel (SHA-1 der Datei-ID, 12 Hex-Zeichen) als `drive_h` in `data/zusammenfassungen.json` steht.
 4. **Je Lauf:** alle Neuzugänge seit dem letzten Lauf, dazu **bis zu 5 Titel aus dem Bestand** – Vorrang haben Bücher mit laufender oder abgeschlossener Buchreihe (`data/drive-processed.json`), dann die übrigen.
-5. Dateien mit `"grund": "quelle"` oder `"grund": "herkunft_ungeklaert"` im Register `data/drive-processed.json` **nicht öffnen**. Für solche Titel darf eine Zusammenfassung **nur aus öffentlichen Quellen** entstehen (`"basis": "oeffentlich"`), wenn diese für Expertenniveau reichen – sonst auslassen.
+5. Neuzugänge ohne Rückfrage verarbeiten. Nur Dateien mit `"grund": "quelle"` im Register `data/drive-processed.json` (eindeutige Raubkopie-Kennung oder größengleiche Kopie) **nicht öffnen**. Für solche Titel darf eine Zusammenfassung **nur aus öffentlichen Quellen** entstehen (`"basis": "oeffentlich"`), wenn diese für Expertenniveau reichen – sonst auslassen.
 
 ## Arbeitsweise
 

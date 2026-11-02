@@ -1,5 +1,5 @@
 {
- "_hinweis": "Leseliste für Buchreihen aus öffentlichen Quellen (Weg 1: Artikel, Interviews, Vorträge der Autoren, Verlagsseiten, seriöse Rezensionen – keine Raubkopien). Reihenfolge = Abarbeitungsreihenfolge. status: offen | in_arbeit | fertig. Steuerung: research/BUECHER.md. Titel, die Rohat gekauft und in den Drive-Ordner gelegt hat (The Tyranny of Metrics, Conjectures and Refutations), laufen als Bibliotheks-Reihe und stehen hier nicht mehr.",
+ "_hinweis": "Leseliste für Buchreihen aus öffentlichen Quellen (Weg 1: Artikel, Interviews, Vorträge der Autoren, Verlagsseiten, seriöse Rezensionen – keine Raubkopien). Reihenfolge = Abarbeitungsreihenfolge. status: offen | in_arbeit | fertig. Steuerung: research/BUECHER.md. Titel, die Rohat gekauft und in den Drive-Ordner gelegt hat (u. a. The Tyranny of Metrics, Conjectures and Refutations, The Intelligence Trap, Superforecasting, The Knowledge Illusion, The Enigma of Reason, Calling Bullshit, The Book of Why), laufen als Bibliotheks-Reihe und stehen hier nicht mehr.",
  "buecher": [
   {
    "id": "logic-of-failure",
@@ -34,87 +34,10 @@
    "zuletzt": "2026-11-01"
   },
   {
-   "id": "intelligence-trap",
-   "titel": "The Intelligence Trap",
-   "autoren": "David Robson",
-   "jahr": 2019,
-   "modul": "urteil",
-   "status": "in_arbeit",
-   "plan": [
-    {
-     "teil": 1,
-     "thema": "Die Falle: Dysrationalia, earned dogmatism, bias blind spot",
-     "impuls": "buch-20261102-1"
-    },
-    {
-     "teil": 2,
-     "thema": "Motiviertes Denken: Warum Klugheit Fehlurteile verteidigt (inkl. Replikationskritik)",
-     "impuls": null
-    },
-    {
-     "teil": 3,
-     "thema": "Gegenmittel: intellektuelle Demut, Neugier und evidenzbasierte Weisheit",
-     "impuls": null
-    },
-    {
-     "teil": 4,
-     "thema": "Transfer auf die IH im Netz Hagen",
-     "impuls": null
-    }
-   ],
-   "begonnen": "2026-11-02",
-   "zuletzt": "2026-11-02"
-  },
-  {
    "id": "halo-effect",
    "titel": "The Halo Effect",
    "autoren": "Phil Rosenzweig",
    "jahr": 2007,
-   "modul": "urteil",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "superforecasting",
-   "titel": "Superforecasting",
-   "autoren": "Philip E. Tetlock & Dan Gardner",
-   "jahr": 2015,
-   "modul": "urteil",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "knowledge-illusion",
-   "titel": "The Knowledge Illusion",
-   "autoren": "Steven Sloman & Philip Fernbach",
-   "jahr": 2017,
-   "modul": "fk",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "enigma-of-reason",
-   "titel": "The Enigma of Reason",
-   "autoren": "Hugo Mercier & Dan Sperber",
-   "jahr": 2017,
-   "modul": "gespraeche",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "calling-bullshit",
-   "titel": "Calling Bullshit",
-   "autoren": "Carl T. Bergstrom & Jevin D. West",
-   "jahr": 2020,
-   "modul": "urteil",
-   "status": "offen",
-   "plan": []
-  },
-  {
-   "id": "book-of-why",
-   "titel": "The Book of Why",
-   "autoren": "Judea Pearl & Dana Mackenzie",
-   "jahr": 2018,
    "modul": "urteil",
    "status": "offen",
    "plan": []

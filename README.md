@@ -48,11 +48,11 @@ Eine geplante Claude-Code-Aufgabe recherchiert jeden Morgen 3 Impulse und schrei
 
 ### Bibliothek aus Google Drive
 
-Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff verarbeitet Rohats Drive-Ordner (inkl. Unterordner) **in Buchreihen**: Für jedes Dokument entsteht zuerst ein Lesekonzept aus Lerneinheiten, dann erscheinen täglich 2 Teile aus zwei verschiedenen Büchern (bis zu 3 Bücher im Wechsel, „📖 Teil x/y“), bei längeren Büchern mit Synthese am Ende. Regeln: `research/DRIVE.md`. Register mit Plänen: `data/drive-processed.json` (Dateien nur als Kürzel, keine Drive-Links).
+Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff verarbeitet Rohats Drive-Ordner (inkl. Unterordner) **in Buchreihen**: Für jedes Dokument entsteht zuerst ein Lesekonzept aus Lerneinheiten, dann erscheinen täglich 2 Teile aus zwei verschiedenen Büchern (bis zu 3 Bücher im Wechsel, „📖 Teil x/y“), bei längeren Büchern mit Synthese am Ende. Neuzugänge werden ohne Rückfrage verarbeitet; gesperrt bleiben nur Dateien mit eindeutiger Raubkopie-Kennung (und größengleiche Kopien davon) sowie als vertraulich gekennzeichnete Dokumente. Regeln: `research/DRIVE.md`. Register mit Plänen: `data/drive-processed.json` (Dateien nur als Kürzel, keine Drive-Links).
 
 ### Buchreihen aus öffentlichen Quellen
 
-Leseliste in `data/buecher.json` (u. a. Dörner, Muller, Robson, Tetlock, Pearl, Popper). Einer der 3 täglichen Web-Impulse ist ein Buch-Teil („📚 Buch kompakt“), erstellt nur aus öffentlich zugänglichen Quellen – keine Raubkopien. Regeln: `research/BUECHER.md`.
+Leseliste in `data/buecher.json` (derzeit Dörner, Rosenzweig, Page). Titel, die als gekaufte Datei im Drive liegen, laufen stattdessen als Bibliotheks-Reihe. Einer der 3 täglichen Web-Impulse ist ein Buch-Teil („📚 Buch kompakt“), erstellt nur aus öffentlich zugänglichen Quellen – keine Raubkopien. Regeln: `research/BUECHER.md`.
 
 ### Buch-Zusammenfassungen
 
