@@ -1,5 +1,5 @@
 {
- "_hinweis": "Register der Bibliothek. Datei nur als SHA-1-Kürzel der Drive-ID (12 Zeichen), keine IDs oder Links. status: in_arbeit | fertig | uebersprungen (nur Audio/Video, ohne Titel). plan = Lerneinheiten des Buchs; impuls = veröffentlichte ID oder null.",
+ "_hinweis": "Register der Bibliothek. Datei nur als SHA-1-Kürzel der Drive-ID (12 Zeichen), keine IDs oder Links. status: in_arbeit | fertig | uebersprungen (nur Audio/Video, ohne Titel). plan = Lerneinheiten des Buchs; impuls = veröffentlichte ID oder null. grund \"ersetzt\": große Originaldatei, die Rohat als „_komprimiert“-Fassung neu abgelegt hat – die komprimierte Datei wird verarbeitet.",
  "dateien": [
   {
    "h": "e838e38f93ab",
@@ -230,6 +230,30 @@
    "status": "uebersprungen",
    "grund": "quelle",
    "groesse": 4988760
+  },
+  {
+   "h": "f70286bdba17",
+   "status": "uebersprungen",
+   "grund": "ersetzt",
+   "ersetzt_durch_groesse": 6585274
+  },
+  {
+   "h": "4f95f977ffe1",
+   "status": "uebersprungen",
+   "grund": "ersetzt",
+   "ersetzt_durch_groesse": 2433840
+  },
+  {
+   "h": "fee3f470d775",
+   "status": "uebersprungen",
+   "grund": "ersetzt",
+   "ersetzt_durch_groesse": 2785348
+  },
+  {
+   "h": "2268101d7197",
+   "status": "uebersprungen",
+   "grund": "ersetzt",
+   "ersetzt_durch_groesse": 3190129
   }
  ]
 }
