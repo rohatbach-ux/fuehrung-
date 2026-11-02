@@ -1,7 +1,100 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T14:59:42+00:00",
+ "updated": "2026-11-02T15:01:03+00:00",
  "items": [
+  {
+   "id": "zf-book-of-why",
+   "date": "2026-11-02",
+   "titel": "The Book of Why",
+   "autoren": "Judea Pearl & Dana Mackenzie",
+   "jahr": 2018,
+   "verlag": "Basic Books",
+   "basis": "buch",
+   "drive_h": "fee3f470d775",
+   "reihe": "The Book of Why",
+   "modul": "urteil",
+   "kernthese": "Daten allein beantworten keine Warum-Fragen; erst ein ausdrückliches Modell von Ursache und Wirkung – als Diagramm gezeichnet – erlaubt Aussagen darüber, was ein Eingriff bewirkt und was ohne ihn geschehen wäre.",
+   "kern": {
+    "aussagen": [
+     "Ursachenwissen hat drei Stufen: Zusammenhänge sehen, die Folgen eines Eingriffs vorhersagen und sich vorstellen, was anders gekommen wäre.",
+     "Statistik allein bleibt auf der untersten Stufe; für die höheren braucht es Annahmen über Ursachen, die man offen als Diagramm darlegt.",
+     "Ob man eine Größe herausrechnen darf oder muss, entscheidet das Ursachendiagramm – falsches „Kontrollieren“ erzeugt Scheinzusammenhänge.",
+     "Auch ohne randomisierten Versuch lassen sich Wirkungen schätzen, wenn das Diagramm es erlaubt.",
+     "Echte künstliche Intelligenz braucht ein Modell von Ursachen, nicht nur mehr Daten."
+    ],
+    "original": "Für den Überblick reicht diese Zusammenfassung. Im Original lohnen Kapitel 1 (Leiter der Kausalität), Kapitel 4 (Störgrößen) und Kapitel 6 (Paradoxien) – dort tragen die Diagramme und Beispiele das Verständnis."
+   },
+   "text": "## 🎯 Worum es geht\nDer Informatiker **Judea Pearl**, Turing-Preisträger und Pionier der Bayes-Netze, erklärt mit der Wissenschaftsjournalistin **Dana Mackenzie** die „kausale Revolution“: Werkzeuge, mit denen sich Ursache und Wirkung mathematisch fassen lassen. Das Buch verbindet Methode, Wissenschaftsgeschichte und Beispiele aus Medizin, Recht und Sozialwissenschaft.\n\n## 🧭 Kapitel für Kapitel\n**Einleitung und Kapitel 1 – die Leiter der Kausalität.** Pearl unterscheidet drei Stufen. Auf der ersten sieht man Zusammenhänge: Was verrät mir ein Merkmal über ein anderes? Auf der zweiten fragt man, was ein Eingriff bewirkt; dafür führt er einen eigenen Operator für das aktive Tun ein. Auf der dritten stellt man sich vor, was ohne die Handlung geschehen wäre. Tiere und heutige lernende Maschinen bleiben auf Stufe eins. Menschen erreichen Stufe drei, weil sie im Kopf Modelle von Ursachen bilden.\n\n**Kapitel 2 – Herkunft der Ursachenforschung.** Galton und Pearson begründeten die Korrelation und verbannten Ursachen aus der Statistik. Der Genetiker Sewall Wright zeichnete schon in den 1920er-Jahren Pfaddiagramme, wurde aber jahrzehntelang ignoriert.\n\n**Kapitel 3 – Von Belegen zu Ursachen.** Bayes-Netze verbinden Wahrscheinlichkeiten mit Diagrammen. Drei Grundmuster bestimmen, wie Information fließt: Kette, Gabel und Kollision. Wer sie erkennt, weiß, welche Zusammenhänge echt sind.\n\n**Kapitel 4 – Störgrößen.** Eine Störgröße beeinflusst Ursache und Wirkung zugleich. Randomisierte Versuche schalten sie aus. Ohne Versuch zeigt das **Hintertür-Kriterium**, welche Variablen man berücksichtigen muss – und welche man nicht anfassen darf.\n\n**Kapitel 5 – Der Streit ums Rauchen.** Jahrzehntelang verhinderte das Argument „Korrelation ist keine Kausalität“, unterstützt vom Statistiker Ronald Fisher, eine klare Aussage über Zigaretten und Lungenkrebs. Erst Überlegungen, wie stark eine verborgene Störgröße sein müsste, und die Kriterien von Bradford Hill lösten den Streit.\n\n**Kapitel 6 – Paradoxien.** Das Ziegenproblem, Berksons Paradox und Simpsons Paradox zeigen, wie Daten in die Irre führen, wenn man das Ursachenmodell nicht kennt. Ob ein Trend in Untergruppen oder im Ganzen gilt, entscheidet das Diagramm, nicht die Statistik.\n\n**Kapitel 7 – Jenseits des Herausrechnens.** Mit dem Vordertür-Kriterium und dem Do-Kalkül lassen sich Wirkungen bestimmen, auch wenn Störgrößen unbeobachtet bleiben. Instrumentvariablen, von John Snows Cholera-Studie bis zur Mendelschen Randomisierung, sind ein weiterer Weg.\n\n**Kapitel 8 – Kontrafaktische Fragen.** Was wäre geschehen, wenn? Pearl formalisiert notwendige und hinreichende Ursachen, etwa für die juristische Frage, ob ein Schaden ohne die Handlung eingetreten wäre, oder für die Zuordnung von Wetterextremen zum Klimawandel.\n\n**Kapitel 9 – Vermittlung.** Wirkt eine Ursache direkt oder über einen Zwischenschritt? Die Unterscheidung direkter und indirekter Effekte klärt, warum eine Maßnahme wirkt. Die Geschichte des Skorbuts zeigt, wie verloren geht, was man über den Mechanismus nicht versteht.\n\n**Kapitel 10 – Big Data und künstliche Intelligenz.** Mehr Daten ersetzen kein Ursachenmodell. Maschinen, die wirklich verstehen, müssten Eingriffe und Gegenwelten denken können.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Leiter der Kausalität. Sie macht verständlich, welche Fragen Daten allein beantworten können und welche nicht, und zwingt dazu, Annahmen über Ursachen offenzulegen statt sie zu verstecken. Selbst kritische Rezensenten wie Andrew Gelman halten das Buch für Außenstehende für nützlich.\n\n**Am schwächsten** ist der Umgang mit der Zunft. Gelman kritisiert wiederholte Seitenhiebe gegen Statistiker und unbelegte Pauschalurteile. Aronow und Sävje warnen im Journal of the American Statistical Association, dass Leser die Möglichkeiten überschätzen könnten: Alles hängt davon ab, ob das Diagramm stimmt, und andere Ansätze wie das Modell potenzieller Ergebnisse kommen zu kurz.\n\n## 🗣️ Rezeption\nDie New York Times nannte das Buch erhellend, Chemistry World lobte es bei hohem Anspruch an die Konzentration. Fachrezensionen in Statistik und Philosophie sind überwiegend positiv, mit Vorbehalten zu Ton und Reichweite.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n| Stufe der Leiter | Frage | Beispiel |\n|---|---|---|\n| **1 · Sehen** | Was verrät A über B? | Wer Zahnseide kauft, kauft auch Zahnpasta |\n| **2 · Eingreifen** | Was passiert, wenn ich A tue? | Steigt der Absatz, wenn wir den Preis verdoppeln? |\n| **3 · Vorstellen** | Was wäre ohne A geschehen? | Wäre der Patient ohne Medikament gestorben? |\n\n| Grundmuster | Aufbau | Folge |\n|---|---|---|\n| **Kette** | A → B → C | B berücksichtigen unterbricht den Fluss von A nach C |\n| **Gabel** | A ← B → C | B ist Störgröße; berücksichtigen beseitigt den Scheinzusammenhang |\n| **Kollision** | A → B ← C | B berücksichtigen *erzeugt* einen Scheinzusammenhang |\n\n| Begriff | Bedeutung |\n|---|---|\n| **Störgröße** | beeinflusst Ursache und Wirkung zugleich |\n| **Hintertür-Kriterium** | welche Variablen man berücksichtigen muss, um eine Wirkung zu schätzen |\n| **Vordertür-Kriterium** | Wirkung über einen beobachteten Zwischenschritt bestimmen, trotz verborgener Störgröße |\n| **Instrumentvariable** | Größe, die nur über die Ursache auf die Wirkung wirkt |\n| **Direkter und indirekter Effekt** | Wirkung ohne und über einen Vermittler |\n\n## ✅ Listen und Fragen\n**Prüffragen vor einer Ursachenbehauptung:**\n1. Auf welcher Stufe der Leiter steht die Frage – Zusammenhang, Eingriff oder Gegenwelt?\n2. Wie sieht das Ursachendiagramm aus? Zeichnen!\n3. Gibt es eine gemeinsame Ursache (Gabel), die beides erklärt?\n4. Wurde nach einer Folge beider Größen gefiltert (Kollision, Berksons Paradox)?\n5. Ändert sich der Trend in Untergruppen (Simpsons Paradox), und welche Ebene ist laut Diagramm die richtige?\n6. Wäre ein Versuch möglich – und wenn nicht, erlaubt das Diagramm eine Schätzung?\n\n**Bradford-Hill-Kriterien (Kapitel 5, Auswahl):** Stärke und Beständigkeit des Zusammenhangs · zeitliche Abfolge · Dosis-Wirkungs-Beziehung · Plausibilität eines Mechanismus.\n\n## 🔬 Belege und ihr Stand\n| Inhalt | Stand |\n|---|---|\n| Do-Kalkül und Hintertür-Kriterium | **mathematisch bewiesen**, in Epidemiologie und Ökonometrie verbreitet |\n| Rauchen verursacht Lungenkrebs | **gesichert** |\n| Kritik am Modell potenzieller Ergebnisse | **umstritten** – beide Ansätze gelten heute als weitgehend gleichwertig |\n| Ursachenmodelle als Voraussetzung starker KI | **These**, offen diskutiert |",
+   "karten": [
+    {
+     "frage": "Welche drei Stufen hat die Leiter der Kausalität?",
+     "antwort": "Sehen (Zusammenhänge), Eingreifen (Folgen einer Handlung), Vorstellen (was ohne die Handlung geschehen wäre)."
+    },
+    {
+     "frage": "Was ist eine Störgröße?",
+     "antwort": "Eine Größe, die Ursache und Wirkung zugleich beeinflusst und so einen Scheinzusammenhang erzeugt."
+    },
+    {
+     "frage": "Warum darf man nicht jede Größe „herausrechnen“?",
+     "antwort": "Bei einer Kollision (A → B ← C) erzeugt das Berücksichtigen von B einen Scheinzusammenhang zwischen A und C."
+    },
+    {
+     "frage": "Was zeigt Simpsons Paradox?",
+     "antwort": "Ein Trend kann in allen Untergruppen umgekehrt sein wie im Ganzen – welche Ebene gilt, entscheidet das Ursachenmodell."
+    },
+    {
+     "frage": "Was leistet das Hintertür-Kriterium?",
+     "antwort": "Es zeigt anhand des Diagramms, welche Variablen man berücksichtigen muss, um eine Wirkung ohne Versuch zu schätzen."
+    },
+    {
+     "frage": "Was ist Pearls Einwand gegen „Big Data statt Theorie“?",
+     "antwort": "Daten beantworten nur Zusammenhangsfragen; Eingriffe und Gegenwelten erfordern ein Ursachenmodell."
+    }
+   ],
+   "bezuege": [
+    {
+     "id": "zf-calling-bullshit",
+     "titel": "Carl T. Bergstrom & Jevin D. West – Calling Bullshit",
+     "art": "ergaenzt",
+     "text": "Liefert die Alltagsfassung: Korrelation ist keine Ursache. Pearl zeigt, wann man trotzdem auf Ursachen schließen darf."
+    },
+    {
+     "id": "zf-superforecasting",
+     "titel": "Philip E. Tetlock & Dan Gardner – Superforecasting",
+     "art": "ergaenzt",
+     "text": "Tetlock fragt, was passieren wird; Pearl fragt, was ein Eingriff bewirkt und warum."
+    },
+    {
+     "id": "zf-conjectures-refutations",
+     "titel": "Karl R. Popper – Conjectures and Refutations",
+     "art": "widerspricht",
+     "text": "Popper betont die bleibende Vorläufigkeit jeder Theorie; Pearl hält Ursachenfragen für mathematisch beantwortbar, sobald das Modell steht."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: Judea Pearl & Dana Mackenzie – The Book of Why (Basic Books, 2018); Einleitung und Kapitel 1 im Volltext ausgewertet, übrige Kapitel aus Inhaltsverzeichnis und öffentlichen Quellen",
+     "url": ""
+    },
+    {
+     "name": "Andrew Gelman – „The Book of Why“ by Pearl and Mackenzie, Statistical Modeling blog, 2019",
+     "url": "https://statmodeling.stat.columbia.edu/2019/01/08/book-pearl-mackenzie/"
+    },
+    {
+     "name": "Peter M. Aronow & Fredrik Sävje – The Book of Why: Review, Journal of the American Statistical Association",
+     "url": "https://ar5iv.labs.arxiv.org/html/2003.11635"
+    },
+    {
+     "name": "Chemistry World – Review: The Book of Why",
+     "url": "https://chemistryworld.com/review/the-book-of-why-the-new-science-of-cause-and-effect-/3009919.article"
+    },
+    {
+     "name": "Wikipedia – The Book of Why",
+     "url": "https://en.wikipedia.org/wiki/The_Book_of_Why"
+    }
+   ]
+  },
   {
    "id": "zf-calling-bullshit",
    "date": "2026-11-02",
