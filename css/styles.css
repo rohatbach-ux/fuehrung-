@@ -268,3 +268,16 @@ body.has-player.player-compact .toast { bottom: calc(140px + env(safe-area-inset
 .zf-title { font-size: 22px; margin: 4px 0 2px; letter-spacing: -.01em; }
 .zf-these { font-size: 16px; }
 .zf-text .md h3.md-h { font-size: 18px; }
+.zf-tier { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; }
+.zf-tier > summary { cursor: pointer; list-style: none; padding: 2px 0; }
+.zf-tier > summary::-webkit-details-marker { display: none; }
+.zf-tier > summary::after { content: "▾"; float: right; color: var(--muted); }
+.zf-tier[open] > summary { margin-bottom: 8px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.zf-tier[open] > summary::after { content: "▴"; }
+.zf-t1 { background: var(--accent-soft); border-color: transparent; }
+.zf-tier-h { font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent); margin-bottom: 6px; }
+.zf-aussagen { padding-left: 20px; margin: 8px 0; }
+.zf-aussagen li { margin: 6px 0; line-height: 1.45; }
+.zf-original { margin: 8px 0 0; font-size: 14px; }
+.zf-bezug { line-height: 1.4; }
+.zf-bezug b { color: var(--text); margin-right: 0; }

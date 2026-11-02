@@ -55,8 +55,25 @@ try {
     const w = (m) => err.push(`zusammenfassung ${z.id || "?"}: ${m}`);
     for (const f of ["id", "date", "titel", "autoren", "kernthese", "text"]) if (!z[f] || !String(z[f]).trim()) w(`Feld ${f} fehlt`);
     if (z.modul && !MODS.includes(z.modul)) w(`unbekanntes Modul ${z.modul}`);
-    const words = String(z.text || "").split(/\s+/).filter(Boolean).length;
-    if (words < 450 || words > 1300) w(`Umfang ${words} Wörter – erlaubt 450–1300 (1–2 DIN-A4-Seiten)`);
+    const wc = (t) => String(t || "").split(/\s+/).filter(Boolean).length;
+    const words = wc(z.text);
+    if (words < 500 || words > 1000) w(`Tiefe 2 (text): ${words} Wörter – erlaubt 500–1000`);
+    if (/^\s*\|/m.test(z.text || "")) w("Tiefe 2 (text) ohne Tabellen – wird vorgelesen");
+    const k = z.kern || {};
+    if (!Array.isArray(k.aussagen) || k.aussagen.length < 3 || k.aussagen.length > 5 || k.aussagen.some((a) => !String(a).trim())) w("Tiefe 1: kern.aussagen mit 3–5 Sätzen fehlt");
+    if (!String(k.original || "").trim()) w("Tiefe 1: kern.original fehlt");
+    const kw = wc(z.kernthese) + wc((k.aussagen || []).join(" ")) + wc(k.original);
+    if (kw > 220) w(`Tiefe 1: ${kw} Wörter – höchstens 220`);
+    if (words + kw > 1150) w(`Tiefe 1+2: ${words + kw} Wörter – höchstens 1150 (2 DIN-A4-Seiten)`);
+    const tw = wc(z.werkzeuge);
+    if (tw < 150 || tw > 900) w(`Tiefe 3 (werkzeuge): ${tw} Wörter – erlaubt 150–900`);
+    if (!Array.isArray(z.karten) || z.karten.length < 5 || z.karten.length > 8) w("5–8 Lernkarten fehlen");
+    for (const c of z.karten || []) if (!c.frage || !c.antwort) w("Lernkarte ohne frage/antwort");
+    for (const b of z.bezuege || []) {
+      if (!b.titel || !b.text || !["stuetzt", "widerspricht", "ergaenzt"].includes(b.art)) w("Querbezug unvollständig (titel, art stuetzt|widerspricht|ergaenzt, text)");
+      if (b.id && !(zf.items || []).some((y) => y.id === b.id)) w(`Querbezug auf unbekannte id ${b.id}`);
+      if (b.id === z.id) w("Querbezug auf sich selbst");
+    }
     if (!Array.isArray(z.quellen) || !z.quellen.length) w("Quellen fehlen");
     for (const q of z.quellen || []) {
       if (!q.name) w("Quelle ohne Namen");

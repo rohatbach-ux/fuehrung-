@@ -56,7 +56,7 @@ Leseliste in `data/buecher.json` (derzeit Dörner, Rosenzweig, Page). Titel, die
 
 ### Buch-Zusammenfassungen
 
-Je Titel aus dem Drive-Ordner eine Zusammenfassung auf Expertenniveau (höchstens 1–2 DIN-A4-Seiten, nur die Literatur, mit öffentlichen Rezensionen und Interpretationen) in `data/zusammenfassungen.json`, in der App unter *Entdecken → Zusammenfassungen* und verlinkt aus der jeweiligen Buchreihe. Eine wöchentliche Aufgabe (sonntags) erstellt sie für Neuzugänge und arbeitet den Bestand ab. Regeln: `research/ZUSAMMENFASSUNG.md`.
+Je Titel aus dem Drive-Ordner eine Zusammenfassung auf Expertenniveau in `data/zusammenfassungen.json`, in der App unter *Entdecken → Zusammenfassungen* und verlinkt aus der jeweiligen Buchreihe. Aufbau in **drei Lesetiefen**: ⚡ Kern in einer Minute (These, Kernaussagen, „Lohnt das Original?“), 🧭 Kapitel für Kapitel (ersetzt das Lesen, höchstens 2 DIN-A4-Seiten zusammen mit dem Kern), 🧰 Werkzeugkasten (Modelle, Listen, Belege; eingeklappt). Dazu 5–8 Lernkarten je Buch, die in die Wiederholung laufen, Querbezüge zwischen den Büchern und 🔊 Vorlesen mit der iPhone-Stimme im eingestellten Tempo. Nur die Literatur, mit öffentlichen Rezensionen und Interpretationen. Eine wöchentliche Aufgabe (sonntags) erstellt sie für Neuzugänge und arbeitet den Bestand ab. Regeln: `research/ZUSAMMENFASSUNG.md`.
 
 ### Links als Merkzettel
 

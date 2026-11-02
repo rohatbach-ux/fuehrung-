@@ -4,10 +4,21 @@ Diese Datei steuert die geplante Aufgabe „Führungskompass Zusammenfassungen�
 
 ## Ziel
 
-Rohat will sich das vollständige Lesen eines Buchs sparen können. Je Titel entsteht **eine Zusammenfassung auf Expertenniveau**:
-- **höchstens 1–2 DIN-A4-Seiten** – Richtwert 700–1.100 Wörter (die Prüfung erlaubt 450–1.300),
-- **nur die Literatur** – kein Bezug zur IH, zum Netz Hagen oder zu Rohats Rolle; den liefern die Buchreihen bereits,
-- unter Einbezug **öffentlich zugänglicher Zusammenfassungen und Interpretationen** (Rezensionen, Fachbesprechungen, Interviews mit den Autoren).
+Rohat will sich das vollständige Lesen eines Buchs sparen können. Je Titel entsteht **eine Zusammenfassung auf Expertenniveau in drei Lesetiefen** (von Rohat am 02.11.2026 freigegeben):
+
+| Tiefe | Feld | Umfang | Inhalt |
+|---|---|---|---|
+| **1 · Kern** | `kernthese`, `kern` | ~150 Wörter | These in einem Satz, 3–5 Kernaussagen, Urteil „Lohnt das Original?“ mit konkreten Kapiteln |
+| **2 · Kapitelübersicht** | `text` | 500–1.000 Wörter | je Kapitel bzw. Buchteil: Behauptung → Beleg → Folgerung; stärkstes und schwächstes Argument mit Rezensionsbezug |
+| **3 · Werkzeugkasten** | `werkzeuge` | 150–900 Wörter, in der App eingeklappt | die Modelle, Listen, Fragenkataloge und Unterscheidungen des Buchs vollständig; zentrale Studien mit ihrem Stand |
+
+Dazu **5–8 Lernkarten** (`karten`, laufen automatisch in Rohats Wiederholung) und **Querbezüge** zu anderen Büchern der Bibliothek (`bezuege`).
+
+Rahmen:
+- Tiefe 1 und 2 zusammen höchstens **1–2 DIN-A4-Seiten**; Tiefe 3 kommt eingeklappt dazu.
+- **Nur die Literatur** – kein Bezug zur IH, zum Netz Hagen oder zu Rohats Rolle; den liefern die Buchreihen.
+- Unter Einbezug **öffentlich zugänglicher Zusammenfassungen und Interpretationen** (Rezensionen, Fachbesprechungen, Interviews mit den Autoren).
+- Tiefe 1 und 2 werden in der App auch **vorgelesen** – deshalb ganze Sätze, keine Tabellen in `text`, Abkürzungen ausschreiben.
 
 ## Welche Titel
 
@@ -24,16 +35,29 @@ Rohat will sich das vollständige Lesen eines Buchs sparen können. Je Titel ent
 3. Zusammenfassen **in eigenen Worten**. Kurze, markierte Zitate sind erlaubt; keine längeren wörtlichen Passagen.
 4. Nichts erfinden. Was weder im Buch noch in den Quellen steht, nicht behaupten.
 
-## Aufbau des Texts (`text`, Markdown)
+## Aufbau
 
-Gestaltungsregeln wie in `research/ANLEITUNG.md` (Überschriften mit Emoji, Fettungen, Listen, Tabellen wo sinnvoll, kurze Absätze). Feste Gliederung:
+Gestaltungsregeln wie in `research/ANLEITUNG.md` (Überschriften mit Emoji, Fettungen, kurze Absätze).
 
-1. `## 🎯 Worum es geht` – Fragestellung, Anlass, Autor und Kontext in wenigen Sätzen
-2. `## 🧭 Der Argumentationsgang` – die Teile oder Kapitel in ihrer Logik, knapp
-3. `## 🧩 Zentrale Begriffe und Modelle` – die tragenden Konzepte, gern als Tabelle
-4. `## 🔬 Belege und Methode` – worauf sich das Buch stützt (Studien, Fallbeispiele, Erfahrung)
-5. `## 🗣️ Rezeption und Kritik` – wie das Buch öffentlich besprochen wurde, Stärken und Einwände, mit Quellenbezug
-6. `## 📌 Was bleibt` – die drei bis fünf Kernaussagen, die man behalten sollte
+**Tiefe 1 – `kernthese` und `kern`**
+- `kernthese`: die zentrale These in einem Satz.
+- `kern.aussagen`: 3–5 Kernaussagen, je ein Satz, so formuliert, dass man sie behalten und weitersagen kann.
+- `kern.original`: 2–3 Sätze – lohnt das Original, für wen, und welche Kapitel konkret (z. B. „Kapitel 4 und 9 lohnen im Original, der Rest ist durch diese Zusammenfassung abgedeckt“).
+
+**Tiefe 2 – `text` (Markdown, vorlesbar, keine Tabellen)**
+1. `## 🎯 Worum es geht` – Fragestellung, Autor und Kontext, 2–4 Sätze
+2. `## 🧭 Kapitel für Kapitel` – je Kapitel oder Buchteil ein Absatz, beginnend mit **fettem Kapitelnamen**: Was wird behauptet, worauf stützt es sich, was folgt daraus. Kurze Kapitel dürfen zusammengefasst werden; kein tragendes Kapitel auslassen.
+3. `## ⚖️ Stärkstes und schwächstes Argument` – je ein Absatz, mit Bezug auf Rezensionen und Kritik (Quelle nennen)
+4. `## 🗣️ Rezeption` – 2–4 Sätze, wie das Buch aufgenommen wurde
+
+**Tiefe 3 – `werkzeuge` (Markdown, Tabellen erwünscht)**
+- `## 🧰 Modelle und Unterscheidungen` – die tragenden Begriffe als Tabelle (Begriff · Bedeutung · Beispiel aus dem Buch)
+- `## ✅ Listen und Fragen` – Checklisten, Regeln, Fragenkataloge des Buchs vollständig, in eigenen Worten
+- `## 🔬 Belege und ihr Stand` – zentrale Studien oder Fälle, je mit Stand (bestätigt · umstritten · widerlegt), soweit öffentlich bekannt
+
+**Lernkarten – `karten`**: 5–8 Karten `{ "frage": "…", "antwort": "…" }` zu den wichtigsten Begriffen und Aussagen; Antwort höchstens 2 Sätze.
+
+**Querbezüge – `bezuege`**: 1–4 Einträge zu anderen Büchern der Bibliothek oder der Leseliste, die die These stützen, ihr widersprechen oder sie ergänzen. `{ "id": "zf-… (wenn es die Zusammenfassung schon gibt)", "titel": "Autor – Titel", "art": "stuetzt | widerspricht | ergaenzt", "text": "ein Satz, worin" }`. Nur echte inhaltliche Bezüge, keine bloße Themenverwandtschaft. Beim Anlegen einer neuen Zusammenfassung prüfen, ob ältere Einträge einen Rückbezug bekommen sollten, und ihn dort ergänzen.
 
 ## Eintrag in `data/zusammenfassungen.json`
 
@@ -50,7 +74,11 @@ Gestaltungsregeln wie in `research/ANLEITUNG.md` (Überschriften mit Emoji, Fett
   "reihe": "Kurztitel der Buchreihe, falls vorhanden (wie reihe.buch in impulse.json)",
   "modul": "passende Modul-ID (nur zur Einordnung in der App)",
   "kernthese": "die zentrale These in einem Satz",
-  "text": "Markdown nach obiger Gliederung",
+  "kern": { "aussagen": ["…", "…", "…"], "original": "…" },
+  "text": "Tiefe 2, Markdown nach obiger Gliederung",
+  "werkzeuge": "Tiefe 3, Markdown",
+  "karten": [{ "frage": "…", "antwort": "…" }],
+  "bezuege": [{ "id": "zf-…", "titel": "Autor – Titel", "art": "ergaenzt", "text": "…" }],
   "quellen": [{ "name": "Buch: Autor – Titel (Verlag, Jahr)", "url": "" }, { "name": "Rezension …", "url": "https://…" }]
 }
 ```

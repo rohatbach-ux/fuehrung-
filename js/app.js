@@ -1,7 +1,7 @@
 import {
   ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT, NOTEBOOK_NAME, COPILOT_NOTEBOOK_PROMPT,
 } from "./content.js";
-import { md } from "./md.js";
+import { md, stripEmoji } from "./md.js";
 
 // ---------- Speicher (nur lokal auf diesem Gerät) ----------
 const KEY = "fk-state-v1";
@@ -687,6 +687,7 @@ function feedCards() {
   const out = [];
   for (const p of state.posts) (p.karten || []).forEach((k, i) => out.push({ id: `post-${p.id}-k${i}`, mod: p.modul, q: k.frage, a: k.antwort, src: `Mein Post: ${p.titel}` }));
   for (const x of rxData?.items || []) (x.karten || []).forEach((k, i) => out.push({ id: `rx-${x.id}-k${i}`, mod: x.modul, q: k.frage, a: k.antwort, src: `Recherche: ${x.titel}` }));
+  for (const z of zfData?.items || []) (z.karten || []).forEach((k, i) => out.push({ id: `zf-${z.id}-k${i}`, mod: z.modul, q: k.frage, a: k.antwort, src: `Zusammenfassung: ${z.titel}` }));
   return out.filter((c) => c.q && c.a);
 }
 const ownCards = () => (state.ownCards || []).map((c) => ({ id: `own-${c.id}`, mod: c.mod, q: c.q, a: c.a, src: "Eigene Karte" }));
@@ -709,33 +710,120 @@ function feedCard(x) {
     </button>`;
 }
 
+const zfMinutes = (z) => readMinutes(z.text);
 function zfCard(z) {
   const m = moduleById(z.modul);
   const unread = !state.read[`zf:${z.id}`];
   return `
     <button class="card feed-item ${unread ? "unread" : ""}" data-act="zf-open" data-id="${esc(z.id)}">
-      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⏱ ${readMinutes(z.text)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
+      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⚡ 1 Min · 🧭 ${zfMinutes(z)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
       <h3>${esc(z.titel)}</h3>
       <p class="src">${esc(z.autoren)} · ${esc(String(z.jahr || ""))}</p>
       <p>${esc(z.kernthese)}</p>
     </button>`;
 }
-function openSummary(id) {
+const BEZUG = { stuetzt: "🤝 stützt", widerspricht: "⚔️ widerspricht", ergaenzt: "➕ ergänzt" };
+function openSummary(id, opts = {}) {
   const z = zfById(id);
   if (!z) return;
   state.read[`zf:${id}`] = Date.now(); save();
   const ref = { t: "zf", id };
+  const k = z.kern || {};
+  const em = { emoji: !state.plain };
+  const cards = (z.karten || []).length;
   showSheet("📖 Zusammenfassung", () => `
     <h2 class="zf-title">${esc(z.titel)}</h2>
-    <p class="src">${esc(z.autoren)} · ${esc(z.verlag || "")} ${esc(String(z.jahr || ""))} · ⏱ ${readMinutes(z.text)} Min Lesezeit</p>
-    <blockquote class="md-q zf-these">${esc(z.kernthese)}</blockquote>
-    <div class="zf-text">${md(z.text, { emoji: !state.plain })}</div>
+    <p class="src">${esc(z.autoren)} · ${esc(z.verlag || "")} ${esc(String(z.jahr || ""))}</p>
+    ${ttsOk() ? `<p><button class="btn small" data-act="zf-tts" data-id="${esc(z.id)}" id="zf-tts">${tts.id === z.id ? "⏹ Vorlesen stoppen" : `🔊 Vorlesen (Kern + Kapitel, ${String(state.speed).replace(".", ",")}×)`}</button></p>` : ""}
+    <div class="zf-tier zf-t1">
+      <div class="zf-tier-h">⚡ Tiefe 1 · Der Kern in einer Minute</div>
+      <blockquote class="md-q zf-these">${esc(z.kernthese)}</blockquote>
+      ${(k.aussagen || []).length ? `<ol class="zf-aussagen">${k.aussagen.map((a) => `<li>${esc(a)}</li>`).join("")}</ol>` : ""}
+      ${k.original ? `<p class="zf-original"><b>📕 Lohnt das Original?</b> ${esc(k.original)}</p>` : ""}
+    </div>
+    <details class="zf-tier" ${k.aussagen ? "" : "open"}><summary><b>🧭 Tiefe 2 · Kapitel für Kapitel</b> <span class="src">⏱ ${zfMinutes(z)} Min</span></summary>
+      <div class="zf-text">${md(z.text, em)}</div></details>
+    ${z.werkzeuge ? `<details class="zf-tier"><summary><b>🧰 Tiefe 3 · Werkzeugkasten</b> <span class="src">Modelle, Listen, Belege</span></summary>
+      <div class="zf-text">${md(z.werkzeuge, em)}</div></details>` : ""}
+    ${cards ? `<details class="zf-tier"><summary><b>🃏 ${cards} Lernkarten</b> <span class="src">laufen in deiner Wiederholung</span></summary>
+      <ul class="refs">${z.karten.map((c) => `<li><b>${esc(c.frage)}</b><br>${esc(c.antwort)}</li>`).join("")}</ul></details>` : ""}
+    ${(z.bezuege || []).length ? `<div class="section-title">🔗 Querbezüge</div>${z.bezuege.map((b) => {
+      const t = b.id && zfById(b.id);
+      const inner = `<span class="tag">${BEZUG[b.art] || esc(b.art)}</span> <b>${esc(b.titel)}</b><br><span class="src">${esc(b.text)}</span>`;
+      return t ? `<button class="series-row zf-bezug" data-act="zf-open" data-id="${esc(b.id)}">${inner} ›</button>` : `<div class="series-row zf-bezug">${inner}</div>`;
+    }).join("")}` : ""}
     ${(z.quellen || []).length ? `<div class="section-title">Quellen</div><ul class="refs">${z.quellen.map((q) => `<li>${q.url ? `<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}</a>` : esc(q.name)}</li>`).join("")}</ul>` : ""}
     ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
     ${actionRow(ref)}
-  `);
+  `, opts);
   if (ui.tab === "inbox") render();
 }
+
+// ---------- Vorlesen (iPhone-Stimme) ----------
+const tts = { id: null };
+const ttsOk = () => "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function";
+function ttsPlain(src) {
+  return stripEmoji(String(src || ""))
+    .replace(/^\s*\|.*$/gm, "")
+    .replace(/^\s*-{3,}\s*$/gm, "")
+    .replace(/^\s*#{1,6}\s*(.+)$/gm, "$1.")
+    .replace(/^\s*>\s?/gm, "")
+    .replace(/^\s*(?:[-*]|\d+\.)\s+/gm, "")
+    .replace(/\*\*|__|\*|_|`/g, "")
+    .replace(/→/g, ", daraus folgt, ")
+    .replace(/[ \t]+/g, " ");
+}
+function ttsChunks(text) {
+  const out = [];
+  for (const para of text.split(/\n+/).map((x) => x.trim()).filter(Boolean)) {
+    let cur = "";
+    for (const sent of para.match(/[^.!?…]+[.!?…]*\s*/g) || [para]) {
+      if ((cur + sent).length > 280 && cur) { out.push(cur.trim()); cur = ""; }
+      cur += sent;
+    }
+    if (cur.trim()) out.push(cur.trim());
+  }
+  return out;
+}
+function ttsVoice() {
+  const vs = speechSynthesis.getVoices().filter((v) => /^de/i.test(v.lang));
+  return vs.find((v) => /premium|enhanced|erweitert/i.test(v.name)) || vs.find((v) => /anna|helena|petra|markus/i.test(v.name)) || vs[0] || null;
+}
+function ttsButton() {
+  const b = document.getElementById("zf-tts");
+  if (b) b.textContent = tts.id === b.dataset.id ? "⏹ Vorlesen stoppen" : `🔊 Vorlesen (Kern + Kapitel, ${String(state.speed).replace(".", ",")}×)`;
+}
+function ttsStop() {
+  if (!ttsOk()) return;
+  tts.id = null;
+  speechSynthesis.cancel();
+  ttsButton();
+}
+function ttsSpeak(id) {
+  const z = zfById(id);
+  if (!z || !ttsOk()) return;
+  if (tts.id === id) { ttsStop(); return; }
+  speechSynthesis.cancel();
+  if (typeof audio !== "undefined" && !audio.paused) audio.pause();
+  const k = z.kern || {};
+  const intro = [`${z.titel}, von ${z.autoren}.`, `Die Kernthese: ${z.kernthese}`,
+    ...(k.aussagen || []).map((a, i) => `${["Erstens", "Zweitens", "Drittens", "Viertens", "Fünftens"][i] || ""}: ${a}`),
+    k.original ? `Lohnt das Original? ${k.original}` : ""].join("\n");
+  const chunks = ttsChunks(ttsPlain(intro + "\n" + z.text));
+  const voice = ttsVoice();
+  tts.id = id;
+  chunks.forEach((c, i) => {
+    const u = new SpeechSynthesisUtterance(c);
+    u.lang = voice?.lang || "de-DE";
+    if (voice) u.voice = voice;
+    u.rate = Math.min(2, Math.max(0.5, state.speed || 1));
+    if (i === chunks.length - 1) u.onend = () => { if (tts.id === id) { tts.id = null; ttsButton(); } };
+    speechSynthesis.speak(u);
+  });
+  ttsButton();
+}
+if (ttsOk()) speechSynthesis.getVoices();
+
 function renderInbox() {
   if (!rxData) loadResearch();
   const items = feedItems();
@@ -1681,6 +1769,7 @@ function refreshSheet() {
   d.scrollTop = top;
 }
 function closeSheet(all) {
+  ttsStop();
   const d = $("#sheet");
   if (!all && d.open && sheetStack.length) {
     const prev = sheetStack.pop();
@@ -1761,7 +1850,8 @@ document.addEventListener("click", async (ev) => {
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
     case "feed-filter": ui.feed = el.dataset.k; render(); break;
     case "story": openStory(el.dataset.t, id, inSheet); break;
-    case "zf-open": openSummary(id); break;
+    case "zf-open": ttsStop(); openSummary(id); break;
+    case "zf-tts": ttsSpeak(id); break;
     case "post-new": openNewPost(el.dataset.link || ""); break;
     case "post-save": savePost(el.dataset.link || ""); break;
     case "post-del": deletePost(id); break;
