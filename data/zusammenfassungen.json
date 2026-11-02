@@ -1,7 +1,99 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T14:54:29+00:00",
+ "updated": "2026-11-02T14:56:03+00:00",
  "items": [
+  {
+   "id": "zf-knowledge-illusion",
+   "date": "2026-11-02",
+   "titel": "The Knowledge Illusion",
+   "autoren": "Steven Sloman & Philip Fernbach",
+   "jahr": 2017,
+   "verlag": "Riverhead Books",
+   "basis": "buch",
+   "drive_h": "4082a1105704",
+   "reihe": "The Knowledge Illusion",
+   "modul": "fk",
+   "kernthese": "Jeder Einzelne weiß viel weniger, als er glaubt; dass wir trotzdem funktionieren, liegt an einer Gemeinschaft des Wissens, in der Verstehen über Köpfe, Werkzeuge und Institutionen verteilt ist.",
+   "kern": {
+    "aussagen": [
+     "Wir überschätzen systematisch, wie gut wir Dinge verstehen – erst der Versuch, sie Schritt für Schritt zu erklären, entlarvt die Lücke.",
+     "Das Gehirn ist für Handeln gebaut, nicht für Speichern: Es behält grobe Ursache-Wirkungs-Zusammenhänge und verlässt sich für Details auf andere und auf die Umwelt.",
+     "Weil Wissen geteilt ist, verwechseln wir das Wissen der Gemeinschaft mit unserem eigenen – das macht Gruppenmeinungen ansteckend und schwer zu korrigieren.",
+     "Mehr Fakten allein ändern Überzeugungen selten; wer Menschen um eine Erklärung der Wirkmechanismen bittet, mäßigt dagegen oft ihre Haltung.",
+     "Klugheit ist eine Eigenschaft von Teams: Wertvoll ist, wer zum gemeinsamen Denken beiträgt, nicht wer allein am meisten weiß."
+    ],
+    "original": "Diese Zusammenfassung deckt das Buch ab. Im Original lohnen Kapitel 9 (Politik und erklärende Fragen) und Kapitel 12 (bessere Entscheidungen) für die konkreten Studien und Beispiele."
+   },
+   "text": "## 🎯 Worum es geht\nDie Kognitionswissenschaftler **Steven Sloman** (Brown University) und **Philip Fernbach** (University of Colorado) gehen einem Widerspruch nach: Menschen sind einzeln erstaunlich unwissend und haben doch gemeinsam Raumfahrt und Medizin hervorgebracht. Ihre Antwort ist die **Gemeinschaft des Wissens** – und die Illusion, die daraus entsteht.\n\n## 🧭 Kapitel für Kapitel\n**Was wir wissen (Einleitung und Kapitel 1).** Ausgangspunkt ist die **Illusion der Erklärungstiefe**: Menschen schätzen ihr Verständnis von Reißverschluss, Spülkasten oder Fahrrad hoch ein, bis sie es Schritt für Schritt erklären sollen. Dann sinkt die Selbsteinschätzung deutlich. Die Welt ist schlicht zu komplex, als dass ein Kopf sie fassen könnte; viele Systeme verhalten sich sogar chaotisch.\n\n**Warum und wie wir denken (Kapitel 2 und 3).** Das Gehirn hat sich nicht als Speicher entwickelt, sondern als Steuerung von Handlungen. Es abstrahiert und behält vor allem Ursache-Wirkungs-Zusammenhänge. Menschen sind darin geübt, vorwärts von Ursachen auf Folgen zu schließen, und schlechter darin, rückwärts von Folgen auf Ursachen zu schließen. Gedankenexperimente und Gegenwelten machen planvolles Handeln erst möglich.\n\n**Warum wir Falsches glauben (Kapitel 4).** Kausales Denken ist meist schnell und intuitiv. Der Test zum kognitiven Nachdenken zeigt, wie oft die erste Antwort falsch ist und wie selten Menschen sie prüfen. Wer eher abwägt, unterliegt der Illusion der Erklärungstiefe weniger.\n\n**Denken mit Körper, Umwelt und anderen (Kapitel 5 und 6).** Denken nutzt den Körper und die Umgebung als Gedächtnisstütze; wir müssen nicht speichern, was wir nachsehen können. Vor allem aber teilen Menschen kognitive Arbeit: Gemeinsame Absichten und Arbeitsteilung sind die eigentliche Stärke unserer Art. Unser Wissen ist dabei voller Verweise auf das Wissen anderer, die wir nicht einmal bemerken.\n\n**Denken mit Technik (Kapitel 7).** Auch das Internet behandeln wir wie eigenes Wissen. Wer nachgeschlagen hat, hält sich anschließend für klüger. Maschinen teilen aber keine Absichten mit uns; ihnen blind zu vertrauen ist riskant.\n\n**Wissenschaft und Politik (Kapitel 8 und 9).** Mehr Aufklärung allein verändert Einstellungen zu Impfungen, Klimawandel oder Gentechnik kaum, denn Überzeugungen hängen an der Gemeinschaft, nicht an Detailwissen. Ängste vor Gentechnik beruhen teils auf falschen Ursachenvorstellungen. In Experimenten mäßigten Menschen extreme Positionen, nachdem sie erklären sollten, wie eine Maßnahme wirkt. Bloße Begründungen verstärkten dagegen die Haltung. Wer politische Fragen zu heiligen Werten erklärt, entzieht sie der Abwägung von Folgen.\n\n**Eine neue Definition von Klugheit (Kapitel 10 bis 12).** Intelligenz sollte daran gemessen werden, was jemand zur Gruppe beiträgt. Schulen sollten lehren, Wissen zu finden und mit anderen zu denken, statt nur Fakten zu vermitteln. Bei Entscheidungen hilft es, die Illusion einzuplanen: einfache Regeln, gut gesetzte Voreinstellungen und Information genau dann, wenn sie gebraucht wird.\n\n**Schluss.** Unwissen ist unvermeidlich und nicht beschämend. Die Illusion kann sogar Mut zum Handeln geben – gefährlich wird sie, wenn sie Prüfung und Austausch verhindert.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Verbindung zweier gut belegter Befunde: Die Illusion der Erklärungstiefe zeigt die Grenzen des Einzelnen, die verteilte Kognition erklärt, warum das selten auffällt. Robin Hogarth lobt in seiner Besprechung die gut lesbare Darstellung.\n\n**Am schwächsten** sind die Lösungen. Yuval Harari bemängelte in der New York Times, dass die Autoren kaum Auswege bieten; Hogarth vermisst Aussagen darüber, wann die Gemeinschaft klug und wann sie töricht urteilt. Das Magazin Reason kritisiert, dass Märkte als wichtigster Mechanismus verteilten Wissens nach Hayek fast fehlen. Der Befund zur Mäßigung durch Erklären ließ sich zudem nicht in allen Nachuntersuchungen bestätigen.\n\n## 🗣️ Rezeption\nDas Buch wurde breit besprochen und als anregend und zugänglich gelobt. Louise Barrett merkte an, dass vieles im Kern bekannt sei, das Buch aber eine wichtige Schwäche menschlichen Denkens klar benenne.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n| Begriff | Bedeutung | Beispiel im Buch |\n|---|---|---|\n| **Illusion der Erklärungstiefe** | Verstehen wird überschätzt, bis man es erklären soll | Reißverschluss, Spülkasten, Fahrrad |\n| **Gemeinschaft des Wissens** | Wissen ist über Menschen, Werkzeuge und Institutionen verteilt | Hausbau: Zimmermann und Installateur |\n| **Kognitive Arbeitsteilung** | jeder hält nur einen Teil, Verweise auf andere ersetzen Details | Wissen über die Sphinx als Platzhalter |\n| **Vorwärts- und Rückwärtsschluss** | Ursache → Folge fällt leichter als Folge → Ursache | Diagnose ist schwerer als Prognose |\n| **Intuitive und abwägende Denker** | wer seine erste Antwort prüft, fällt seltener auf die Illusion herein | Test zum kognitiven Nachdenken |\n| **Ansteckendes Verstehen** | wir fühlen uns kundig, weil andere es sind | Meinungen in der eigenen Gruppe |\n| **Heilige Werte** | Positionen, die jede Abwägung von Folgen verweigern | Konflikte um Grundsatzfragen |\n\n## ✅ Listen und Fragen\n**Gegen die Illusion – Prüffragen aus dem Buch:**\n- Kann ich Schritt für Schritt erklären, *wie* das funktioniert – nicht nur *dass*?\n- Woher stammt mein Wissen, und wem vertraue ich dabei?\n- Würde meine Gruppe dasselbe glauben, wenn niemand darin Experte wäre?\n- Erkläre ich gerade Wirkmechanismen oder sammle ich Gründe für meine Meinung?\n\n**Für bessere Entscheidungen (Kapitel 12):** Komplexität für andere verringern · einfache Faustregeln anbieten · Information genau dann geben, wenn sie gebraucht wird · Voreinstellungen klug wählen · das eigene Verständnis vor wichtigen Entscheidungen prüfen.\n\n**Für Teams und Bildung:** Beiträge zur Gruppe zählen, nicht Einzelwissen · unterschiedliche Fähigkeiten kombinieren · lehren, wo Wissen liegt und wie man es abruft.\n\n## 🔬 Belege und ihr Stand\n| Befund | Stand |\n|---|---|\n| Illusion der Erklärungstiefe (Rozenblit & Keil, 2002) | **bestätigt**, mehrfach repliziert |\n| Internetsuche steigert das Gefühl eigenen Wissens (Fisher u. a., 2015) | **gestützt** |\n| Erklären lassen mäßigt politische Haltungen (Fernbach u. a., 2013) | **umstritten** – Nachuntersuchungen fanden schwächere oder keine Effekte |\n| Kollektive Intelligenz von Gruppen (Woolley u. a.) | **umstritten** |",
+   "karten": [
+    {
+     "frage": "Was ist die Illusion der Erklärungstiefe?",
+     "antwort": "Wir überschätzen, wie gut wir etwas verstehen – bis wir es Schritt für Schritt erklären sollen."
+    },
+    {
+     "frage": "Was meinen Sloman und Fernbach mit der Gemeinschaft des Wissens?",
+     "antwort": "Wissen ist über Menschen, Werkzeuge und Institutionen verteilt; jeder trägt nur einen Teil und verweist für den Rest auf andere."
+    },
+    {
+     "frage": "Wofür hat sich das Gehirn laut den Autoren entwickelt?",
+     "antwort": "Für wirksames Handeln, nicht zum Speichern – es behält grobe Ursache-Wirkungs-Zusammenhänge statt Details."
+    },
+    {
+     "frage": "Warum ändern mehr Fakten Überzeugungen selten?",
+     "antwort": "Überzeugungen hängen an der eigenen Gemeinschaft, nicht an Detailwissen – sie werden gemeinsam getragen."
+    },
+    {
+     "frage": "Welche Frage kann extreme Positionen mäßigen?",
+     "antwort": "Die Bitte, den Wirkmechanismus einer Maßnahme zu erklären – nicht die Bitte um Gründe für die eigene Meinung (Befund umstritten)."
+    },
+    {
+     "frage": "Wie definieren die Autoren Klugheit neu?",
+     "antwort": "Als Beitrag zum gemeinsamen Denken einer Gruppe, nicht als Wissen eines Einzelnen."
+    }
+   ],
+   "bezuege": [
+    {
+     "titel": "Hugo Mercier & Dan Sperber – The Enigma of Reason",
+     "art": "stuetzt",
+     "text": "Teilt die Grundannahme, dass Vernunft vor allem in der Gemeinschaft funktioniert – Mercier und Sperber erklären, warum."
+    },
+    {
+     "id": "zf-intelligence-trap",
+     "titel": "David Robson – The Intelligence Trap",
+     "art": "ergaenzt",
+     "text": "Robson zeigt, dass gerade Experten der Illusion des eigenen Wissens erliegen; Sloman und Fernbach liefern den Mechanismus dahinter."
+    },
+    {
+     "id": "zf-tyranny-of-metrics",
+     "titel": "Jerry Z. Muller – The Tyranny of Metrics",
+     "art": "ergaenzt",
+     "text": "Beide berufen sich auf Hayek: Wissen ist verteilt und an Ort und Erfahrung gebunden – Zentralen sehen nur einen Ausschnitt."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: Steven Sloman & Philip Fernbach – The Knowledge Illusion (Riverhead Books, 2017)",
+     "url": ""
+    },
+    {
+     "name": "Robin M. Hogarth – What Makes You Think You’re So Smart?, Judicature (Duke Law), 2020",
+     "url": "https://judicature.duke.edu/articles/what-makes-you-think-youre-so-smart/hogarth-spring2020/"
+    },
+    {
+     "name": "Louise Barrett – Rezension in Human Ethology 35, 2020",
+     "url": "https://ishe.org/wp-content/uploads/2021/01/HE_2020_35_2-5.pdf"
+    },
+    {
+     "name": "Reason – You Are Ignorant, But Not Necessarily Dumb",
+     "url": "https://reason.com/?p=265797"
+    },
+    {
+     "name": "Writers Write – Book Review: The Knowledge Illusion",
+     "url": "https://www.writerswrite.co.za/?p=1157426"
+    }
+   ]
+  },
   {
    "id": "zf-superforecasting",
    "date": "2026-11-02",
