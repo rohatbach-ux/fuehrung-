@@ -1,6 +1,74 @@
 {
- "updated": "2026-11-02T03:37:38+00:00",
+ "updated": "2026-11-02T04:07:43+00:00",
  "items": [
+  {
+   "id": "drive-20261102-1",
+   "date": "2026-11-02",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 2,
+    "von": 10
+   },
+   "titel": "Theorie X oder Y: Dein Menschenbild führt mit",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), Kapitel 2.1–2.1.1",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Ob du Menschen für bequem oder für engagiert hältst, bestimmt, wie viel du ihnen zutraust – und erzeugt genau das Verhalten, das du erwartest.",
+   "deutsch": "> **Dein Menschenbild ist keine Privatsache: Es zeigt sich in jeder Aufgabe, die du überträgst – oder eben nicht.**\n\n## 🔗 Anschluss an Teil 1\nTeil 1 stellte die fünf Kernkompetenzen für Führung in der Mitte vor. Die erste und laut Frerichs **wichtigste** ist ein positives Menschenbild und eine positive Haltung.\n\n## 🧠 Warum das Menschenbild zählt\n- Unser **Denken beeinflusst unsere Gefühlslage** – ein Befund, den Pädagogik, Verhaltenstherapie und Führungspsychologie nutzen.\n- Das Menschenbild entsteht aus **Erfahrungen** mit Menschen und wird in jeder Begegnung bewusst und vor allem **unbewusst** wiederholt.\n- Es zeigt sich darin, **wie wir mit und über andere sprechen** und wie wir handeln.\n\n---\n\n## ⚖️ McGregors Theorien X und Y\nDer US-Psychologe **Douglas McGregor** formulierte sie 1960 am MIT.\n\n| | Theorie X | Theorie Y |\n|---|---|---|\n| **Bild vom Menschen** | von Natur aus faul und bequem | von Natur aus engagiert und leistungswillig |\n| **Motivation** | nur durch äußere Reize | intrinsisch – wenn die Ziele sinnvoll sind |\n| **Antrieb** | kein innerer Wunsch, mehr zu leisten oder zu wachsen | Streben nach Entwicklung und Selbstverwirklichung |\n| **Arbeit ist …** | ein notwendiges Übel | eine Quelle der Zufriedenheit |\n\nMcGregor selbst bevorzugte **Theorie Y**.\n\n## 🔁 Die selbsterfüllende Prophezeiung\nBeide Theorien bestätigen sich selbst: Eine Führungskraft **sucht unbewusst nach Belegen** für ihr Menschenbild.\n- Frerichs’ Beispiel aus der Schule: Hält ein Lehrer ein Kind für unbegabt in Mathe, reagiert er anders auf es – und die Ergebnisse folgen oft der Erwartung.\n- Dazu kommt der **Halo-Effekt**: Ein auffälliges Merkmal überstrahlt alle anderen.\n\n## 🎯 Wo es im Alltag sichtbar wird\n- **Vertrauen:** Wie viel traust du jemandem zu?\n- **Delegation:** Welche Aufgaben überträgst du – und welche nicht?\n- **Erwartungen:** Was hältst du für erfüllbar?\n- **Kontrolle:** Wer niemandem ganz traut, verlangt engmaschig Zwischenergebnisse – im Extremfall bis zur Kamera.\n\n**Warnsignale** laut Frerichs: ein unglückliches Team, steigende **Krankenquote** und **Fluktuation**. Dann lohnt der Blick auf den eigenen Stil – denn Führung beginnt mit **Selbstführung**.",
+   "modul": "fk",
+   "bezug_ih": "- **Schubladen prüfen:** In einem unruhigen Netz entstehen schnell Urteile über „die Zuverlässigen“ und „die Problemfälle“. Frag dich, welche davon Erfahrung sind und welche eine Erwartung, die sich selbst bestätigt.\n- **Kontrolle ist nicht gleich Kontrolle:** In der Instandhaltung sind Prüfungen, Abnahmen und Vier-Augen-Prinzip Sicherheitsvorgaben – kein Ausdruck von Misstrauen. Theorie Y heißt nicht, darauf zu verzichten, sondern zusätzliche Kontrolle aus Misstrauen zu vermeiden.\n- **Einordnung:** X und Y sind ein vereinfachendes Gegensatzpaar, kein Messinstrument; die meisten Menschen und Lagen liegen dazwischen. Frerichs beruft sich allgemein auf Studien zu Erwartungseffekten, nennt sie aber nicht im Einzelnen.",
+   "frage": "Bei welchen Menschen in meinem künftigen Umfeld habe ich schon ein Urteil, bevor ich sie richtig kenne?",
+   "experiment": "**Prüfe deine Zutrauens-Landkarte.**\n1. Schreib für jede direkte Führungskraft auf, welche Aufgabe du ihr spontan **zutrauen** würdest – und welche nicht.\n2. Notiere daneben, worauf dein Urteil beruht: **eigene Erfahrung** oder **Hörensagen**.\n3. Wähle eine Person mit „Hörensagen“ und übertrage ihr in den ersten Wochen bewusst eine anspruchsvolle Aufgabe.\n4. Halte im Journal fest, was passiert ist.",
+   "karten": [
+    {
+     "frage": "Was unterscheidet McGregors Theorie X von Theorie Y?",
+     "antwort": "X: Menschen sind faul und nur durch äußere Reize motivierbar. Y: Menschen sind engagiert und intrinsisch motiviert, wenn die Ziele sinnvoll sind."
+    },
+    {
+     "frage": "Warum bestätigen sich Theorie X und Y selbst?",
+     "antwort": "Die Führungskraft sucht unbewusst nach Belegen und verhält sich entsprechend – eine selbsterfüllende Prophezeiung, verstärkt durch den Halo-Effekt."
+    },
+    {
+     "frage": "Welche Warnsignale nennt Frerichs für ein problematisches Menschenbild der Führung?",
+     "antwort": "Ein unglückliches Team, steigende Krankenquote und Fluktuation."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261102-2",
+   "date": "2026-11-02",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 3,
+    "von": 7
+   },
+   "titel": "Zwei Gespräche, die den Start prägen",
+   "quelle": {
+    "name": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019), Kapitel 2 und 6",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Ein gut vorbereitetes Gespräch mit dem eigenen Vorgesetzten und ein strukturierter „Wunschzettel“ für die ersten Einzelgespräche geben dir in kurzer Zeit ein Bild, das Wochen an Beobachtung ersetzt.",
+   "deutsch": "> **Wer zu Beginn die richtigen Fragen stellt – nach oben und nach unten –, stellt die Weichen, bevor sich Muster festsetzen.**\n\n## 🔗 Anschluss an Teil 2\nIn Teil 2 hast du deine Führungs-Charta formuliert. Jetzt geht es um die zwei Gespräche, die De Micheli für den Start besonders hervorhebt.\n\n## 🗣️ 1. Das Gespräch mit dem eigenen Vorgesetzten\n**Wozu:** Weichen richtig stellen, Prioritäten klären, sich **Rückhalt** sichern – auch um später schnell nötige Maßnahmen absegnen zu lassen. Wenn das Vertrauen es zulässt, auch Rat und Erfahrungen einholen.\n\n| Themenfeld | Fragen aus dem Buch |\n|---|---|\n| **Auftrag** | Welchen Beitrag leistet der Bereich im Unternehmen? Welchen Stellenwert hat er? |\n| **Ziele und Prioritäten** | Welche qualitativen und welche quantitativen Ziele gelten? Welche Probleme und Prioritäten sind aktuell – und welche sind warum vorrangig? Gibt es Konflikte, die dringend gelöst werden müssen? |\n| **Vorgänger** | Wie stand das Team zum Vorgänger, was schätzte es an ihm? Warum ist er gegangen? Welchen Führungsstil hatte er? |\n| **Menschen** | Wie lassen sich die Mitarbeitenden kurz beschreiben? Von wem ist warum Widerstand zu erwarten? Wer hat guten, wer schlechten Einfluss? Wer passt warum weniger gut ins Team? Wer sind die Meinungsmacher? |\n| **Zusammenarbeit und Klima** | Wo gibt es warum Probleme in der Zusammenarbeit? Welche Erfolge und Misserfolge gab es zuletzt? Welche Bedenken oder Ängste herrschen vor? Welche Herausforderungen und Motivationen dominieren? Wie ist das Teamklima? |\n\n**Danach:** Gespräch **protokollieren**, daraus einen Aktivitäten- und Maßnahmenplan ableiten – und diesen **noch einmal besprechen**.\n\n### 🤝 Die Beziehung nach oben\n- Konzentriere dich auf drei Dinge: **Leistungen und Erfolge zeigen**, **Loyalität** und Anerkennung der Autorität, **Entscheidungen mittragen**.\n- In schwierigen Lagen **um Rat fragen** – mit Verweis auf seine Erfahrung.\n- **Courage zeigen:** auch widersprechen und Kritik üben. Gute Vorgesetzte wollen keine Ja-Sager.\n- Den Vorgesetzten **diskret bei Schwächen unterstützen** und seine Stärken vor anderen würdigen.\n- **Zwei Ebenen** unterscheiden: menschlich auf Augenhöhe, geschäftlich unterstellt – mit der Pflicht, auch schwere Entscheidungen mitzutragen.\n\n---\n\n## 📝 2. Der „Wunschzettel“ vor dem ersten Einzelgespräch\nDe Micheli schlägt vor, den Mitarbeitenden eine **Vorbereitungshilfe** zu geben. Einleitung sinngemäß: Es ist mir wichtig, dass Ihre Anliegen schon im ersten Gespräch offen zur Sprache kommen.\n\n**Sechs Themenfelder:**\n- 🌤️ Arbeitsklima und Beziehung zum Vorgesetzten\n- 🗂️ Information, Organisation und Abläufe\n- 📈 Weiterentwicklung, Karrierewünsche und Berufsziele\n- 🎯 Aufgabe, Zufriedenheit, Ziele und Herausforderungen\n- 💪 Gesundheit, Wohlbefinden und Arbeitsplatz\n- ⚖️ Balance von Beruf und Privatleben\n\n**Zu jedem Feld:** Mein Ziel oder Wunsch · Problem oder Hindernis · Lösungsvorschläge · Bemerkungen.",
+   "modul": "uebergang",
+   "bezug_ih": "- **Vor dem Start nutzen:** Das Gespräch mit deiner künftigen Führungskraft kannst du noch im Dezember führen – ergänze Fragen zu den Brandherden und zu Erwartungen an dein WHY-Vorhaben.\n- **Urteile als Hypothesen:** Fragen wie „Wer hat schlechten Einfluss?“ liefern Einschätzungen anderer, keine Fakten. Notiere sie als Hypothesen und prüfe sie selbst – sonst wirkt genau die selbsterfüllende Prophezeiung aus Frerichs’ Teil 2.\n- **Einordnung:** Den Wunschzettel freiwillig und ohne Ablage anbieten. Gesundheit und Privatleben sind heikle Themen. Ein einheitliches Formular für alle Mitarbeitenden kann außerdem der Mitbestimmung unterliegen (Personalfragebogen nach BetrVG) – vorher mit Personalbereich bzw. Betriebsrat klären.",
+   "frage": "Was muss ich von meiner künftigen Führungskraft wissen, damit ich im ersten Konflikt nicht im Regen stehe?",
+   "experiment": "**Bereite beide Gespräche vor.**\n1. Wähle aus der Fragenliste die **acht** wichtigsten Fragen für das Gespräch nach oben und ergänze zwei zu den Brandherden.\n2. Vereinbare den Termin noch vor dem Antritt.\n3. Formuliere deine eigene, kurze Version des Wunschzettels mit **drei** Feldern, die für dich am wichtigsten sind.\n4. Kläre vor dem Einsatz, ob dafür eine Abstimmung mit dem Betriebsrat nötig ist.",
+   "karten": [
+    {
+     "frage": "Welche drei Dinge stehen in der Beziehung zum eigenen Vorgesetzten laut De Micheli im Mittelpunkt?",
+     "antwort": "Leistungen und Erfolge zeigen, Loyalität und Anerkennung der Autorität, Entscheidungen mittragen – dazu der Mut, auch zu widersprechen."
+    },
+    {
+     "frage": "Was ist der „Wunschzettel“ nach De Micheli?",
+     "antwort": "Eine Vorbereitungshilfe für Mitarbeitende vor dem ersten Einzelgespräch: sechs Themenfelder mit Wunsch, Hindernis, Lösungsvorschlag und Bemerkungen."
+    }
+   ]
+  },
   {
    "id": "20261102-1",
    "date": "2026-11-02",
