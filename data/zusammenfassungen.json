@@ -1,7 +1,104 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T15:01:03+00:00",
+ "updated": "2026-11-02T15:02:27+00:00",
  "items": [
+  {
+   "id": "zf-enigma-of-reason",
+   "date": "2026-11-02",
+   "titel": "The Enigma of Reason",
+   "autoren": "Hugo Mercier & Dan Sperber",
+   "jahr": 2017,
+   "verlag": "Harvard University Press",
+   "basis": "oeffentlich",
+   "drive_h": "2268101d7197",
+   "reihe": "The Enigma of Reason",
+   "modul": "gespraeche",
+   "kernthese": "Vernunft hat sich nicht entwickelt, damit der Einzelne allein zu besseren Urteilen kommt, sondern um Gründe zu liefern und zu prüfen – im Austausch mit anderen; deshalb ist sie beim Argumentieren für sich selbst parteiisch und bequem, beim Prüfen fremder Argumente aber scharf.",
+   "kern": {
+    "aussagen": [
+     "Vernunft ist kein Sondervermögen über der Intuition, sondern selbst eine spezialisierte Intuition – über Gründe.",
+     "Ihre Funktion ist sozial: das eigene Handeln vor anderen rechtfertigen und andere durch Argumente überzeugen.",
+     "Die Bestätigungsneigung ist kein Defekt, sondern passt zu dieser Funktion: Wer überzeugen will, sucht Argumente für die eigene Seite.",
+     "Beim Bewerten fremder Argumente sind Menschen deutlich kritischer und treffsicherer als beim Erzeugen eigener.",
+     "Deshalb denkt man in kleinen Gruppen mit echtem Austausch besser als allein – und allein oder unter Gleichgesinnten gefährlich einseitig."
+    ],
+    "original": "Diese Zusammenfassung beruht auf öffentlichen Quellen, weil die Datei im Drive ein reines Bild-PDF ohne Text ist. Laut den Fachbesprechungen tragen die Teile zur sozialen Funktion der Vernunft und zum Denken in Gruppen das Buch."
+   },
+   "text": "## 🎯 Worum es geht\nDer Kognitionswissenschaftler **Hugo Mercier** und der Anthropologe **Dan Sperber** gehen einem doppelten Rätsel nach. Wenn Vernunft Menschen so mächtig macht, warum hat keine andere Art sie entwickelt? Und wenn sie so nützlich ist, warum funktioniert sie in Experimenten so schlecht? Ihre Antwort ist die **interaktionistische Theorie der Vernunft**.\n\n## 🧭 Teil für Teil\n**Die Anklage gegen die Vernunft.** Jahrzehnte der Denkpsychologie zeigen Menschen als schlechte Logiker: Sie scheitern an einfachen Aufgaben, suchen Bestätigung und rechtfertigen Fehlurteile. Die gängige Erklärung mit zwei Denksystemen, einem schnellen intuitiven und einem langsamen vernünftigen, überzeugt die Autoren nicht.\n\n**Schlussfolgern ist überall – und meist unbewusst.** Der Geist besteht aus vielen spezialisierten Mechanismen, die ständig intuitive Schlüsse ziehen, etwa über Gesichter, Absichten oder Mengen. Vernunft ist einer davon: ein Mechanismus, der Intuitionen über **Gründe** erzeugt. Sie ist also keine übergeordnete Instanz, sondern eine besondere Form der Intuition, die sich auf Darstellungen von Darstellungen stützt.\n\n**Wozu Gründe dienen.** Menschen nennen Gründe vor allem im Nachhinein und für andere. Sie rechtfertigen ihr Handeln, damit andere ihnen vertrauen, und sie argumentieren, um andere zu überzeugen. Beides hilft Menschen, die stark aufeinander angewiesen sind und sich vor Täuschung schützen müssen. Vernunft ist damit eine Anpassung an das Zusammenleben.\n\n**Was die Vernunft kann und was nicht.** Daraus erklären sich ihre scheinbaren Mängel. Wer Argumente erzeugt, ist parteiisch, weil er überzeugen will, und bequem, weil er sich auf Widerspruch verlassen kann, der Schwachstellen aufdeckt. Wer Argumente anderer prüft, ist dagegen anspruchsvoll und lässt sich von guten Gründen bewegen. In einem bekannten Versuch lehnten Teilnehmer ihre eigenen Begründungen häufig ab, wenn man sie ihnen als fremde unterschob. Allein denkend verstärkt die Vernunft daher oft bestehende Überzeugungen; in Gruppen mit echtem Austausch lösen Menschen schwierige Logikaufgaben dagegen deutlich häufiger richtig.\n\n**Vernunft in der Welt.** Wissenschaft funktioniert, weil sie organisierten Widerspruch institutionalisiert. Auch moralisches und politisches Urteilen profitiert vom Austausch, leidet aber unter Gruppen Gleichgesinnter, die sich gegenseitig bestärken. Gute Vernunft ist also weniger eine Eigenschaft von Köpfen als von Gesprächen und Institutionen. Für die Autoren folgt daraus kein Pessimismus: Wer Entscheidungen so organisiert, dass unterschiedliche Sichtweisen aufeinandertreffen und Gründe offen geprüft werden, nutzt die Vernunft genau so, wie sie gebaut ist. Problematisch wird es dort, wo Menschen allein grübeln oder nur noch Zustimmung hören.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Auflösung des Widerspruchs zwischen der Leistungsfähigkeit menschlicher Vernunft und ihren Fehlern im Labor. Die Unterscheidung zwischen dem Erzeugen und dem Bewerten von Argumenten erklärt beides und wird von Experimenten zum Denken in Gruppen gestützt. Nick Chater und Mike Oaksford nennen die Analyse in Mind & Language erfrischend und gut belegt.\n\n**Am schwächsten** sind die evolutionären Annahmen. Catarina Dutilh Novaes bezweifelt, dass Vernunft ein abgegrenzter Mechanismus ist und dass die Bestätigungsneigung tatsächlich eine Anpassung darstellt; Kim Sterelny fragt, ob Vernunft nicht eher auf Gruppenebene entstanden ist. Unklar bleibt auch, warum einsames Denken in Mathematik oder Wissenschaft manchmal glänzend funktioniert.\n\n## 🗣️ Rezeption\nDas Buch wurde in Psychologie und Philosophie breit diskutiert, unter anderem in einem Themenheft von Mind & Language mit Antwort der Autoren. Populär wurde es auch als Erklärung dafür, warum Fakten Überzeugungen selten ändern.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n| Begriff | Bedeutung |\n|---|---|\n| **Intellektualistische Sicht** | Vernunft soll dem Einzelnen zu besserem Wissen und Entscheiden verhelfen |\n| **Interaktionistische Sicht** | Vernunft dient dem Rechtfertigen und Argumentieren gegenüber anderen |\n| **Vernunft als Intuition** | ein spezialisierter Mechanismus für Intuitionen über Gründe |\n| **Parteilichkeit für die eigene Seite** | beim Erzeugen von Argumenten werden Gründe für die eigene Position gesucht |\n| **Bequemlichkeit beim Erzeugen** | schwache eigene Argumente genügen, weil Widerspruch Fehler aufdeckt |\n| **Strenge beim Bewerten** | fremde Argumente werden kritisch geprüft, gute überzeugen |\n| **Wachsamkeit** | Schutz vor Täuschung durch Prüfen von Quelle und Gründen |\n\n**Erzeugen und Bewerten im Vergleich:**\n| | Eigene Argumente erzeugen | Fremde Argumente bewerten |\n|---|---|---|\n| Haltung | parteiisch | prüfend |\n| Aufwand | gering | hoch |\n| Ergebnis allein | Bestätigung der eigenen Sicht | Ablehnung schwacher Gründe |\n| Ergebnis im Austausch | wird durch Widerspruch verbessert | gute Gründe setzen sich durch |\n\n## ✅ Listen und Fragen\n**Folgerungen für das Denken (aus der Theorie abgeleitet):**\n- Wichtige Fragen nicht allein durchdenken, sondern mit Menschen, die anderer Meinung sind.\n- Kleine Gruppen mit echtem Austausch nutzen, nicht große Runden mit Frontalvortrag.\n- Gruppen Gleichgesinnter meiden, weil sie Positionen zuspitzen.\n- Die eigene Begründung so prüfen, als käme sie von jemand anderem.\n- Für Überzeugungsarbeit Argumente anbieten, die der andere selbst prüfen kann – statt Autorität.\n\n## 🔬 Belege und ihr Stand\n| Befund | Stand |\n|---|---|\n| Gruppen lösen die Wason-Auswahlaufgabe weit häufiger richtig als Einzelne | **bestätigt**, mehrfach repliziert |\n| Eigene Argumente werden abgelehnt, wenn sie als fremde erscheinen (Trouche u. a., 2016) | **gestützt** |\n| Bestätigungsneigung als evolutionäre Anpassung | **umstritten** |\n| Vernunft als eigenständiger Mechanismus | **umstritten** in der Philosophie des Geistes |",
+   "karten": [
+    {
+     "frage": "Was ist die interaktionistische Theorie der Vernunft?",
+     "antwort": "Vernunft dient dem Rechtfertigen und Argumentieren gegenüber anderen – nicht in erster Linie dem einsamen Denken."
+    },
+    {
+     "frage": "Warum ist die Bestätigungsneigung laut Mercier und Sperber kein Defekt?",
+     "antwort": "Wer überzeugen will, muss Argumente für die eigene Seite finden – die Neigung passt zur sozialen Funktion der Vernunft."
+    },
+    {
+     "frage": "Worin unterscheiden sich Erzeugen und Bewerten von Argumenten?",
+     "antwort": "Beim Erzeugen sind wir parteiisch und bequem, beim Bewerten fremder Argumente kritisch und treffsicher."
+    },
+    {
+     "frage": "Wann denken Menschen laut der Theorie am besten?",
+     "antwort": "In kleinen Gruppen mit echtem Austausch und unterschiedlichen Meinungen."
+    },
+    {
+     "frage": "Warum sind Gruppen Gleichgesinnter gefährlich?",
+     "antwort": "Ohne Widerspruch liefern alle nur Gründe für dieselbe Seite – Positionen werden extremer statt besser."
+    },
+    {
+     "frage": "Was zeigte der Versuch mit untergeschobenen Argumenten?",
+     "antwort": "Viele lehnten ihre eigene Begründung ab, wenn sie als die eines anderen präsentiert wurde."
+    }
+   ],
+   "bezuege": [
+    {
+     "id": "zf-knowledge-illusion",
+     "titel": "Steven Sloman & Philip Fernbach – The Knowledge Illusion",
+     "art": "stuetzt",
+     "text": "Auch Sloman und Fernbach verorten Denken in der Gemeinschaft; Mercier und Sperber erklären, warum Vernunft sozial gebaut ist."
+    },
+    {
+     "id": "zf-intelligence-trap",
+     "titel": "David Robson – The Intelligence Trap",
+     "art": "widerspricht",
+     "text": "Robson behandelt motiviertes Denken als Fehler, den man trainieren kann; hier ist es eine Funktion, die erst im Austausch produktiv wird."
+    },
+    {
+     "id": "zf-conjectures-refutations",
+     "titel": "Karl R. Popper – Conjectures and Refutations",
+     "art": "stuetzt",
+     "text": "Poppers Tradition der Kritik ist genau die Einrichtung, die nach Mercier und Sperber Vernunft wirksam macht."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: Hugo Mercier & Dan Sperber – The Enigma of Reason (Harvard University Press, 2017); Datei im Drive ohne Textebene, Zusammenfassung aus öffentlichen Quellen",
+     "url": ""
+    },
+    {
+     "name": "Nick Chater & Mike Oaksford – Rezension in Mind & Language, 2018",
+     "url": "https://zendy.io/title/10.1111/mila.12174"
+    },
+    {
+     "name": "Hugo Mercier & Dan Sperber – Antwort auf Kritiker, Mind & Language",
+     "url": "https://zendy.io/title/10.1111/mila.12181"
+    },
+    {
+     "name": "Dan Sperber – Seite zum Buch",
+     "url": "https://dan.sperber.fr/?p=1865"
+    },
+    {
+     "name": "Croatian Journal of Philosophy – Rezension",
+     "url": "https://hrcak.srce.hr/file/368493"
+    },
+    {
+     "name": "Cosma Shalizi – Books to Read While the Algae Grow in Your Fur, August 2019",
+     "url": "https://bactra.org/weblog/algae-2019-08.html"
+    }
+   ]
+  },
   {
    "id": "zf-book-of-why",
    "date": "2026-11-02",
@@ -161,7 +258,8 @@
     {
      "titel": "Judea Pearl & Dana Mackenzie – The Book of Why",
      "art": "ergaenzt",
-     "text": "Vertieft das Kapitel zur Ursächlichkeit: wann man aus Daten tatsächlich auf Ursachen schließen darf."
+     "text": "Vertieft das Kapitel zur Ursächlichkeit: wann man aus Daten tatsächlich auf Ursachen schließen darf.",
+     "id": "zf-book-of-why"
     }
    ],
    "quellen": [
@@ -253,7 +351,8 @@
     {
      "titel": "Judea Pearl & Dana Mackenzie – The Book of Why",
      "art": "widerspricht",
-     "text": "Pearl hält Ursachenwissen für mathematisch fassbar und aus Daten plus Modell ableitbar; Popper betont die bleibende Vorläufigkeit jeder Theorie."
+     "text": "Pearl hält Ursachenwissen für mathematisch fassbar und aus Daten plus Modell ableitbar; Popper betont die bleibende Vorläufigkeit jeder Theorie.",
+     "id": "zf-book-of-why"
     }
    ],
    "quellen": [
@@ -329,7 +428,8 @@
     {
      "titel": "Hugo Mercier & Dan Sperber – The Enigma of Reason",
      "art": "stuetzt",
-     "text": "Teilt die Grundannahme, dass Vernunft vor allem in der Gemeinschaft funktioniert – Mercier und Sperber erklären, warum."
+     "text": "Teilt die Grundannahme, dass Vernunft vor allem in der Gemeinschaft funktioniert – Mercier und Sperber erklären, warum.",
+     "id": "zf-enigma-of-reason"
     },
     {
      "id": "zf-intelligence-trap",
@@ -431,7 +531,8 @@
     {
      "titel": "Judea Pearl & Dana Mackenzie – The Book of Why",
      "art": "ergaenzt",
-     "text": "Behandelt die Frage nach Ursachen, die Tetlocks Prognosen bewusst ausklammern: nicht was passiert, sondern warum und was ein Eingriff bewirkt."
+     "text": "Behandelt die Frage nach Ursachen, die Tetlocks Prognosen bewusst ausklammern: nicht was passiert, sondern warum und was ein Eingriff bewirkt.",
+     "id": "zf-book-of-why"
     }
    ],
    "quellen": [
@@ -515,17 +616,20 @@
     {
      "titel": "Philip E. Tetlock & Dan Gardner – Superforecasting",
      "art": "stuetzt",
-     "text": "Liefert die empirische Grundlage für aktiv offenes Denken, auf die Robson in Kapitel 4 baut."
+     "text": "Liefert die empirische Grundlage für aktiv offenes Denken, auf die Robson in Kapitel 4 baut.",
+     "id": "zf-superforecasting"
     },
     {
      "titel": "Hugo Mercier & Dan Sperber – The Enigma of Reason",
      "art": "widerspricht",
-     "text": "Deutet die Bestätigungsneigung nicht als Denkfehler, sondern als Funktion argumentativer Vernunft, die in der Gruppe produktiv wird."
+     "text": "Deutet die Bestätigungsneigung nicht als Denkfehler, sondern als Funktion argumentativer Vernunft, die in der Gruppe produktiv wird.",
+     "id": "zf-enigma-of-reason"
     },
     {
      "titel": "Carl T. Bergstrom & Jevin D. West – Calling Bullshit",
      "art": "ergaenzt",
-     "text": "Baut Robsons „Werkzeugkasten gegen Falschinformation“ zu einer vollständigen Prüfmethode für Zahlen und Grafiken aus."
+     "text": "Baut Robsons „Werkzeugkasten gegen Falschinformation“ zu einer vollständigen Prüfmethode für Zahlen und Grafiken aus.",
+     "id": "zf-calling-bullshit"
     }
    ],
    "quellen": [
@@ -622,7 +726,8 @@
     {
      "titel": "Carl T. Bergstrom & Jevin D. West – Calling Bullshit",
      "art": "ergaenzt",
-     "text": "Liefert das Handwerkszeug, um verzerrte Zahlen und Auswahlfehler im Einzelfall zu erkennen, die Muller als Systemfolge beschreibt."
+     "text": "Liefert das Handwerkszeug, um verzerrte Zahlen und Auswahlfehler im Einzelfall zu erkennen, die Muller als Systemfolge beschreibt.",
+     "id": "zf-calling-bullshit"
     }
    ]
   },
