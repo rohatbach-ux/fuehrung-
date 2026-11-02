@@ -1,6 +1,90 @@
 {
- "updated": "2026-11-01T04:09:06+00:00",
+ "updated": "2026-11-02T03:37:38+00:00",
  "items": [
+  {
+   "id": "20261102-1",
+   "date": "2026-11-02",
+   "titel": "Veränderung gelingt öfter, wenn das Team mitplant",
+   "quelle": {
+    "name": "Gartner – This New Strategy Could Be Your Ticket to Change Management Success",
+    "url": "https://www.gartner.com/en/articles/this-new-strategy-could-be-your-ticket-to-change-management-success"
+   },
+   "sprache": "en",
+   "kernaussage": "Wer die Umsetzungsplanung einer Veränderung den Betroffenen überlässt, statt sie von oben vorzugeben, erhöht laut Gartner die Erfolgschancen deutlich und senkt die Gefahr von Veränderungsmüdigkeit.",
+   "deutsch": "> **Nicht das Ziel, aber der Weg dorthin gehört in die Hände derer, die ihn gehen müssen.**\n\n## 🔍 Der Ansatz\nDas Beratungs- und Forschungsunternehmen **Gartner** unterscheidet zwei Arten, Veränderung zu steuern:\n| Klassisch (top-down) | „Open-Source Change“ |\n|---|---|\n| Führung plant, Belegschaft setzt um | **Beschäftigte gestalten die Umsetzungsplanung** |\n| Kommunikation als Verkündung | **Offener Dialog** über Folgen und Sorgen |\n| Entscheidungen im kleinen Kreis | **Mehr Menschen** wirken an Entscheidungen mit |\n\n---\n\n## 📊 Was Gartner berichtet\n- 📈 Laut Gartner sind Organisationen mit diesem Ansatz **deutlich häufiger erfolgreich** (bis zu 14-mal, laut eigener Darstellung).\n- 🧩 In Zusammenfassungen wird vor allem ein Hebel hervorgehoben: Wenn **Beschäftigte die Umsetzungsplanung verantworten**, steigt die Erfolgswahrscheinlichkeit um rund **20 Prozentpunkte**.\n- 😮‍💨 Zugleich sinkt die Gefahr von **Veränderungsmüdigkeit**, die Gartner seit 2020 als wachsendes Risiko beschreibt.\n\n## ⚖️ Einordnung\nDie Zahlen stammen aus **Gartner-Befragungen**, deren Details nur Kunden einsehen können. Die genauen Werte schwanken je nach Zusammenfassung. Die Richtung deckt sich aber mit der langen Forschung zu **Beteiligung bei Veränderungen**.",
+   "modul": "change",
+   "bezug_ih": "- **Ziel setzen, Weg teilen:** Wenn du das Netz in ruhigeres Fahrwasser bringen willst, gib die Richtung vor, aber lass Meister und Teams mitplanen, wie es konkret umgesetzt wird.\n- **Müdigkeit ernst nehmen:** Dein künftiges Team hat vermutlich schon viele Programme erlebt. Wenige Vorhaben mit echter Mitgestaltung wirken mehr als viele verkündete.",
+   "frage": "Bei welcher Veränderung, die ich mir für 2027 vornehme, könnte ich das Wie vollständig dem Team überlassen?",
+   "experiment": "**Bereite eine Veränderung zur Mitplanung vor.**\n1. Wähl ein konkretes Vorhaben für die ersten Monate (z. B. Ablauf der Störungsbearbeitung).\n2. Formuliere nur das Ziel und die festen Rahmenbedingungen auf einer Seite.\n3. Notier, wer aus dem Team die Umsetzung planen könnte und was du bewusst offen lässt.",
+   "karten": [
+    {
+     "frage": "Was unterscheidet „Open-Source Change“ nach Gartner vom klassischen Vorgehen?",
+     "antwort": "Die Beschäftigten gestalten die Umsetzungsplanung mit, und es gibt offenen Dialog statt reiner Verkündung von oben."
+    },
+    {
+     "frage": "Welchen Hebel heben Zusammenfassungen der Gartner-Forschung besonders hervor?",
+     "antwort": "Wenn Beschäftigte die Umsetzungsplanung verantworten, steigt die Erfolgswahrscheinlichkeit deutlich (rund 20 Prozentpunkte)."
+    }
+   ]
+  },
+  {
+   "id": "20261102-2",
+   "date": "2026-11-02",
+   "titel": "Fünf Minuten mit den Menschen, für die ihr arbeitet",
+   "quelle": {
+    "name": "Knowledge at Wharton – Adam Grant: Putting a Face to a Name",
+    "url": "https://knowledge.wharton.upenn.edu/article/putting-a-face-to-a-name-the-art-of-motivating-employees/"
+   },
+   "sprache": "en",
+   "kernaussage": "Schon ein kurzer, direkter Kontakt mit den Menschen, denen die eigene Arbeit nützt, kann Einsatz und Leistung deutlich steigern, weil er den Sinn der Arbeit greifbar macht.",
+   "deutsch": "> **Sinn entsteht weniger durch Leitbilder als durch Begegnungen mit den Menschen, denen die Arbeit nützt.**\n\n## 🔬 Das Experiment\nDer Organisationspsychologe **Adam Grant** untersuchte das Callcenter einer Universität, in dem bezahlte Kräfte Spenden für Stipendien einwarben.\n- 🎓 Eine Gruppe traf **für etwa fünf Minuten** eine Person, die ein Stipendium erhalten hatte.\n- 📄 Vergleichsgruppen lasen nur einen Brief oder hatten keinen Kontakt.\n\n## 📊 Ergebnisse\n| Messgröße (ein Monat später) | Veränderung in der Kontaktgruppe |\n|---|---|\n| Zeit am Telefon | **+142 %** |\n| Eingeworbene Summe | **+171 %** |\n\nIn einer **Folgestudie** stiegen die Einnahmen laut Grant sogar um **mehr als 400 %**.\n\n---\n\n## 🧠 Warum das wirkt\nGrant nennt es **Bedeutsamkeit der Aufgabe**: Der Kontakt macht sichtbar, welchen Unterschied die Arbeit für echte Menschen macht. Bemerkenswert: Viele Beteiligte **führten ihre Steigerung selbst nicht** auf die kurze Begegnung zurück.\n\n## ⚖️ Einordnung\nDie Effekte sind **groß und gut bekannt**, stammen aber aus speziellen Umfeldern. Die genauen Prozentwerte unterscheiden sich je nach Studie und Zusammenfassung.",
+   "modul": "why",
+   "bezug_ih": "- **Nutzen sichtbar machen:** Instandhaltung wirkt oft unsichtbar. Wenn Teams erleben, wem ein verlässliches Netz nützt (z. B. Fahrgäste, Pendler, Güterkunden, Betrieb), wird das WHY greifbarer als jedes Papier.\n- **Klein anfangen:** Es braucht keine großen Kampagnen. Eine kurze Begegnung oder Rückmeldung von Nutzern kann mehr bewirken als eine Rede der Führung.",
+   "frage": "Wer sind die Menschen, denen die Arbeit meines künftigen Teams am meisten nützt – und wann hat das Team sie zuletzt direkt erlebt?",
+   "experiment": "**Plane eine erste Begegnung mit den Nutznießern.**\n1. Schreib drei Gruppen auf, die von einem verlässlichen Netz am stärksten profitieren.\n2. Überleg für jede Gruppe, wie dein Team in den ersten Monaten eine kurze, echte Rückmeldung erleben könnte (Besuch, Gast in einer Runde, Brief).\n3. Wähl eine Idee aus und frag eine erfahrene Person aus dem künftigen Team, ob sie passt.",
+   "karten": [
+    {
+     "frage": "Was bewirkte in Adam Grants Callcenter-Studie ein etwa fünfminütiger Kontakt mit einem Stipendiaten?",
+     "antwort": "Deutlich mehr Einsatz und Erfolg: einen Monat später rund 142 % mehr Telefonzeit und 171 % mehr eingeworbene Summe."
+    },
+    {
+     "frage": "Wie erklärt Grant den Effekt?",
+     "antwort": "Über die Bedeutsamkeit der Aufgabe: Der Kontakt macht sichtbar, welchen Unterschied die Arbeit für echte Menschen macht."
+    }
+   ]
+  },
+  {
+   "id": "buch-20261102-1",
+   "date": "2026-11-02",
+   "herkunft": "buch",
+   "reihe": {
+    "buch": "The Intelligence Trap",
+    "teil": 1,
+    "von": 4
+   },
+   "titel": "Warum kluge Köpfe besonders sicher danebenliegen",
+   "quelle": {
+    "name": "Chemistry World – Rezension zu David Robson (Bezug: The Intelligence Trap)",
+    "url": "https://chemistryworld.com/review/the-intelligence-trap-why-smart-people-do-stupid-things-and-how-to-make-wiser-decisions/3010894.article"
+   },
+   "sprache": "en",
+   "kernaussage": "Intelligenz und Fachwissen schützen nicht vor Fehlurteilen – sie können sogar dazu verleiten, sich für unfehlbar zu halten und andere Sichtweisen auszublenden.",
+   "deutsch": "> **Wer viel weiß, kann auch besonders überzeugend falsch liegen.**\n\n## 📚 Worum es geht\nDieser Teil beruht auf **öffentlichen Quellen zum Buch** (Rezensionen und Zusammenfassungen), nicht auf dem Buchtext selbst. Der Wissenschaftsjournalist **David Robson** fragt in *The Intelligence Trap* (2019), **warum kluge Menschen dumme Fehler machen**. Seine Grundthese: **Intelligenz ist nicht dasselbe wie gutes Denken.**\n\n## 🪤 Drei Fallen\n| Begriff | Bedeutung |\n|---|---|\n| **Dysrationalia** | Begriff des Psychologen Keith Stanovich: **unvernünftig denken trotz hoher Intelligenz** |\n| **Earned dogmatism** | Das Gefühl, als Experte **das Recht** zu haben, andere Sichtweisen zu ignorieren |\n| **Bias blind spot** | Denkfehler **bei anderen** erkennen, bei sich selbst aber nicht |\n\n---\n\n## 🔄 Der Kern\n- 🧠 Hohe Intelligenz hilft, **gute Begründungen** zu finden – auch für falsche Überzeugungen.\n- 🎓 Mit wachsender Erfahrung kann die **Offenheit für Neues sinken**.\n- 🧰 Im zweiten Teil des Buchs stellt Robson **Werkzeuge für klügeres Urteilen** vor. Darum geht es in den nächsten Teilen.",
+   "modul": "urteil",
+   "bezug_ih": "- **Erfahrung als Risiko:** Du bringst viel Fachwissen aus dem Projektmanagement Oberbau mit, und dein künftiges Team ebenso viel aus der Instandhaltung. Gerade Erfahrene laufen Gefahr, ungewohnte Hinweise zu schnell abzutun.\n- **Einordnung:** Die Begriffe stammen aus der Forschung (z. B. Stanovich) und sind gut belegt. Robson verdichtet sie populärwissenschaftlich. Wie stark Fachwissen tatsächlich verschließt, hängt von Person und Lage ab.",
+   "frage": "Bei welchem Thema bin ich mir so sicher, dass ich Widerspruch kaum noch ernsthaft prüfe?",
+   "experiment": "**Prüf eine eigene Gewissheit.**\n1. Schreib eine Überzeugung zur Instandhaltung auf, die du für selbstverständlich hältst.\n2. Such bewusst nach dem stärksten Gegenargument (Kollegen, Studie, Erfahrungsbericht).\n3. Notier, was du an deiner Überzeugung anpassen würdest, wenn das Gegenargument stimmt.",
+   "karten": [
+    {
+     "frage": "Was meint „Dysrationalia“?",
+     "antwort": "Unvernünftiges Denken trotz hoher Intelligenz (Begriff von Keith Stanovich)."
+    },
+    {
+     "frage": "Was ist „earned dogmatism“ nach Robson?",
+     "antwort": "Das Gefühl, sich durch Expertise das Recht verdient zu haben, andere Sichtweisen zu ignorieren."
+    }
+   ]
+  },
   {
    "id": "drive-20261101-1",
    "date": "2026-11-01",

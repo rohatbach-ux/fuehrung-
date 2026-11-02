@@ -39,8 +39,31 @@
    "autoren": "David Robson",
    "jahr": 2019,
    "modul": "urteil",
-   "status": "offen",
-   "plan": []
+   "status": "in_arbeit",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Die Falle: Dysrationalia, earned dogmatism, bias blind spot",
+     "impuls": "buch-20261102-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Motiviertes Denken: Warum Klugheit Fehlurteile verteidigt (inkl. Replikationskritik)",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Gegenmittel: intellektuelle Demut, Neugier und evidenzbasierte Weisheit",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Transfer auf die IH im Netz Hagen",
+     "impuls": null
+    }
+   ],
+   "begonnen": "2026-11-02",
+   "zuletzt": "2026-11-02"
   },
   {
    "id": "halo-effect",
