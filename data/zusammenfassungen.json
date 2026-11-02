@@ -1,7 +1,97 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T14:52:06+00:00",
+ "updated": "2026-11-02T14:54:29+00:00",
  "items": [
+  {
+   "id": "zf-superforecasting",
+   "date": "2026-11-02",
+   "titel": "Superforecasting",
+   "autoren": "Philip E. Tetlock & Dan Gardner",
+   "jahr": 2015,
+   "verlag": "Crown",
+   "basis": "buch",
+   "drive_h": "f70286bdba17",
+   "reihe": "Superforecasting",
+   "modul": "urteil",
+   "kernthese": "Gute Prognosen sind keine Gabe weniger Genies, sondern das Ergebnis erlernbarer Denkweisen – in Wahrscheinlichkeiten denken, Probleme zerlegen, ständig nachjustieren und die eigene Trefferquote ehrlich messen.",
+   "kern": {
+    "aussagen": [
+     "Ohne genaue Fragen und messbare Ergebnisse lässt sich Prognosegüte nicht beurteilen – die meisten Expertenprognosen werden nie überprüft.",
+     "„Füchse“, die viele Perspektiven abwägen, sagen besser voraus als „Igel“ mit einer großen Idee; Selbstsicherheit und Medienpräsenz sagen nichts über Treffsicherheit.",
+     "Superprognostiker zerlegen Fragen, beginnen bei der Außensicht (Basisraten) und passen ihre Schätzung in kleinen Schritten an neue Informationen an.",
+     "Der stärkste Einzelfaktor ist die Haltung „ständig in der Testphase“: Fehler auswerten und sich verbessern wollen wiegt schwerer als Intelligenz.",
+     "Gut geführte Teams schlagen Einzelne – wenn sie Widerspruch zulassen und Gruppendenken vermeiden."
+    ],
+    "original": "Kapitel 3 bis 8 und der Anhang mit den zehn Geboten tragen das Buch; diese Zusammenfassung bildet sie ab. Lesenswert im Original bleibt Kapitel 10 zum Führungsdilemma zwischen Demut und Entschlossenheit."
+   },
+   "text": "## 🎯 Worum es geht\nDer Psychologe **Philip E. Tetlock** zeigte in einer zwanzigjährigen Studie, dass politische Experten im Schnitt kaum besser vorhersagen als der Zufall. Im Buch, gemeinsam mit dem Journalisten **Dan Gardner** geschrieben, folgt die optimistische Wendung: Im Good Judgment Project, einem Prognosewettbewerb der US-Geheimdienstforschung, fanden sich Laien, die dauerhaft und deutlich besser trafen als alle anderen.\n\n## 🧭 Kapitel für Kapitel\n**Ein optimistischer Skeptiker (Kapitel 1).** Vorhersagen sind begrenzt, aber nicht unmöglich. Für kurze Zeiträume lässt sich Prognosegüte messen und steigern; es lohnt, menschliches Urteil und Rechenmodelle zu verbinden.\n\n**Die Illusion des Wissens (Kapitel 2).** Die Medizin hat jahrhundertelang auf Überzeugung statt auf Prüfung gesetzt. Prognosen stehen heute an einem ähnlichen Punkt. Schuld ist die Sicht „von der eigenen Nasenspitze“: Das schnelle, intuitive Denken liefert eine stimmige Geschichte und hält sie für die Wahrheit.\n\n**Punkte zählen (Kapitel 3).** Vage Aussagen wie „es besteht eine gewisse Möglichkeit“ lassen sich nicht überprüfen. Erst präzise Fragen mit Zeitraum und Zahlenwahrscheinlichkeit machen Prognosen messbar, etwa mit dem Brier-Wert, der Trefferquote und Kalibrierung zusammenfasst. Tetlocks frühere Expertenstudie zeigte: Igel mit einer großen Theorie lagen besonders bei ihrem eigenen Fachgebiet daneben, Füchse mit vielen kleinen Ideen trafen besser.\n\n**Superprognostiker (Kapitel 4).** Im Good Judgment Project übertrafen die besten zwei Prozent der Freiwilligen die Vergleichsgruppen deutlich und hielten ihr Niveau über Jahre. Das spricht gegen bloßes Glück.\n\n**Klug, rechenstark, informiert? (Kapitel 5 bis 7).** Superprognostiker sind überdurchschnittlich intelligent, aber keine Genies. Entscheidend ist, wie sie denken. Sie zerlegen Fragen nach Art des Physikers Enrico Fermi in Teilschätzungen. Sie beginnen bei der Außensicht, also der Häufigkeit vergleichbarer Fälle, und gehen erst dann auf die Besonderheiten ein. Sie denken fein abgestuft in Wahrscheinlichkeiten statt in „ja, nein, vielleicht“ und lehnen Schicksalsdenken ab. Neue Nachrichten verarbeiten sie in vielen kleinen Korrekturen, ohne über- oder unterzureagieren.\n\n**Ständig in der Testphase (Kapitel 8).** Der beste Einzelprädiktor für Erfolg ist der Wille, sich zu verbessern: Prognosen auswerten, Ursachen von Fehlern suchen, ohne der Rückschauverzerrung zu erliegen. Das Kapitel endet mit einem Porträt aus Haltung, Denkstil, Methoden und Arbeitsethik.\n\n**Superteams (Kapitel 9).** Teams aus Superprognostikern waren noch besser als Einzelne und schlugen sogar Prognosemärkte – wenn sie respektvoll widersprachen und sich gegenseitig herausforderten. Die Schweinebucht-Invasion und die Kubakrise zeigen, wie dieselbe Gruppe Gruppendenken überwinden kann.\n\n**Das Dilemma der Führung (Kapitel 10).** Führung verlangt Entschlossenheit, gute Prognosen verlangen Zweifel. Die Auflösung liefert das preußische Prinzip der Auftragstaktik: Ziel und Absicht klar vorgeben, die Ausführung denen überlassen, die vor Ort urteilen. Demut gilt dem Wissen, nicht dem eigenen Handeln.\n\n**Wie super ist super? (Kapitel 11 und 12).** Tetlock antwortet auf Kahneman und Taleb: Seltene, folgenreiche Ereignisse lassen sich kaum vorhersagen, und jenseits von etwa einem Jahr nimmt die Treffsicherheit stark ab. Dennoch lohnt es, das Vorhersagbare besser vorherzusagen. Zum Schluss wirbt er dafür, öffentliche Debatten mit überprüfbaren Prognosen zu führen.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Belegbasis: Ein großes, mehrjähriges Turnier mit Kontrollgruppen und Trainingsexperimenten zeigt, dass sich Urteilskraft messen und trainieren lässt. Das Wall Street Journal stellte das Buch deshalb in eine Reihe mit Kahnemans „Schnelles Denken, langsames Denken“.\n\n**Am schwächsten** ist die Reichweite. Die Turnierfragen betrafen Zeiträume bis etwa ein Jahr und klar entscheidbare Ereignisse. Nassim Taleb hält dem entgegen, dass es bei Risiken weniger auf die Trefferquote als auf die Folgen seltener Extremereignisse ankommt. Kritiker bemängeln zudem, dass das Buch zwischen Lob statistischen Denkens und Skepsis gegenüber Modellen schwankt.\n\n## 🗣️ Rezeption\nDas Buch wurde breit gelobt und prägte die Debatte über Prognosen in Politik, Geheimdiensten und Unternehmen. Besprechungen loben, dass Gardner die Forschung anschaulich macht; Kritik gilt vor allem der Übertragbarkeit auf lange Zeiträume und strategische Überraschungen.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n| Begriff | Bedeutung |\n|---|---|\n| **Füchse und Igel** | viele kleine Ideen und Perspektiven gegen eine große Theorie |\n| **Brier-Wert** | Maß für Prognosegüte aus Kalibrierung und Trennschärfe; 0 ist perfekt |\n| **Kalibrierung** | wer 70 Prozent sagt, sollte in 70 Prozent der Fälle recht behalten |\n| **Außensicht und Innensicht** | erst die Basisrate vergleichbarer Fälle, dann die Besonderheiten des Falls |\n| **Fermi-Schätzung** | eine unlösbar wirkende Frage in schätzbare Teilfragen zerlegen |\n| **Ständig in der Testphase** | Überzeugungen als vorläufig behandeln, laufend prüfen und verbessern |\n| **Auftragstaktik** | Absicht vorgeben, Ausführung vor Ort entscheiden lassen |\n\n**Porträt eines Superprognostikers:** *Haltung* – vorsichtig, demütig, kein Schicksalsdenken · *Denkstil* – aktiv offen, neugierig, reflektiert, rechenfreudig · *Methoden* – pragmatisch, analytisch, viele Perspektiven („Libellenauge“), probabilistisch, aktualisiert in kleinen Schritten, gute Menschenkenntnis · *Arbeitsethik* – Wachstumshaltung und Ausdauer.\n\n## ✅ Die zehn Gebote (Anhang)\n1. **Triage:** Zeit auf Fragen verwenden, bei denen Mühe die Treffsicherheit erhöht – weder trivial noch unlösbar.\n2. Scheinbar unlösbare Probleme in lösbare Teilprobleme zerlegen.\n3. Außen- und Innensicht ausbalancieren.\n4. Auf neue Belege weder über- noch unterreagieren.\n5. In jeder Frage nach gegenläufigen Kräften suchen.\n6. So viele Abstufungen des Zweifels unterscheiden, wie die Frage zulässt – nicht mehr.\n7. Zwischen Unter- und Überschätzung, Vorsicht und Entschlossenheit abwägen.\n8. Die Ursachen eigener Fehler suchen, aber die Rückschauverzerrung meiden.\n9. Das Beste aus anderen herausholen und sich von anderen fordern lassen.\n10. Das Fahrradfahren mit dem Fehlerausgleich üben – Können wächst nur durch Praxis mit Rückmeldung.\n11. Die Gebote nicht als Gebote behandeln.\n\n## 🔬 Belege und ihr Stand\n| Befund | Stand |\n|---|---|\n| Expertenprognosen kaum besser als Zufall, Füchse besser als Igel (Expert Political Judgment, 2005) | **gestützt**, vielfach zitiert |\n| Superprognostiker dauerhaft besser, kein Glückseffekt | **bestätigt** im Good Judgment Project, später repliziert |\n| Kurzes Training in probabilistischem Denken steigert Treffsicherheit | **bestätigt** (Mellers u. a.) |\n| Übertragbarkeit auf Zeiträume über ein Jahr | **offen** – Tetlock räumt die Grenze selbst ein |",
+   "karten": [
+    {
+     "frage": "Was unterscheidet Füchse von Igeln?",
+     "antwort": "Igel deuten alles durch eine große Theorie, Füchse wägen viele Perspektiven ab – und sagen besser voraus."
+    },
+    {
+     "frage": "Was ist die Außensicht?",
+     "antwort": "Zuerst die Basisrate vergleichbarer Fälle bestimmen und erst dann die Besonderheiten des Einzelfalls einrechnen."
+    },
+    {
+     "frage": "Was misst der Brier-Wert?",
+     "antwort": "Die Güte von Wahrscheinlichkeitsprognosen – Kalibrierung und Trennschärfe; 0 ist perfekt."
+    },
+    {
+     "frage": "Welcher Faktor sagt Prognoseerfolg am stärksten voraus?",
+     "antwort": "Die Haltung „ständig in der Testphase“: Fehler auswerten und sich verbessern wollen – stärker als Intelligenz."
+    },
+    {
+     "frage": "Was ist eine Fermi-Schätzung?",
+     "antwort": "Eine scheinbar unlösbare Frage in schätzbare Teilfragen zerlegen und daraus eine begründete Gesamtschätzung bilden."
+    },
+    {
+     "frage": "Wie löst Tetlock das Dilemma zwischen Demut und Entschlossenheit?",
+     "antwort": "Mit Auftragstaktik: Absicht klar vorgeben, Ausführung vor Ort entscheiden lassen; Demut gilt dem Wissen, nicht dem Handeln."
+    },
+    {
+     "frage": "Was ist das erste der zehn Gebote?",
+     "antwort": "Triage: Mühe dorthin lenken, wo sie die Treffsicherheit erhöht – nicht auf triviale oder unlösbare Fragen."
+    }
+   ],
+   "bezuege": [
+    {
+     "id": "zf-intelligence-trap",
+     "titel": "David Robson – The Intelligence Trap",
+     "art": "ergaenzt",
+     "text": "Erklärt, warum Intelligenz allein nicht vor Fehlurteilen schützt – Tetlocks Superprognostiker sind das empirische Gegenbild."
+    },
+    {
+     "titel": "Judea Pearl & Dana Mackenzie – The Book of Why",
+     "art": "ergaenzt",
+     "text": "Behandelt die Frage nach Ursachen, die Tetlocks Prognosen bewusst ausklammern: nicht was passiert, sondern warum und was ein Eingriff bewirkt."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: Philip E. Tetlock & Dan Gardner – Superforecasting (Crown, 2015); Kapitel 1–3 im Volltext ausgewertet, übrige Kapitel aus Inhaltsverzeichnis, Anhang und öffentlichen Quellen",
+     "url": ""
+    },
+    {
+     "name": "Wikipedia – Superforecasting: The Art and Science of Prediction",
+     "url": "https://en.wikipedia.com/wiki/Superforecasting"
+    },
+    {
+     "name": "BookBrowse – Superforecasting",
+     "url": "https://www.bookbrowse.com/mag/reviews/index.cfm/book_number/5154/superforecasting"
+    },
+    {
+     "name": "Royal Air Force – Air and Space Power Review, Rezension",
+     "url": "https://www.raf.mod.uk/what-we-do/centre-for-air-and-space-power-studies/aspr/apr-vol20-iss1-review2-pdf/"
+    },
+    {
+     "name": "Is Superforecasting Really Super? (Medium, 2023)",
+     "url": "https://medium.com/writ340econspring2023/is-superforecasting-really-super-37eb45bc8ff4"
+    }
+   ]
+  },
   {
    "id": "zf-intelligence-trap",
    "date": "2026-11-02",
