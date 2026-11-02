@@ -230,6 +230,48 @@
    "status": "uebersprungen",
    "grund": "quelle",
    "groesse": 4988760
+  },
+  {
+   "h": "fee3f470d775",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 7073501
+  },
+  {
+   "h": "f70286bdba17",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 7733722
+  },
+  {
+   "h": "4f95f977ffe1",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 11577313
+  },
+  {
+   "h": "4082a1105704",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 2219194
+  },
+  {
+   "h": "2268101d7197",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 46558897
+  },
+  {
+   "h": "3c7e50507eb0",
+   "datum": "2026-11-02",
+   "status": "uebersprungen",
+   "grund": "herkunft_ungeklaert",
+   "groesse": 2095239
   }
  ]
 }
