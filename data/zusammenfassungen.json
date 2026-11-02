@@ -1,7 +1,101 @@
 {
  "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
- "updated": "2026-11-02T14:49:12+00:00",
+ "updated": "2026-11-02T14:52:06+00:00",
  "items": [
+  {
+   "id": "zf-intelligence-trap",
+   "date": "2026-11-02",
+   "titel": "The Intelligence Trap",
+   "autoren": "David Robson",
+   "jahr": 2019,
+   "verlag": "Hodder & Stoughton",
+   "basis": "buch",
+   "drive_h": "3c7e50507eb0",
+   "reihe": "The Intelligence Trap",
+   "modul": "urteil",
+   "kernthese": "Intelligenz, Bildung und Expertise schützen nicht vor Fehlurteilen – sie können sie sogar verstärken; was schützt, sind erlernbare Denkhaltungen wie intellektuelle Demut, Neugier und aktiv offenes Denken.",
+   "kern": {
+    "aussagen": [
+     "IQ misst nur einen Ausschnitt guten Denkens; Rationalität, praktische und kreative Intelligenz sind davon weitgehend unabhängig.",
+     "Kluge Menschen nutzen ihre Denkkraft oft zum Rechtfertigen statt zum Prüfen – motiviertes Denken und der blinde Fleck für eigene Verzerrungen wachsen mit der Intelligenz mit.",
+     "Expertise kann in Dogmatismus kippen: Wer sich als Fachmann sieht, fühlt sich berechtigt, Gegenargumente zu übergehen.",
+     "Weisheit ist trainierbar: Abstand zu sich selbst nehmen, Gefühle genau benennen, Gegenpositionen aktiv suchen, an Schwierigkeiten lernen.",
+     "Auch Teams und Organisationen tappen in die Falle – Hierarchie, Talentüberschuss und fehlende Fehlerkultur machen kluge Gruppen dumm."
+    ],
+    "original": "Diese Zusammenfassung ersetzt das Buch für den Überblick. Im Original lohnen Kapitel 4 (Werkzeuge der evidenzbasierten Weisheit) und Kapitel 10 (Organisationen, Hochzuverlässigkeit) sowie der Anhang mit beiden Begriffssammlungen."
+   },
+   "text": "## 🎯 Worum es geht\nDer britische Wissenschaftsjournalist **David Robson** fragt, warum hochintelligente Menschen – Nobelpreisträger, Spitzenmediziner, FBI-Experten – folgenschwere Fehlurteile fällen. Er verbindet Forschung zu Rationalität, Urteilskraft und Lernen mit Fallgeschichten und entwickelt daraus das Konzept einer **evidenzbasierten Weisheit**.\n\n## 🧭 Kapitel für Kapitel\n**Teil 1 – Die Kehrseite der Intelligenz (Kapitel 1 bis 3).** Am Beispiel von Lewis Termans Langzeitstudie hochbegabter Kinder zeigt Robson, dass ein hoher IQ weder Lebenserfolg noch gutes Urteil garantiert. Mit Robert Sternberg unterscheidet er analytische, kreative und praktische Intelligenz; nur die erste wird getestet. Kapitel 2 führt den Begriff **Dysrationalia** ein: Keith Stanovich zeigt, dass Intelligenz und rationales Denken nur schwach zusammenhängen. Schlimmer noch, kluge Menschen sind beim motivierten Denken besonders geschickt und sehen eigene Verzerrungen schlechter. Arthur Conan Doyles Glaube an Feen und Kary Mullis' Verschwörungsdenken dienen als Beispiele. Kapitel 3 behandelt Expertise: Erfahrene Fachleute neigen zu **erworbenem Dogmatismus** und erstarrten Denkmustern. Der Fall Brandon Mayfield, den FBI-Daktyloskopen fälschlich mit den Madrider Anschlägen 2004 verbanden, zeigt, wie Erwartung Wahrnehmung lenkt.\n\n**Teil 2 – Auswege (Kapitel 4 bis 6).** Kapitel 4 stellt die Forschung von Igor Grossmann vor: Weises Urteilen umfasst intellektuelle Demut, das Einnehmen anderer Perspektiven, das Erkennen von Unsicherheit und die Suche nach Kompromissen. Menschen urteilen über fremde Probleme weiser als über eigene (Salomons Paradox); Abstand zu sich selbst, etwa das Nachdenken in der dritten Person, gleicht das aus. Benjamin Franklins „moralische Algebra“ und Tetlocks Superprognostiker zeigen, wie systematisches Abwägen hilft. Kapitel 5 rehabilitiert die Intuition: Wer Körpersignale wahrnimmt und Gefühle genau benennen kann, entscheidet besser. Ärzte stellen bessere Diagnosen, wenn sie erst ihr Bauchgefühl notieren und es dann gezielt prüfen. Kapitel 6 erklärt, warum flüssig präsentierte Falschinformation überzeugt, und empfiehlt Prüffragen sowie eine Art Impfung durch das bewusste Studium typischer Täuschungstricks.\n\n**Teil 3 – Die Kunst des Lernens (Kapitel 7 und 8).** Neugier und die Überzeugung, Fähigkeiten seien entwickelbar, fördern Lernen und Demut zugleich. Mit Robert und Elizabeth Bjork zeigt Robson, dass **wünschenswerte Erschwernisse** – verteiltes Üben, Abwechslung, Selbsttests – tieferes Verständnis erzeugen als bequemes Wiederholen. Ostasiatische Schulsysteme, die produktive Verwirrung zulassen, dienen als Beispiel.\n\n**Teil 4 – Torheit und Weisheit von Gruppen (Kapitel 9 und 10).** Die kollektive Intelligenz eines Teams hängt kaum vom IQ der Mitglieder ab, stark aber von sozialer Sensibilität und gleichmäßiger Redezeit. Zu viele Stars schaden, wie Englands Fußballteam 2016 zeigte, und starre Hierarchien unterdrücken Warnungen, wie bei der Everest-Katastrophe 1996. Kapitel 10 beschreibt **funktionale Dummheit** in Organisationen, die kritisches Nachfragen entmutigen, mit Beispielen von BP, Nokia und der NASA. Als Gegenmodell dienen Hochzuverlässigkeitsorganisationen nach Karl Weick und Kathleen Sutcliffe.\n\n## ⚖️ Stärkstes und schwächstes Argument\n**Am stärksten** ist die Trennung von Intelligenz und Rationalität, gestützt auf Stanovichs gut belegte Forschung. Sie erklärt überzeugend, warum Bildung allein nicht vor Fehlurteilen schützt, und macht Denkhaltungen zum eigentlichen Hebel. Chemistry World hebt diese Pointe als Kern des Buchs hervor.\n\n**Am schwächsten** ist die Belegqualität mancher Gegenmittel. Robson stützt sich unter anderem auf Studien zum Growth Mindset und zum Fremdsprachen-Effekt, deren Effekte sich in späteren Replikationen als deutlich kleiner oder uneinheitlich erwiesen. Das Gleiche gilt teilweise für Befunde, nach denen gerade numerisch Begabte politisch besonders verzerrt urteilen.\n\n## 🗣️ Rezeption\nDas Buch erhielt überwiegend positive Besprechungen, darunter eine Sternrezension von Kirkus, und gilt als eine der breitesten populärwissenschaftlichen Darstellungen des Themas. Kritiker merken an, dass die vielen Fallgeschichten das Tempo bremsen und nicht jede Studie die Last trägt, die ihr aufgeladen wird.",
+   "werkzeuge": "## 🧰 Modelle und Unterscheidungen\n**Formen der Dummheit (Auswahl aus dem Anhang):**\n| Begriff | Bedeutung |\n|---|---|\n| **Dysrationalia** | Kluft zwischen Intelligenz und rationalem Denken |\n| **Blinder Fleck für Verzerrungen** | Fehler bei anderen sehen, bei sich nicht |\n| **Kognitiver Geiz** | aus Bequemlichkeit der Intuition folgen statt zu prüfen |\n| **Verseuchte Denkwerkzeuge** | falsches Grundwissen, das weitere Irrtümer nach sich zieht |\n| **Motiviertes Denken** | Denkkraft nur einsetzen, wenn das Ergebnis passt |\n| **Erworbener Dogmatismus** | Expertenstatus als Freibrief, Gegenargumente zu ignorieren |\n| **Verfestigung** | Denkmuster von Experten werden starr |\n| **Meta-Vergessen** | heutiges Wissen mit früherem Spitzenwissen verwechseln |\n| **Salomons Paradox** | weise bei fremden, unweise bei eigenen Problemen |\n| **Funktionale Dummheit** | Organisation entmutigt Nachdenken – kurzfristig effizient, langfristig gefährlich |\n| **Zu-viel-Talent-Effekt** | Teams scheitern ab einem hohen Anteil an Stars |\n\n**Formen der Weisheit:** aktiv offenes Denken · intellektuelle Demut · epistemische Neugier · emotionaler Kompass (Körpersignale wahrnehmen, Gefühle genau benennen, regulieren) · Selbstdistanzierung · wünschenswerte Erschwernisse · kognitive Impfung · kollektive Intelligenz · Pre-mortem · Achtsamkeit.\n\n## ✅ Listen und Fragen\n**Weises Urteilen nach Grossmann:** Grenzen des eigenen Wissens anerkennen · andere Sichtweisen einnehmen · Unsicherheit und Wandel einkalkulieren · Kompromiss und Ausgleich suchen.\n\n**Moralische Algebra (Franklin):** Pro und Contra über mehrere Tage sammeln, gleich gewichtige Punkte gegeneinander streichen, dann entscheiden.\n\n**Diagnose-Methode (Mamede):** erst das Bauchgefühl notieren, dann die Belege dafür prüfen, dann Alternativen vergleichen.\n\n**Gegen Expertenfehler (Dror):** Spuren „blind“ bewerten, ohne Kontext · Zweitgutachter ohne Kenntnis des Ersturteils · Beweise in fester Reihenfolge freigeben.\n\n**Fünf Merkmale hochzuverlässiger Organisationen (Weick/Sutcliffe):** Beschäftigung mit Fehlern · Widerwille gegen Vereinfachung · Sensibilität für den laufenden Betrieb · Streben nach Widerstandsfähigkeit · Respekt vor Fachwissen vor Ort.\n\n## 🔬 Belege und ihr Stand\n| Befund | Stand |\n|---|---|\n| Intelligenz und Rationalität hängen nur schwach zusammen (Stanovich) | **bestätigt** |\n| Selbstdistanzierung verbessert weises Urteilen (Grossmann, Kross) | **gestützt**, Effekte moderat |\n| Kollektive Intelligenz von Teams (Woolley) | **umstritten** – Nachuntersuchungen fanden den Faktor schwächer |\n| Growth Mindset fördert Lernen | **umstritten** – Metaanalysen zeigen kleine Effekte |\n| Fremdsprachen-Effekt auf Entscheidungen | **uneinheitlich** repliziert |\n| Wünschenswerte Erschwernisse (Bjork) | **bestätigt** |",
+   "karten": [
+    {
+     "frage": "Was ist Dysrationalia?",
+     "antwort": "Die Kluft zwischen Intelligenz und rationalem Denken: Kluge Menschen können trotzdem systematisch unvernünftig urteilen."
+    },
+    {
+     "frage": "Was meint „erworbener Dogmatismus“?",
+     "antwort": "Wer sich als Experte sieht, fühlt sich berechtigt, Gegenargumente zu übergehen – Expertise macht dann engstirnig."
+    },
+    {
+     "frage": "Was ist Salomons Paradox, und was hilft dagegen?",
+     "antwort": "Wir urteilen über fremde Probleme weiser als über eigene. Abstand zu sich selbst – etwa in der dritten Person über die Lage nachdenken – gleicht das aus."
+    },
+    {
+     "frage": "Welche vier Bausteine weisen Urteilens nennt Grossmann?",
+     "antwort": "Grenzen des eigenen Wissens anerkennen, andere Perspektiven einnehmen, Unsicherheit einkalkulieren, Kompromisse suchen."
+    },
+    {
+     "frage": "Was sind wünschenswerte Erschwernisse?",
+     "antwort": "Lernbedingungen, die sich mühsamer anfühlen – verteiltes Üben, Abwechseln, Selbsttests – aber tieferes, haltbareres Wissen erzeugen."
+    },
+    {
+     "frage": "Was ist funktionale Dummheit?",
+     "antwort": "Eine Organisationskultur, die Nachfragen und Reflexion entmutigt – kurzfristig effizient, langfristig gefährlich."
+    },
+    {
+     "frage": "Nenne die fünf Merkmale hochzuverlässiger Organisationen.",
+     "antwort": "Beschäftigung mit Fehlern, Widerwille gegen Vereinfachung, Sensibilität für den Betrieb, Streben nach Widerstandsfähigkeit, Respekt vor Fachwissen vor Ort."
+    }
+   ],
+   "bezuege": [
+    {
+     "titel": "Philip E. Tetlock & Dan Gardner – Superforecasting",
+     "art": "stuetzt",
+     "text": "Liefert die empirische Grundlage für aktiv offenes Denken, auf die Robson in Kapitel 4 baut."
+    },
+    {
+     "titel": "Hugo Mercier & Dan Sperber – The Enigma of Reason",
+     "art": "widerspricht",
+     "text": "Deutet die Bestätigungsneigung nicht als Denkfehler, sondern als Funktion argumentativer Vernunft, die in der Gruppe produktiv wird."
+    },
+    {
+     "titel": "Carl T. Bergstrom & Jevin D. West – Calling Bullshit",
+     "art": "ergaenzt",
+     "text": "Baut Robsons „Werkzeugkasten gegen Falschinformation“ zu einer vollständigen Prüfmethode für Zahlen und Grafiken aus."
+    }
+   ],
+   "quellen": [
+    {
+     "name": "Buch: David Robson – The Intelligence Trap (Hodder & Stoughton, 2019)",
+     "url": ""
+    },
+    {
+     "name": "Chemistry World – Review: The Intelligence Trap",
+     "url": "https://chemistryworld.com/review/the-intelligence-trap-why-smart-people-do-stupid-things-and-how-to-make-wiser-decisions/3010894.article"
+    },
+    {
+     "name": "Kirkus Reviews – The Intelligence Trap",
+     "url": "https://kirkusreviews.com/book-reviews/david-robson/the-intelligence-trap/print"
+    },
+    {
+     "name": "Robert M. Ellis, Middle Way Society – ‘The Intelligence Trap’ by David Robson",
+     "url": "https://www.middlewaysociety.org/?p=8552"
+    },
+    {
+     "name": "Publishers Weekly – The Intelligence Trap",
+     "url": "https://publishersweekly.com/978-0-393-65142-3"
+    }
+   ]
+  },
   {
    "id": "zf-tyranny-of-metrics",
    "date": "2026-11-02",
