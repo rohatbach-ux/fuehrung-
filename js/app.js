@@ -46,6 +46,7 @@ function save() {
 const ui = { tab: "heute", lern: "module", inbox: "neu", feed: "alle", pod: "alle", journal: "experimente" };
 let podData = null; // geladene data/podcasts.json
 let rxData = null;  // geladene data/impulse.json (tägliche Recherche)
+let zfData = null;  // data/zusammenfassungen.json
 let podDe = null;   // data/podcasts-de.json: deutsche Titel/Beschreibungen englischer Folgen
 
 // ---------- Helfer ----------
@@ -208,6 +209,11 @@ function refInfo(ref) {
   if (ref.t === "entry") {
     const j = state.journal.find((x) => x.id === ref.id);
     return j ? { label: KIND[j.kind]?.label || "Notiz", text: j.text, source: "mein Journal", short: j.text.slice(0, 60) } : null;
+  }
+  if (ref.t === "zf") {
+    const z = zfById(ref.id);
+    if (!z) return null;
+    return { label: `Zusammenfassung: ${z.titel}`, text: `${z.kernthese}`, source: `${z.autoren} – ${z.titel} (${z.jahr})`, short: z.titel };
   }
   if (ref.t === "post" || ref.t === "rx") {
     const x = feedItem(ref.t, ref.id);
@@ -633,6 +639,17 @@ async function shrinkImage(file) {
   } catch (e) { return file; }
 }
 
+async function loadSummaries(force) {
+  try {
+    const res = await fetch(`data/zusammenfassungen.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
+    if (!res.ok) throw new Error(res.status);
+    zfData = await res.json();
+  } catch (e) { zfData = zfData || { items: [] }; }
+  if (ui.tab === "inbox") render();
+}
+const zfById = (id) => (zfData?.items || []).find((z) => z.id === id);
+const zfForBook = (buch) => (zfData?.items || []).find((z) => z.reihe === buch || z.titel === buch);
+const readMinutes = (txt) => Math.max(1, Math.round(String(txt || "").split(/\s+/).length / 200));
 async function loadResearch(force) {
   try {
     const res = await fetch(`data/impulse.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
@@ -662,7 +679,8 @@ function seriesBlock(x) {
     ${parts.map((y) => y.id === x.id
       ? `<div class="series-row cur"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)}</div>`
       : `<button class="series-row" data-act="story" data-t="rx" data-id="${esc(y.id)}"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)} ${isRead({ ...y, t: "rx" }) ? "✓" : ""}</button>`).join("")}
-    ${open > 0 ? `<div class="hint">${open} weitere${open === 1 ? "r Teil folgt" : " Teile folgen"} in den nächsten Tagen.</div>` : ""}</div>`;
+    ${open > 0 ? `<div class="hint">${open} weitere${open === 1 ? "r Teil folgt" : " Teile folgen"} in den nächsten Tagen.</div>` : ""}
+    ${zfForBook(x.reihe.buch) ? `<button class="series-row" data-act="zf-open" data-id="${esc(zfForBook(x.reihe.buch).id)}"><b>📖</b> Zusammenfassung des ganzen Buchs lesen</button>` : ""}</div>`;
 }
 const kindClass = (t, x) => (t === "post" ? "t-praxis" : isLib(x) || isBook(x) ? "t-phase" : "t-wissen");
 function feedCards() {
@@ -691,12 +709,39 @@ function feedCard(x) {
     </button>`;
 }
 
+function zfCard(z) {
+  const m = moduleById(z.modul);
+  const unread = !state.read[`zf:${z.id}`];
+  return `
+    <button class="card feed-item ${unread ? "unread" : ""}" data-act="zf-open" data-id="${esc(z.id)}">
+      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⏱ ${readMinutes(z.text)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
+      <h3>${esc(z.titel)}</h3>
+      <p class="src">${esc(z.autoren)} · ${esc(String(z.jahr || ""))}</p>
+      <p>${esc(z.kernthese)}</p>
+    </button>`;
+}
+function openSummary(id) {
+  const z = zfById(id);
+  if (!z) return;
+  state.read[`zf:${id}`] = Date.now(); save();
+  const ref = { t: "zf", id };
+  showSheet("📖 Zusammenfassung", () => `
+    <h2 class="zf-title">${esc(z.titel)}</h2>
+    <p class="src">${esc(z.autoren)} · ${esc(z.verlag || "")} ${esc(String(z.jahr || ""))} · ⏱ ${readMinutes(z.text)} Min Lesezeit</p>
+    <blockquote class="md-q zf-these">${esc(z.kernthese)}</blockquote>
+    <div class="zf-text">${md(z.text, { emoji: !state.plain })}</div>
+    ${(z.quellen || []).length ? `<div class="section-title">Quellen</div><ul class="refs">${z.quellen.map((q) => `<li>${q.url ? `<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}</a>` : esc(q.name)}</li>`).join("")}</ul>` : ""}
+    ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
+    ${actionRow(ref)}
+  `);
+  if (ui.tab === "inbox") render();
+}
 function renderInbox() {
   if (!rxData) loadResearch();
   const items = feedItems();
   const unread = items.filter((x) => !isRead(x)).length;
   const links = state.inbox.filter((i) => i.status === "neu").length;
-  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["buecher", "Bücher"], ["links", `Links (${links})`]];
+  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["buecher", "Bücher"], ["zf", `Zusammenfassungen (${(zfData?.items || []).length})`], ["links", `Links (${links})`]];
   const head = `
     <div class="btn-row">
       <button class="btn primary" data-act="post-new">📸 Post verarbeiten</button>
@@ -704,6 +749,10 @@ function renderInbox() {
     </div>
     <div class="chips">${filters.map(([k, l]) => `<button data-act="feed-filter" data-k="${k}" aria-pressed="${ui.feed === k}">${l}</button>`).join("")}</div>`;
   if (ui.feed === "links") return head + renderLinks();
+  if (ui.feed === "zf") {
+    const zs = [...(zfData?.items || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    return head + (zs.length ? zs.map(zfCard).join("") : `<div class="empty">Die Zusammenfassungen entstehen einmal pro Woche für neue Bücher in deinem Drive-Ordner.</div>`);
+  }
   let list = items;
   if (ui.feed === "neu") list = items.filter((x) => !isRead(x));
   if (ui.feed === "posts") list = items.filter((x) => x.t === "post");
@@ -1438,12 +1487,26 @@ document.addEventListener("visibilitychange", () => { if (document.hidden) persi
 function renderPlayer() {
   const el = $("#player");
   const e = state.current && findEpisode(state.current);
+  const playing = !!e && !!audio.src && !audio.paused;
   document.body.classList.toggle("has-player", !!e);
+  document.body.classList.toggle("player-compact", !!e && !playing);
+  el.classList.toggle("compact", !!e && !playing);
   if (!e) { el.hidden = true; return; }
   el.hidden = false;
   const l = state.listen[state.current] || {};
   const pos = audio.src ? audio.currentTime : l.pos || 0;
   const dur = audio.duration || l.dur || e.duration || 0;
+  if (!playing) {
+    // Ohne laufende Wiedergabe: schmale Leiste ohne Spulen, Tempo und Merker
+    el.innerHTML = `
+    <div class="pl-row">
+      <div class="pl-info" data-act="ep-open" data-id="${esc(e.id)}"><b>${esc(e.title)}</b><small><span id="pl-time">${fmtTime(pos)} / ${fmtTime(dur)}</span> · ${esc(e.pod.short || e.pod.name)}</small></div>
+      <button data-act="pl-toggle" class="big" aria-label="Weiterhören">▶</button>
+      <button data-act="pl-hide" class="pl-x" aria-label="Player ausblenden">✕</button>
+    </div>
+    <div class="pl-bar"><i id="pl-bar" style="width:${dur ? (pos / dur) * 100 : 0}%"></i></div>`;
+    return;
+  }
   el.innerHTML = `
     <div class="pl-info" data-act="ep-open" data-id="${esc(e.id)}"><b>${esc(e.title)}</b><small><span id="pl-time">${fmtTime(pos)} / ${fmtTime(dur)}</span> · ${esc(e.pod.short || e.pod.name)}</small></div>
     <div class="pl-ctrl">
@@ -1698,6 +1761,7 @@ document.addEventListener("click", async (ev) => {
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
     case "feed-filter": ui.feed = el.dataset.k; render(); break;
     case "story": openStory(el.dataset.t, id, inSheet); break;
+    case "zf-open": openSummary(id); break;
     case "post-new": openNewPost(el.dataset.link || ""); break;
     case "post-save": savePost(el.dataset.link || ""); break;
     case "post-del": deletePost(id); break;
@@ -1773,6 +1837,7 @@ document.addEventListener("click", async (ev) => {
     }
     case "pl-toggle": if (audio.src) { audio.paused ? audio.play() : audio.pause(); } else playEpisode(state.current); break;
     case "pl-back": seekBy(-15); break;
+    case "pl-hide": persistPos(true); audio.pause(); audio.removeAttribute("src"); audio.load(); state.current = null; save(); renderPlayer(); if (ui.tab === "hoeren") render(); break;
     case "pl-fwd": seekBy(30); break;
     case "pl-speed": cycleSpeed(); break;
     case "pl-mark": setMarker(); break;
@@ -1802,4 +1867,5 @@ document.addEventListener("keydown", (e) => {
 render();
 loadPodcasts();
 loadResearch();
+loadSummaries();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});

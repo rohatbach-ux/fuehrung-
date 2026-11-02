@@ -48,6 +48,24 @@ try {
   }
   if (active > 2) err.push(`buecher: ${active} Bücher in Arbeit – höchstens 2`);
 } catch (e) { if (e.code !== "ENOENT") err.push("buecher.json nicht lesbar: " + e.message); }
+try {
+  const zf = JSON.parse(await readFile("data/zusammenfassungen.json", "utf8"));
+  const zids = new Set();
+  for (const z of zf.items || []) {
+    const w = (m) => err.push(`zusammenfassung ${z.id || "?"}: ${m}`);
+    for (const f of ["id", "date", "titel", "autoren", "kernthese", "text"]) if (!z[f] || !String(z[f]).trim()) w(`Feld ${f} fehlt`);
+    if (z.modul && !MODS.includes(z.modul)) w(`unbekanntes Modul ${z.modul}`);
+    const words = String(z.text || "").split(/\s+/).filter(Boolean).length;
+    if (words < 450 || words > 1300) w(`Umfang ${words} Wörter – erlaubt 450–1300 (1–2 DIN-A4-Seiten)`);
+    if (!Array.isArray(z.quellen) || !z.quellen.length) w("Quellen fehlen");
+    for (const q of z.quellen || []) {
+      if (!q.name) w("Quelle ohne Namen");
+      if (q.url && !/^https:\/\//.test(q.url)) w("Quelle ohne https");
+      if (/drive\.google|docs\.google|libgen|library\.lol|pdfdrive|annas-archive|z-lib|zlibrary/i.test(q.url || "")) w("unzulässige Quelle");
+    }
+    if (zids.has(z.id)) w("doppelte id"); zids.add(z.id);
+  }
+} catch (e) { if (e.code !== "ENOENT") err.push("zusammenfassungen.json nicht lesbar: " + e.message); }
 if ((d.items || []).length > 200) err.push("mehr als 200 Einträge");
 try {
   const dp = JSON.parse(await readFile("data/drive-processed.json", "utf8"));

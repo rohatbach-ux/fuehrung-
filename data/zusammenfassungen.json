@@ -1,0 +1,58 @@
+{
+ "_hinweis": "Buch-Zusammenfassungen auf Expertenniveau (je Titel höchstens 1–2 DIN-A4-Seiten, nur die Literatur, ohne Bezug zur IH). Steuerung: research/ZUSAMMENFASSUNG.md.",
+ "updated": "2026-11-02T14:31:27+00:00",
+ "items": [
+  {
+   "id": "zf-tyranny-of-metrics",
+   "date": "2026-11-02",
+   "titel": "The Tyranny of Metrics",
+   "autoren": "Jerry Z. Muller",
+   "jahr": 2018,
+   "verlag": "Princeton University Press",
+   "basis": "buch",
+   "drive_h": "0698843d04db",
+   "reihe": "The Tyranny of Metrics",
+   "modul": "umsetzung",
+   "kernthese": "Kennzahlen helfen, solange sie Urteilskraft unterstützen; werden sie zur Grundlage von Belohnung und Strafe, verzerren sie vorhersehbar die Arbeit, die sie abbilden sollen.",
+   "text": "> **Messen ist nützlich – solange es Urteilskraft unterstützt statt ersetzt. Wo Kennzahlen zur Grundlage von Belohnung und Strafe werden, verzerren sie vorhersehbar genau das, was sie messen sollen.**\n\n## 🎯 Worum es geht\nDer Historiker **Jerry Z. Muller** (Catholic University of America) erlebte als Institutsleiter, wie wachsende Berichtspflichten Zeit von Lehre, Forschung und Betreuung abzogen. Daraus wurde eine Analyse quer durch Bildung, Medizin, Polizei, Militär, Wirtschaft und Entwicklungshilfe.\n\nSein Gegenstand ist nicht das Messen an sich, sondern die **„Metric Fixation“**: der Glaube, standardisierte Kennzahlen könnten erfahrungsbasiertes Urteil ersetzen, ihre Veröffentlichung sichere Verantwortlichkeit, und Belohnung oder Strafe nach Zahlen sei der beste Motivator – und das Festhalten daran trotz sichtbarer Nebenwirkungen.\n\n## 🧭 Der Argumentationsgang\n1. **Die These kurz gefasst und eine Fehlertypologie** (Kap. 1–2): Was sich leicht messen lässt, ist selten das Wichtigste; gemessen werden Inputs statt Ergebnisse; Standardisierung entkleidet Information ihres Kontexts. Dazu die Formen der Manipulation.\n2. **Herkunft** (Kap. 3–6): von der „payment by results“-Schulpolitik im England des 19. Jahrhunderts über Taylors wissenschaftliche Betriebsführung und Robert McNamaras Zahlensteuerung – bis hin zum „Body Count“ in Vietnam – zu New Public Management. Erklärt wird die Verbreitung mit Misstrauen gegenüber Urteil und Autorität, Prinzipal-Agent-Denken und billiger Informationstechnik. Philosophisch stützt sich Muller auf Hayek und Oakeshott und deren Kritik an der Überschätzung explizit formulierbaren Wissens.\n3. **Fallstudien** (Kap. 7–13): Hochschulen, Schulen (No Child Left Behind, Race to the Top), Medizin, Polizei (CompStat), Militär (Afghanistan), Unternehmen und Finanzen (u. a. Wells Fargo), Philanthropie und Entwicklungshilfe.\n4. **Exkurs zur Transparenz** (Kap. 14): In Politik, Diplomatie, Nachrichtendiensten – und sogar Partnerschaften – braucht wirksames Handeln geschützte Räume.\n5. **Folgen und Checkliste** (Kap. 15–16).\n\n## 🧩 Zentrale Begriffe und Modelle\n| Begriff | Bedeutung |\n|---|---|\n| **Metric Fixation** | Fixierung auf Kennzahlen trotz absehbarer Nebenwirkungen |\n| **Campbells Gesetz** | Je stärker eine Kennzahl Entscheidungen steuert, desto mehr wird sie verzerrt und verzerrt die Arbeit |\n| **Goodharts Gesetz** | Ein Maß, das zur Steuerung dient, wird unzuverlässig |\n| **Gaming** | Creaming (leichte Fälle bevorzugen), Standards senken, Daten weglassen oder schönen, Betrug |\n| **Diagnostische vs. Anreiz-Metrik** | Daten für das eigene Lernen der Fachleute vs. Daten für Belohnung und Strafe durch Dritte |\n\n**Vorhersehbare Folgen** (Kap. 15): Zielverschiebung hin zum Gemessenen, Kurzfristdenken, Zeitverlust durch Berichtswesen, abnehmender Grenznutzen, Regelkaskaden gegen Manipulation, Belohnung von Glück, weniger Risikobereitschaft und Innovation, weniger Zusammenarbeit, entwertete Arbeit und mögliche Produktivitätsverluste.\n\n**Die Checkliste** (Kap. 16) in zehn Fragen:\n1. Welche Art Information soll gemessen werden – je menschlicher die Tätigkeit, desto unzuverlässiger?\n2. Wie nützlich ist sie – ist sie ein guter Stellvertreter für das eigentlich Gemeinte?\n3. Bringen mehr Kennzahlen wirklich mehr?\n4. Was kostet der Verzicht auf standardisierte Messung, und welche anderen Urteilsquellen gibt es?\n5. Wozu und für wen wird gemessen – internes Lernen oder externe Belohnung?\n6. Was kostet die Erhebung, vor allem an Zeit?\n7. Warum verlangt die Spitze Kennzahlen – oft aus mangelnder Kenntnis der Organisation?\n8. Wer entwickelt die Maße – besser von unten, mit den Praktikern?\n9. Auch die besten Maße werden verzerrt; es bleibt eine Abwägung.\n10. Nicht jedes Problem ist lösbar – Transparenz macht es sichtbarer, nicht lösbarer.\n\n## 🔬 Belege und Methode\nMuller argumentiert als Historiker mit **Fallstudien und Sekundärliteratur**, ergänzt um Studien aus den jeweiligen Feldern. In der Medizin zeigt er beides: Erfolge wie das Checklisten-Programm von Peter Pronovost gegen Katheter-Infektionen, die Kliniken Cleveland und Geisinger – und Übersichtsarbeiten, nach denen öffentliche Ranglisten und Leistungsprämien kaum messbare Verbesserungen der Behandlungsergebnisse bringen. Sein Befund: Kennzahlen wirken dort, wo **Fachleute sie selbst entwickeln** und zum Lernen nutzen, nicht wo sie von oben aufgesetzt werden.\n\n## 🗣️ Rezeption und Kritik\n- **Positiv:** Die Deming-Stiftung nennt das Buch klug und knapp; in *Nature* wurde es als Erwiderung auf Erbsenzähler beschrieben, die *London Review of Books* hob hervor, dass Muller Ursachen der Fehlsteuerung und Wege zu besserem Messen herausarbeitet.\n- **Einwände:** Der Rezensent Rolf A. E. Müller merkt an, dass es weniger um eine „Tyrannei“ der Kennzahlen gehe als um die Fixierung auf sie – der Titel verspricht mehr Zuspitzung als das Buch liefert. Leser beschreiben es teils als zäher als erwartet. Auffällig ist zudem der Schwerpunkt auf **USA und Großbritannien** und auf öffentliche Einrichtungen; systematische Gegenbeispiele erfolgreicher Kennzahlensteuerung kommen eher knapp vor.\n\n## 📌 Was bleibt\n- Das Problem ist **nicht Messen, sondern Messfixierung**.\n- Kennzahlen taugen am besten zur **Diagnose durch die Fachleute selbst** – sobald Belohnung und Strafe daran hängen, beginnt die Verzerrung.\n- Gute Maße entstehen **von unten**, mit denen, die die Arbeit kennen.\n- Jede Kennzahl hat **Kosten**: Zeit, Aufmerksamkeit, Motivation.\n- Am Ende ersetzt nichts die **Kenntnis der eigenen Organisation** und das Urteil, das daraus entsteht.",
+   "quellen": [
+    {
+     "name": "Buch: Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018)",
+     "url": ""
+    },
+    {
+     "name": "The Deming Institute – Book Review: The Tyranny of Metrics",
+     "url": "https://deming.org/tyranny-of-metrics/"
+    },
+    {
+     "name": "Rolf A. E. Müller – Book Review, International Journal on Food System Dynamics",
+     "url": "https://ideas.repec.org/a/ags/ijofsd/277722.html"
+    },
+    {
+     "name": "Joel Best – Numbers Games: Review of The Tyranny of Metrics, Numeracy 11(2), 2018",
+     "url": "https://doaj.org/article/c02fa9c0ce9f4dffba936a3e3f83c1ba"
+    }
+   ]
+  },
+  {
+   "id": "zf-erste-100-tage-chefposition",
+   "date": "2026-11-02",
+   "titel": "Die ersten 100 Tage in der neuen Chefposition",
+   "autoren": "Marco De Micheli",
+   "jahr": 2019,
+   "verlag": "bookboon",
+   "basis": "buch",
+   "drive_h": "e838e38f93ab",
+   "reihe": "Die ersten 100 Tage in der neuen Chefposition",
+   "modul": "uebergang",
+   "kernthese": "Ein erfolgreicher Chefstart folgt drei Phasen – lernen, ordnen, umsetzen – und wird von ruhiger Souveränität statt Gefallen-Wollen oder Härte getragen.",
+   "text": "> **Ein erfolgreicher Chefstart folgt einem Plan: erst lernen und Beziehungen aufbauen, dann Prioritäten setzen, dann umsetzen – getragen von ruhiger Souveränität statt Gefallen-Wollen oder Härte.**\n\n## 🎯 Worum es geht\nDas kurze E-Book des Schweizer Autors und Verlagsleiters **Marco De Micheli** (PRAXIUM-Verlag) ist ein **Praxisleitfaden** für Führungskräfte in einer neuen Chefposition. Es versteht sich weniger als Theoriebuch denn als Sammlung von Arbeitshilfen: Checklisten, Vorlagen, ein Wochenplan und Beispiele.\n\n## 🧭 Der Argumentationsgang\n1. **Die 100 Tage gelten auch für Chefs:** Zuhören, Fragen, Beobachten und das Würdigen bisheriger Leistungen kommen bei Mitarbeitenden gut an. Gefährlich ist der Drang, Unzufriedenheit sofort mit Entscheidungen zu beheben.\n2. **Drei Drittel:** Lernen und Beziehungen aufbauen – Probleme, Chancen und Prioritäten klären – Maßnahmen umsetzen und ihren Erfolg prüfen.\n3. **Werkzeuge für die Praxis:** Führungstagebuch, Gespräch mit dem eigenen Vorgesetzten, Worksheets, Führungs-Charta, „Wunschzettel“ für Mitarbeitergespräche, 100-Tage-Plan.\n4. **Bilanz nach 100 Tagen:** Selbstbewertung, Feedback-Rat, Beurteilung durch das Team, anschließendes Training oder Coaching.\n5. **Motivation als Kern von Führung:** Vision und Ziele vermitteln, Verantwortung übertragen, offen beurteilen, Begeisterung zeigen, Demotivatoren aufspüren.\n\n## 🧩 Zentrale Begriffe und Modelle\n| Element | Inhalt |\n|---|---|\n| **Zwei Fehltypen** | „Der liebe Neue“ will allen gefallen, „die Axt im Walde“ greift hart durch – beides Zeichen von Unsicherheit |\n| **Führungstagebuch** | Täglich oder wöchentlich: positive und negative Erfahrungen, Lehren, konkrete Vorsätze |\n| **Vorgesetzten-Gespräch** | Rund zwei Dutzend Fragen zu Auftrag, Zielen, Vorgänger, Personen, Konflikten und Klima |\n| **Führungs-Charta** | Vier Grundsätze mit je vier beobachtbaren Handlungen auf einer Seite |\n| **Wunschzettel** | Vorbereitungsbogen für Mitarbeitende mit sechs Themenfeldern |\n| **100-Tage-Plan** | Wochenweise Schwerpunkte von Teamklima und Vertrauen über Mitarbeiterprofile bis Zielvereinbarung und Zwischenbilanz |\n\n**Achtung und Akzeptanz** entstehen laut Autor durch Konsequenz, das Einstehen für Werte und das Team, das Eingestehen eigener Fehler – das Buch nennt aber auch harte Mittel wie öffentliche Kritik und angedrohte Kündigungen.\n\n## 🔬 Belege und Methode\nDas Buch stützt sich auf **Praxiserfahrung des Autors** aus HR- und Führungsaufgaben, nicht auf eigene Studien. Es verweist an einer Stelle allgemein auf Untersuchungen, nach denen Mitarbeitende eher ihren Vorgesetzten als das Unternehmen verlassen, ohne Quelle im Detail. Zitate von Saint-Exupéry, Augustinus und Emerson dienen als Merksätze.\n\n## 🗣️ Rezeption und Kritik\nFür dieses E-Book ließen sich **keine öffentlichen Besprechungen** finden. Einordnen lässt es sich als kompakte, praxisorientierte Ergänzung zu ausführlicheren Standardwerken über den Rollenwechsel wie Michael Watkins’ „The First 90 Days“.\n- **Stärken:** sofort nutzbare Vorlagen, klare Phasenlogik, Betonung von Zuhören und Selbstreflexion.\n- **Schwächen:** wenig Belege; manche Empfehlungen sind schwer übertragbar – etwa private Aufmerksamkeiten für Mitarbeitende oder Partner, die Compliance-Regeln berühren, und öffentlich angedrohte Sanktionen, die psychologischer Sicherheit widersprechen. Der Wochenplan ist eher eine Ideensammlung als ein erprobtes Programm, wie der Autor selbst einräumt.\n\n## 📌 Was bleibt\n- Die ersten Wochen gehören dem **Lernen und dem Beziehungsaufbau**, nicht schnellen Entscheidungen.\n- **Souveränität** wirkt stärker als Gefallen-Wollen oder demonstrative Härte.\n- Struktur hilft: **Tagebuch, Charta und Plan** machen den Start reflektierbar.\n- Das **Gespräch mit dem eigenen Vorgesetzten** und vorbereitete Einzelgespräche liefern schnell ein belastbares Bild.\n- Nach 100 Tagen gehört eine ehrliche **Bilanz** dazu – am besten mit Feedback des Teams.",
+   "quellen": [
+    {
+     "name": "Buch: Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019)",
+     "url": ""
+    }
+   ]
+  }
+ ]
+}

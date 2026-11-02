@@ -54,6 +54,10 @@ Eine geplante Aufgabe in der Claude-Code-Sitzung mit Drive-Zugriff verarbeitet R
 
 Leseliste in `data/buecher.json` (u. a. Dörner, Muller, Robson, Tetlock, Pearl, Popper). Einer der 3 täglichen Web-Impulse ist ein Buch-Teil („📚 Buch kompakt“), erstellt nur aus öffentlich zugänglichen Quellen – keine Raubkopien. Regeln: `research/BUECHER.md`.
 
+### Buch-Zusammenfassungen
+
+Je Titel aus dem Drive-Ordner eine Zusammenfassung auf Expertenniveau (höchstens 1–2 DIN-A4-Seiten, nur die Literatur, mit öffentlichen Rezensionen und Interpretationen) in `data/zusammenfassungen.json`, in der App unter *Entdecken → Zusammenfassungen* und verlinkt aus der jeweiligen Buchreihe. Eine wöchentliche Aufgabe (sonntags) erstellt sie für Neuzugänge und arbeitet den Bestand ab. Regeln: `research/ZUSAMMENFASSUNG.md`.
+
 ### Links als Merkzettel
 
 Instagram gibt gespeicherte Posts an keine fremde App heraus. Es gibt zwei Wege:
