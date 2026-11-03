@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T05:16:49.964Z",
+ "updated": "2026-11-03T05:09:47.088Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-6ab198cf9b",
+     "title": "Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
+     "date": "2026-11-03T04:54:34.000Z",
+     "duration": 562,
+     "audio": "https://audio.podigee-cdn.net/2628971-m-8098bc0170a4a9e69155c743486c64d2.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2234-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat",
+     "desc": "Die Wirtschaftsministerin macht eine Forderung des letzten Koalitionsausschusses konkret. Das gewünschte Ziel wird wohl verfehlt - dafür vermeidet Reiche es, sich ökonomisch zu verheddern."
+    },
+    {
      "id": "morningbriefing-74612a18d6",
      "title": "Hilft Unternehmen nur die Rückkehr der Deutschland AG?",
      "date": "2026-11-02T04:52:34.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2622455-m-7e234179e43d04e3d8a140fed5cdc025.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2230-israel-ein-land-zwei-wirklichkeiten-handel-merz-fur-freihandel-mit-asien",
      "desc": "So viele Menschen wie nie strömten in Israel gestern zu den Wahlen - und produzierten ein echtes Patt. Der Verlierer könnte ausgerechnet der Nutznießer dieser Konstellation sein."
-    },
-    {
-     "id": "morningbriefing-fe22685218",
-     "title": "Anthropic: Börsengang wird konkret / Mercedes: Sechsstellige Abfindungen für Produktionsmitarbeiter",
-     "date": "2026-10-27T05:05:20.000Z",
-     "duration": 539,
-     "audio": "https://audio.podigee-cdn.net/2622454-m-b0df11b5a4520f1fa2843259bc1c6c75.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2229-anthropic-borsengang-wird-konkret-mercedes-sechsstellige-abfindungen-fur-produktionsmitarbeiter",
-     "desc": "Das exklusive Abo-Angebot für alle Hörerinnen und Hörer des Handelsblatt Morning Briefings: https://www.handelsblatt.com/wirtschaftsabo Weitere Informationen zu Werbeeinblendungen"
     }
    ]
   },
