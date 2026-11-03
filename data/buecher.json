@@ -39,8 +39,31 @@
    "autoren": "Phil Rosenzweig",
    "jahr": 2007,
    "modul": "urteil",
-   "status": "offen",
-   "plan": []
+   "status": "in_arbeit",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Der Halo-Effekt: wie Erfolg rückblickend alles verklärt",
+     "impuls": "buch-20261103-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Die übrigen Täuschungen: Einzelerklärung, absolute Leistung, dauerhafter Erfolg, falsche Seite des Stocks",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Was stattdessen hilft: Strategie als Wette unter Unsicherheit",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Transfer auf die IH im Netz Hagen",
+     "impuls": null
+    }
+   ],
+   "begonnen": "2026-11-03",
+   "zuletzt": "2026-11-03"
   },
   {
    "id": "model-thinker",
