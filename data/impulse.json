@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-03T03:36:56+00:00",
+ "updated": "2026-11-03T04:07:58+00:00",
  "items": [
+  {
+   "id": "drive-20261103-1",
+   "date": "2026-11-03",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 2,
+    "von": 11
+   },
+   "titel": "Acht Wege, wie Kennzahlen in die Irre führen",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), Kapitel 2",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Kennzahlen scheitern nach wiederkehrenden Mustern: Vier verzerren die Information schon beim Messen, vier entstehen, sobald Menschen unter Druck die Zahl statt der Sache verbessern.",
+   "deutsch": "> **Wer die typischen Fehler kennt, erkennt sie früh – lange bevor eine Kennzahl die Arbeit verbogen hat.**\n\n## 🔗 Anschluss an Teil 1\nIn Teil 1 ging es um Mullers Grundbegriff, die Messfixierung, und um die Gesetze von Campbell und Goodhart. Kapitel 2 macht daraus eine **Checkliste der wiederkehrenden Fehler**. Muller betont: Kennzahlen entstehen meist aus guten Absichten und lösen manchmal tatsächlich Probleme – die Fehler sind aber so regelmäßig, dass man sie vorhersehen kann. In der Praxis überlappen sie sich.\n\n## 🔍 Gruppe 1: Verzerrte Information\n| Fehler | Was passiert | Beispiel aus dem Buch |\n|---|---|---|\n| **Das Leichteste messen** | Man misst, was sich einfach zählen lässt – das ist selten das Wichtigste, manchmal gar nicht wichtig. | – |\n| **Einfaches messen, wo das Ziel komplex ist** | Die meisten Aufgaben haben mehrere Verantwortungen, Organisationen mehrere Ziele. Wer nur eines misst, bekommt ein trügerisches Bild. | – |\n| **Eingaben statt Ergebnisse** | Gezählt wird, was ausgegeben oder eingesetzt wurde, oder der Prozess statt des Produkts. | Mittel und Aufwand statt Wirkung |\n| **Informationsverlust durch Standardisierung** | Zahlen machen vergleichbar, nehmen aber Zusammenhang, Geschichte und Bedeutung weg. Vorbehalte und Unsicherheiten verschwinden – nichts wirkt so sicher wie eine Zahl. | Ranglisten von Personen und Einrichtungen |\n\n## 🎲 Gruppe 2: Spielen mit der Zahl\nSobald viel an einer Kennzahl hängt, beginnt das, wovor Campbell und Goodhart warnen. Muller unterscheidet vier Stufen:\n\n1. **Rosinenpicken („creaming“):** einfachere Fälle oder Kunden bevorzugen, damit das Ziel leichter erreicht wird – die schwierigen bleiben liegen.\n2. **Standards senken:** die Messlatte für den Erfolg herabsetzen. Abschlussquoten steigen, wenn die Prüfung leichter wird; Fluggesellschaften verbessern ihre Pünktlichkeit, indem sie die geplante Flugzeit verlängern.\n3. **Weglassen oder umdeuten:** unbequeme Fälle nicht erfassen oder so einordnen, dass sie aus der Statistik fallen. Polizeien „senken“ die Kriminalität, indem sie Verbrechen als Vergehen buchen oder Anzeigen gar nicht aufnehmen.\n4. **Betrug:** Er nimmt mit dem Gewicht der Kennzahl zu. Als ein US-Schulgesetz die Testergebnisse folgenreich machte, änderten Lehrkräfte und Schulleitungen in mehreren Städten die Antworten ihrer Schüler.\n\n---\n\n## 🧭 Die Leiter des Spielens\nDie vier Stufen zeigen eine Steigerung: von legalem, oft unbewusstem Ausweichen bis zur Fälschung. Wichtig ist Mullers Beobachtung, dass **die Häufigkeit mit dem Einsatz wächst**: Je mehr an einer Zahl hängt, desto weiter steigen Menschen die Leiter hinauf.",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Pünktlichkeit durch Puffer:** Das Beispiel der Fluggesellschaften lässt sich leicht übertragen – jede Termintreue lässt sich verbessern, indem man Fristen großzügiger plant. Frag bei jeder Erfolgsquote, ob sich der Maßstab verändert hat.\n- **Eingaben statt Wirkung:** Abgearbeitete Aufträge, eingesetzte Stunden oder ausgegebene Mittel sagen wenig darüber, ob das Netz stabiler wird. Halte Ausschau nach einer Zahl, die näher an der eigentlichen Wirkung liegt.\n- **Umdeuten:** Wo Einstufungen Spielraum lassen, etwa bei Dringlichkeit oder Ursachen, kann sich eine Statistik verbessern, ohne dass sich draußen etwas ändert.\n- **Einordnung:** Muller belegt die Muster mit Beispielen aus Bildung, Polizei und Luftfahrt in den USA und Großbritannien. Für die IH sind es Prüfmuster, keine Befunde – ob und wo sie auftreten, zeigt nur der Blick in die eigenen Zahlen und Gespräche mit den Teams.",
+   "frage": "Bei welcher Kennzahl im künftigen Bereich wäre es am leichtesten, die Zahl zu verbessern, ohne dass sich die Lage draußen verbessert?",
+   "experiment": "**Lege die acht Fehler neben deine Kennzahlenliste.**\n1. Nimm die Liste aus dem Experiment zu Teil 1 (oder notiere fünf Kennzahlen, die dir im Bereich begegnen).\n2. Prüfe jede gegen die vier Informationsfehler: leicht statt wichtig? Einfach statt komplex? Eingabe statt Ergebnis? Ohne Zusammenhang?\n3. Prüfe dann: Hängt etwas daran – Anerkennung, Budget, Bewertung? Wenn ja, welche Stufe des Spielens wäre am naheliegendsten?\n4. Markiere eine Kennzahl, über die du mit einem erfahrenen Praktiker sprechen willst: „Was zeigt diese Zahl nicht?“",
+   "karten": [
+    {
+     "frage": "Welche vier Informationsfehler nennt Muller?",
+     "antwort": "Das Leichteste messen; Einfaches messen, wo das Ziel komplex ist; Eingaben statt Ergebnisse; Informationsverlust durch Standardisierung."
+    },
+    {
+     "frage": "Welche vier Stufen des Spielens mit Kennzahlen unterscheidet Muller?",
+     "antwort": "Rosinenpicken, Standards senken, Weglassen oder Umdeuten, Betrug – die Häufigkeit steigt mit dem Einsatz."
+    },
+    {
+     "frage": "Wie verbessern Fluggesellschaften laut Muller ihre Pünktlichkeit, ohne pünktlicher zu werden?",
+     "antwort": "Sie verlängern die geplante Flugzeit – der Maßstab sinkt, die Zahl steigt."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261103-2",
+   "date": "2026-11-03",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 4,
+    "von": 7
+   },
+   "titel": "13 Wochen mit System",
+   "quelle": {
+    "name": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019), Kapitel 8",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Ein Wochenplan mit je einem Schwerpunkt macht die ersten 100 Tage steuerbar: erst Klima und Vertrauen, dann Menschen und Abläufe, dann Ziele und Veränderung – mit zwei eingebauten Rückblicken.",
+   "deutsch": "> **Ein Plan ersetzt kein Urteil – aber er verhindert, dass das Dringende die ersten 100 Tage auffrisst.**\n\n## 🔗 Anschluss an Teil 3\nIn Teil 3 ging es um die zwei Gespräche, die den Start prägen: mit dem eigenen Vorgesetzten und mit den Mitarbeitenden. Kapitel 8 ordnet diese und alle anderen Schritte in einen **Plan für 13 Wochen**.\n\n**Wichtig vorab:** De Micheli versteht den Plan ausdrücklich als **Anregung und Planungshilfe**, nicht als Vorgabe – weder bei der Reihenfolge noch bei den Prioritäten. Er empfiehlt, ihn leicht angepasst auch dem Team als Orientierung zu geben.\n\n## 🗓️ Der Plan im Überblick\n| Woche | Schwerpunkt | Aktivitäten laut Buch |\n|---|---|---|\n| **1** | Team- und Arbeitsklima | Leitbild beim Team vorstellen · aktuelle Projekte und Aufgaben kennenlernen · Teamklima beobachten · Unternehmenskultur und Organisation kennenlernen |\n| **2** | Vertrauensbasis stärken | Einzelgespräche beginnen · Gespräch mit dem Vorgesetzten · Einstand geben · Zeichen für den eigenen Führungsstil setzen · Zeitplanung und Kommunikation analysieren |\n| **3** | Persönlichkeiten im Team | Einzelgespräche fortsetzen · dringende und wichtige Projekte klären · Kommunikation und Zusammenarbeit reflektieren · Akten und Geschichte der Abteilung studieren |\n| **4** | Chancen für Motivation | Information und Kommunikation organisieren · Arbeitsplätze und Hilfsmittel verbessern · Motivationsprofile erstellen · **Rückblick auf den ersten Monat** mit dem Team |\n| **5** | Qualifikationen | an die Arbeitsplätze gehen, beobachten, lernen · Abläufe analysieren · Stärken und Schwächen erfassen · Zusammenarbeit mit anderen Abteilungen |\n| **6** | Neue Zeichen setzen | weiter vor Ort lernen · Informationswege einrichten · Verbesserungswünsche der Mitarbeitenden umsetzen · mit der Personalabteilung über die Geschichte des Teams sprechen |\n| **7** | Herausforderungen | Tätigkeiten analysieren und besprechen · andere Abteilungsleitungen treffen · Projekte und Aufgaben vertiefen |\n| **8** | Zielvereinbarung | Ziele mit dem Vorgesetzten besprechen · Zielgespräche vorbereiten · Ziele auf Verträglichkeit mit den Unternehmenszielen prüfen |\n| **9** | Veränderungsklima schaffen | Zielgespräche führen · Neuordnung von Aufgaben erwägen · **Rückblick auf zwei Monate** |\n| **10** | Veränderungen planen | Weiterbildungsbedarf ermitteln (Ist und Soll) · Fördergespräche führen · Aufgabenneuordnung fortsetzen |\n| **11** | Persönliche Zwischenbilanz | eintägige Klausur zur Bilanz der Zusammenarbeit · Beurteilungsgespräche vorbereiten · Teilziele prüfen |\n| **12–13** | Verbesserungen | Rückblick und Ausblick mit dem Vorgesetzten · Handlungsbedarf bei der eigenen Person, bei Team und Führung, bei Betrieb und Zusammenarbeit |\n\n---\n\n## 🧩 Die Logik dahinter\n- **Wochen 1–4: Ankommen.** Klima, Vertrauen und Menschen stehen vor Inhalten. Das entspricht dem ersten Drittel aus Teil 1.\n- **Wochen 5–7: Verstehen.** Vor Ort lernen, Abläufe und Schnittstellen kennenlernen, erste sichtbare Verbesserungen umsetzen – kleine Wünsche des Teams eignen sich dafür besonders.\n- **Wochen 8–13: Ausrichten.** Erst jetzt kommen Ziele, Neuordnung und Entwicklung – abgestimmt nach oben, besprochen mit jedem Einzelnen.\n- **Zwei feste Rückblicke** (Woche 4 und 9) und eine **Klausur** (Woche 11) sorgen dafür, dass der Plan selbst überprüft wird.",
+   "modul": "uebergang",
+   "bezug_ih": "- **Vor Ort statt am Schreibtisch:** Die Wochen 5 und 6 („an die Arbeitsplätze gehen, beobachten, lernen“) passen besonders zur Instandhaltung – Begehungen mit den Teams und Gespräche an den Arbeitsstellen zeigen, was keine Kennzahl abbildet.\n- **Schnittstellen früh:** Woche 5 und 7 betonen andere Abteilungen. Im Netz gehören dazu die Partner in Betrieb, Planung und Anlagenverantwortung – die Zusammenarbeit mit ihnen entscheidet oft über ruhigere Fahrwasser.\n- **Brandherde einplanen:** Der Plan setzt voraus, dass Zeit für Aufbau bleibt. In einem Bereich mit akuten Störungen solltest du feste Zeitblöcke für den Plan reservieren, sonst verdrängt das Tagesgeschäft ihn.\n- **Einordnung:** Der Plan ist Erfahrungswissen des Autors, kein erprobtes Programm. Schritte wie Aufgabenneuordnung, Teambeurteilungen oder das Einsehen von Qualifikationsdaten berühren bei der DB Mitbestimmung und Datenschutz – sie gehören rechtzeitig mit Betriebsrat und Personalbereich abgestimmt.",
+   "frage": "Welche drei Wochenschwerpunkte aus dem Plan würde ich für meinen Start im Netz vorziehen – und welchen würde ich bewusst später legen?",
+   "experiment": "**Baue deinen eigenen 13-Wochen-Rahmen – auf einer Seite.**\n1. Übertrage die 13 Schwerpunkte in eine Tabelle mit Kalenderwochen ab Januar 2027.\n2. Streiche, was für den Netzbereich nicht passt, und ergänze, was fehlt (zum Beispiel Begehungen, Schnittstellengespräche).\n3. Trage die zwei Rückblicke und die Klausur fest ein.\n4. Reserviere pro Woche einen festen Termin nur für den Plan – und prüfe nach vier Wochen, wie oft er gehalten hat.",
+   "karten": [
+    {
+     "frage": "Wie gliedert sich De Michelis 13-Wochen-Plan grob?",
+     "antwort": "Wochen 1–4 Klima, Vertrauen, Menschen; Wochen 5–7 vor Ort lernen, Abläufe, Schnittstellen; Wochen 8–13 Ziele, Veränderung, Entwicklung, Bilanz."
+    },
+    {
+     "frage": "Welche festen Überprüfungen enthält der Plan?",
+     "antwort": "Rückblicke nach dem ersten Monat (Woche 4) und nach zwei Monaten (Woche 9) sowie eine eintägige Klausur zur Zwischenbilanz (Woche 11)."
+    },
+    {
+     "frage": "Wie soll der 13-Wochen-Plan laut Autor verstanden werden?",
+     "antwort": "Als Anregung und Planungshilfe, nicht als Vorgabe – auch leicht angepasst als Orientierung für das Team."
+    }
+   ]
+  },
   {
    "id": "20261103-1",
    "date": "2026-11-03",
