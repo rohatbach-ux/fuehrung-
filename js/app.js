@@ -1,5 +1,5 @@
 import {
-  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT, NOTEBOOK_NAME, COPILOT_NOTEBOOK_PROMPT,
+  ROLE, GOALS, PHASES, WEEKLY_REVIEW, MODULES, moduleById, IMPULSES, impulseById, CARDS, TYPE_LABEL, DEEPEN, PROJECT_PROMPT, NOTEBOOK_NAME, COPILOT_NOTEBOOK_PROMPT, AGENDA_PAGE, APP_URL,
 } from "./content.js";
 import { md, stripEmoji } from "./md.js";
 
@@ -29,6 +29,7 @@ function defaultState() {
     newCards: null,     // { date, n }
     listen: {},         // episodeId -> { pos, dur, done, ts }
     current: null,      // episodeId im Player
+    agendaSent: null,   // Zeitstempel des letzten Agenda-Updates an Copilot
   };
 }
 function load() {
@@ -297,6 +298,13 @@ function renderHeute() {
       <div>${esc(ph.fokus)}</div>
       <button class="leit" data-act="note-new" ${refAttrs({ t: "phase", id: ph.id })}>❓ ${esc(ph.leitfrage)}</button>
     </div>
+
+    ${agendaDue() ? `
+      <div class="card accent">
+        <b>🗺️ Agenda „${esc(AGENDA_PAGE)}“ aktualisieren</b>
+        <p class="hint">${state.agendaSent ? `Letztes Update: ${fmtShort(state.agendaSent)}. ` : "Noch kein Agenda-Paket verschickt – damit baut Copilot die erste Fassung. "}Dein Gesamtstand mit Links geht an Copilot, der daraus deine A4-Seite fortschreibt.</p>
+        <button class="btn primary block" data-act="agenda">Agenda-Paket öffnen</button>
+      </div>` : ""}
 
     ${[5, 6, 0].includes(wd) && !reviewed ? `
       <div class="card accent">
@@ -1203,7 +1211,7 @@ function renderJournal() {
       <button class="btn" data-act="note-new">✍️ Neue Notiz</button>
       ${ui.journal === "notizen" ? `<button class="btn" data-act="weekly">📓 Wochenrückblick</button>` : ""}
     </div>
-    <button class="btn block" data-act="week-packet">📦 Wochenpaket an Copilot</button>
+    <div class="btn-row"><button class="btn" data-act="week-packet">📦 Wochenpaket</button><button class="btn" data-act="agenda">🗺️ Agenda-Update</button></div>
     ${ui.journal === "why" ? `<p class="hint">Sammle Stolz-Geschichten, Formulierungen und Beobachtungen. Daraus entsteht mit dem Team euer WHY.</p>` : ""}
     ${list.length ? list.map(entryCard).join("") : `<div class="empty">Noch keine Einträge.</div>`}`;
 }
@@ -1330,6 +1338,119 @@ async function weekPacketSend(mode) {
   state.journal.unshift({ id: uid(), ts: Date.now(), kind: "copilot", text: `Wochenpaket KW ${openWeekPacket.kw}`, ref: null });
   save(); closeSheet(); render();
 }
+
+// ----- Agenda ANTRITT HAGEN (lebende A4-Seite in Copilot) -----
+const deepLink = (k, id) => `${APP_URL}#${k}=${encodeURIComponent(id)}`;
+const AGENDA_DAYS = [0, 2, 4, 5]; // So, Di, Do, Fr – jeweils abends
+function agendaDue() {
+  const now = new Date();
+  if (!state.agendaSent) return true;
+  if (iso(new Date(state.agendaSent)) === iso(now)) return false;
+  return AGENDA_DAYS.includes(now.getDay()) && now.getHours() >= 17;
+}
+function buildAgendaPacket() {
+  const now = new Date();
+  const ph = currentPhase();
+  const since = state.agendaSent || Date.now() - 7 * 864e5;
+  const first = !state.agendaSent;
+  const wday = now.toLocaleDateString("de-DE", { weekday: "long", day: "2-digit", month: "2-digit", year: "numeric" });
+  const clean = (t) => String(t || "").replace(/\*\*/g, "").replace(/\s*\n+\s*/g, " / ").trim();
+  const line = (j) => {
+    const info = refInfo(j.ref);
+    return `- ${fmtShort(j.ts)}${info ? ` (zu: ${info.label})` : ""}: ${clean(j.text)}`;
+  };
+  const kindName = { notiz: "Notiz", why: "WHY-Baustein", merker: "Podcast-Merker", reflexion: "Wochenrückblick" };
+  const fresh = state.journal.filter((j) => j.ts >= since && j.kind !== "copilot").slice(0, 20);
+  const active = state.experiments.filter((e) => e.status === "aktiv");
+  const doneRecent = state.experiments.filter((e) => e.status !== "aktiv" && e.review && Date.now() - parseIso(e.due).getTime() < 30 * 864e5);
+  const whys = state.journal.filter((j) => j.kind === "why").slice(0, 12);
+  const notes = state.journal.filter((j) => j.kind === "notiz" && j.ts >= Date.now() - 21 * 864e5 && j.ts < since).slice(0, 10);
+  const starred = Object.entries(state.starred).sort((a, b) => b[1] - a[1]).map(([id]) => impulseById(id)).filter(Boolean).slice(0, 8);
+  const items = rxData?.items || [];
+  const books = {};
+  for (const x of items) if (x.reihe) (books[x.reihe.buch] ||= []).push(x);
+  const bookLines = Object.entries(books).map(([buch, parts]) => {
+    parts.sort((a, b) => a.reihe.teil - b.reihe.teil);
+    const readN = parts.filter((y) => state.read[`rx:${y.id}`]).length;
+    const next = parts.find((y) => !state.read[`rx:${y.id}`]);
+    return `- ${buch}: ${readN} von ${parts.length} erschienenen Teilen gelesen (Reihe hat ${parts[0].reihe.von})${next ? ` – als Nächstes Teil ${next.reihe.teil} „${next.titel}“: ${deepLink("rx", next.id)}` : " – alles Erschienene gelesen"}`;
+  });
+  const zfLines = (zfData?.items || []).map((z) => `- ${z.titel} (${z.autoren}) – ${state.read[`zf:${z.id}`] ? "gelesen" : "ungelesen"}: ${deepLink("zf", z.id)}`);
+  const unread = items.filter((x) => !x.reihe && !state.read[`rx:${x.id}`]).slice(0, 5).map((x) => `- ${x.titel}: ${deepLink("rx", x.id)}`);
+  const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
+  const started = roleDay() >= 1;
+  const parts = [
+    `# Agenda-Update ${AGENDA_PAGE} – ${wday}`,
+    first
+      ? `Erstes Paket: Bitte die Seite „${AGENDA_PAGE}“ nach der Agenda-Struktur der Notizbuch-Anweisung neu aufbauen und das Startgerüst der Einstiegsliste mit meinem Stand abgleichen.`
+      : `Bitte die Seite „${AGENDA_PAGE}“ nach der Agenda-Struktur der Notizbuch-Anweisung aktualisieren. Meine Änderungen auf der Seite haben Vorrang. Letztes Update: ${fmtShort(state.agendaSent)}.`,
+    `## Stand\n- Phase ${ph.nr} „${ph.name}“ – ${started ? `Tag ${roleDay()} im Amt` : `noch ${1 - roleDay()} Tage bis zum Antritt am ${fmtD(state.roleStart)}`}\n- Fokus der Phase: ${ph.fokus}\n- Leitfrage der Phase: ${ph.leitfrage}\n- App (Startseite): ${APP_URL}`,
+    sec(first ? "Meine Einträge der letzten 7 Tage" : "Neu seit dem letzten Update", fresh.map((j) => `- ${kindName[j.kind] || j.kind}, ${line(j).slice(2)}`)),
+    sec("Laufende Experimente", active.map((e) => `- ${e.title} – Auswertung am ${fmtD(e.due)}${e.plan ? `; Erfolgskriterium: ${clean(e.plan)}` : ""}`)),
+    sec("Abgeschlossene Experimente (30 Tage)", doneRecent.map((e) => `- ${e.title} – Entscheidung: ${e.review.weiter}; gelernt: ${clean(e.review.gelernt)}`)),
+    sec("Alle WHY-Bausteine (neueste zuerst)", whys.map(line)),
+    sec("Weitere Notizen der letzten drei Wochen", notes.map(line)),
+    sec("Gemerkte Impulse", starred.map((x) => `- ${x.title}: ${clean(x.text)}${x.mod ? ` – Modul: ${deepLink("modul", x.mod)}` : ""}`)),
+    `## Lernstand\n- Lernkarten: ${dueCards().length} fällig, ${(state.ownCards || []).length} eigene Karten`,
+    sec("Buchreihen", bookLines),
+    sec("Buch-Zusammenfassungen", zfLines),
+    sec("Neue, ungelesene Impulse", unread),
+    `## Module (Links)\n${MODULES.map((m) => `- ${m.title}: ${deepLink("modul", m.id)}`).join("\n")}`,
+  ].filter(Boolean);
+  return parts.join("\n\n");
+}
+async function openAgendaPacket() {
+  await Promise.all([loaded.research, loaded.summaries]);
+  const text = buildAgendaPacket();
+  showSheet(`🗺️ Agenda-Update „${AGENDA_PAGE}“`, () => `
+    <p class="hint">Dein Gesamtstand mit Links in die App. Copilot schreibt daraus deine A4-Seite „${esc(AGENDA_PAGE)}“ fort. Empfohlen: sonntags, dienstags, donnerstags und freitags abends.</p>
+    <textarea id="ag-text" rows="12">${esc(text)}</textarea>
+    ${state.workMail ? `<button class="btn primary block" data-act="ag-mail">📧 An Diensthandy mailen</button>`
+      : `<button class="btn primary block" data-act="settings">📧 Dienstliche E-Mail hinterlegen</button>`}
+    <div class="btn-row"><button class="btn" data-act="ag-copy">Kopieren</button><button class="btn" data-act="ag-share">Teilen …</button></div>
+    <p class="hint">Im Notizbuch „${esc(NOTEBOOK_NAME)}“ einfügen. Die Links öffnen am Rechner direkt die passende Stelle der App.</p>
+  `);
+}
+async function agendaSend(mode) {
+  const text = $("#ag-text").value;
+  const subject = `Führungskompass – Agenda-Update ${AGENDA_PAGE} (${fmtShort(Date.now())})`;
+  let ok = false;
+  if (mode === "mail") {
+    const url = `mailto:${encodeURIComponent(state.workMail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    if (url.length > 16000) { toast("Paket sehr lang – wird kopiert, bitte in die Mail einfügen"); mode = "copy"; }
+    else { location.href = url; ok = true; }
+  }
+  if (!ok && mode === "share" && navigator.share) {
+    try { await navigator.share({ title: subject, text }); ok = true; } catch (e) { if (e.name === "AbortError") return; }
+  }
+  if (!ok) {
+    try { await navigator.clipboard.writeText(text); ok = true; toast("Kopiert – im Notizbuch einfügen"); }
+    catch (e) { $("#ag-text").select(); toast("Text markiert – bitte kopieren"); return; }
+  }
+  state.agendaSent = Date.now();
+  state.journal.unshift({ id: uid(), ts: Date.now(), kind: "copilot", text: `Agenda-Update ${AGENDA_PAGE}`, ref: null });
+  save(); closeSheet(); render();
+}
+
+// ----- Direktlinks (#zf=…, #rx=…, #modul=…, #tab=…) -----
+async function handleHash() {
+  const m = location.hash.match(/^#(zf|rx|modul|tab)=(.+)$/);
+  if (!m) return;
+  const k = m[1], id = decodeURIComponent(m[2]);
+  history.replaceState(null, "", location.pathname + location.search);
+  if (k === "tab") { if (["heute", "lernen", "inbox", "hoeren", "journal"].includes(id)) { ui.tab = id; render(); } return; }
+  if (k === "modul") { if (moduleById(id)) { ui.tab = "lernen"; render(); openModule(id); } return; }
+  if (k === "zf") {
+    await loaded.summaries;
+    if (zfById(id)) { ui.tab = "inbox"; ui.feed = "zf"; render(); openSummary(id); } else toast("Zusammenfassung nicht gefunden");
+    return;
+  }
+  if (k === "rx") {
+    await loaded.research;
+    if ((rxData?.items || []).some((x) => x.id === id)) { ui.tab = "inbox"; render(); openStory("rx", id); } else toast("Beitrag nicht gefunden");
+  }
+}
+window.addEventListener("hashchange", handleHash);
 
 // ----- Copilot-Brücke -----
 function refInfoAny(ref) {
@@ -1835,6 +1956,10 @@ document.addEventListener("click", async (ev) => {
       if (confirm("Eigene Karte wirklich entfernen?")) { state.ownCards = state.ownCards.filter((c) => c.id !== id); delete state.cards[`own-${id}`]; save(); render(); }
       break;
     case "week-packet": openWeekPacket(); break;
+    case "agenda": openAgendaPacket(); break;
+    case "ag-mail": agendaSend("mail"); break;
+    case "ag-copy": agendaSend("copy"); break;
+    case "ag-share": agendaSend("share"); break;
     case "wp-mail": weekPacketSend("mail"); break;
     case "wp-copy": weekPacketSend("copy"); break;
     case "wp-share": weekPacketSend("share"); break;
@@ -1956,6 +2081,6 @@ document.addEventListener("keydown", (e) => {
 })();
 render();
 loadPodcasts();
-loadResearch();
-loadSummaries();
+const loaded = { research: loadResearch(), summaries: loadSummaries() };
+handleHash();
 if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});
