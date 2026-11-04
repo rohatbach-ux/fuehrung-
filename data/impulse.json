@@ -1,6 +1,94 @@
 {
- "updated": "2026-11-03T04:07:58+00:00",
+ "updated": "2026-11-04T03:37:27+00:00",
  "items": [
+  {
+   "id": "20261104-1",
+   "date": "2026-11-04",
+   "titel": "Strategie als wenige einfache Regeln",
+   "quelle": {
+    "name": "Harvard Business Review – Kathleen M. Eisenhardt, Donald N. Sull: Strategy as Simple Rules",
+    "url": "https://hbr.org/2001/01/strategy-as-simple-rules"
+   },
+   "sprache": "en",
+   "kernaussage": "In unsicheren, schnell wechselnden Lagen trägt Strategie besser, wenn sie sich auf wenige entscheidende Prozesse und eine Handvoll einfacher Regeln stützt, statt auf detaillierte Pläne.",
+   "deutsch": "> **Wo sich die Lage ständig ändert, führen wenige klare Regeln weiter als ein dicker Plan.**\n\n## 🔍 Die Idee\n**Kathleen Eisenhardt und Donald Sull** beschreiben einen dritten Weg zur Strategie, neben **Marktposition** und **Ressourcen**. Ihre Definition: Strategie ist die Auswahl **weniger strategisch wichtiger Prozesse** plus eine **Handvoll einfacher Regeln**, die diese Prozesse steuern.\n\n## ⚖️ Klassisch vs. einfache Regeln\n| Klassische Strategie | Strategie als einfache Regeln |\n|---|---|\n| Vorteil aus **stabiler Position** oder Ressourcen | Vorteil aus dem **Ergreifen flüchtiger Chancen** |\n| Detaillierte Pläne | **Wenige Leitplanken**, viel Spielraum |\n| Gut für stabile Märkte | Gut für **unübersichtliche, schnelle Lagen** |\n\n---\n\n## 🧭 Wie das aussieht\n- 🎯 Zuerst klären, **welche Prozesse wirklich entscheiden** (z. B. welche Aufträge man annimmt).\n- 📏 Für jeden Prozess **wenige, konkrete Regeln** formulieren, die Entscheidungen vor Ort erleichtern.\n- 🔄 Regeln **anpassen**, wenn sie nicht mehr passen.\n\n## ⚖️ Einordnung\nDer Artikel stammt von **2001** und stützt sich auf Fallbeispiele vor allem aus Technologiemärkten. Ein Beispiel war **Enron**, was zeigt: Einfache Regeln ersetzen **keine Integrität und Kontrolle**. Die Autoren haben den Ansatz 2015 im Buch *Simple Rules* erweitert.",
+   "modul": "strategie",
+   "bezug_ih": "- **Leitplanken statt Detailplan:** In einem unruhigen Netz kannst du nicht jede Lage vorab regeln. Wenige klare Regeln (z. B. wann eine Störung Vorrang vor geplanter Instandhaltung hat) helfen Meistern, vor Ort gut zu entscheiden.\n- **Sicherheit bleibt gesetzt:** Einfache Regeln ergänzen Regelwerke und Vorschriften, sie ersetzen sie nicht.",
+   "frage": "Welche zwei, drei Entscheidungen werden in meinem künftigen Bereich täglich vor Ort getroffen – und welche einfache Regel würde sie leichter und einheitlicher machen?",
+   "experiment": "**Entwirf erste einfache Regeln.**\n1. Wähle einen Prozess, der für die Ruhe im Netz entscheidend ist (z. B. Priorisierung von Störungen und Aufträgen).\n2. Formuliere höchstens drei Regeln, jede in einem Satz.\n3. Prüfe sie mit einer erfahrenen Person: Würden diese Regeln echte Entscheidungen vor Ort leiten?",
+   "karten": [
+    {
+     "frage": "Wie definieren Eisenhardt und Sull Strategie als einfache Regeln?",
+     "antwort": "Als Auswahl weniger strategisch wichtiger Prozesse plus eine Handvoll einfacher Regeln, die diese Prozesse steuern."
+    },
+    {
+     "frage": "Woher kommt der Vorteil in diesem Ansatz?",
+     "antwort": "Aus dem schnellen Ergreifen flüchtiger Chancen statt aus einer stabilen Position oder Ressourcen."
+    }
+   ]
+  },
+  {
+   "id": "20261104-2",
+   "date": "2026-11-04",
+   "titel": "Feedback-Irrtum: Was Urteile über andere verraten",
+   "quelle": {
+    "name": "Harvard Business Review – Marcus Buckingham, Ashley Goodall: The Feedback Fallacy",
+    "url": "https://hbr.org/2019/03/the-feedback-fallacy"
+   },
+   "sprache": "en",
+   "kernaussage": "Bewertungen sagen oft mehr über den Bewertenden als über die bewertete Person – wirksamer als Kritik ist es, genau zu benennen, was gut gelungen ist.",
+   "deutsch": "> **Wer andere bewertet, beschreibt oft vor allem sich selbst.**\n\n## 🔍 Die These\n**Marcus Buckingham und Ashley Goodall** stellen eine verbreitete Annahme infrage: dass Führungskräfte Mitarbeitenden vor allem sagen sollten, **was sie verbessern müssen**. Sie nennen drei Gründe, warum das oft nicht funktioniert.\n\n## 🧱 Drei Irrtümer\n| Annahme | Gegenargument der Autoren |\n|---|---|\n| Andere können meine Leistung **zuverlässig einschätzen** | **Idiosyncratic Rater Effect:** Ein großer Teil einer Bewertung spiegelt den **Bewertenden** wider |\n| Kritik hilft beim **Lernen** | Kritik kann eher **verunsichern** als Lernen anregen |\n| Exzellenz lässt sich **vorab definieren** | Exzellenz ist **individuell** und zeigt sich unterschiedlich |\n\n---\n\n## ✅ Was die Autoren empfehlen\n- 🔦 **Auf Gelungenes achten** und es konkret benennen.\n- 🗣️ **Eigene Wahrnehmung** schildern („Ich habe erlebt …“) statt Urteile („Du bist …“).\n- ❓ **Fragen**, was im Moment hilft, statt Lösungen vorzugeben.\n\n## ⚖️ Einordnung\nDer Artikel ist eine **bewusste Gegenposition** zu Ansätzen wie Radical Candor. Eine spätere Studie fand den Rater-Effekt bestätigt, aber **kleiner** (etwa ein Drittel statt mehr als die Hälfte). Kritisches Feedback bleibt bei **Sicherheit und Regelverstößen** unverzichtbar.",
+   "modul": "gespraeche",
+   "bezug_ih": "- **Urteile über andere prüfen:** Als neuer Leiter wirst du schnell Einschätzungen über Personen hören. Frag dich, wie viel davon über den Urteilenden sagt.\n- **Gelungenes sichtbar machen:** In einem Bereich voller Brandherde wird Gutes oft übersehen. Konkretes Benennen gelungener Arbeit stärkt, was funktioniert.",
+   "frage": "Wenn ich jemanden in meinem Team beurteile – wie viel davon beschreibt die Person, und wie viel meine eigenen Maßstäbe?",
+   "experiment": "**Übe konkretes Benennen von Gelungenem.**\n1. Achte zwei Wochen lang bewusst auf Situationen, in denen jemand etwas richtig gut gemacht hat.\n2. Sag es der Person zeitnah und konkret: was du beobachtet hast und welche Wirkung es hatte.\n3. Notiere, wie die Personen reagieren und ob sich das Verhalten wiederholt.",
+   "karten": [
+    {
+     "frage": "Was beschreibt der „Idiosyncratic Rater Effect“?",
+     "antwort": "Ein großer Teil einer Bewertung spiegelt die Eigenheiten des Bewertenden wider, nicht die Leistung der bewerteten Person."
+    },
+    {
+     "frage": "Was empfehlen Buckingham und Goodall statt Kritik?",
+     "antwort": "Gelungenes konkret benennen, eigene Wahrnehmung statt Urteile schildern und fragen, was gerade hilft."
+    }
+   ]
+  },
+  {
+   "id": "buch-20261104-1",
+   "date": "2026-11-04",
+   "herkunft": "buch",
+   "reihe": {
+    "buch": "Die Logik des Mißlingens (The Logic of Failure)",
+    "teil": 2,
+    "von": 4
+   },
+   "titel": "Typische Denkfehler, wenn es komplex wird",
+   "quelle": {
+    "name": "Computers in Human Behavior Reports – Dietrich Dörner, C. Dominik Güss: Human error in complex problem solving and dynamic decision making (Bezug: Die Logik des Mißlingens)",
+    "url": "https://doi.org/10.1016/j.chbr.2022.100222"
+   },
+   "sprache": "en",
+   "kernaussage": "Menschen scheitern in komplexen Lagen an wiederkehrenden Fehlern – und diese entstehen nicht nur aus Denklücken, sondern aus dem Zusammenspiel von Gefühlen, Motiven und Denken.",
+   "deutsch": "> **Die gefährlichsten Fehler entstehen nicht aus Dummheit, sondern aus dem Wunsch, sich kompetent zu fühlen.**\n\n## 📚 Worum es geht\nDieser Teil beruht auf **öffentlichen Quellen zum Buch**, vor allem einem frei zugänglichen Fachartikel von **Dörner und Güss (2022)**, nicht auf dem Buchtext selbst. Teil 1 zeigte, **was komplexe Lagen ausmacht**. Jetzt geht es um die **typischen Fehler**, die Menschen darin machen.\n\n## 🧪 Neue Studie, alte Muster\nDörner und Güss beobachteten Einzelne und Teams in drei Planspielen: einer **Schokoladenfabrik**, einem **Nomadenstamm** in der Sahelzone und der **Bekämpfung von Waldbränden**. Daraus leiteten sie **24 typische Fehler** ab, geordnet nach den Schritten des Problemlösens.\n\n---\n\n## 🧩 Bekannte Fehlermuster\n- 🌫️ **Vage Ziele:** Wer nicht klar weiß, was er erreichen will, kann Erfolg nicht prüfen.\n- 🔍 **Ungeprüfte Annahmen:** Vermutungen werden selten getestet, und wenn, dann nur auf **Bestätigung**.\n- 🐚 **Einkapselung:** Unter Druck ziehen sich Menschen in Bereiche zurück, die sie **gut beherrschen**.\n- 🦋 **Thematisches Vagabundieren:** Ständiges Springen zwischen Themen **wirkt kompetent**, löst aber nichts.\n- 🎯 **Ballistisches Handeln:** Maßnahmen werden losgeschickt, aber ihre **Wirkung nicht geprüft**.\n\n## 🧠 Die Erklärung\nNeu ist die Theorie: Fehler entstehen aus dem **Zusammenspiel von Emotionen, Motiven und Denken**. Ein wichtiger Treiber ist das Bedürfnis, sich **handlungsfähig und kompetent** zu fühlen. Teil 3 geht auf **Zeit und Nebenwirkungen** ein.",
+   "modul": "stabil",
+   "bezug_ih": "- **Brandherde verführen:** Das sofortige Lösen des jeweils aktuellsten Problems fühlt sich kompetent an, kann aber den Blick auf die Ursachen verstellen.\n- **Wirkung nachhalten:** Lege für jede größere Maßnahme fest, woran und wann du prüfst, ob sie wirkt.\n- **Einordnung:** Die Fehlermuster sind in der Forschung zum komplexen Problemlösen breit beschrieben. Wie gut sich Ergebnisse aus Planspielen auf echte Organisationen übertragen lassen, bleibt umstritten. Einige Begriffe (z. B. ballistisches Handeln) sind hier nach Lehrmaterialien wiedergegeben.",
+   "frage": "In welche Themen ziehe ich mich unter Druck gern zurück, weil ich sie gut beherrsche – auch wenn sie gerade nicht die wichtigsten sind?",
+   "experiment": "**Mach deine Maßnahmen prüfbar.**\n1. Notiere die nächsten drei Maßnahmen, die du anstößt (beruflich oder in der Vorbereitung).\n2. Schreib zu jeder: Welches Ziel genau? Woran erkenne ich, dass sie wirkt? Wann schaue ich nach?\n3. Prüfe nach zwei Wochen, wie viele du tatsächlich nachgehalten hast.",
+   "karten": [
+    {
+     "frage": "Was ist „thematisches Vagabundieren“ nach Dörner?",
+     "antwort": "Ständiges Springen zwischen Themen, das Kompetenz vorspiegelt, ohne Probleme wirklich zu lösen."
+    },
+    {
+     "frage": "Wie erklären Dörner und Güss (2022) Fehler in komplexen Lagen?",
+     "antwort": "Als Ergebnis des Zusammenspiels von Emotionen, Motiven und Denken – nicht nur als Denkfehler."
+    },
+    {
+     "frage": "Was bedeutet „ballistisches Handeln“?",
+     "antwort": "Maßnahmen werden losgeschickt, ohne ihre Wirkung zu kontrollieren oder zu korrigieren."
+    }
+   ]
+  },
   {
    "id": "drive-20261103-1",
    "date": "2026-11-03",
