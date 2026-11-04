@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-04T03:37:27+00:00",
+ "updated": "2026-11-04T04:07:44+00:00",
  "items": [
+  {
+   "id": "drive-20261104-1",
+   "date": "2026-11-04",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 3,
+    "von": 10
+   },
+   "titel": "Sieben Tugenden als Kompass in der Mitte",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), Kapitel 2.1.2",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Wer zwischen oben und unten führt, braucht einen inneren Kompass: Klarheit, Verlässlichkeit, Konsequenz, Wertschätzung, Zuversicht, Respekt und innere Unabhängigkeit vom Wunsch, beliebt zu sein.",
+   "deutsch": "> **Werte zeigen sich nicht in Leitbildern, sondern in kleinen, wiederholten Entscheidungen – vor allem dann, wenn sie unbequem sind.**\n\n## 🔗 Anschluss an Teil 2\nIn Teil 2 ging es um das Menschenbild nach McGregor: Was du über Menschen denkst, prägt, wie du führst. Frerichs leitet daraus sieben Tugenden ab, die er im Führungsalltag für besonders wichtig hält.\n\n## 🧭 Die sieben Tugenden\n| Tugend | Kern laut Frerichs | Woran man sie erkennt |\n|---|---|---|\n| **1. Klarheit** | Verständlich, eindeutig und authentisch kommunizieren und entscheiden – das gibt Orientierung und Sicherheit. | Man wird nur noch inhaltlich angreifbar; die persönliche Autorität wächst. Wer das Team im Nebel lässt, verliert dessen Motivation und in der Krise das Vertrauen. |\n| **2. Verlässlichkeit und Aufrichtigkeit** | Zusagen halten, Taten statt Worte, bei der Wahrheit bleiben. | Keine leeren Versprechen zu Gehalt oder Beförderung. Vertrauliches bleibt vertraulich. Darf man etwas vorerst nicht sagen, hält man sich daran – und erklärt später, warum. |\n| **3. Konsequenz** | Verstöße offen ansprechen, in gravierenden Fällen auch mit arbeitsrechtlichen Mitteln. | Wer Regelbrüche „ausnahmsweise“ duldet, frustriert die Verlässlichen und verliert Autorität. Bei Mobbing, Belästigung oder Diskriminierung muss Führung immer eingreifen. |\n| **4. Wertschätzung** | Den eigenen Wert und den der anderen anerkennen, Stärken sehen, dankbar sein. | Zeit für Anliegen nehmen, wirklich zuhören – oder ehrlich sagen, dass es gerade nicht passt. Ein ehrliches Danke wirkt oft stärker als ein Prozent mehr Prämie. Rituale wie handgeschriebene Karten oder gemeinsame Unternehmungen. |\n| **5. Optimismus in schweren Zeiten** | Zuversicht verbreiten, auf die eigenen Möglichkeiten statt auf Unbeeinflussbares schauen. | Frerichs empfiehlt Ansätze der Positiven Psychologie (Liste unten). |\n| **6. Respekt** | Jeden Menschen als wertvoll behandeln und seine Würde wahren. | Druck von oben nicht nach unten weitergeben – die Führungskraft ist auf ihr Team angewiesen. |\n| **7. Innere Autonomie** | Nicht vorrangig beliebt sein wollen. | Die Spannung zwischen Loyalität nach oben und Vertrauen des Teams aushalten (Details unten). |\n\n---\n\n## ☀️ Zuversicht konkret\n- Das Team ermutigen, an die eigenen Fähigkeiten zu glauben.\n- An frühere Erfolge erinnern und die Stärken benennen, mit denen Krisen schon gelöst wurden.\n- Die Gemeinschaft betonen.\n- Vorbild sein, auch symbolisch.\n- Freundlich bleiben: Kaum etwas verunsichert ein Team so sehr wie eine schlecht gelaunte Führungskraft, die nicht mehr grüßt.\n\n## ⚖️ Nähe und Distanz – Frerichs' Antwort\n- **Du oder Sie** entscheidet nicht über Autorität – wichtig ist nur, es **einheitlich** zu handhaben und klarzumachen, dass ein Du keine Anbiederung erlaubt.\n- Gesunde Distanz entsteht, wenn man **empathisch zur Person und sachlich in der Sache** ist.\n- Werkzeug dafür: **Aktives Zuhören** – zugewandt sein, Verständnisfragen stellen, das Gehörte in eigenen Worten zurückspiegeln und die Antwort abwarten.\n- **Allparteilich bleiben:** sich nicht instrumentalisieren lassen, nicht nach Sympathie Partei ergreifen, nicht über Abwesende lästern, Vertrauliches nicht weitergeben, sich die Meinung immer direkt bei den Betroffenen bilden.",
+   "modul": "fk",
+   "bezug_ih": "- **Konsequenz bei Sicherheitsregeln:** In der Instandhaltung hat Frerichs' Punkt besonderes Gewicht – wer Abweichungen bei Arbeitsschutz oder Sicherungsregeln „ausnahmsweise“ durchgehen lässt, setzt mehr aufs Spiel als die eigene Autorität.\n- **Informationsvorbehalt:** In einer großen Organisation wirst du öfter Dinge wissen, die du noch nicht weitergeben darfst, etwa zu Umorganisationen. Frerichs' Regel – schweigen, aber später offen erklären – schützt deine Glaubwürdigkeit nach beiden Seiten.\n- **Du und Sie im Netz:** Im Bahnbetrieb ist das Du verbreitet. Entscheidend ist, dass du es für alle gleich hältst.\n- **Einordnung:** Die Liste ist Erfahrungswissen eines Coaches, keine empirisch abgeleitete Systematik. Arbeitsrechtliche Schritte wie Abmahnungen laufen bei der DB über Personalbereich und Mitbestimmung, nicht im Alleingang.",
+   "frage": "Welche der sieben Tugenden fällt mir unter Druck von oben am schwersten – und woran würde mein Team das zuerst merken?",
+   "experiment": "**Teste die Tugenden an einer Woche.**\n1. Wähle zwei Tugenden, eine Stärke und eine Schwachstelle.\n2. Notiere eine Woche lang abends je eine Situation, in der sie gefragt waren, und wie du gehandelt hast.\n3. Nutze in mindestens einem Gespräch bewusst Aktives Zuhören: das Gehörte zurückspiegeln und die Bestätigung abwarten.\n4. Werte am Freitag aus: Wo hat Klarheit oder Konsequenz gefehlt, wo hat Wertschätzung etwas bewirkt?",
+   "karten": [
+    {
+     "frage": "Welche sieben Tugenden nennt Frerichs als Werte-Kompass?",
+     "antwort": "Klarheit, Verlässlichkeit und Aufrichtigkeit, Konsequenz, Wertschätzung, Optimismus in schweren Zeiten, Respekt, innere Autonomie."
+    },
+    {
+     "frage": "Was rät Frerichs, wenn man Informationen vorerst nicht weitergeben darf?",
+     "antwort": "Sich an die Vorgabe halten – und dem Team später offen erklären, warum man nicht früher informieren konnte."
+    },
+    {
+     "frage": "Wie verbindet man laut Frerichs Nähe und Distanz?",
+     "antwort": "Empathisch zur Person, sachlich in der Sache – etwa mit Aktivem Zuhören – und stets allparteilich."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261104-2",
+   "date": "2026-11-04",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 5,
+    "von": 7
+   },
+   "titel": "Akzeptanz gewinnen – was trägt und was nicht",
+   "quelle": {
+    "name": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019), Kapitel 5 und 10",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Akzeptanz entsteht langfristig aus gutem Führungsverhalten; De Micheli empfiehlt zusätzlich frühe Zeichen – von kleinen Aufmerksamkeiten bis zu klaren Grenzen. Nicht alles davon passt zu einer modernen, regelgebundenen Organisation.",
+   "deutsch": "> **Respekt lässt sich nicht verordnen – aber man kann früh zeigen, wofür man steht und was man nicht duldet.**\n\n## 🔗 Anschluss an Teil 4\nIn Teil 4 ging es um den 13-Wochen-Plan. Zwei Arbeitshilfen des Buchs ergänzen ihn: eine Ideenliste für **Sympathie** (Kapitel 5) und eine Liste von **Signalen für Achtung und Akzeptanz** (Kapitel 10). Beide sind als Auswahllisten gedacht: Man kreuzt an, was man macht, was man überlegt und was nicht passt.\n\n## 💝 Kapitel 5: Kleine Aufmerksamkeiten\nDe Micheli sammelt rund zwanzig Gesten, mit denen eine neue Führungskraft Sympathie gewinnen kann. In Gruppen geordnet:\n| Art | Beispiele aus der Liste (sinngemäß) |\n|---|---|\n| **Anerkennung in Worten** | Dankesbrief, Anerkennungsurkunde, Kundenlob kommentiert weiterleiten, Einladung mit dem Tenor „ohne Sie wäre es nicht gegangen“ |\n| **Kleine Gesten im Alltag** | ein kurzes „Ich habe an Sie gedacht“, Dank-Zettel mit Frühstück, nach Überstunden etwas abnehmen, ein Besprechungsthema ganz anderer Art |\n| **Persönliche Bezüge** | Freizeittipp oder Geschenk zum Hobby, Grüße in den Urlaub, Buch mit Widmung |\n| **Erfolge feiern** | Abteilungserfolg mit kleinen Symbolen feiern |\n| **Entlastung** | Entspannungsangebote nach einer Stresswoche |\n| **Private Sphäre** | Abendessen mit Partner, Blumen an die Familie, Brief an die Privatadresse |\n\n## 🛡️ Kapitel 10: Signale für Achtung und Akzeptanz\nLangfristig, so De Micheli, entsteht Akzeptanz durch wirksame Führung, Motivation und Kommunikation. Früh helfen aber deutliche Zeichen. Seine Liste lässt sich in drei Gruppen teilen:\n\n**Vorbild und Haltung**\n- Konsequent tun, was man sagt und verlangt.\n- Zu den eigenen Werten und Überzeugungen stehen.\n- Den Mut zu unpopulären Entscheidungen haben.\n- Zu Fehlern stehen und das Team für Erfolge nennen.\n- Sich kompromisslos für gemeinsame Ziele einsetzen.\n\n**Schutz nach außen**\n- Sich auch nach oben behaupten und hinter dem Team stehen.\n\n**Grenzen setzen**\n- Schon in der Antrittsrede sagen, was man nicht duldet.\n- Verstöße gegen Fairness und wichtige Spielregeln klar ahnden, Konsequenzen aufzeigen.\n- Mitarbeitende mit negativem Einfluss auf das Team früh verwarnen; von dauerhaft destruktiven trennen.\n- Außerdem nennt die Liste: respektloses Verhalten **vor dem ganzen Team** kritisieren, Inakzeptables nach einer Woche öffentlich machen, bei schweren Vergehen **Kündigung androhen** und das Team informieren.\n\n---\n\n## ⚖️ Was trägt, was nicht\n- **Trägt:** Vorbild, Konsequenz, Rückendeckung nach oben, Fehler eingestehen – das deckt sich mit Teil 1 („souverän statt gefallen wollen“) und mit Frerichs' Tugenden.\n- **Trägt nicht:** Öffentliche Kritik und angedrohte Kündigungen vor dem Team widersprechen der Betonung von Vertrauen im übrigen Buch. Sie erzeugen Angst statt Respekt und schwächen die Bereitschaft, Probleme offen zu melden.",
+   "modul": "uebergang",
+   "bezug_ih": "- **Sicherheit braucht Offenheit:** In der Instandhaltung hängt viel daran, dass Fehler und Beinahe-Ereignisse gemeldet werden. Öffentliche Bloßstellung würde genau das bremsen – Grenzen deshalb klar, aber unter vier Augen ziehen.\n- **Rückendeckung als stärkstes Signal:** Wenn du dich in einem Konflikt mit Betrieb oder Planung erkennbar vor dein Team stellst, gewinnst du mehr Akzeptanz als mit jeder Antrittsrede.\n- **Einordnung zu Kapitel 5:** Geschenke, Einladungen mit Partnern, Briefe an Privatadressen und Blumen an Familien berühren bei der DB Compliance-Regeln und Datenschutz. Tragfähig sind Gesten ohne Geldwert: persönlicher Dank, handgeschriebene Karte, gemeinsames Feiern von Erfolgen im Rahmen der Regeln.\n- **Einordnung zu Kapitel 10:** Abmahnungen und Kündigungen laufen über Personalbereich und Mitbestimmung; sie anzudrohen ist kein Führungsinstrument für den Start. Die Liste ist Erfahrungswissen des Autors ohne Belege.",
+   "frage": "Welches eine Signal will ich in den ersten Wochen setzen, damit das Team weiß, wofür ich stehe – ohne dass es Angst auslöst?",
+   "experiment": "**Sortiere die beiden Listen für dich.**\n1. Lege drei Spalten an: „mache ich“, „überlege ich“, „passt nicht“ – so wie De Micheli es vorschlägt.\n2. Ordne jede Geste und jedes Signal aus diesem Teil zu; prüfe die Gesten zusätzlich gegen die Compliance-Regeln.\n3. Formuliere aus der Spalte „mache ich“ zwei Sätze für deinen ersten Auftritt: einen dazu, wofür du stehst, und einen dazu, was du nicht duldest.\n4. Lies die Sätze einer erfahrenen Vertrauensperson vor und frag: Wie kommt das an?",
+   "karten": [
+    {
+     "frage": "Woraus entsteht Akzeptanz laut De Micheli langfristig – und was hilft früh?",
+     "antwort": "Langfristig aus wirksamer Führung, Motivation und Kommunikation; früh helfen klare Zeichen wie Konsequenz, Rückendeckung und klare Grenzen."
+    },
+    {
+     "frage": "Welche Signale aus De Michelis Liste sind problematisch?",
+     "antwort": "Öffentliche Kritik vor dem Team und angedrohte Kündigungen – sie widersprechen dem Vertrauensaufbau und hemmen offenes Melden von Problemen."
+    },
+    {
+     "frage": "Welche Art von Aufmerksamkeiten ist in einer regelgebundenen Organisation tragfähig?",
+     "antwort": "Gesten ohne Geldwert: persönlicher Dank, handgeschriebene Karte, Kundenlob weitergeben, Erfolge gemeinsam feiern."
+    }
+   ]
+  },
   {
    "id": "20261104-1",
    "date": "2026-11-04",
