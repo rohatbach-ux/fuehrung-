@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T05:09:47.088Z",
+ "updated": "2026-11-04T05:14:03.288Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-83975de0c3",
+     "title": "USA: So sind die Midterms gelaufen / Auto: BMW kappt Prognose – schon wieder",
+     "date": "2026-11-04T05:01:53.000Z",
+     "duration": 567,
+     "audio": "https://audio.podigee-cdn.net/2628972-m-c7e5161b1dd29faaa28fa7f82e195eab.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2235-usa-so-sind-die-midterms-gelaufen-auto-bmw-kappt-prognose-schon-wieder",
+     "desc": "Ein Ende der republikanischen Mehrheiten im US-Kongress scheint möglich, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh."
+    },
+    {
      "id": "morningbriefing-6ab198cf9b",
      "title": "Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
      "date": "2026-11-03T04:54:34.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2622456-m-e7963c15f712e81019cf34f2b65a0bb1.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2231-bundesprasident-warum-der-kanzler-kein-staatsoberhaupt-findet",
      "desc": "Die Wahl des Bundespräsidenten steht an, der Kanzler könnte da eine Wunschpersonalie durchsetzen. Doch stattdessen verstolpert er den Prozess. Wie viel Führungsdefizite darf ein Regierungschef haben?"
-    },
-    {
-     "id": "morningbriefing-ffb0d84c59",
-     "title": "Israel: Ein Land, zwei Wirklichkeiten / Handel: Merz für Freihandel mit Asien",
-     "date": "2026-10-28T04:52:59.000Z",
-     "duration": 513,
-     "audio": "https://audio.podigee-cdn.net/2622455-m-7e234179e43d04e3d8a140fed5cdc025.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2230-israel-ein-land-zwei-wirklichkeiten-handel-merz-fur-freihandel-mit-asien",
-     "desc": "So viele Menschen wie nie strömten in Israel gestern zu den Wahlen - und produzierten ein echtes Patt. Der Verlierer könnte ausgerechnet der Nutznießer dieser Konstellation sein."
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-6f79138aab",
+     "title": "The Topics We Avoid at Work—and How to Start Talking About Them",
+     "date": "2026-11-03T11:07:52.000Z",
+     "duration": 1840,
+     "audio": "https://audio.hbr.org/ideacast/20261102141503_127701-TheTopicsWeAvoidatWorkandHowtoStartTalkingAboutThem.mp3",
+     "link": "https://hbr.org/podcast/2026/11/the-topics-we-avoid-at-work-and-how-to-start-talking-about-them",
+     "desc": "Money, politics, family responsibilities, age, ambition, and fear: Some of the topics that matter most to employees are the ones they feel least comfortable discussing at work. But avoiding these conversations can erode trust, undermine psychological safety, and leave leaders making decisions without crucial information. That's according to Christina Wing, a senior lecturer at Harvard Business School, who argues that leaders need to get better at addressing workplace taboos. She explains how managers can create an environment where employees feel safe raising sensitive issues, and shares pr…"
+    },
     {
      "id": "ideacast-e7c14697df",
      "title": "Staying Principled in a Time of Uncertainty",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260824114544-HowPeopleWithoutFormalPowerGainInfluence.mp3",
      "link": "https://hbr.org/podcast/2026/08/how-people-without-formal-power-gain-influence",
      "desc": "In today’s increasingly decentralized workplaces, leaders often need to get things done without having direct authority over the people they depend on. So how can you influence colleagues, clients, vendors, and even senior executives without simply telling them what to do? Pamela Meyer, founder and CEO of Calibrate, says the answer is learning to read the room—and understanding the informal networks, emotional dynamics, and hidden sources of power that shape decisions. She explains five paths to indirect influence: becoming an influence spotter, a backchanneler, a precision mover, a connect…"
-    },
-    {
-     "id": "ideacast-c5fbd083a2",
-     "title": "Living and Working in the Age of Longevity",
-     "date": "2026-08-18T11:04:15.000Z",
-     "duration": 1737,
-     "audio": "https://audio.hbr.org/ideacast/20260814122152-LivingandWorkingintheAgeofLongevity.mp3",
-     "link": "https://hbr.org/podcast/2026/08/living-and-working-in-the-age-of-longevity",
-     "desc": "People are living longer, healthier lives than ever before. But many of our assumptions about executive careers—from climbing the corporate ladder to retiring at 65—haven't caught up. London Business School professor Lynda Gratton says we need a new way of thinking about work and life, and argues that traditional career paths are giving way to more flexible, multi-stage journeys that require greater personal agency, continuous learning, and a long-term perspective. She explains why leaders should think of their lives less as a ladder and more as a fabric they actively weave over time, and o…"
     }
    ]
   }
