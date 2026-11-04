@@ -676,6 +676,7 @@ genau 3 Vorhaben, je mit Tag
 - **Links** nur aus dem Paket übernehmen (Form https://rohatbach-ux.github.io/fuehrung-/#…), nie erfinden.
 - **Für den Bildschirm:** Tabellen, Fettungen, klare Abschnitte; Emojis nur als Abschnittszeichen.
 - **Priorisieren statt sammeln.** **Nichts erfinden:** Wo mein Stand fehlt, schreib „offen – klären mit …“.
+- **Konkretes bewahren:** Bestehende Seiten nie neu formulieren. Zahlen, Listen, Prüffragen, Standards und Fachbegriffe bleiben wörtlich erhalten; nichts verallgemeinern, nichts stillschweigend weglassen. Änderungen an HYPOTHESENBUCH und ZIELBILD nur als Nachtrag oder Vorschlag.
 
 **Startgerüst für die Einstiegsliste** (mit meinen Inhalten abgleichen und zeitlich staffeln):
 - *Bis 31.12.2026:* Lernplan (Technik, Kultur, Einfluss) · Übergabe mit dem Vorgänger · Gespräch mit meiner künftigen Führungskraft vorbereiten · Hypothesen prüfbar machen · Antrittsbotschaft · Abschied im bisherigen Bereich · eigener 13-Wochen-Rahmen ab Januar
