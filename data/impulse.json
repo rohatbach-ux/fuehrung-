@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-05T03:36:55+00:00",
+ "updated": "2026-11-05T04:08:14+00:00",
  "items": [
+  {
+   "id": "drive-20261105-1",
+   "date": "2026-11-05",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 3,
+    "von": 11
+   },
+   "titel": "Woher der Messwahn kommt – und warum gerade neue Chefs ihm erliegen",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), Kapitel 3 und 4",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Messfixierung hat eine lange Geschichte – von der Schulfinanzierung nach Prüfungsergebnissen über Taylor bis McNamara – und verbreitet sich, wo Vertrauen fehlt, Organisationen unübersichtlich werden und neue Führungskräfte schnell einen Überblick wollen.",
+   "deutsch": "> **Zahlen versprechen einen Abkürzungsweg zum Verstehen einer Organisation. Muller zeigt, warum dieser Weg gerade für Neue so verlockend ist – und wohin er führt.**\n\n## 🔗 Anschluss an Teil 2\nIn Teil 2 ging es um die acht wiederkehrenden Fehler von Kennzahlen. Die Kapitel 3 und 4 fragen: Wenn die Fehler so bekannt sind – wie ist die Messfixierung entstanden, und warum ist sie trotzdem so verbreitet?\n\n## 🕰️ Kapitel 3: Vier Stationen der Geschichte\n| Station | Was geschah | Mullers Pointe |\n|---|---|---|\n| **Bezahlung nach Ergebnis (England, 1862)** | Der Politiker Robert Lowe ließ Schulen danach finanzieren, wie ihre Schüler bei jährlichen Prüfungen in Lesen, Schreiben und Rechnen abschnitten. | Der Schulinspektor Matthew Arnold warnte: Unterricht wird zum Pauken, Schulen für Arme verlieren Geld. Vieles, was als Ergebnis gilt, sei „bloße Maschinerie“. |\n| **Taylorismus (ab 1911)** | Frederick Taylor zerlegte Arbeit in Einzelschritte, legte Normleistungen fest und koppelte den Lohn daran. Das Erfahrungswissen der Arbeiter sollte in Regeln des Managements überführt werden. | Standardisierung, lückenlose Berichte und Geld als Zuckerbrot und Peitsche wurden zum Erbe – bis hin zur Idee, Lehrkräfte am Lernzuwachs ihrer Schüler zu messen. |\n| **Managerialismus und McNamara** | Ab den 1950er-Jahren galt Management als branchenunabhängige Technik mit Zahlen im Zentrum. Robert McNamara brachte das von Ford ins Verteidigungsministerium; im Vietnamkrieg wurde die Zahl getöteter Gegner zum Erfolgsmaß. | Viele Generäle hielten die Zahl für wertlos oder geschönt. Der Militärstratege Edward Luttwak sprach von einer „materialistischen Schlagseite“: Messbares wie Einsätze und Munition verdrängte Strategie, Führung, Zusammenhalt und Moral. |\n| **Unternehmensberater** | Ihr Leitsatz „Was man nicht messen kann, kann man nicht managen“ verbreitete den Ansatz weiter. | Zahlen erzeugen den Anschein wissenschaftlicher Sachkenntnis – und ersparen genaue Kenntnis der beratenen Organisation. |\n\n---\n\n## 🧲 Kapitel 4: Warum Kennzahlen so beliebt sind\nMuller nennt ausdrücklich „begründete Vermutungen“, keine Beweise:\n1. **Misstrauen gegenüber Urteil.** Wo Vertrauen fehlt, wirken Zahlen objektiv und für alle verständlich. Politisch linke wie rechte Strömungen setzten seit den 1960er-Jahren auf Kennzahlen – die einen gegen Expertenmacht, die anderen gegen bequeme öffentliche Verwaltungen. Daraus wird ein Teufelskreis: weniger Vertrauen, mehr Zahlen, weniger Urteilskraft, mehr Regeln.\n2. **Angst vor Haftung.** Wer jede Entscheidung „objektiv“ dokumentiert, fühlt sich vor Klagen sicherer.\n3. **Kritik an den Professionen und Wahlfreiheit.** Kennzahlen sollten Patienten und Bürgern Auswahl ermöglichen. Sie deckten tatsächlich Missstände auf – untergruben aber zugleich das Vertrauen in fachliches Urteil.\n4. **Die „Kostenkrankheit“.** Weil Industriegüter dank Technik immer billiger werden, fallen die Kosten personalintensiver Leistungen wie Medizin und Bildung stärker auf – und erzeugen Druck nach Effizienznachweisen.\n5. **Führung in komplexen Organisationen.** Je größer die Organisation, desto weiter ist die Spitze von der eigentlichen Arbeit entfernt. Zahlen helfen scheinbar, die begrenzte Aufnahmefähigkeit zu überbrücken. Folge ist oft ein Wildwuchs aus Berichten, Abstimmungsrunden und Gremien, der Zeit für die eigentliche Arbeit frisst. Bedenken von unten gelten dann schnell als „Widerstand gegen Veränderung“.\n6. **Häufige Wechsel an der Spitze.** Wer von außen kommt oder oft rotiert, hat wenig Kontextwissen – und greift deshalb zu standardisierten Zahlen und „Best Practices“.\n7. **Die Verlockung der IT.** Mit der Tabellenkalkulation wurde Wirklichkeit „nach Zahlen“ zur Weltsicht: Hervorgehoben wird, was sich leicht in Zahlen fassen lässt.\n\n## 🎯 Der Satz, der dich betrifft\nMuller beschreibt ausdrücklich den neuen Chef, der „ein Zeichen setzen“ will: Die Erfahrenen sind vorsichtig gegenüber Veränderung, also greift er zu „den Zahlen“ als kürzestem Weg, die Organisation zu verstehen. Genau dort beginnt die Falle.",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Dein Cockpit-Plan:** Ein Lagebild mit Risiken, Störern und Ressourcen ist sinnvoll – Muller zeigt aber, dass neue Führungskräfte Zahlen gern als Ersatz für Kontextwissen nutzen. Lass dir jede Kennzahl im ersten Quartal von denen erklären, die sie erzeugen.\n- **Abstimmungsaufwand im Blick behalten:** Zusätzliche Berichte und Runden kosten die Zeit, die vor Ort fehlt. Frag bei jeder neuen Abfrage, welche Entscheidung sie besser macht.\n- **Bedenken nicht als Widerstand abtun:** Wenn erfahrene Bezirksleitungen eine Zahl anzweifeln, ist das oft Kontextwissen, kein Beharren.\n- **Einordnung:** Muller argumentiert historisch und bezieht sich vor allem auf die USA und Großbritannien. Die Erklärungen in Kapitel 4 bezeichnet er selbst als Vermutungen. Die Übertragung auf die DB ist eine Analogie – die Mechanismen (Größe, Rotation, Berichtswesen) sind aber auch in großen deutschen Organisationen bekannt.",
+   "frage": "Welche Zahl würde ich in meinen ersten Wochen am liebsten als Abkürzung nutzen – und wen müsste ich fragen, um zu verstehen, was sie nicht zeigt?",
+   "experiment": "**Prüfe den Abkürzungsreflex.**\n1. Notiere drei Fragen, die du über das Netz Hagen beantworten willst (zum Beispiel: Wo hakt die Instandhaltungskette?).\n2. Schreib zu jeder auf, welche Zahl du dafür heranziehen würdest.\n3. Schreib daneben, welche Person vor Ort dieselbe Frage aus Erfahrung beantworten könnte.\n4. Plane für den Start, beides zu tun – und vergleiche, wo sich Zahl und Erfahrung widersprechen.",
+   "karten": [
+    {
+     "frage": "Was war Robert Lowes „Bezahlung nach Ergebnis“ (1862) und wer kritisierte sie?",
+     "antwort": "Schulen wurden nach Prüfungsergebnissen ihrer Schüler finanziert; der Schulinspektor Matthew Arnold warnte vor Paukunterricht und Nachteilen für arme Schulen."
+    },
+    {
+     "frage": "Was meinte Edward Luttwak mit der „materialistischen Schlagseite“?",
+     "antwort": "Messbare Größen wie Einsätze und Munition verdrängten Unmessbares wie Strategie, Führung, Zusammenhalt und Moral."
+    },
+    {
+     "frage": "Warum greifen gerade neue Führungskräfte laut Muller zu Kennzahlen?",
+     "antwort": "Ihnen fehlt Kontextwissen, sie wollen schnell ein Zeichen setzen und misstrauen dem Urteil der Erfahrenen – Zahlen wirken wie eine Abkürzung zum Verstehen."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261105-2",
+   "date": "2026-11-05",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 4,
+    "von": 10
+   },
+   "titel": "Gefühle zeigen, was gebraucht wird",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), Kapitel 2.1.3",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Gefühle – die eigenen und die des Teams – zeigen, welche Bedürfnisse erfüllt oder verletzt sind. Wer nur Symptome bearbeitet, löst den Konflikt nicht; wer das Bedürfnis dahinter im Vier-Augen-Gespräch anspricht, schon eher.",
+   "deutsch": "> **Hinter Ärger, Rückzug oder Ausbrüchen steckt meist ein unerfülltes Bedürfnis. Führung heißt, danach zu fragen – nicht nur das Verhalten zu korrigieren.**\n\n## 🔗 Anschluss an Teil 3\nIn Teil 3 ging es um sieben Tugenden als Werte-Kompass. Frerichs ergänzt einen zweiten Kompass: Gefühle als Hinweis darauf, was Menschen brauchen.\n\n## 🧭 Das Grundprinzip\nFrerichs stützt sich auf die **Gewaltfreie Kommunikation** von Marshall Rosenberg:\n- **Gefühle zeigen Bedürfnisse an** – ob sie erfüllt, übergangen oder verletzt sind.\n- **Der Körper verrät Gefühle:** Mimik, Haltung und körperliche Stressreaktionen geben Hinweise. Was genau dahintersteckt, muss man erfragen.\n- Das gilt für die Führungskraft **selbst** ebenso wie für das Team.\n\n## ⚠️ Die typische Falle\n| Was oft passiert | Was Frerichs empfiehlt |\n|---|---|\n| Die Führungskraft bearbeitet schnell das **Symptom** und wundert sich, dass das Problem wiederkommt. | Das eigentliche **Motiv, Interesse oder Bedürfnis** erkennen. |\n| Mitarbeitende sagen selten klar, was sie wirklich brauchen. | Zusammenhänge zwischen Verhalten und Gefühl wahrnehmen und im **geschützten Vier-Augen-Gespräch** ansprechen. |\n\n---\n\n## 🔥 Heftige Reaktionen verstehen\n- **Ausbrüche als Signal:** Bei cholerischen Reaktionen lohnt der Blick auf das Verhältnis zwischen Anlass und Reaktion. Ist die Reaktion deutlich überzogen, deutet das laut Frerichs auf ein älteres emotionales Muster, das durch den Anlass nur angestoßen wird.\n- **Warum solche Muster bleiben:** Sie halten sich, wenn das Verhalten früher Erfolg brachte – oder wenn es die einzige Antwort auf Ohnmacht war.\n- **Ersatzgefühle:** Manche zeigen ein anderes Gefühl als das, was sie eigentlich empfinden, weil es früher eher akzeptiert wurde. Frerichs' Beispiel: Statt Traurigkeit zeigt jemand Wut. Rollenbilder verstärken solche Ausdrucksmuster.\n\n## 💡 Was daraus für das Gespräch folgt\n- Nicht beim sichtbaren Gefühl stehen bleiben, sondern fragen, was die Person gerade braucht – etwa Anerkennung, Sicherheit, Mitsprache oder Entlastung.\n- Den richtigen Rahmen wählen: unter vier Augen, nicht in der Runde.\n- Die eigenen Gefühle als Hinweis nutzen: Was ärgert mich gerade – und welches meiner Bedürfnisse steckt dahinter?",
+   "modul": "gespraeche",
+   "bezug_ih": "- **Hohe Anspannung in Störungslagen:** In Entstörung und Nachtschicht ist der Druck hoch. Gereizte Reaktionen können auf Überlastung oder das Gefühl hinweisen, nicht gesehen zu werden – ein späteres Vier-Augen-Gespräch klärt mehr als eine Zurechtweisung im Moment.\n- **Wiederkehrende Konflikte:** Wenn derselbe Streit zwischen Bezirken oder Schnittstellen immer wieder auftaucht, lohnt die Frage nach dem Bedürfnis dahinter (Planbarkeit, Anerkennung, Mitsprache) statt nach der nächsten Regel.\n- **Selbstführung:** In der Sandwich-Position steigt der Druck von oben und unten. Eigene Gereiztheit ist ein Frühsignal.\n- **Einordnung:** Die Grundidee der Gewaltfreien Kommunikation ist in der Praxis verbreitet, ihre Wirksamkeit ist wissenschaftlich nur begrenzt untersucht. Frerichs' Deutungen zu Kindheitsmustern und seine Verallgemeinerungen über Männer sind Erfahrungswissen eines Coaches, keine belegten Befunde. Eine Führungskraft ist keine Therapeutin: zuhören und nachfragen ja, Ursachen in der Biografie deuten nein; bei ernsten Belastungen auf Hilfsangebote wie den betrieblichen Sozialdienst verweisen.",
+   "frage": "Welche Reaktion in meinem künftigen Team würde mich am schnellsten zum Korrigieren verleiten – und welches Bedürfnis könnte dahinterstecken?",
+   "experiment": "**Übe den Bedürfnis-Blick eine Woche lang.**\n1. Halte täglich eine Situation fest, in der du oder jemand anderes deutlich gereizt, still oder abwehrend reagiert hat.\n2. Notiere: beobachtetes Verhalten · vermutetes Gefühl · mögliches Bedürfnis.\n3. Wähle eine Situation und frag im Vier-Augen-Gespräch offen nach: „Mir ist aufgefallen … Was hättest du in dem Moment gebraucht?“\n4. Vergleiche die Antwort mit deiner Vermutung.",
+   "karten": [
+    {
+     "frage": "Wofür sind Gefühle laut Frerichs (nach Rosenberg) ein Kompass?",
+     "antwort": "Für Bedürfnisse – sie zeigen, ob Bedürfnisse erfüllt, übergangen oder verletzt sind."
+    },
+    {
+     "frage": "Warum kehren Konflikte oft wieder, obwohl die Führungskraft reagiert hat?",
+     "antwort": "Weil sie das Symptom bearbeitet hat statt des Motivs oder Bedürfnisses dahinter."
+    },
+    {
+     "frage": "Was ist ein Ersatzgefühl?",
+     "antwort": "Ein Gefühl, das statt des eigentlichen gezeigt wird, weil es früher eher akzeptiert war – etwa Wut statt Traurigkeit."
+    }
+   ]
+  },
   {
    "id": "20261105-1",
    "date": "2026-11-05",
