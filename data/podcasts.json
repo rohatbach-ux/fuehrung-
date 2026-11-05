@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T05:14:03.288Z",
+ "updated": "2026-11-05T05:14:54.082Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-101284d6e6",
+     "title": "Midterms: Mega-Thema Bezahlbarkeit / Bundesregierung: Kapitalrente wird verschoben",
+     "date": "2026-11-05T04:48:56.000Z",
+     "duration": 498,
+     "audio": "https://audio.podigee-cdn.net/2628973-m-61e2dbfd9a5ae60ec8b327d8796f8ab9.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2236-midterms-mega-thema-bezahlbarkeit-bundesregierung-kapitalrente-wird-verschoben",
+     "desc": "Der US-Präsident hat vor allem mit einem Thema bei seinen Kernwählern verloren. Das ist eins, das auch in Europa gerade immer drängender wird."
+    },
+    {
      "id": "morningbriefing-83975de0c3",
      "title": "USA: So sind die Midterms gelaufen / Auto: BMW kappt Prognose – schon wieder",
      "date": "2026-11-04T05:01:53.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2622457-m-f921c76c437ca54ffa2181f34bff12df.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2232-wie-die-ki-kosten-an-der-borse-milliarden-vernichten",
      "desc": "Christine Lagarde tritt als EZB-Chefin zurück. Auf die Nachfolge wartet eine gefährliche Mischung aus Inflationsbekämpfung und Anleihekrise. Doch erste Kandidaten kristallisieren sich heraus."
-    },
-    {
-     "id": "morningbriefing-d3f02c8e3d",
-     "title": "Bundespräsident: Warum der Kanzler kein Staatsoberhaupt findet",
-     "date": "2026-10-29T04:52:07.000Z",
-     "duration": 506,
-     "audio": "https://audio.podigee-cdn.net/2622456-m-e7963c15f712e81019cf34f2b65a0bb1.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2231-bundesprasident-warum-der-kanzler-kein-staatsoberhaupt-findet",
-     "desc": "Die Wahl des Bundespräsidenten steht an, der Kanzler könnte da eine Wunschpersonalie durchsetzen. Doch stattdessen verstolpert er den Prozess. Wie viel Führungsdefizite darf ein Regierungschef haben?"
     }
    ]
   },
