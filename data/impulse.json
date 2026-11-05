@@ -1,6 +1,90 @@
 {
- "updated": "2026-11-04T04:07:44+00:00",
+ "updated": "2026-11-05T03:36:55+00:00",
  "items": [
+  {
+   "id": "20261105-1",
+   "date": "2026-11-05",
+   "titel": "Die Sinn-Lücke zwischen Chefetage und Front",
+   "quelle": {
+    "name": "McKinsey – Executives, mind the purpose gap",
+    "url": "https://www.mckinsey.com/featured-insights/charts/executives-mind-the-purpose-gap"
+   },
+   "sprache": "en",
+   "kernaussage": "Während die meisten Führungskräfte ihren Sinn in der Arbeit leben, erleben das die Beschäftigten an der Front nur selten – das WHY kommt oft nicht dort an, wo die Arbeit gemacht wird.",
+   "deutsch": "> **Ein WHY, das nur oben gelebt wird, ist für das Team kein WHY.**\n\n## 📊 Der Befund\nIn einer McKinsey-Befragung (2021) zeigte sich eine deutliche **Sinn-Lücke**:\n| Gruppe | Erlebt Sinn in der Arbeit |\n|---|---|\n| **Top-Führungskräfte** | rund **85 %** |\n| **Führungskräfte und Beschäftigte an der Front** | nur rund **15 %** |\n\nNach Zusammenfassungen der Studie beziehen viele Beschäftigte einen großen Teil ihres Lebenssinns **aus der Arbeit**. Wer darin keinen Sinn findet, denkt eher ans **Gehen**.\n\n---\n\n## 🧭 Was daraus folgt\n- 🪜 Sinn entsteht **nicht durch Leitbilder von oben**, sondern im **Arbeitsalltag**.\n- 🔗 Führung muss zeigen, wie die **konkrete Tätigkeit** mit dem größeren Zweck verbunden ist.\n- 🗣️ Beschäftigte brauchen Raum, ihren **eigenen Sinn** in der Arbeit zu benennen.\n\n## ⚖️ Einordnung\nDie Zahlen stammen aus einer **McKinsey-Befragung in US-Unternehmen**. Die Details der Methode sind öffentlich nur knapp beschrieben. Die Richtung deckt sich mit den Gallup-Befunden aus einem früheren Impuls: Sinn ist selten und hängt am **erlebten Auftrag**.",
+   "modul": "why",
+   "bezug_ih": "- **Front zuerst:** Das WHY für das Netz Hagen muss bei Instandhaltern, Meistern und Disponenten ankommen, nicht nur in der Leitungsrunde.\n- **Gemeinsam formulieren:** Wenn du das WHY mit dem Team erarbeitest, hol bewusst Stimmen aus der Fläche dazu, nicht nur Führungskräfte.",
+   "frage": "Wie würde ein Instandhalter in meinem künftigen Bereich heute beschreiben, wofür seine Arbeit gut ist – und wie weit liegt das von meiner eigenen Antwort entfernt?",
+   "experiment": "**Miss die Sinn-Lücke im Kleinen.**\n1. Frag in Kennenlerngesprächen auf verschiedenen Ebenen: *Wofür ist deine Arbeit gut – für wen macht sie einen Unterschied?*\n2. Notiere die Antworten getrennt nach Leitungsebene und Fläche.\n3. Vergleiche: Wo klingen sie ähnlich, wo fehlt an der Front der Bezug?",
+   "karten": [
+    {
+     "frage": "Wie groß war die „Sinn-Lücke“ in der McKinsey-Befragung 2021?",
+     "antwort": "Rund 85 % der Top-Führungskräfte erlebten Sinn in der Arbeit, aber nur rund 15 % der Führungskräfte und Beschäftigten an der Front."
+    },
+    {
+     "frage": "Wo entsteht Sinn in der Arbeit laut dieser Befunde vor allem?",
+     "antwort": "Im Arbeitsalltag und in der erlebten Verbindung der eigenen Tätigkeit mit dem Zweck – nicht durch Leitbilder von oben."
+    }
+   ]
+  },
+  {
+   "id": "20261105-2",
+   "date": "2026-11-05",
+   "titel": "Schneller ankommen durch das richtige Netzwerk",
+   "quelle": {
+    "name": "Harvard Business Review – Rob Cross, Greg Pryor, David Sylvester: How to Succeed Quickly in a New Role",
+    "url": "https://hbr.org/2021/11/how-to-succeed-quickly-in-a-new-role"
+   },
+   "sprache": "en",
+   "kernaussage": "Wer in einer neuen Rolle früh gezielt Beziehungen über den eigenen Bereich hinaus aufbaut, wird schneller wirksam und bleibt eher – doch nur wenige Organisationen unterstützen das bewusst.",
+   "deutsch": "> **In einer neuen Rolle entscheidet nicht nur, was du weißt, sondern wen du kennst – und wie früh.**\n\n## 🔍 Worum es geht\nDer Netzwerkforscher **Rob Cross** und Kollegen untersuchten, warum manche Menschen in neuen Rollen **schnell wirksam** werden und andere nicht. Ein Grund für Fehlstarts: Moderne Organisationen sind **stark vernetzt**. Wer neu ist, braucht schnell die richtigen Verbindungen.\n\n## 📊 Befunde\n- 🕸️ Die **Qualität des Netzwerks** von Neuen verkürzt laut der Forschung die Zeit bis zur vollen Wirksamkeit deutlich und senkt das Risiko ungewollter Abgänge.\n- 🏢 Nur etwa **jedes fünfte** befragte Unternehmen nennt den Aufbau wichtiger Netzwerke überhaupt als Ziel der Einarbeitung.\n- ⚠️ Laut einer Zusammenfassung gilt **bis zur Hälfte** der Führungskräfte in neuen Rollen später als Enttäuschung.\n\n---\n\n## 🧭 Was hilft\n- 🎯 **Früh gezielt** Beziehungen zu Schlüsselpersonen über den eigenen Bereich hinaus aufbauen.\n- 🔄 Je nach Wechsel (neu von außen, Beförderung, Wechsel innerhalb) **unterschiedliche Schwerpunkte** setzen.\n\n## ⚖️ Einordnung\nDie Aussagen stammen aus der Netzwerkforschung von Cross und dem Institut i4cp. Die genauen Zahlen und Methoden stehen im Originalartikel; hier sind sie nach Zusammenfassungen wiedergegeben.",
+   "modul": "schnittstellen",
+   "bezug_ih": "- **Vor dem Start vernetzen:** Du wechselst innerhalb der DB InfraGO in eine neue Leitungsrolle. Nutze die Zeit bis Januar, um Schlüsselpersonen in Betrieb, Planung und Bau im Netz Hagen kennenzulernen.\n- **Nicht nur nach oben:** Wichtig sind auch Menschen, die im Alltag Wissen und Einfluss haben, ohne hohe Positionen zu besetzen.",
+   "frage": "Welche fünf Personen außerhalb meines künftigen Bereichs entscheiden mit darüber, ob das Netz ruhiger wird – und kenne ich sie schon?",
+   "experiment": "**Baue dein Startnetzwerk bewusst auf.**\n1. Schreib die zehn Personen auf, deren Unterstützung du 2027 am dringendsten brauchst (innerhalb und außerhalb deines Bereichs).\n2. Markiere, zu wem du schon eine Beziehung hast.\n3. Vereinbare mit drei der übrigen ein kurzes Kennenlerngespräch vor dem 01.01.2027.",
+   "karten": [
+    {
+     "frage": "Was verkürzt laut Rob Cross die Zeit, bis Neue in einer Rolle wirksam sind?",
+     "antwort": "Die Qualität ihres Netzwerks, vor allem früh aufgebaute Beziehungen zu Schlüsselpersonen."
+    },
+    {
+     "frage": "Wie viele Unternehmen nennen den Netzwerkaufbau als Ziel der Einarbeitung?",
+     "antwort": "Nur etwa jedes fünfte der befragten Unternehmen."
+    }
+   ]
+  },
+  {
+   "id": "buch-20261105-1",
+   "date": "2026-11-05",
+   "herkunft": "buch",
+   "reihe": {
+    "buch": "The Halo Effect",
+    "teil": 2,
+    "von": 4
+   },
+   "titel": "Weitere Täuschungen hinter Erfolgsrezepten",
+   "quelle": {
+    "name": "California Management Review – Phil Rosenzweig: Misunderstanding the Nature of Company Performance (Bezug: The Halo Effect)",
+    "url": "https://cmr.berkeley.edu/2007/08/49-4-misunderstanding-the-nature-of-company-performance-the-halo-effect-and-other-business-delusions/"
+   },
+   "sprache": "en",
+   "kernaussage": "Neben dem Halo-Effekt verführen weitere Denkfehler dazu, an einfache Erfolgsformeln zu glauben – etwa, dass ein einzelner Faktor den Erfolg erklärt oder dass Leistung unabhängig vom Wettbewerb ist.",
+   "deutsch": "> **Wer einen einzelnen Grund für Erfolg sucht, findet meistens nur das, was mit dem Erfolg gemeinsam auftritt.**\n\n## 📚 Worum es geht\nDieser Teil beruht auf **öffentlichen Quellen zum Buch**, vor allem einem Fachartikel Rosenzweigs in der *California Management Review* (2007), nicht auf dem Buchtext selbst. Teil 1 zeigte den **Halo-Effekt**. Rosenzweig beschreibt insgesamt **neun Täuschungen**; hier die wichtigsten weiteren.\n\n## 🧩 Ausgewählte Täuschungen\n| Täuschung | Kern |\n|---|---|\n| **Einzelerklärung** | Ein Faktor (z. B. Kultur oder Kundennähe) wird als Ursache gefeiert – dabei hängen viele Faktoren **eng zusammen**, und jeder einzelne wirkt weniger als behauptet. |\n| **Absolute Leistung** | Erfolg hängt **vom Wettbewerb** ab. Wer sich verbessert, kann trotzdem zurückfallen, wenn andere schneller sind. Eine Formel garantiert deshalb nichts. |\n| **Gründliche Forschung** | **Viel Datenmenge** wird mit **guter Methode** verwechselt. Sind die Daten vom Halo-Effekt gefärbt, hilft auch mehr davon nicht. |\n\n---\n\n## 📋 Weitere Täuschungen\nRezensionen nennen außerdem die Täuschungen **„falsches Ende des Stocks“**, **„dauerhafter Erfolg“** und **„Organisationsphysik“**. Ihre genaue Fassung steht im Buch; öffentliche Quellen beschreiben sie nur knapp.\n\n## ⚖️ Einordnung\nDie Täuschung der **Einzelerklärung** und der **Datenverzerrung** gilt in der Methodenkritik als gut begründet. Teil 3 geht darauf ein, was Rosenzweig **stattdessen** empfiehlt.",
+   "modul": "urteil",
+   "bezug_ih": "- **Keine Patentrezepte:** Erfolgsgeschichten aus anderen Netzen oder Regionen lassen sich nicht einfach übertragen. Frag immer, welche anderen Bedingungen dort mitgewirkt haben.\n- **Relativ denken:** Ob das Netz Hagen „besser“ wird, hängt auch von Rahmenbedingungen ab (Bauvolumen, Personalmarkt, Zustand der Anlagen).\n- **Einordnung:** Rosenzweigs Kritik an Erfolgsstudien gilt als stark. Für den Alltag bleibt sie abstrakt, wenn man sie nicht auf konkrete Entscheidungen bezieht.",
+   "frage": "Welche „Erfolgsformel“ aus einem anderen Netz oder Projekt würde ich gern übernehmen – und welche Bedingungen dort habe ich dabei vielleicht übersehen?",
+   "experiment": "**Prüfe eine Erfolgsgeschichte.**\n1. Wähle ein Beispiel, das dir als Vorbild für das Netz Hagen genannt wurde.\n2. Schreib auf, welche drei bis fünf Faktoren dort neben der gelobten Maßnahme mitgewirkt haben könnten.\n3. Frag jemanden, der das Beispiel kennt, welche dieser Faktoren wirklich da waren.",
+   "karten": [
+    {
+     "frage": "Was meint Rosenzweigs „Täuschung der Einzelerklärung“?",
+     "antwort": "Ein einzelner Faktor wird als Erfolgsursache gefeiert, obwohl viele Faktoren eng zusammenhängen und jeder einzelne weniger bewirkt als behauptet."
+    },
+    {
+     "frage": "Warum ist Leistung nach Rosenzweig „relativ“?",
+     "antwort": "Erfolg hängt vom Wettbewerb ab – wer sich verbessert, kann trotzdem zurückfallen, wenn andere schneller sind."
+    }
+   ]
+  },
   {
    "id": "drive-20261104-1",
    "date": "2026-11-04",

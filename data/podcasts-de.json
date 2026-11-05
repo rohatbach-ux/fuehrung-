@@ -1,6 +1,10 @@
 {
  "_hinweis": "Deutsche Übersetzungen von Titel und Beschreibung englischsprachiger Podcast-Folgen (Schlüssel = Folgen-ID aus data/podcasts.json). Gepflegt vom täglichen Recherche-Lauf.",
  "folgen": {
+  "ideacast-6f79138aab": {
+   "titel": "Die Themen, die wir bei der Arbeit meiden – und wie man anfängt, darüber zu sprechen",
+   "desc": "Geld, Politik, familiäre Verpflichtungen, Alter, Ehrgeiz und Angst: Einige der Themen, die Beschäftigten am wichtigsten sind, sind genau die, über die sie bei der Arbeit am wenigsten gern sprechen. Doch wer diesen Gesprächen ausweicht, kann Vertrauen untergraben, die psychologische Sicherheit schwächen und Führungskräfte Entscheidungen ohne wichtige Informationen treffen lassen. Das sagt Christina Wing, Senior Lecturer an der Harvard Business School, die dafür plädiert, dass Führungskräfte besser mit Tabus am Arbeitsplatz umgehen. Sie erklärt, wie Führungskräfte ein Umfeld schaffen können, in dem sich Beschäftigte sicher fühlen, heikle Themen anzusprechen, und teilt pr…"
+  },
   "ideacast-e7c14697df": {
    "titel": "Prinzipientreu bleiben in unsicheren Zeiten",
    "desc": "Wie führt man durch eine Krise, baut ein innovatives Unternehmen auf und bereitet eine Organisation auf langfristigen Erfolg vor? Für Kenneth Chenault, ehemaliger CEO von American Express und heute Chairman bei General Catalyst, beginnt wirksame Führung mit zwei Aufgaben: die Wirklichkeit benennen und Menschen Hoffnung geben. Chenault, der Amex von 2001 bis 2018 führte und das Unternehmen durch 9/11 und die Finanzkrise 2008 steuerte, teilt die Prinzipien und Praktiken, mit denen er Unsicherheit bewältigte, Innovation förderte und eine Kultur der Verantwortlichkeit aufbaute. Chenault erklärt, wie …"
@@ -56,10 +60,6 @@
   "ideacast-bcf7a89478": {
    "titel": "Wie Menschen ohne formale Macht Einfluss gewinnen",
    "desc": "In zunehmend dezentralen Organisationen müssen Führungskräfte oft Dinge erreichen, ohne direkte Weisungsbefugnis über die Menschen zu haben, auf die sie angewiesen sind. Wie beeinflusst man Kollegen, Kunden, Lieferanten und sogar das Topmanagement, ohne einfach Anweisungen zu geben? Pamela Meyer, Gründerin und CEO von Calibrate, sagt: indem man lernt, die Lage zu lesen – und die informellen Netzwerke, emotionalen Dynamiken und verborgenen Machtquellen versteht, die Entscheidungen prägen. Sie erklärt fünf Wege zu indirektem Einfluss: Einflussquellen erkennen, Hintergrundgespräche führen, gezielt handeln, verbinden …"
-  },
-  "ideacast-c5fbd083a2": {
-   "titel": "Leben und Arbeiten im Zeitalter der Langlebigkeit",
-   "desc": "Menschen leben länger und gesünder als je zuvor. Doch viele unserer Annahmen über Führungslaufbahnen – vom Aufstieg auf der Karriereleiter bis zum Ruhestand mit 65 – haben damit nicht Schritt gehalten. Lynda Gratton, Professorin an der London Business School, fordert ein neues Verständnis von Arbeit und Leben. Klassische Laufbahnen weichen flexibleren Wegen mit mehreren Lebensphasen, die mehr Eigenverantwortung, kontinuierliches Lernen und einen langen Atem erfordern. Sie erklärt, warum Führungskräfte ihr Leben weniger als Leiter und mehr als Gewebe sehen sollten, das sie aktiv knüpfen, und …"
   }
  }
 }
