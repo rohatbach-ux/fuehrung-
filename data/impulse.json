@@ -1,6 +1,90 @@
 {
- "updated": "2026-11-05T04:08:14+00:00",
+ "updated": "2026-11-06T03:37:02+00:00",
  "items": [
+  {
+   "id": "20261106-1",
+   "date": "2026-11-06",
+   "titel": "Beinahe-Unfälle: Was nicht gemeldet wird, lehrt nichts",
+   "quelle": {
+    "name": "Rail Accident Investigation Branch (UK) – Class investigation into track worker near misses, Report 07/2017",
+    "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/608279/R072017_170413_Track_workers.pdf"
+   },
+   "sprache": "en",
+   "kernaussage": "Die britische Bahn-Unfalluntersuchung zeigt: Beinahe-Unfälle von Gleisarbeitern werden teils spät oder gar nicht gemeldet – und gehen damit für das Lernen der Organisation verloren.",
+   "deutsch": "> **Jeder nicht gemeldete Beinahe-Unfall ist eine Warnung, die niemand gehört hat.**\n\n## 🔍 Worum es geht\nDie britische **Rail Accident Investigation Branch (RAIB)** untersucht Unfälle und gefährliche Ereignisse im Bahnbetrieb. 2017 legte sie eine **übergreifende Untersuchung** zu Beinahe-Unfällen von **Gleisarbeitern** vor, weil die Sicherheit dieser Gruppe als besonders kritisch galt.\n\n## 📋 Befunde zur Meldekultur\n- ⏳ Manche Beinahe-Unfälle werden von den Beteiligten **erst lange danach** gemeldet und landen so **nicht in den offiziellen Meldesystemen**.\n- 🤐 In einem untersuchten Fall meldete der **Triebfahrzeugführer** den Vorfall, aber weder der betroffene Gleisarbeiter **noch ein Kollege**, der ihn gesehen hatte.\n- 🔎 In späteren Untersuchungen zeigte sich, dass die **Schwere** eines Beinahe-Unfalls oft erst bei genauer Auswertung von Aufzeichnungen sichtbar wird.\n\n---\n\n## 🧭 Was daraus folgt\n- 📣 **Melden muss leicht und folgenlos sein** – sonst verschwinden genau die Vorfälle, aus denen man am meisten lernt.\n- 👷 Die RAIB empfahl in einem weiteren Fall, die **Sicherheitsführung vor Ort** und das Zusammenspiel mit **Fremdfirmen** genauer zu überwachen.\n\n## ⚖️ Einordnung\nDie Befunde stammen aus **britischen Untersuchungen** und lassen sich nicht eins zu eins übertragen. Das Muster – **Untermeldung von Beinahe-Unfällen** – ist aber aus vielen Hochrisikobereichen bekannt.",
+   "modul": "sicherheit",
+   "bezug_ih": "- **Meldungen als Gradmesser:** Wenige gemeldete Beinahe-Unfälle sind nicht unbedingt ein gutes Zeichen. Sie können auch heißen, dass nicht gemeldet wird.\n- **Fremdfirmen einbeziehen:** Wenn viele Arbeiten mit Partnerfirmen laufen, gehört deren Meldeverhalten zur eigenen Sicherheitskultur.",
+   "frage": "Woran würde ich in meinem künftigen Bereich erkennen, ob Beinahe-Unfälle wirklich gemeldet werden – oder ob Stille nur Schweigen ist?",
+   "experiment": "**Verschaffe dir ein Bild der Meldekultur.**\n1. Lass dir vor dem Start zeigen, wie Beinahe-Unfälle im künftigen Bereich gemeldet und ausgewertet werden.\n2. Frag zwei erfahrene Beschäftigte: *Was hält Kollegen davon ab, einen Beinahe-Unfall zu melden?*\n3. Notiere, was du in den ersten Wochen sichtbar tun kannst, damit Melden sich lohnt (z. B. Dank und Rückmeldung).",
+   "karten": [
+    {
+     "frage": "Welches Problem mit Beinahe-Unfällen beschrieb die RAIB 2017 bei Gleisarbeitern?",
+     "antwort": "Manche wurden erst spät oder gar nicht gemeldet und fehlten deshalb in den offiziellen Meldesystemen."
+    },
+    {
+     "frage": "Warum sind wenige Meldungen nicht automatisch ein gutes Zeichen?",
+     "antwort": "Sie können auch bedeuten, dass Beinahe-Unfälle nicht gemeldet werden – und damit für das Lernen verloren gehen."
+    }
+   ]
+  },
+  {
+   "id": "20261106-2",
+   "date": "2026-11-06",
+   "titel": "Zu viele Veränderungen auf einmal erschöpfen",
+   "quelle": {
+    "name": "Harvard Business Review – Employees Are Losing Patience with Change Initiatives (2023)",
+    "url": "https://hbr.org/2023/05/employees-are-losing-patience-with-change-initiatives"
+   },
+   "sprache": "en",
+   "kernaussage": "Wenn Beschäftigte mehr Veränderungen erleben, als sie verarbeiten können, sinken Geduld und Einsatz – Führung muss deshalb priorisieren, Energie lenken und bewusst Ruhephasen einplanen.",
+   "deutsch": "> **Veränderungsfähigkeit ist begrenzt – wer alles gleichzeitig ändern will, ändert am Ende wenig.**\n\n## 🔍 Worum es geht\nDer HBR-Beitrag beschreibt, dass Beschäftigte **zunehmend ungeduldig** mit Veränderungsprogrammen werden. Schon 2004 prägte der Managementforscher **Eric Abrahamson** dafür den Begriff **„Initiative Overload“**, die Überlastung durch zu viele Initiativen.\n\n## ⚠️ Typische Ursachen\n- 🧩 **Sich überschneidende Programme**, die niemand aufeinander abstimmt.\n- ❓ **Unklare Prioritäten**: Alles ist wichtig, also nichts.\n- 📉 **Keine Planung der Kapazität**: Veränderung kommt zusätzlich zum Tagesgeschäft.\n\n---\n\n## ✅ Was Führung tun kann\n| Hebel | Bedeutung |\n|---|---|\n| **Priorisieren** | Wenige Vorhaben auswählen und andere bewusst zurückstellen |\n| **Energie lenken** | Klar zeigen, wo das Team seine Kraft einsetzen soll |\n| **Ruhephasen** | Zeiten ohne neue Veränderung **aktiv einplanen** |\n\n## ⚖️ Einordnung\nDie Empfehlungen sind hier nach Zusammenfassungen des Artikels wiedergegeben. Vieles zum Thema stammt aus **Beratungsquellen**. Der Kern – **begrenzte Aufnahmefähigkeit für Veränderung** – ist aber breit akzeptiert.",
+   "modul": "change",
+   "bezug_ih": "- **Erbe prüfen:** Dein künftiges Team hat vermutlich mehrere laufende Programme und Vorgaben. Verschaff dir einen Überblick, bevor du Neues anstößt.\n- **Ruhe als Ziel ernst nehmen:** Ruhigere Fahrwasser heißt auch: weniger, aber konsequent umgesetzte Veränderungen.",
+   "frage": "Welche laufenden Programme und Vorgaben belasten mein künftiges Team schon heute – und welches davon könnte ich bewusst stoppen oder bündeln?",
+   "experiment": "**Mach eine Inventur der Veränderungen.**\n1. Liste alle laufenden Initiativen, Projekte und neuen Vorgaben auf, die dein künftiger Bereich gerade umsetzen muss.\n2. Frag zwei Meister, welche davon am meisten Kraft kosten und welche am wenigsten bringen.\n3. Markiere eine Initiative, die du ab Januar zurückstellen oder bündeln würdest.",
+   "karten": [
+    {
+     "frage": "Was bedeutet „Initiative Overload“?",
+     "antwort": "Die Überlastung von Beschäftigten durch zu viele gleichzeitige Veränderungsinitiativen (Begriff von Eric Abrahamson, 2004)."
+    },
+    {
+     "frage": "Welche drei Hebel gegen Veränderungsmüdigkeit nennt der HBR-Beitrag?",
+     "antwort": "Initiativen priorisieren, zeigen, wo die Energie hin soll, und bewusst Ruhephasen einplanen."
+    }
+   ]
+  },
+  {
+   "id": "buch-20261106-1",
+   "date": "2026-11-06",
+   "herkunft": "buch",
+   "reihe": {
+    "buch": "Die Logik des Mißlingens (The Logic of Failure)",
+    "teil": 3,
+    "von": 4
+   },
+   "titel": "Zeit, Wachstum und Nebenwirkungen unterschätzen",
+   "quelle": {
+    "name": "University of York – Buchbesprechung zu The Logic of Failure (Bezug: Die Logik des Mißlingens)",
+    "url": "https://www-users.york.ac.uk/~ss44/books/pages/d/DietrichDorner.htm"
+   },
+   "sprache": "en",
+   "kernaussage": "Menschen denken schlecht in Zeitverläufen: Sie lösen die Probleme von heute, übersehen die von morgen, unterschätzen exponentielle Entwicklungen – und werden durch folgenlose Regelverstöße zu immer größeren Risiken verleitet.",
+   "deutsch": "> **Das gefährlichste Problem ist oft das, das man heute noch nicht hat.**\n\n## 📚 Worum es geht\nDieser Teil beruht auf **öffentlichen Quellen zum Buch** (Rezensionen und Buchbesprechungen), nicht auf dem Buchtext selbst. Teil 2 zeigte **typische Denkfehler**. Jetzt geht es um einen Kern von Dörners Buch: den Umgang mit **Zeit**.\n\n## ⏳ Drei Zeitfallen\n- 📅 **Gegenwartsfixierung:** Menschen bearbeiten die Probleme, die sie **jetzt** haben, und übersehen die, die sich **erst entwickeln**.\n- 📈 **Exponentielles Wachstum:** Entwicklungen, die sich immer schneller beschleunigen, werden in **Tempo und Ausmaß** unterschätzt.\n- 🔁 **Neben- und Fernwirkungen:** Eingriffe wirken oft **an anderer Stelle oder später** als gedacht.\n\n---\n\n## ☢️ Das Beispiel Tschernobyl\nDörner analysiert das Unglück von **Tschernobyl** (1986). Die Bediener waren **Fachleute**, verstießen aber bewusst gegen Sicherheitsregeln und **unterschätzten**, wie gefährlich Änderungen der Leistung waren. Ein Kernpunkt: Regelverstöße werden **meist belohnt**, weil fast immer nichts passiert. So wächst das Vertrauen in die Abkürzung – bis zum Ernstfall.\n\n## ⚖️ Einordnung\nRezensenten loben die Beispiele, kritisieren aber, dass manche Modelle **stark vereinfacht** sind. Teil 4 überträgt die Reihe auf die **Instandhaltung im Netz Hagen**.",
+   "modul": "stabil",
+   "bezug_ih": "- **Rückstände wachsen still:** Instandhaltungsrückstände und Anlagenzustand entwickeln sich langsam und dann plötzlich. Wer nur auf heutige Störungen schaut, sieht die Probleme von 2028 nicht.\n- **Folgenlose Abkürzungen sind gefährlich:** Wenn ein Regelverstoß lange gutgeht, wird er Normalität. Das gilt für Arbeitsschutz wie für Planung.\n- **Einordnung:** Die Tschernobyl-Analyse ist anschaulich, aber eine Deutung im Rückblick. Die Zeitfallen selbst sind in der Forschung zum Entscheiden gut beschrieben.",
+   "frage": "Welches Problem in meinem künftigen Netz ist heute noch klein, wächst aber Jahr für Jahr – und wer schaut eigentlich darauf?",
+   "experiment": "**Schau bewusst in die Zukunft.**\n1. Wähle drei Kennzahlen, die sich langsam entwickeln (z. B. Rückstände, Altersstruktur, offene Mängel).\n2. Lass dir ihre Entwicklung über die letzten drei bis fünf Jahre zeigen.\n3. Schätze grob, wo sie in drei Jahren stehen, wenn sich nichts ändert, und notiere, was das für 2027 bedeutet.",
+   "karten": [
+    {
+     "frage": "Welche drei Zeitfallen beschreibt Dörner?",
+     "antwort": "Fixierung auf heutige Probleme, Unterschätzung exponentieller Entwicklungen und Übersehen von Neben- und Fernwirkungen."
+    },
+    {
+     "frage": "Warum werden Regelverstöße nach Dörner so leicht zur Gewohnheit?",
+     "antwort": "Weil sie meist folgenlos bleiben und so „belohnt“ werden – das Vertrauen in die Abkürzung wächst bis zum Ernstfall."
+    }
+   ]
+  },
   {
    "id": "drive-20261105-1",
    "date": "2026-11-05",
