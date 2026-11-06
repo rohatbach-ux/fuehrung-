@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T05:14:54.082Z",
+ "updated": "2026-11-06T05:14:21.239Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-285aac1c7c",
+     "title": "Börse: Tech-Werte brechen ein / Rüstung: Der Bund wird Panzerbauer",
+     "date": "2026-11-06T04:53:48.000Z",
+     "duration": 526,
+     "audio": "https://audio.podigee-cdn.net/2628974-m-54f8cb90c8a7fc4e49ab6082acdf94e4.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2237-borse-tech-werte-brechen-ein-rustung-der-bund-wird-panzerbauer",
+     "desc": "In den USA brechen die Aktienmärkte ein. Und geben einen kleinen Vorgeschmack: Nur weil der US-Präsident künftig weniger Einfluss hat, wird nicht automatisch alles gut."
+    },
+    {
      "id": "morningbriefing-101284d6e6",
      "title": "Midterms: Mega-Thema Bezahlbarkeit / Bundesregierung: Kapitalrente wird verschoben",
      "date": "2026-11-05T04:48:56.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2622458-m-6cf6c8c0232da9c7c8c481899f3b2bb3.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2233-hilft-unternehmen-nur-die-ruckkehr-der-deutschland-ag",
      "desc": "Nach der Asienreise des Bundeskanzlers macht Telekom-Chef Timotheus Höttges einen interessanten Debattenvorschlag – der etwas gestrig klingt, für den es aber Gründe gibt."
-    },
-    {
-     "id": "morningbriefing-2273c04008",
-     "title": "Wie die KI-Kosten an der Börse Milliarden vernichten",
-     "date": "2026-10-30T04:57:23.000Z",
-     "duration": 529,
-     "audio": "https://audio.podigee-cdn.net/2622457-m-f921c76c437ca54ffa2181f34bff12df.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2232-wie-die-ki-kosten-an-der-borse-milliarden-vernichten",
-     "desc": "Christine Lagarde tritt als EZB-Chefin zurück. Auf die Nachfolge wartet eine gefährliche Mischung aus Inflationsbekämpfung und Anleihekrise. Doch erste Kandidaten kristallisieren sich heraus."
     }
    ]
   },
