@@ -269,7 +269,19 @@ function impulseCard(imp) {
       ${actionRow(ref, { starId: imp.id, starred, downId: imp.id, down })}
     </article>`;
 }
+const FEED_STAR = ["post", "rx", "zf"];
+const starKey = (ref) => `${ref.t}:${ref.id}`;
+function starredItems() {
+  return Object.entries(state.starred).sort((a, b) => b[1] - a[1]).map(([key, ts]) => {
+    const m = key.match(/^(post|rx|zf):(.+)$/);
+    if (!m) { const obj = impulseById(key); return obj ? { key, ts, kind: "imp", obj } : null; }
+    const [, kind, id] = m;
+    const obj = kind === "zf" ? zfById(id) : feedItem(kind, id);
+    return obj ? { key, ts, kind, obj } : null;
+  }).filter(Boolean);
+}
 function actionRow(ref, opt = {}) {
+  if (!opt.starId && ref && FEED_STAR.includes(ref.t)) opt = { ...opt, starId: starKey(ref), starred: !!state.starred[starKey(ref)] };
   return `
     <div class="acts">
       ${opt.starId ? `<button data-act="star" data-id="${opt.starId}" aria-pressed="${opt.starred}" title="Merken">${opt.starred ? "★" : "☆"}<span>Merken</span></button>` : ""}
@@ -342,8 +354,10 @@ function renderLernen() {
         .map(([k, l]) => `<button data-act="lern-sub" data-k="${k}" aria-pressed="${ui.lern === k}">${l}</button>`).join("")}
     </div>`;
   if (ui.lern === "gemerkt") {
-    const list = Object.entries(state.starred).sort((a, b) => b[1] - a[1]).map(([id]) => impulseById(id)).filter(Boolean);
-    return chips + (list.length ? list.map(impulseCard).join("") : `<div class="empty">Noch nichts gemerkt. Tippe bei einem Impuls auf ☆.</div>`);
+    const list = starredItems();
+    const card = (it) => (it.kind === "imp" ? impulseCard(it.obj) : it.kind === "zf" ? zfCard(it.obj) : feedCard({ ...it.obj, t: it.kind }));
+    return chips + `<p class="hint">Gemerkte Impulse, Beiträge, Buchteile und Zusammenfassungen. Sie gehen ins Wochen- und ins Agenda-Paket – Copilot nutzt sie für „Wissen griffbereit“.</p>`
+      + (list.length ? list.map(card).join("") : `<div class="empty">Noch nichts gemerkt. Tippe bei einem Impuls oder Beitrag auf ☆ Merken.</div>`);
   }
   if (ui.lern === "karten") {
     const sure = allCards().filter((c) => (state.cards[c.id]?.box || 0) >= 4).length;
@@ -653,7 +667,7 @@ async function loadSummaries(force) {
     if (!res.ok) throw new Error(res.status);
     zfData = await res.json();
   } catch (e) { zfData = zfData || { items: [] }; }
-  if (ui.tab === "inbox") render();
+  if (["inbox", "lernen"].includes(ui.tab)) render();
 }
 const zfById = (id) => (zfData?.items || []).find((z) => z.id === id);
 const zfForBook = (buch) => (zfData?.items || []).find((z) => z.reihe === buch || z.titel === buch);
@@ -708,6 +722,7 @@ function feedCard(x) {
       <div class="tags">
         <span class="tag ${kindClass(x.t, x)}">${kindLabel(x.t, x)}</span>
         ${seriesTag(x)}
+        ${state.starred[`${x.t}:${x.id}`] ? `<span class="tag">★ gemerkt</span>` : ""}
         ${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}
         <span class="tag">${x.t === "post" ? fmtShort(x.added) : x.date ? fmtShort(parseIso(x.date.slice(0, 10))) : ""}</span>
         ${isRead(x) ? "" : '<span class="dot" aria-label="neu"></span>'}
@@ -724,7 +739,7 @@ function zfCard(z) {
   const unread = !state.read[`zf:${z.id}`];
   return `
     <button class="card feed-item ${unread ? "unread" : ""}" data-act="zf-open" data-id="${esc(z.id)}">
-      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⚡ 1 Min · 🧭 ${zfMinutes(z)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
+      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${state.starred[`zf:${z.id}`] ? `<span class="tag">★ gemerkt</span>` : ""}${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⚡ 1 Min · 🧭 ${zfMinutes(z)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
       <h3>${esc(z.titel)}</h3>
       <p class="src">${esc(z.autoren)} · ${esc(String(z.jahr || ""))}</p>
       <p>${esc(z.kernthese)}</p>
@@ -1276,6 +1291,16 @@ function isoWeek(d) {
   const y = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
   return Math.ceil(((t - y) / 864e5 + 1) / 7);
 }
+function starLine(it, links) {
+  const clean = (t) => String(t || "").replace(/\*\*/g, "").replace(/\s*\n+\s*/g, " / ").trim();
+  const o = it.obj;
+  if (it.kind === "imp") return `${o.title}: ${clean(o.text)}${links && o.mod ? ` – Modul: ${deepLink("modul", o.mod)}` : ""}`;
+  if (it.kind === "zf") return `Zusammenfassung „${o.titel}“ (${o.autoren}): ${clean(o.kernthese)}${links ? ` – ${deepLink("zf", o.id)}` : ""}`;
+  const kind = it.kind === "post" ? "Mein Post" : isLib(o) ? "Bibliothek" : isBook(o) ? "Buch kompakt" : "Recherche";
+  const reihe = o.reihe ? ` (${o.reihe.buch}, Teil ${o.reihe.teil})` : "";
+  const link = links ? (it.kind === "rx" ? ` – ${deepLink("rx", o.id)}` : " – nur in der App auf dem iPhone") : "";
+  return `${kind}${reihe} „${o.titel}“: ${clean(o.kernaussage)}${link}`;
+}
 function buildWeekPacket() {
   const since = Date.now() - 7 * 864e5;
   const kw = isoWeek(new Date());
@@ -1289,7 +1314,7 @@ function buildWeekPacket() {
   };
   const exps = state.experiments.filter((e) => e.status === "aktiv" || (e.review && parseIso(e.start).getTime() >= since - 21 * 864e5));
   const read = feedItems().filter((x) => (state.read[`${x.t}:${x.id}`] || 0) >= since);
-  const starred = Object.entries(state.starred).filter(([, ts]) => ts >= since).map(([id]) => impulseById(id)).filter(Boolean);
+  const starred = starredItems().filter((it) => it.ts >= since);
   const cardsNew = (state.ownCards || []).filter((c) => c.ts >= since);
   const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
   const parts = [
@@ -1301,7 +1326,7 @@ function buildWeekPacket() {
     sec("Podcast-Merker", by("merker").map(line)),
     sec("Experimente", exps.map((e) => `- ${e.title} – ${e.status === "aktiv" ? `läuft bis ${fmtD(e.due)}` : `abgeschlossen, Entscheidung: ${e.review?.weiter}`}${e.plan ? `; Erfolgskriterium: ${e.plan}` : ""}${e.review ? `; Ergebnis: ${e.review.passiert}; gelernt: ${e.review.gelernt}` : ""}`)),
     sec("Gelesen in Entdecken", read.map((x) => `- ${x.titel}: ${String(x.kernaussage || "").replace(/\*\*/g, "")}`)),
-    sec("Gemerkte Impulse", starred.map((x) => `- ${x.title}: ${x.text}`)),
+    sec("Gemerkt", starred.map((it) => `- ${starLine(it)}`)),
     sec("Neue eigene Lernkarten", cardsNew.map((c) => `- ${c.q} → ${c.a}`)),
   ].filter(Boolean);
   return { kw, text: parts.join("\n\n"), empty: parts.length <= 2 };
@@ -1365,7 +1390,7 @@ function buildAgendaPacket() {
   const doneRecent = state.experiments.filter((e) => e.status !== "aktiv" && e.review && Date.now() - parseIso(e.due).getTime() < 30 * 864e5);
   const whys = state.journal.filter((j) => j.kind === "why").slice(0, 12);
   const notes = state.journal.filter((j) => j.kind === "notiz" && j.ts >= Date.now() - 21 * 864e5 && j.ts < since).slice(0, 10);
-  const starred = Object.entries(state.starred).sort((a, b) => b[1] - a[1]).map(([id]) => impulseById(id)).filter(Boolean).slice(0, 8);
+  const starred = starredItems().slice(0, 12);
   const items = rxData?.items || [];
   const books = {};
   for (const x of items) if (x.reihe) (books[x.reihe.buch] ||= []).push(x);
@@ -1390,7 +1415,7 @@ function buildAgendaPacket() {
     sec("Abgeschlossene Experimente (30 Tage)", doneRecent.map((e) => `- ${e.title} – Entscheidung: ${e.review.weiter}; gelernt: ${clean(e.review.gelernt)}`)),
     sec("Alle WHY-Bausteine (neueste zuerst)", whys.map(line)),
     sec("Weitere Notizen der letzten drei Wochen", notes.map(line)),
-    sec("Gemerkte Impulse", starred.map((x) => `- ${x.title}: ${clean(x.text)}${x.mod ? ` – Modul: ${deepLink("modul", x.mod)}` : ""}`)),
+    sec("Gemerkt – Vorrang für „Wissen griffbereit“", starred.map((it) => `- ${starLine(it, true)}`)),
     `## Lernstand\n- Lernkarten: ${dueCards().length} fällig, ${(state.ownCards || []).length} eigene Karten`,
     sec("Buchreihen", bookLines),
     sec("Buch-Zusammenfassungen", zfLines),
@@ -1438,6 +1463,7 @@ async function handleHash() {
   if (!m) return;
   const k = m[1], id = decodeURIComponent(m[2]);
   history.replaceState(null, "", location.pathname + location.search);
+  closeSheet(true);
   if (k === "tab") { if (["heute", "lernen", "inbox", "hoeren", "journal"].includes(id)) { ui.tab = id; render(); } return; }
   if (k === "modul") { if (moduleById(id)) { ui.tab = "lernen"; render(); openModule(id); } return; }
   if (k === "zf") {

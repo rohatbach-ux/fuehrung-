@@ -12,7 +12,7 @@
 | **Hören** | Podcasts mit Standard-Tempo 1,5×, Position wird gemerkt, 📍 Merker mit Zeitstempel und Notiz, Sprung zur Stelle aus dem Journal. |
 | **Journal** | Experimente mit Auswertung, Notizen, WHY-Bausteine, Podcast-Merker, Wochenrückblicke. |
 
-Jeder Impuls, Beitrag, Merker und Eintrag hat dieselben Aktionen: ☆ Merken · ✍️ Notiz · 🧪 Testen (Experiment) · 📤 Copilot · 👎 Weniger.
+Jeder Impuls, Beitrag, Buchteil und jede Zusammenfassung hat dieselben Aktionen: ☆ Merken (gesammelt unter *Lernen → Gemerkt*, geht ins Wochen- und Agenda-Paket) · ✍️ Notiz · 🧪 Testen (Experiment) · 📤 Copilot · 👎 Weniger.
 
 **📤 Copilot:** Hauptweg ist „📧 An Diensthandy mailen“ an die in ⚙️ hinterlegte dienstliche Adresse (nur lokal gespeichert). Die App baut eine fertige Anfrage (Rolle, Ziele, Phase, Impuls, deine Gedanken, gewählte Vertiefungsart) und gibt sie über das iOS-Teilen-Menü weiter oder kopiert sie. Die Vertiefung im konkreten DB-Kontext passiert damit in Copilot, innerhalb der Unternehmensrichtlinien.
 

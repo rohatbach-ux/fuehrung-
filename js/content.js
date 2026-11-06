@@ -658,7 +658,7 @@ Kommt am selben Tag ein Wochenpaket, werte es zuerst aus.
 höchstens 3 Zeilen: Titel · nächster Schritt · Auswertung am
 
 ## 📚 Wissen griffbereit
-genau 5 Zeilen: Modell oder Werkzeug – ein Satz zur Anwendung – [Link](…)
+genau 5 Zeilen: Modell oder Werkzeug – ein Satz zur Anwendung – [Link](…). Vorrang haben meine gemerkten Inhalte (Abschnitt „Gemerkt“ im Paket).
 
 ## 📅 Bis zum nächsten Update
 genau 3 Vorhaben, je mit Tag
