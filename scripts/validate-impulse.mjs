@@ -83,7 +83,18 @@ try {
     if (zids.has(z.id)) w("doppelte id"); zids.add(z.id);
   }
 } catch (e) { if (e.code !== "ENOENT") err.push("zusammenfassungen.json nicht lesbar: " + e.message); }
-if ((d.items || []).length > 200) err.push("mehr als 200 Einträge");
+if ((d.items || []).length > 200) err.push("mehr als 200 Einträge – älteste nach data/impulse-archiv.json verschieben");
+try {
+  const ar = JSON.parse(await readFile("data/impulse-archiv.json", "utf8"));
+  if (!Array.isArray(ar.items)) err.push("impulse-archiv.json: items fehlt");
+  const live = new Set((d.items || []).map((x) => x.id));
+  const seenA = new Set();
+  for (const x of ar.items || []) {
+    if (!x.id || !x.titel || !x.date) err.push(`archiv ${x.id || "?"}: id/titel/date fehlt`);
+    if (live.has(x.id)) err.push(`archiv ${x.id}: steht zugleich in impulse.json`);
+    if (seenA.has(x.id)) err.push(`archiv ${x.id}: doppelt`); seenA.add(x.id);
+  }
+} catch (e) { if (e.code !== "ENOENT") err.push("impulse-archiv.json nicht lesbar: " + e.message); }
 try {
   const dp = JSON.parse(await readFile("data/drive-processed.json", "utf8"));
   const ids = new Set((d.items || []).map((x) => x.id));

@@ -30,6 +30,7 @@ function defaultState() {
     listen: {},         // episodeId -> { pos, dur, done, ts }
     current: null,      // episodeId im Player
     agendaSent: null,   // Zeitstempel des letzten Agenda-Updates an Copilot
+    done: {},           // "t:id" -> Zeitstempel, wenn per Button als fertig gelesen markiert (read = nur geöffnet)
   };
 }
 function load() {
@@ -333,6 +334,7 @@ function renderHeute() {
 
     <div class="section-title">Dranbleiben</div>
     <div class="card list-group">
+      <button class="row" data-act="stack"><span>📚 Lesestapel</span><b>${stackCount()} offen</b></button>
       <button class="row" data-act="practice"><span>🃏 Lernkarten</span><b>${due.length ? `${due.length} fällig` : "alles wiederholt"}</b></button>
       <button class="row" data-act="tab" data-tab="inbox"><span>✨ Entdecken: Posts, Recherche & Bibliothek</span><b>${feedItems().filter((x) => !isRead(x)).length}</b></button>
       ${open.length ? `<button class="row" data-act="inbox-next"><span>🔗 Gespeicherte Links</span><b>${open.length}</b></button>` : ""}
@@ -677,6 +679,14 @@ async function loadResearch(force) {
     const res = await fetch(`data/impulse.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
     if (!res.ok) throw new Error(res.status);
     rxData = await res.json();
+    try {
+      const ar = await fetch(`data/impulse-archiv.json${force ? `?t=${Date.now()}` : ""}`, { cache: force ? "no-store" : "default" });
+      if (ar.ok) {
+        const arch = await ar.json();
+        const have = new Set(rxData.items.map((x) => x.id));
+        rxData.items = rxData.items.concat((arch.items || []).filter((x) => !have.has(x.id)));
+      }
+    } catch (e) { /* Archiv optional */ }
   } catch (e) { rxData = rxData || { updated: null, items: [] }; }
   if (["inbox", "heute", "lernen"].includes(ui.tab)) render();
 }
@@ -689,6 +699,37 @@ function feedItems() {
   return [...posts, ...rx].sort((a, b) => b.sort - a.sort);
 }
 const isRead = (x) => !!state.read[`${x.t}:${x.id}`];
+const isDone = (k) => !!(state.done || {})[k];
+function statusTag(k) {
+  if (isDone(k)) return `<span class="tag t-done">✓ gelesen</span>`;
+  if (state.read[k]) return `<span class="tag t-started">◐ angefangen</span>`;
+  return "";
+}
+function doneButton(k) {
+  return isDone(k)
+    ? `<div class="done-row"><span class="hint">✓ Als fertig gelesen markiert am ${fmtShort(state.done[k])}</span>
+        <button class="btn ghost small" data-act="done-toggle" data-k="${esc(k)}">rückgängig</button>
+        <button class="btn ghost small" data-act="unread" data-k="${esc(k)}">↺ als ungelesen</button></div>`
+    : `<button class="btn primary block done-btn" data-act="done-toggle" data-k="${esc(k)}">✓ Fertig gelesen</button>`;
+}
+// Lesestapel: alles, was nicht fertig gelesen ist – älteste zuerst, Buchreihen als zusammenhängender Block in Teil-Reihenfolge
+function readingStack() {
+  const dayMs = (d) => (d ? parseIso(String(d).slice(0, 10)).getTime() : 0);
+  const open = feedItems().filter((x) => !isDone(`${x.t}:${x.id}`)).map((x) => ({ kind: x.t, obj: x, when: x.t === "post" ? x.added : dayMs(x.date) }));
+  const zfs = (zfData?.items || []).filter((z) => !isDone(`zf:${z.id}`)).map((z) => ({ kind: "zf", obj: z, when: dayMs(z.date) }));
+  const blocks = []; const series = {};
+  for (const it of open) {
+    if (it.kind === "rx" && it.obj.reihe) {
+      const b = series[it.obj.reihe.buch] ||= { serie: it.obj.reihe.buch, items: [], when: Infinity };
+      b.items.push(it); b.when = Math.min(b.when, it.when);
+    } else blocks.push({ items: [it], when: it.when });
+  }
+  for (const b of Object.values(series)) { b.items.sort((a, c) => a.obj.reihe.teil - c.obj.reihe.teil); blocks.push(b); }
+  for (const z of zfs) blocks.push({ items: [z], when: z.when });
+  blocks.sort((a, b) => a.when - b.when || String(a.items[0].obj.id).localeCompare(String(b.items[0].obj.id)));
+  return blocks;
+}
+const stackCount = () => readingStack().reduce((n, b) => n + b.items.length, 0);
 const isLib = (x) => x?.herkunft === "drive";
 const isBook = (x) => x?.herkunft === "buch";
 const kindLabel = (t, x) => (t === "post" ? "📸 Mein Post" : isLib(x) ? "📁 Bibliothek" : isBook(x) ? "📚 Buch kompakt" : "🔎 Recherche");
@@ -700,7 +741,7 @@ function seriesBlock(x) {
   return `<div class="series"><div class="slide-h">📖 Reihe: ${esc(x.reihe.buch)}</div>
     ${parts.map((y) => y.id === x.id
       ? `<div class="series-row cur"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)}</div>`
-      : `<button class="series-row" data-act="story" data-t="rx" data-id="${esc(y.id)}"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)} ${isRead({ ...y, t: "rx" }) ? "✓" : ""}</button>`).join("")}
+      : `<button class="series-row" data-act="story" data-t="rx" data-id="${esc(y.id)}"><b>Teil ${y.reihe.teil}</b> ${esc(y.titel)} ${isDone(`rx:${y.id}`) ? "✓" : isRead({ ...y, t: "rx" }) ? "◐" : ""}</button>`).join("")}
     ${open > 0 ? `<div class="hint">${open} weitere${open === 1 ? "r Teil folgt" : " Teile folgen"} in den nächsten Tagen.</div>` : ""}
     ${zfForBook(x.reihe.buch) ? `<button class="series-row" data-act="zf-open" data-id="${esc(zfForBook(x.reihe.buch).id)}"><b>📖</b> Zusammenfassung des ganzen Buchs lesen</button>` : ""}</div>`;
 }
@@ -722,6 +763,7 @@ function feedCard(x) {
       <div class="tags">
         <span class="tag ${kindClass(x.t, x)}">${kindLabel(x.t, x)}</span>
         ${seriesTag(x)}
+        ${statusTag(`${x.t}:${x.id}`)}
         ${state.starred[`${x.t}:${x.id}`] ? `<span class="tag">★ gemerkt</span>` : ""}
         ${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}
         <span class="tag">${x.t === "post" ? fmtShort(x.added) : x.date ? fmtShort(parseIso(x.date.slice(0, 10))) : ""}</span>
@@ -739,7 +781,7 @@ function zfCard(z) {
   const unread = !state.read[`zf:${z.id}`];
   return `
     <button class="card feed-item ${unread ? "unread" : ""}" data-act="zf-open" data-id="${esc(z.id)}">
-      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${state.starred[`zf:${z.id}`] ? `<span class="tag">★ gemerkt</span>` : ""}${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⚡ 1 Min · 🧭 ${zfMinutes(z)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
+      <div class="tags"><span class="tag t-phase">📖 Zusammenfassung</span>${statusTag(`zf:${z.id}`)}${state.starred[`zf:${z.id}`] ? `<span class="tag">★ gemerkt</span>` : ""}${m ? `<span class="tag">${m.icon} ${esc(m.title)}</span>` : ""}<span class="tag">⚡ 1 Min · 🧭 ${zfMinutes(z)} Min</span>${unread ? '<span class="dot" aria-label="neu"></span>' : ""}</div>
       <h3>${esc(z.titel)}</h3>
       <p class="src">${esc(z.autoren)} · ${esc(String(z.jahr || ""))}</p>
       <p>${esc(z.kernthese)}</p>
@@ -777,6 +819,7 @@ function openSummary(id, opts = {}) {
     }).join("")}` : ""}
     ${(z.quellen || []).length ? `<div class="section-title">Quellen</div><ul class="refs">${z.quellen.map((q) => `<li>${q.url ? `<a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.name)}</a>` : esc(q.name)}</li>`).join("")}</ul>` : ""}
     ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
+    ${doneButton(`zf:${id}`)}
     ${actionRow(ref)}
   `, opts);
   if (ui.tab === "inbox") render();
@@ -852,7 +895,7 @@ function renderInbox() {
   const items = feedItems();
   const unread = items.filter((x) => !isRead(x)).length;
   const links = state.inbox.filter((i) => i.status === "neu").length;
-  const filters = [["alle", "Alle"], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["buecher", "Bücher"], ["zf", `Zusammenfassungen (${(zfData?.items || []).length})`], ["links", `Links (${links})`]];
+  const filters = [["alle", "Alle"], ["offen", `📚 Offen (${stackCount()})`], ["neu", `Neu (${unread})`], ["posts", "Meine Posts"], ["recherche", "Recherche"], ["bibliothek", "Bibliothek"], ["buecher", "Bücher"], ["zf", `Zusammenfassungen (${(zfData?.items || []).length})`], ["links", `Links (${links})`]];
   const head = `
     <div class="btn-row">
       <button class="btn primary" data-act="post-new">📸 Post verarbeiten</button>
@@ -860,6 +903,14 @@ function renderInbox() {
     </div>
     <div class="chips">${filters.map(([k, l]) => `<button data-act="feed-filter" data-k="${k}" aria-pressed="${ui.feed === k}">${l}</button>`).join("")}</div>`;
   if (ui.feed === "links") return head + renderLinks();
+  if (ui.feed === "offen") {
+    const blocks = readingStack();
+    const card = (it) => (it.kind === "zf" ? zfCard(it.obj) : feedCard({ ...it.obj, t: it.kind }));
+    return head + `<p class="hint">Dein Lesestapel: alles, was du noch nicht als „✓ Fertig gelesen“ markiert hast – älteste zuerst, Buchreihen zusammen und in Teil-Reihenfolge. ◐ = schon geöffnet.</p>`
+      + (blocks.length ? blocks.map((b) => b.serie
+        ? `<div class="section-title">📖 ${esc(b.serie)} – ${b.items.length === 1 ? `Teil ${b.items[0].obj.reihe.teil}` : `Teile ${b.items.map((i) => i.obj.reihe.teil).join(", ")}`} offen</div>${b.items.map(card).join("")}`
+        : card(b.items[0])).join("") : `<div class="empty">Alles gelesen. 🎉</div>`);
+  }
   if (ui.feed === "zf") {
     const zs = [...(zfData?.items || [])].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
     return head + (zs.length ? zs.map(zfCard).join("") : `<div class="empty">Die Zusammenfassungen entstehen einmal pro Woche für neue Bücher in deinem Drive-Ordner.</div>`);
@@ -1039,6 +1090,7 @@ async function openStory(t, id, replace) {
       ${(x.karten || []).length ? `<p>${x.karten.length} Lernkarte${x.karten.length > 1 ? "n" : ""} ${x.karten.length > 1 ? "sind" : "ist"} in deinem Stapel:</p>
         <ul class="refs">${x.karten.map((k) => `<li>${esc(k.frage)}</li>`).join("")}</ul>` : ""}
       ${notesFor(ref).map((n) => `<div class="mynote">✍️ ${nl2br(n.text)}</div>`).join("")}
+      ${doneButton(`${t}:${id}`)}
       ${actionRow(ref)}
       ${seriesBlock(x)}
       ${t === "rx" && isLib(x) ? `<p class="hint">📁 Quelle: ${esc(x.quelle?.name || "")} – liegt in deinem Google-Drive-Ordner „Führung DB“.</p>` : ""}
@@ -1313,7 +1365,8 @@ function buildWeekPacket() {
     return `- ${fmtShort(j.ts)}${where}: ${j.text.replace(/\n+/g, " / ")}`;
   };
   const exps = state.experiments.filter((e) => e.status === "aktiv" || (e.review && parseIso(e.start).getTime() >= since - 21 * 864e5));
-  const read = feedItems().filter((x) => (state.read[`${x.t}:${x.id}`] || 0) >= since);
+  const read = feedItems().filter((x) => ((state.done || {})[`${x.t}:${x.id}`] || 0) >= since);
+  const started = feedItems().filter((x) => (state.read[`${x.t}:${x.id}`] || 0) >= since && !isDone(`${x.t}:${x.id}`));
   const starred = starredItems().filter((it) => it.ts >= since);
   const cardsNew = (state.ownCards || []).filter((c) => c.ts >= since);
   const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
@@ -1325,7 +1378,8 @@ function buildWeekPacket() {
     sec("WHY-Bausteine", by("why").map(line)),
     sec("Podcast-Merker", by("merker").map(line)),
     sec("Experimente", exps.map((e) => `- ${e.title} – ${e.status === "aktiv" ? `läuft bis ${fmtD(e.due)}` : `abgeschlossen, Entscheidung: ${e.review?.weiter}`}${e.plan ? `; Erfolgskriterium: ${e.plan}` : ""}${e.review ? `; Ergebnis: ${e.review.passiert}; gelernt: ${e.review.gelernt}` : ""}`)),
-    sec("Gelesen in Entdecken", read.map((x) => `- ${x.titel}: ${String(x.kernaussage || "").replace(/\*\*/g, "")}`)),
+    sec("Fertig gelesen in Entdecken", read.map((x) => `- ${x.titel}: ${String(x.kernaussage || "").replace(/\*\*/g, "")}`)),
+    sec("Angefangen, noch nicht fertig", started.map((x) => `- ${x.titel}`)),
     sec("Gemerkt", starred.map((it) => `- ${starLine(it)}`)),
     sec("Neue eigene Lernkarten", cardsNew.map((c) => `- ${c.q} → ${c.a}`)),
   ].filter(Boolean);
@@ -1396,12 +1450,13 @@ function buildAgendaPacket() {
   for (const x of items) if (x.reihe) (books[x.reihe.buch] ||= []).push(x);
   const bookLines = Object.entries(books).map(([buch, parts]) => {
     parts.sort((a, b) => a.reihe.teil - b.reihe.teil);
-    const readN = parts.filter((y) => state.read[`rx:${y.id}`]).length;
-    const next = parts.find((y) => !state.read[`rx:${y.id}`]);
-    return `- ${buch}: ${readN} von ${parts.length} erschienenen Teilen gelesen (Reihe hat ${parts[0].reihe.von})${next ? ` – als Nächstes Teil ${next.reihe.teil} „${next.titel}“: ${deepLink("rx", next.id)}` : " – alles Erschienene gelesen"}`;
+    const readN = parts.filter((y) => isDone(`rx:${y.id}`)).length;
+    const next = parts.find((y) => !isDone(`rx:${y.id}`));
+    return `- ${buch}: ${readN} von ${parts.length} erschienenen Teilen fertig gelesen (Reihe hat ${parts[0].reihe.von})${next ? ` – als Nächstes Teil ${next.reihe.teil} „${next.titel}“: ${deepLink("rx", next.id)}` : " – alles Erschienene gelesen"}`;
   });
-  const zfLines = (zfData?.items || []).map((z) => `- ${z.titel} (${z.autoren}) – ${state.read[`zf:${z.id}`] ? "gelesen" : "ungelesen"}: ${deepLink("zf", z.id)}`);
-  const unread = items.filter((x) => !x.reihe && !state.read[`rx:${x.id}`]).slice(0, 5).map((x) => `- ${x.titel}: ${deepLink("rx", x.id)}`);
+  const zfLines = (zfData?.items || []).map((z) => `- ${z.titel} (${z.autoren}) – ${isDone(`zf:${z.id}`) ? "fertig gelesen" : state.read[`zf:${z.id}`] ? "angefangen" : "ungelesen"}: ${deepLink("zf", z.id)}`);
+  const stackN = stackCount();
+  const unread = readingStack().filter((b) => !b.serie && b.items[0].kind === "rx").slice(0, 5).map((b) => `- ${b.items[0].obj.titel}${state.read[`rx:${b.items[0].obj.id}`] ? " (angefangen)" : ""}: ${deepLink("rx", b.items[0].obj.id)}`);
   const sec = (title, arr) => (arr.length ? `## ${title}\n${arr.join("\n")}` : "");
   const started = roleDay() >= 1;
   const parts = [
@@ -1419,7 +1474,7 @@ function buildAgendaPacket() {
     `## Lernstand\n- Lernkarten: ${dueCards().length} fällig, ${(state.ownCards || []).length} eigene Karten`,
     sec("Buchreihen", bookLines),
     sec("Buch-Zusammenfassungen", zfLines),
-    sec("Neue, ungelesene Impulse", unread),
+    sec(`Lesestapel – ${stackN} offen; die ältesten Einzelimpulse`, unread),
     `## Module (Links)\n${MODULES.map((m) => `- ${m.title}: ${deepLink("modul", m.id)}`).join("\n")}`,
   ].filter(Boolean);
   return parts.join("\n\n");
@@ -2000,6 +2055,16 @@ document.addEventListener("click", async (ev) => {
     case "card-rate": rateCard(el.dataset.ok === "1"); break;
     case "inbox-filter": ui.inbox = el.dataset.k; render(); break;
     case "feed-filter": ui.feed = el.dataset.k; render(); break;
+    case "stack": ui.tab = "inbox"; ui.feed = "offen"; render(); window.scrollTo(0, 0); break;
+    case "done-toggle": {
+      const k = el.dataset.k; state.done ||= {};
+      if (state.done[k]) delete state.done[k]; else { state.done[k] = Date.now(); state.read[k] ||= Date.now(); toast("✓ Fertig gelesen"); }
+      save(); inSheet ? refreshSheet() : render(); if (inSheet) render(); break;
+    }
+    case "unread": {
+      const k = el.dataset.k; delete (state.done || {})[k]; delete state.read[k];
+      save(); toast("Wieder ungelesen"); inSheet ? refreshSheet() : render(); if (inSheet) render(); break;
+    }
     case "story": openStory(el.dataset.t, id, inSheet); break;
     case "zf-open": ttsStop(); openSummary(id); break;
     case "zf-tts": ttsSpeak(id); break;

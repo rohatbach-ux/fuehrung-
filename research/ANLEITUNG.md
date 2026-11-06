@@ -46,7 +46,7 @@ Rohat Bach übernimmt zum 01.01.2027 die Leitung der Instandhaltung im Netz Hage
    - `---` als Trenner zwischen größeren Abschnitten.
    - Beispiele für die gewünschte Form: die vorhandenen Einträge in `data/impulse.json`.
 
-   1–3 Lernkarten je Impuls. Die neuen Einträge kommen **vorne** in `items`; `updated` auf die aktuelle Zeit (ISO) setzen. Höchstens 200 Einträge behalten (die ältesten fallen weg; Einträge mit `"herkunft": "drive"` dabei nicht bevorzugt löschen).
+   1–3 Lernkarten je Impuls. Die neuen Einträge kommen **vorne** in `items`; `updated` auf die aktuelle Zeit (ISO) setzen. Höchstens 200 Einträge in `data/impulse.json` behalten: Was darüber hinausgeht, **nicht löschen**, sondern die ältesten Einträge unverändert nach `data/impulse-archiv.json` verschieben (dort vorne in `items` einfügen) und die Archivdatei mit committen. Rohat liest nicht jeden Tag – Ungelesenes darf nicht verloren gehen.
 6. **Podcast-Übersetzungen pflegen:** In `data/podcasts.json` alle Folgen von Podcasts mit `"lang": "en"` (derzeit HBR IdeaCast) suchen, die in `data/podcasts-de.json` unter `folgen` noch fehlen. Für jede Titel und Beschreibung sinngemäß ins Deutsche übersetzen (`{"titel": "…", "desc": "…"}`), nichts hinzufügen oder weglassen; eine im Original mit „…“ gekürzte Beschreibung bleibt gekürzt. Einträge zu Folgen, die nicht mehr in `podcasts.json` stehen, entfernen. `data/podcasts-de.json` mit den Impulsen des Tages committen.
 7. **Prüfen:** `node scripts/validate-impulse.mjs` muss „OK“ melden.
 8. **Veröffentlichen** auf `main` (Freigabe von Rohat liegt vor):

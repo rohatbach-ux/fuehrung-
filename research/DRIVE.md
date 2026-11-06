@@ -50,8 +50,8 @@ Google-Drive-Ordner „Führung DB“ (ID `1WhbUTR8qVYNXGpeRFzjAv8_8lJCS564t`) *
    - Kritisch einordnen (`bezug_ih`, Stichpunkt „**Einordnung:**“): Was ist Erfahrungswissen, was belegt? Was passt nicht zur DB (z. B. Compliance, Mitbestimmung)?
    - Lernkarten 1–3 je Teil, nur zu Inhalten dieses Teils.
 7. **Register aktualisieren:** `impuls` des Plan-Teils setzen, `zuletzt` des Buchs auf das heutige Datum; sind alle Teile veröffentlicht, `status: "fertig"` und `"abgeschlossen": "JJJJ-MM-TT"`.
-8. **Prüfen:** `node scripts/validate-impulse.mjs` muss „OK“ melden.
-9. **Veröffentlichen** auf `main` (Freigabe von Rohat liegt vor): nur `data/impulse.json` und `data/drive-processed.json` committen, Nachricht „Bibliothek: <Kurztitel> Teil x–y (JJJJ-MM-TT)“, dann `git pull --rebase origin main` und `git push origin main`.
+8. **Prüfen:** Hat `data/impulse.json` mehr als 200 Einträge, die ältesten unverändert nach `data/impulse-archiv.json` verschieben (vorne einfügen) – nie löschen. Dann `node scripts/validate-impulse.mjs`; muss „OK“ melden.
+9. **Veröffentlichen** auf `main` (Freigabe von Rohat liegt vor): nur `data/impulse.json`, `data/drive-processed.json` und – falls geändert – `data/impulse-archiv.json` committen, Nachricht „Bibliothek: <Kurztitel> Teil x–y (JJJJ-MM-TT)“, dann `git pull --rebase origin main` und `git push origin main`.
 10. Ist die Bibliothek ausgeschöpft: nichts erfinden, kurz melden.
 
 ## Register-Schema (`data/drive-processed.json`)

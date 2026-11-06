@@ -281,3 +281,8 @@ body.has-player.player-compact .toast { bottom: calc(140px + env(safe-area-inset
 .zf-original { margin: 8px 0 0; font-size: 14px; }
 .zf-bezug { line-height: 1.4; }
 .zf-bezug b { color: var(--text); margin-right: 0; }
+
+.tag.t-done { background: var(--green-soft); color: var(--green); }
+.tag.t-started { background: var(--gold-soft); color: var(--gold); }
+.done-btn { margin: 12px 0 4px; }
+.done-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 12px 0 4px; }
