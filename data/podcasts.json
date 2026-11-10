@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T05:22:31.939Z",
+ "updated": "2026-11-10T05:08:29.907Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-0b736090b5",
+     "title": "Die wahre Bilanz der Klimagipfel (und eine Überraschung)",
+     "date": "2026-11-10T04:53:47.000Z",
+     "duration": 519,
+     "audio": "https://audio.podigee-cdn.net/2640051-m-0d0443eede6e2fdd76bebedc41a848f6.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2239-die-wahre-bilanz-der-klimagipfel-und-eine-uberraschung",
+     "desc": "Bundeskanzler Merz nimmt nicht an der Klimakonferenz in Antalya teil. Wer sich darüber empört, sollte sich zunächst zwei wesentliche Fakten anschauen."
+    },
+    {
      "id": "morningbriefing-8d91708fa2",
      "title": "Nvidia: Fiel der Chef auf eine Spionin herein?",
      "date": "2026-11-09T04:52:22.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2628972-m-c7e5161b1dd29faaa28fa7f82e195eab.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2235-usa-so-sind-die-midterms-gelaufen-auto-bmw-kappt-prognose-schon-wieder",
      "desc": "Ein Ende der republikanischen Mehrheiten im US-Kongress scheint möglich, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh."
-    },
-    {
-     "id": "morningbriefing-6ab198cf9b",
-     "title": "Das beste Gesetz, das Katherina Reiche bisher vorgelegt hat",
-     "date": "2026-11-03T04:54:34.000Z",
-     "duration": 562,
-     "audio": "https://audio.podigee-cdn.net/2628971-m-8098bc0170a4a9e69155c743486c64d2.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2234-das-beste-gesetz-das-katherina-reiche-bisher-vorgelegt-hat",
-     "desc": "Die Wirtschaftsministerin macht eine Forderung des letzten Koalitionsausschusses konkret. Das gewünschte Ziel wird wohl verfehlt - dafür vermeidet Reiche es, sich ökonomisch zu verheddern."
     }
    ]
   },
