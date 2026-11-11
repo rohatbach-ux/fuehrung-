@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T05:08:29.907Z",
+ "updated": "2026-11-11T05:15:56.287Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-b0e7266b8b",
+     "title": "Steuern: Vereinfachen statt senken ? / Anthropic: Der zweitgrößte Börsengang aller Zeiten",
+     "date": "2026-11-11T04:55:59.000Z",
+     "duration": 492,
+     "audio": "https://audio.podigee-cdn.net/2640052-m-f3c1b4bfafc873b121832583dd7d5e14.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2240-steuern-vereinfachen-statt-senken-anthropic-der-zweitgrosste-borsengang-aller-zeiten",
+     "desc": "Legt der Finanzminister die Axt ans Ehegattensplitting? Das ist die falsche Frage. Ein anderes Versäumnis des Vizekanzlers sollte viel eher für Unmut sorgen."
+    },
+    {
      "id": "morningbriefing-0b736090b5",
      "title": "Die wahre Bilanz der Klimagipfel (und eine Überraschung)",
      "date": "2026-11-10T04:53:47.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2628973-m-61e2dbfd9a5ae60ec8b327d8796f8ab9.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2236-midterms-mega-thema-bezahlbarkeit-bundesregierung-kapitalrente-wird-verschoben",
      "desc": "Der US-Präsident hat vor allem mit einem Thema bei seinen Kernwählern verloren. Das ist eins, das auch in Europa gerade immer drängender wird."
-    },
-    {
-     "id": "morningbriefing-83975de0c3",
-     "title": "USA: So sind die Midterms gelaufen / Auto: BMW kappt Prognose – schon wieder",
-     "date": "2026-11-04T05:01:53.000Z",
-     "duration": 567,
-     "audio": "https://audio.podigee-cdn.net/2628972-m-c7e5161b1dd29faaa28fa7f82e195eab.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2235-usa-so-sind-die-midterms-gelaufen-auto-bmw-kappt-prognose-schon-wieder",
-     "desc": "Ein Ende der republikanischen Mehrheiten im US-Kongress scheint möglich, die Wähler wenden sich von US-Präsident Donald Trump ab. Doch abschreiben sollte man ihn nicht zu früh."
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-eb1565373d",
+     "title": "What Customers Really Value—and Why Leaders Keep Getting It Wrong",
+     "date": "2026-11-10T11:04:20.000Z",
+     "duration": 1682,
+     "audio": "https://audio.hbr.org/ideacast/20261109142610_825380-WhatCustomersReallyValueandWhyLeadersKeepGettingItWrong.mp3",
+     "link": "https://hbr.org/podcast/2026/11/what-customers-really-value-and-why-leaders-keep-getting-it-wrong",
+     "desc": "Good leaders believe they understand customer priorities. They invest heavily in data, direct conversations, and really knowing their industry. But according to Vikas Mittal, a professor of marketing at the Jones Graduate School of Business at Rice University, leaders are missing a key step. Without a science-driven strategy, businesses don’t understand what matters most to their customers or what to prioritize to create the most value for the company. Mittal spent seven years studying 72 businesses, and he has lots of advice on how companies can get better at understanding the data that th…"
+    },
     {
      "id": "ideacast-6f79138aab",
      "title": "The Topics We Avoid at Work—and How to Start Talking About Them",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260831131847-AreGreatLeadersTrulyGreatorJustLucky_.mp3",
      "link": "https://hbr.org/podcast/2026/09/are-great-leaders-truly-great-or-just-lucky",
      "desc": "How much does a leader actually matter to an organization’s success? We tend to credit CEOs, founders, and other powerful figures with shaping the institutions they lead, but historian Jared Diamond argues that we often underestimate the role of timing, circumstance, industry, and plain luck. Diamond explains his “Hamlet test,” which asks whether someone else could have achieved the same outcome or whether the leader was uniquely qualified to do it, and how it applies to many business leaders. He also explains why some leaders are able to seize a fleeting moment of opportunity, why founders…"
-    },
-    {
-     "id": "ideacast-bcf7a89478",
-     "title": "How People Without Formal Power Gain Influence",
-     "date": "2026-08-25T11:09:41.000Z",
-     "duration": 1250,
-     "audio": "https://audio.hbr.org/ideacast/20260824114544-HowPeopleWithoutFormalPowerGainInfluence.mp3",
-     "link": "https://hbr.org/podcast/2026/08/how-people-without-formal-power-gain-influence",
-     "desc": "In today’s increasingly decentralized workplaces, leaders often need to get things done without having direct authority over the people they depend on. So how can you influence colleagues, clients, vendors, and even senior executives without simply telling them what to do? Pamela Meyer, founder and CEO of Calibrate, says the answer is learning to read the room—and understanding the informal networks, emotional dynamics, and hidden sources of power that shape decisions. She explains five paths to indirect influence: becoming an influence spotter, a backchanneler, a precision mover, a connect…"
     }
    ]
   }
