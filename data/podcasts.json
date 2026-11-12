@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T05:15:56.287Z",
+ "updated": "2026-11-12T05:16:44.776Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-50ebdae6ad",
+     "title": "Bundesregierung: Großer Kompromiss bei kleinen Steuern",
+     "date": "2026-11-12T04:58:40.000Z",
+     "duration": 565,
+     "audio": "https://audio.podigee-cdn.net/2640053-m-5e37c92d2644ddc7dd209c64b550a623.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2241-bundesregierung-grosser-kompromiss-bei-kleinen-steuern",
+     "desc": "Die Stromsteuersenkung kommt nicht, dafür aber auch weder Zucker- noch Plastiksteuer: Die Koalition geht mit einem Kompromiss in den entscheidenden Haushaltstag. Ein Problem bleibt."
+    },
+    {
      "id": "morningbriefing-b0e7266b8b",
      "title": "Steuern: Vereinfachen statt senken ? / Anthropic: Der zweitgrößte Börsengang aller Zeiten",
      "date": "2026-11-11T04:55:59.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2628974-m-54f8cb90c8a7fc4e49ab6082acdf94e4.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2237-borse-tech-werte-brechen-ein-rustung-der-bund-wird-panzerbauer",
      "desc": "In den USA brechen die Aktienmärkte ein. Und geben einen kleinen Vorgeschmack: Nur weil der US-Präsident künftig weniger Einfluss hat, wird nicht automatisch alles gut."
-    },
-    {
-     "id": "morningbriefing-101284d6e6",
-     "title": "Midterms: Mega-Thema Bezahlbarkeit / Bundesregierung: Kapitalrente wird verschoben",
-     "date": "2026-11-05T04:48:56.000Z",
-     "duration": 498,
-     "audio": "https://audio.podigee-cdn.net/2628973-m-61e2dbfd9a5ae60ec8b327d8796f8ab9.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2236-midterms-mega-thema-bezahlbarkeit-bundesregierung-kapitalrente-wird-verschoben",
-     "desc": "Der US-Präsident hat vor allem mit einem Thema bei seinen Kernwählern verloren. Das ist eins, das auch in Europa gerade immer drängender wird."
     }
    ]
   },
