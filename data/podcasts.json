@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T05:16:44.776Z",
+ "updated": "2026-11-13T05:15:51.803Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-d4ca6dbbbf",
+     "title": "Warum Mercedes nicht mehr an Deutschland glaubt",
+     "date": "2026-11-13T04:57:54.000Z",
+     "duration": 520,
+     "audio": "https://audio.podigee-cdn.net/2640054-m-20cf733d19e634034c9c1ef3fbc380ff.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2242-warum-mercedes-nicht-mehr-an-deutschland-glaubt",
+     "desc": "Der älteste Autokonzern der Welt gibt sein Heimatland auf – mit einem drastischen Schritt. Was ein wenig nach Erpressung klingt, hat gut durchgerechnete Gründe."
+    },
+    {
      "id": "morningbriefing-50ebdae6ad",
      "title": "Bundesregierung: Großer Kompromiss bei kleinen Steuern",
      "date": "2026-11-12T04:58:40.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2628975-m-8d51b8221dec232548393caaa64b54f3.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2238-nvidia-fiel-der-chef-auf-eine-spionin-herein",
      "desc": "Jensen Huang räumt eine Affäre mit einer Managerin aus Singapur ein. Hatte sie Kontakt zum chinesischen Geheimdienst - und was heißt das für den wertvollsten Konzern der Welt?"
-    },
-    {
-     "id": "morningbriefing-285aac1c7c",
-     "title": "Börse: Tech-Werte brechen ein / Rüstung: Der Bund wird Panzerbauer",
-     "date": "2026-11-06T04:53:48.000Z",
-     "duration": 526,
-     "audio": "https://audio.podigee-cdn.net/2628974-m-54f8cb90c8a7fc4e49ab6082acdf94e4.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2237-borse-tech-werte-brechen-ein-rustung-der-bund-wird-panzerbauer",
-     "desc": "In den USA brechen die Aktienmärkte ein. Und geben einen kleinen Vorgeschmack: Nur weil der US-Präsident künftig weniger Einfluss hat, wird nicht automatisch alles gut."
     }
    ]
   },
