@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T05:15:51.803Z",
+ "updated": "2026-11-15T05:10:17.298Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-d4c88233b4",
+     "title": "Podcast-Tipp: Made in Berlin – Wirtschaftspolitik und was sie für euch bedeutet",
+     "date": "2026-11-14T07:00:00.000Z",
+     "duration": 84,
+     "audio": "https://audio.podigee-cdn.net/2649020-m-fccaba6734b795541a31f7ac1eb1986d.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2249-podcast-tipp-made-in-berlin-wirtschaftspolitik-und-was-sie-fur-euch-bedeutet",
+     "desc": "Der neue Wirtschaftspolitik-Podcast vom Handelsblatt"
+    },
+    {
      "id": "morningbriefing-d4ca6dbbbf",
      "title": "Warum Mercedes nicht mehr an Deutschland glaubt",
      "date": "2026-11-13T04:57:54.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2640051-m-0d0443eede6e2fdd76bebedc41a848f6.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2239-die-wahre-bilanz-der-klimagipfel-und-eine-uberraschung",
      "desc": "Bundeskanzler Merz nimmt nicht an der Klimakonferenz in Antalya teil. Wer sich darüber empört, sollte sich zunächst zwei wesentliche Fakten anschauen."
-    },
-    {
-     "id": "morningbriefing-8d91708fa2",
-     "title": "Nvidia: Fiel der Chef auf eine Spionin herein?",
-     "date": "2026-11-09T04:52:22.000Z",
-     "duration": 521,
-     "audio": "https://audio.podigee-cdn.net/2628975-m-8d51b8221dec232548393caaa64b54f3.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2238-nvidia-fiel-der-chef-auf-eine-spionin-herein",
-     "desc": "Jensen Huang räumt eine Affäre mit einer Managerin aus Singapur ein. Hatte sie Kontakt zum chinesischen Geheimdienst - und was heißt das für den wertvollsten Konzern der Welt?"
     }
    ]
   },
