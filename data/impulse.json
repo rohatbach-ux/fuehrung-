@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-06T04:07:40+00:00",
+ "updated": "2026-11-16T04:07:37+00:00",
  "items": [
+  {
+   "id": "drive-20261116-1",
+   "date": "2026-11-16",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 5,
+    "von": 10
+   },
+   "titel": "Aufgabe oder Beziehung – und was man von Klopp lernen kann",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), Kapitel 2.2.1–2.2.2",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Viele Teamkonflikte entstehen, weil aufgaben- und beziehungsorientierte Menschen aufeinandertreffen – oft verstärkt durch die Führungskraft selbst. Gute Führung schafft Rahmen für beide Stile und spricht Menschen nach ihren Motiven an.",
+   "deutsch": "> **Nicht jeder will zuerst über die Sache reden – und nicht jeder zuerst über den Menschen. Führung heißt, beides möglich zu machen.**\n\n## 🔗 Anschluss an Teil 4\nIn Teil 4 ging es um Gefühle als Hinweis auf Bedürfnisse. Kapitel 2.2 eröffnet die zweite Kernkompetenz: **Beziehungen gestalten**.\n\n## ⚖️ Zwei Arbeitsstile\n| | Aufgabenorientiert | Beziehungsorientiert |\n|---|---|---|\n| **Arbeitsplatz ist …** | vor allem ein Ort der Pflichterfüllung | auch ein Ort der Beziehungen |\n| **Privates** | wird ungern besprochen | gehört dazu |\n| **Regeln und Abläufe** | haben großes Gewicht, etwa feste Pausenzeiten | werden lockerer gesehen, Freiräume sind wichtig |\n| **Betriebsklima** | Nebensache gegenüber der Arbeit | so wichtig wie die Arbeit selbst |\n\nFrerichs berichtet aus zehn Jahren Mediation und Konfliktcoaching: Fast immer ging es um genau diesen Gegensatz – zwischen Führungskraft und Team oder zwischen Gruppen im Team.\n\n## 🛠️ Was hilft\n1. **Allen klarmachen, dass es verschiedene Wege zum Ziel gibt** – und für beide Stile Bedingungen schaffen, unter denen sie motiviert und produktiv arbeiten.\n2. **Teamentwicklung und gemeinsame Unternehmungen** sind oft ein guter Anfang, um Toleranz zu fördern.\n3. **Den eigenen Führungsstil prüfen** – aus systemischer Sicht hat ein Teamkonflikt fast immer auch mit Führung zu tun. Typische Muster:\n   - Wer der Führungskraft im Stil ähnelt, wird großzügiger behandelt und bekommt mehr Aufmerksamkeit.\n   - Die Führungskraft greift zu spät ein oder spielt das Problem herunter.\n   - „Situatives Führen“ wird als Wegschauen missverstanden: Das Team sei reif genug, man werde nicht gebraucht.\n4. **Moderierte Workshops** mit Rückendeckung der Leitung, in denen bestehende Regeln überprüft und gemeinsam neu vereinbart werden.\n\n---\n\n## ⚽ Von Jürgen Klopp lernen\nFrerichs nutzt Klopp als Beispiel für **individuelle, bedürfnisorientierte Führung**: Nähe zu den Spielern, emotionale Ansprache, sichtbare Freude.\n- **Charisma ist keine Voraussetzung.** Diese Art von Führung liegt nicht jedem; man kann Techniken übernehmen, ohne eine charismatische Persönlichkeit zu werden.\n- **Motivorientierte Führung:** Hinter Klopps Stil steht laut einem Zeitschriftenartikel das Prinzip individueller Zuwendung, gestützt auf die Theorie der 16 Lebensmotive des Psychologen Steven Reiss. Coaches nutzen dafür ein Testverfahren, das Reiss-Motivationsprofil.\n- **Erst sich selbst kennen:** Wer die eigenen Motive kennt, versteht besser, was das heterogene Team braucht – und mit welchen Worten und Bedingungen man jede Person am besten erreicht.\n\n**Vier Lehren, die Frerichs zieht:**\n1. Klopp hat Erfolge vorzuweisen und Mannschaften durch Krisen geführt.\n2. Er agiert frei, humorvoll, manchmal frech und emotional.\n3. Er sucht persönliche Nähe und pflegt Beziehungen.\n4. Er stellt **Teamregeln auf, die für alle ohne Ausnahme gelten** – Regeln, die an Ehrgefühl, Eigenverantwortung und Teamgeist appellieren.",
+   "modul": "fk",
+   "bezug_ih": "- **Pausen und Ruhezeiten:** In der Instandhaltung sind Pausen- und Ruhezeitregeln auch Sicherheitsregeln. Hier gibt es keinen Spielraum für unterschiedliche Stile – sag das klar, und schaffe Spielraum dort, wo er möglich ist (etwa bei Besprechungsformen oder Kommunikation).\n- **Ähnliche bevorzugen:** Achte in deinen ersten Wochen bewusst darauf, wem du mehr Zeit und Aufmerksamkeit gibst – oft sind es die, die dir im Stil ähneln.\n- **Teamregeln wie bei Klopp:** Wenige, für alle geltende Regeln, die an Verantwortung und Teamgeist appellieren, passen gut zu deinem Ziel, Ruhe ins Netz zu bringen. Am besten gemeinsam erarbeitet.\n- **Einordnung:** Die Zweiteilung in Aufgaben- und Beziehungsorientierung ist ein bewährtes, aber vereinfachendes Modell. Das Reiss-Motivationsprofil ist ein kommerzielles Testverfahren, dessen wissenschaftliche Fundierung umstritten ist; Persönlichkeitstests für Mitarbeitende berühren bei der DB Mitbestimmung und Datenschutz. Körpernähe als Führungsmittel ist im Fußball etwas anderes als im Betrieb.",
+   "frage": "Bin ich eher aufgaben- oder beziehungsorientiert – und welche Gruppe in meinem künftigen Team würde sich dadurch zu kurz kommen fühlen?",
+   "experiment": "**Kläre deinen eigenen Stil – und den deiner wichtigsten Gesprächspartner.**\n1. Ordne dich auf einer Skala von 1 (rein aufgabenorientiert) bis 10 (rein beziehungsorientiert) ein.\n2. Ordne fünf Menschen ein, mit denen du eng arbeitest.\n3. Prüfe: Bei wem fällt dir die Zusammenarbeit leicht, bei wem schwer? Passt das zum Abstand auf der Skala?\n4. Wähle eine Person mit großem Abstand und passe in deinem nächsten Gespräch bewusst den Einstieg an – sachlich zuerst oder persönlich zuerst.",
+   "karten": [
+    {
+     "frage": "Worin unterscheiden sich aufgaben- und beziehungsorientierte Menschen laut Frerichs?",
+     "antwort": "Aufgabenorientierte sehen den Arbeitsplatz vor allem als Ort der Pflichterfüllung und legen Wert auf Regeln; Beziehungsorientierte halten Beziehungen und Klima für ebenso wichtig wie die Arbeit und wünschen sich Freiräume."
+    },
+    {
+     "frage": "Welche drei Führungsmuster verschärfen solche Konflikte?",
+     "antwort": "Stilähnliche bevorzugen, zu spät eingreifen oder herunterspielen, situatives Führen als Wegschauen missverstehen."
+    },
+    {
+     "frage": "Was ist motivorientierte Führung nach Frerichs?",
+     "antwort": "Jede Person nach ihren eigenen Motiven ansprechen – beginnend mit der Kenntnis der eigenen Motive; Frerichs bezieht sich auf die 16 Lebensmotive nach Steven Reiss."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261116-2",
+   "date": "2026-11-16",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Die ersten 100 Tage in der neuen Chefposition",
+    "teil": 7,
+    "von": 7
+   },
+   "titel": "Motivieren statt antreiben – und was die Reihe trägt",
+   "quelle": {
+    "name": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019), Kapitel 12–14",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Motivierende Führung lebt von Vertrauen, Vision, offener Kommunikation und echter Anerkennung – und vom gezielten Suchen nach dem, was demotiviert. Damit schließt De Micheli den Bogen vom ersten Tag zur dauerhaften Führungshaltung.",
+   "deutsch": "> **Mitarbeitende verlassen selten das Unternehmen, sondern oft ihre Führungskraft. Motivation ist deshalb keine Zusatzaufgabe, sondern der Kern von Führung.**\n\n## 🔗 Anschluss an Teil 6\nIn Teil 6 ging es um die ehrliche Bilanz nach 100 Tagen. Die letzten drei Kapitel beschreiben, wie Führung danach dauerhaft motivierend wirkt.\n\n## 🌱 Kapitel 12: Woran man motivierende Führungskräfte erkennt\nSie vertrauen erfahrenen Mitarbeitenden und geben Verantwortung ab, sind fair und unterstützen auch Schwächere, sehen Ziele als Herausforderung, akzeptieren Grenzen – bei anderen und sich selbst – und handeln ethisch. Außerdem:\n| Merkmal | Bedeutung |\n|---|---|\n| **Begeisterung statt Zahlenziele** | Sie setzen weniger auf reine Zahlen und mehr auf Begeisterung. |\n| **Klare Kommunikation** | Ziele und Visionen werden anspornend und verständlich vermittelt. |\n| **Talente fördern** | Fähigkeiten erkennen, Freiraum für Entwicklung geben. |\n| **Offen für Neues** | Weniger interner Wettbewerb und Kontrolle, mehr Neugier auf Ideen. |\n| **Fehler als Lernchance** | Nicht Versagen und Tadel, sondern Lernen aus Erfahrung. |\n| **Mut** | Sich auch nach oben vor das Team stellen, neue Wege gehen, Risiken tragen. |\n| **„Wir“ statt „ich“** | Erfolge sind Teamerfolge. |\n\n## 🧭 Kapitel 13: Führung heißt Visionen und Ziele verwirklichen\n- **Vision über das Gehalt hinaus:** Perspektiven, die mehr bedeuten als die nächste Karrierestufe, sind laut De Micheli entscheidend für Motivation. Er beruft sich auf Saint-Exupérys Bild, eher die Sehnsucht nach dem Ziel zu wecken als Werkzeuge zu verteilen.\n- **Teamarbeit:** klarer Rahmen, eher beraten als kontrollieren, Leistungen anerkennen, Hindernisse aus dem Weg räumen.\n- **Kommunikation:** Ziele überzeugend vermitteln; über Fortschritt, Erfolg und Misserfolg systematisch und offen informieren. Fehlende Kommunikation ist fehlende Führungsfähigkeit.\n- **Verantwortung:** Jede Person braucht einen klaren Aufgabenbereich, in dem Aufgaben und Befugnisse zusammenpassen. Kontrolle geschieht durch sachliche, konstruktive Rückmeldung.\n- **Offen beurteilen und fördern:** Stärken erkennen, mehrmals im Jahr über Leistung und Entwicklung sprechen.\n- **Identifikation:** Je besser persönliche Werte und Werte der Organisation zusammenpassen, desto stärker die Bindung – schon bei der Personalauswahl beachten.\n- **Begeisterung:** Sie steckt an und macht glaubwürdig; man kann in anderen nur entfachen, was in einem selbst brennt.\n\n## 🔍 Kapitel 14: Motivationsprobleme aufspüren\n- Motivierte Menschen arbeiten besser, kreativer, schneller und brauchen weniger Kontrolle. Voraussetzung: ein positives Menschenbild, Kommunikations- und Sozialkompetenz, ehrliches Lob, Fachkompetenz und Vorbild.\n- **Probleme schnell und offen angehen** – und gezielt nach **Demotivatoren** suchen: problematische Teammitglieder, Fehler der Leitung oder Störungen in der Sache, etwa wenn der Sinn eines Ziels nicht verstanden wird oder Erfolgserlebnisse fehlen.\n- Grundlage von allem ist **Respekt**.\n\n---\n\n## 🧩 Synthese der Reihe\n| Teil | Kernidee |\n|---|---|\n| 1 | Drei Drittel: lernen – Prioritäten klären – umsetzen; souverän statt gefallen wollen oder hart durchgreifen |\n| 2 | Eine Führungs-Charta: vier Grundsätze mit je vier sichtbaren Handlungen |\n| 3 | Zwei Gespräche prägen den Start: mit dem Vorgesetzten und mit jedem Teammitglied |\n| 4 | Ein 13-Wochen-Plan mit festen Rückblicken |\n| 5 | Akzeptanz durch Vorbild, Konsequenz und Rückendeckung – nicht durch Angst |\n| 6 | Ehrliche Bilanz nach 100 Tagen mit Feedback-Rat und Team |\n| 7 | Motivation, Vision und das Aufspüren von Demotivatoren als Dauerhaltung |\n\n**Was bleibt:** Erst lernen, dann handeln; Struktur schützt vor dem Tagesgeschäft; Akzeptanz entsteht aus Verhalten, nicht aus Signalen der Härte.\n**Offene Fragen:** Wie passt die Vision des Buchs zu einem WHY, das du mit dem Team erarbeiten willst, statt es vorzugeben? Und wie viel Struktur verträgt ein Start, an dem die Brandherde nicht warten?",
+   "modul": "uebergang",
+   "bezug_ih": "- **Demotivatoren in der IH:** Fehlender Sinn eines Ziels und fehlende Erfolgserlebnisse sind in der Instandhaltung typische Bremsen – etwa wenn Arbeit in Sperrpausen verpufft oder niemand erfährt, was eine Entstörung bewirkt hat. Mach Wirkung sichtbar.\n- **Vision und WHY:** De Micheli setzt auf die Vision der Führungskraft. Dein Zielbild sieht vor, das WHY ab Phase 2 gemeinsam zu erarbeiten – das ist der stärkere Weg, weil Identifikation aus Beteiligung wächst.\n- **Querbezug zu Muller:** „Begeisterung statt Zahlenziele“ trifft sich mit Mullers Warnung vor Kennzahlen als Antrieb (Reihe The Tyranny of Metrics, Teil 4).\n- **Einordnung:** Die Kapitel sind Erfahrungswissen; die Aussage, Mitarbeitende verließen eher die Führungskraft als das Unternehmen, nennt der Autor ohne Quelle. Die im Buch angekündigte Übersicht mit Alarmsignalen für Demotivation fehlt im E-Book.",
+   "frage": "Was würde mein künftiges Team heute als größten Demotivator nennen – und wie finde ich das heraus, ohne es zu unterstellen?",
+   "experiment": "**Suche einen Demotivator, bevor du motivierst.**\n1. Frag in drei Gesprächen offen: „Was nimmt dir bei der Arbeit am meisten Energie?“\n2. Ordne jede Antwort zu: Menschen, Führung oder Sache (etwa fehlender Sinn, fehlende Erfolgserlebnisse).\n3. Wähle einen Punkt aus der Kategorie Sache und prüfe, ob du ihn mit wenig Aufwand verbessern kannst.\n4. Erzähl dem Team danach, was du gehört und was du geändert hast.",
+   "karten": [
+    {
+     "frage": "Welche drei Arten von Demotivatoren nennt De Micheli?",
+     "antwort": "Problematische Teammitglieder, Fehler der Leitung und Störungen in der Sache – etwa ein unverstandener Sinn eines Ziels oder fehlende Erfolgserlebnisse."
+    },
+    {
+     "frage": "Was macht motivierende Führungskräfte laut De Micheli aus?",
+     "antwort": "Vertrauen und Verantwortung abgeben, Begeisterung statt reiner Zahlenziele, klare Kommunikation, Talente fördern, Fehler als Lernchance, Mut nach oben, „wir“ statt „ich“."
+    },
+    {
+     "frage": "Wie lautet der Dreischritt, der die ganze Reihe trägt?",
+     "antwort": "Erst lernen und Beziehungen aufbauen, dann Prioritäten klären, dann umsetzen – mit Struktur und ehrlicher Bilanz."
+    }
+   ]
+  },
   {
    "id": "drive-20261106-1",
    "date": "2026-11-06",

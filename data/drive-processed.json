@@ -5,7 +5,7 @@
    "h": "e838e38f93ab",
    "titel": "die-ersten-100-tage-in-der-neuen-chefposition.pdf",
    "buch": "Marco De Micheli – Die ersten 100 Tage in der neuen Chefposition (bookboon, 2019)",
-   "status": "in_arbeit",
+   "status": "fertig",
    "begonnen": "2026-10-31",
    "plan": [
     {
@@ -48,10 +48,11 @@
      "teil": 7,
      "thema": "Motivierendes Führungsverhalten, Vision und Demotivatoren erkennen",
      "kapitel": "12–14",
-     "impuls": null
+     "impuls": "drive-20261116-2"
     }
    ],
-   "zuletzt": "2026-11-06"
+   "zuletzt": "2026-11-16",
+   "abgeschlossen": "2026-11-16"
   },
   {
    "h": "858870d4673c",
@@ -88,7 +89,7 @@
      "teil": 5,
      "thema": "Beziehungsgestaltung: Aufgaben- vs. Beziehungsorientierung, von Jürgen Klopp lernen",
      "kapitel": "2.2.1–2.2.2",
-     "impuls": null
+     "impuls": "drive-20261116-1"
     },
     {
      "teil": 6,
@@ -121,7 +122,7 @@
      "impuls": null
     }
    ],
-   "zuletzt": "2026-11-05"
+   "zuletzt": "2026-11-16"
   },
   {
    "h": "0698843d04db",
