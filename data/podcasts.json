@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T05:10:17.298Z",
+ "updated": "2026-11-16T05:42:29.138Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-bed243c7b7",
+     "title": "Nvidia: Gerüchte über ein Comeback des Gründers / SPD: Vorwärts, Genossen, in die Vergangenheit",
+     "date": "2026-11-16T04:52:54.000Z",
+     "duration": 515,
+     "audio": "https://audio.podigee-cdn.net/2640055-m-24c2e48e2335b5a6cb45a7f71d653a17.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2243-nvidia-geruchte-uber-ein-comeback-des-grunders-spd-vorwarts-genossen-in-die-vergangenheit",
+     "desc": "Plant der geschasste CEO seine Rückkehr an die Spitze des Chip-Konzerns? Während der politische Druck auf Nvidia wächst, formiert sich im Silicon Valley Unterstützung."
+    },
+    {
      "id": "morningbriefing-d4c88233b4",
      "title": "Podcast-Tipp: Made in Berlin – Wirtschaftspolitik und was sie für euch bedeutet",
      "date": "2026-11-14T07:00:00.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2640052-m-f3c1b4bfafc873b121832583dd7d5e14.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2240-steuern-vereinfachen-statt-senken-anthropic-der-zweitgrosste-borsengang-aller-zeiten",
      "desc": "Legt der Finanzminister die Axt ans Ehegattensplitting? Das ist die falsche Frage. Ein anderes Versäumnis des Vizekanzlers sollte viel eher für Unmut sorgen."
-    },
-    {
-     "id": "morningbriefing-0b736090b5",
-     "title": "Die wahre Bilanz der Klimagipfel (und eine Überraschung)",
-     "date": "2026-11-10T04:53:47.000Z",
-     "duration": 519,
-     "audio": "https://audio.podigee-cdn.net/2640051-m-0d0443eede6e2fdd76bebedc41a848f6.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2239-die-wahre-bilanz-der-klimagipfel-und-eine-uberraschung",
-     "desc": "Bundeskanzler Merz nimmt nicht an der Klimakonferenz in Antalya teil. Wer sich darüber empört, sollte sich zunächst zwei wesentliche Fakten anschauen."
     }
    ]
   },
