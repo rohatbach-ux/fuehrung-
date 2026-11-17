@@ -130,7 +130,7 @@
    "buch": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018)",
    "status": "in_arbeit",
    "begonnen": "2026-11-01",
-   "zuletzt": "2026-11-06",
+   "zuletzt": "2026-11-17",
    "plan": [
     {
      "teil": 1,
@@ -160,7 +160,7 @@
      "teil": 5,
      "thema": "Fallstudie Medizin: wo Kennzahlen helfen und wo sie schaden",
      "kapitel": "9",
-     "impuls": null
+     "impuls": "drive-20261117-2"
     },
     {
      "teil": 6,
@@ -265,6 +265,82 @@
    "h": "3c2068cdca2f",
    "status": "uebersprungen",
    "grund": "ersetzt"
+  },
+  {
+   "h": "3c7e50507eb0",
+   "titel": "The Intelligence Trap_ Why Smart People Do Stupid Things and How to Make Wiser Decisions.pdf",
+   "buch": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019)",
+   "status": "in_arbeit",
+   "begonnen": "2026-11-17",
+   "zuletzt": "2026-11-17",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Die Falle im Überblick (aus öffentlichen Quellen, erschienen als Buch kompakt)",
+     "kapitel": "Überblick",
+     "impuls": "buch-20261102-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Was Intelligenz misst und was ihr fehlt: Termans Hochbegabte, Flynn-Effekt, Sternbergs drei Intelligenzen, kulturelle Intelligenz",
+     "kapitel": "Einleitung, 1",
+     "impuls": "drive-20261117-1"
+    },
+    {
+     "teil": 3,
+     "thema": "Verstrickte Argumente: Dysrationalia, motiviertes Denken, blinder Fleck für eigene Verzerrungen",
+     "kapitel": "2",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Der Fluch des Wissens: erworbener Dogmatismus, Verfestigung, Fall Mayfield und Drors Gegenmittel",
+     "kapitel": "3",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Moralische Algebra: evidenzbasierte Weisheit, Salomons Paradox, Selbstdistanz, Franklins Abwägen",
+     "kapitel": "4",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Der emotionale Kompass: Körpersignale, Gefühle genau benennen, Bauchgefühl prüfen",
+     "kapitel": "5",
+     "impuls": null
+    },
+    {
+     "teil": 7,
+     "thema": "Ein Werkzeugkasten gegen Unsinn: Flüssigkeit, Falschinformation, kognitive Impfung",
+     "kapitel": "6",
+     "impuls": null
+    },
+    {
+     "teil": 8,
+     "thema": "Lernen: Neugier, Wachstumshaltung, wünschenswerte Erschwernisse, produktive Verwirrung",
+     "kapitel": "7–8",
+     "impuls": null
+    },
+    {
+     "teil": 9,
+     "thema": "Das Dream Team: kollektive Intelligenz, Zu-viel-Talent-Effekt, Hierarchie und Widerspruch",
+     "kapitel": "9",
+     "impuls": null
+    },
+    {
+     "teil": 10,
+     "thema": "Funktionale Dummheit in Organisationen und die fünf Merkmale hochzuverlässiger Organisationen",
+     "kapitel": "10, Epilog",
+     "impuls": null
+    },
+    {
+     "teil": 11,
+     "thema": "Synthese: Begriffe der Dummheit und der Weisheit (Anhang), Transfer in die Instandhaltung, offene Fragen",
+     "kapitel": "Anhang, Synthese",
+     "impuls": null
+    }
+   ]
   }
  ]
 }

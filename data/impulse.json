@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-16T04:07:37+00:00",
+ "updated": "2026-11-17T04:08:50+00:00",
  "items": [
+  {
+   "id": "drive-20261117-1",
+   "date": "2026-11-17",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Intelligence Trap",
+    "teil": 2,
+    "von": 11
+   },
+   "titel": "Was Intelligenz misst – und was ihr fehlt",
+   "quelle": {
+    "name": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019), Einleitung und Kapitel 1",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Der IQ misst eine wichtige, aber schmale Fähigkeit: abstrakt denken und schnell lernen. Gutes Urteil braucht mehr – praktische und kreative Intelligenz, Erfahrungswissen und den Mut, eigene Annahmen zu prüfen. Wer das verwechselt, tappt in die Intelligenzfalle.",
+   "deutsch": "> **Ein starker Motor macht ein Auto schneller – aber nicht sicherer. Ohne Lenkrad, Bremse und Karte fährt der stärkste Motor am schnellsten in die falsche Richtung.**\n\n## 🔗 Anschluss an Teil 1\nTeil 1 beruhte auf öffentlichen Quellen und gab einen Überblick über Robsons drei Fallen. Ab jetzt folgt die Reihe dem Buchtext selbst – beginnend mit der Frage, was Intelligenz eigentlich ist.\n\n## 🚗 Die Ausgangsfrage\nRobson beginnt mit dem Nobelpreisträger Kary Mullis, der die Erbgut-Vervielfältigung revolutionierte – und zugleich an Astrologie, Begegnungen mit Außerirdischen und die Leugnung des Zusammenhangs von HIV und Aids glaubte. Seine These: **Kluge und gebildete Menschen sind vor bestimmten Denkfehlern nicht geschützt, manchmal sogar anfälliger.** Sie lernen schlechter aus Fehlern, nehmen seltener Rat an und bauen geschicktere Begründungen für ihre Irrtümer.\n\n**Was schützt**, ist eine Reihe anderer Eigenschaften, die kein Schultest misst – aber trainierbar sind:\n- Bereitschaft, die eigene erste Intuition zu hinterfragen (kognitive Reflexion)\n- intellektuelle Demut und aktiv offenes Denken\n- Neugier\n- feine Wahrnehmung der eigenen Gefühle\n- die Überzeugung, sich entwickeln zu können\n\nDie Forschung dazu nennt Robson **„evidenzbasierte Weisheit“**. Schon Sokrates hielt sich für weise, gerade weil er die Grenzen seines Wissens kannte; Descartes schrieb, es reiche nicht, einen guten Verstand zu haben – man müsse ihn richtig anwenden.\n\n---\n\n## 🧪 Kapitel 1: Die „Termiten“ – Aufstieg und Grenzen des IQ\n**Lewis Terman** begleitete ab 1920 über tausend hochbegabte Kinder aus Kalifornien (IQ über 135–140) ihr Leben lang. Er war überzeugt: Nichts sei an einem Menschen so wichtig wie sein IQ.\n\n**Was die Studie zeigte:**\n| Befund | Bedeutung |\n|---|---|\n| Die Gruppe war im Schnitt erfolgreicher als der Durchschnitt | Der IQ sagt Schulerfolg gut und Berufserfolg mäßig voraus. |\n| Von den 26 Kindern mit IQ über 180 erreichten nur vier eine herausragende berufliche Stellung | Ab einer gewissen Schwelle entscheiden andere Faktoren – wie Körpergröße im Basketball. |\n| Bei Juristen, Buchhaltern oder Ingenieuren erklärt der IQ höchstens rund 29 Prozent der Leistungsunterschiede | Der größte Teil liegt woanders. |\n| Die IQ-Werte stiegen über 80 Jahre um rund 30 Punkte (Flynn-Effekt), ungleich verteilt | Schule trainiert abstraktes Denken – das macht Menschen nicht automatisch klüger im Urteil. |\n\n**Sternbergs Gegenmodell – drei Arten von Intelligenz:**\n| Art | Inhalt | Beispiel |\n|---|---|---|\n| **Analytisch** | Was IQ-Tests messen: Muster, Regeln, Gedächtnis | gute Prüfungsergebnisse |\n| **Kreativ** | erfinden, sich vorstellen, „was wäre, wenn …?“ denken | aus Fehlern lernen, Alternativen sehen |\n| **Praktisch** | Ideen umsetzen, unklare Probleme pragmatisch lösen, die eigenen Stärken und Schwächen kennen, Erfahrungswissen | Projekte planen, Folgen vorhersehen, Kompromisse finden |\n\nSternbergs Tests für praktisches Erfahrungswissen sagten in Unternehmen den Erfolg und **beim Militär die Führungsleistung von Kommandeuren besser voraus als der IQ**. Ähnlich zeigt die Forschung zur **kulturellen Intelligenz**: Hochbegabte Programmierer aus verschiedenen Ländern scheiterten an der Zusammenarbeit, weil sie unterschiedliche Arbeitsweisen nicht lesen konnten.\n\n**Terman selbst als Warnung:** Er übersah Daten, die seiner Überzeugung widersprachen, suchte keine Begabten in armen Vierteln, griff in das Leben seiner Probanden ein und antwortete auf Kritik mit persönlichen Angriffen statt Argumenten. Robsons Fazit: Ein großer Verstand schützt nicht vor großen Denkfehlern.\n\n## ⏱️ Ein Irrtum, den Schule lehrt\nWeil Tests unter Zeitdruck stattfinden, gilt Schnelligkeit als Zeichen von Klugheit und Zögern als Schwäche. Robson hält das für falsch – und zeigt in den folgenden Kapiteln, warum.",
+   "modul": "urteil",
+   "bezug_ih": "- **Erfahrungswissen zählt:** Bezirksleitungen und Instandhalter mit großem praktischem Wissen urteilen in Störungen oft besser als formal Höherqualifizierte. Sternbergs Befund aus dem Militär stützt das.\n- **Besetzungen:** Abschlüsse und Testergebnisse sagen wenig darüber, wie jemand mit unklaren Lagen, Schnittstellen und Menschen umgeht. Frag in Auswahlgesprächen nach konkreten Situationen.\n- **Schnittstellen als Kulturfrage:** Netz-P, Regionen und Netzleitung arbeiten nach eigenen Gewohnheiten. Kulturelle Intelligenz heißt hier: Missverständnisse vorab erkennen, statt Zustimmung zu unterstellen.\n- **„Was wäre, wenn …?“:** Kreatives Denken im Sinne Sternbergs hilft bei der Störungsanalyse und beim Vorausdenken von Sperrpausen.\n- **Einordnung:** Robson ist Wissenschaftsjournalist und erzählt anhand ausgewählter Studien. Sternbergs Messverfahren für praktische Intelligenz sind in der Fachwelt umstritten; der Grundbefund, dass IQ nur einen Teil von Leistung erklärt, ist gut belegt.",
+   "frage": "Wo verlasse ich mich in meiner Einschätzung von Menschen zu sehr auf Abschlüsse und Schnelligkeit – und übersehe praktisches Erfahrungswissen?",
+   "experiment": "**Such das Erfahrungswissen.**\n1. Denk an drei Menschen in deinem Umfeld, die ohne herausragende Abschlüsse in schwierigen Lagen besonders gut urteilen.\n2. Notiere für jeden: Was können sie, das kein Test misst?\n3. Frag eine dieser Personen bei der nächsten Gelegenheit: „Woran hast du in der Situation gemerkt, was zu tun ist?“\n4. Halte fest, welches praktische Wissen du daraus mitnimmst.",
+   "karten": [
+    {
+     "frage": "Was meint Robson mit der Intelligenzfalle?",
+     "antwort": "Kluge und gebildete Menschen sind vor Denkfehlern nicht geschützt – sie können sogar anfälliger sein, weil sie geschickter begründen und seltener Rat annehmen."
+    },
+    {
+     "frage": "Welche drei Arten von Intelligenz unterscheidet Sternberg?",
+     "antwort": "Analytische (was IQ-Tests messen), kreative (vorstellen, „was wäre, wenn …?“) und praktische Intelligenz (umsetzen, Erfahrungswissen, Selbstkenntnis)."
+    },
+    {
+     "frage": "Was zeigte Termans Langzeitstudie über Hochbegabte?",
+     "antwort": "Hoher IQ half im Schnitt, sagte aber außergewöhnlichen Erfolg kaum voraus: Von 26 Kindern mit IQ über 180 erreichten nur vier eine herausragende Stellung."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261117-2",
+   "date": "2026-11-17",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 5,
+    "von": 11
+   },
+   "titel": "Medizin: Wo Kennzahlen Leben retten – und wo sie schaden",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), Kapitel 9",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "In der Medizin wirken Kennzahlen dann, wenn Fachleute sie selbst entwickeln, intern zum Lernen nutzen und das Ergebnis weitgehend in eigener Hand liegt. Öffentliche Ranglisten und Bezahlung nach Kennzahlen bringen dagegen meist wenig – und lösen Ausweichen, Schönen und Risikoscheu aus.",
+   "deutsch": "> **Dieselbe Kennzahl kann Leben retten oder Patienten gefährden – entscheidend ist, wer sie entwickelt und wofür sie genutzt wird.**\n\n## 🔗 Anschluss an Teil 4\nIn Teil 4 ging es um das Menschenbild hinter der Messfixierung und die Verdrängung inneren Antriebs. Kapitel 9 ist die erste große Fallstudie – das Feld, in dem Kennzahlen am meisten versprechen.\n\n## 🩺 Drei Rollen von Kennzahlen\n| Rolle | Zweck |\n|---|---|\n| **Diagnostisch** | Verfahren und Ergebnisse vergleichen, um vom Besten zu lernen |\n| **Öffentliche Berichte** | Transparenz für Patienten, Wettbewerb zwischen Anbietern |\n| **Bezahlung nach Leistung** | Geld oder Abzüge je nach gemessenem Ergebnis |\n\nMuller warnt: Befürworter werfen diese drei Rollen oft in einen Topf. Treiber ist vor allem der Kostendruck; elektronische Patientenakten machten Daten zudem billig verfügbar.\n\n## ✅ Drei Erfolgsgeschichten – und warum sie funktionierten\n| Beispiel | Was passierte | Warum es wirkte |\n|---|---|---|\n| **Cleveland Clinic** | veröffentlicht jährlich Ergebnisbände für viele Behandlungen | Sie war schon vorher Weltspitze – die Zahlen spiegeln Qualität, sie erzeugen sie nicht. |\n| **Geisinger** (Pennsylvania) | integrierte Teams, elektronische Akte, Fallmanager für Risikopatienten; rund 20 Prozent der Arztvergütung hängen an Zielen | Kennzahlen wurden **von Teams mit Ärzten** entwickelt; die Beschäftigten wählten selbst, welche Abläufe sie ändern. |\n| **Keystone-Projekt** (Michigan) | Checkliste mit fünf einfachen Schritten gegen Katheter-Infektionen; Infektionen sanken um 66 Prozent | Monatliche Daten wurden intern besprochen, um zu lernen; Ansporn kam aus Berufsethos und Vergleich unter Kollegen. Der Initiator Peter Pronovost: Entscheidend war die Einsicht, dass Infektionen nicht schicksalhaft sind. |\n\nDie Behörde zog daraus aber den Schluss, Infektionsraten zu veröffentlichen und Kliniken finanziell zu bestrafen – also genau den Antrieb von innen durch Druck von außen zu ersetzen.\n\n---\n\n## ⚠️ Das größere Bild\n- **Wenig Wirkung:** Eine niederländische Übersichtsarbeit fand keinen dauerhaften Effekt öffentlicher Kennzahlen auf Behandlungsergebnisse – und keinen auf die Wahl der Patienten. Eine US-Studie fand nach Veröffentlichung von Sterberaten keine Verbesserung, eher eine Verlangsamung. Eine Rand-Studie: Je sauberer das Studiendesign, desto kleiner der Effekt von Leistungsbezahlung.\n- **Zielverschiebung:** In Großbritannien wurden Krankheiten, die nicht im Bezahlmodell standen, schlechter versorgt – „Behandeln für den Test“.\n- **Risikoscheu:** Nach Veröffentlichung von Sterberaten bei Herz-Operationen in New York operierten Chirurgen schwer kranke Patienten seltener. Die Sterberate sank – im Nachbarstaat ohne Veröffentlichung aber genauso.\n- **Übertherapie:** Patienten wurden teils künstlich über die 30-Tage-Grenze am Leben gehalten.\n- **Kosten:** Das Berichtswesen kostet große Kliniken rund ein Prozent ihres Umsatzes; Zeit für Patienten geht verloren. Ein führender Befürworter, Donald Berwick, forderte, die Zahl der Kennzahlen zu halbieren.\n- **Was Zahlen leisten:** Sie decken schlechte Ausreißer auf. Danach sinkt der Nutzen – gemessen wird aber weiter bei allen.\n\n## 🔁 Fallbeispiel Wiederaufnahmen\nKliniken wurden bestraft, wenn Patienten innerhalb von 30 Tagen zurückkamen. Die Quote sank – zu etwa der Hälfte, weil Rückkehrer als ambulante „Beobachtungsfälle“ statt als Aufnahme verbucht wurden. Bestraft wurden vor allem Unikliniken und Häuser in armen Gegenden, deren Patienten schwerer krank sind; die Risikobereinigung ließ sich ebenso verzerren wie die Kennzahl selbst.\n\n## ⚖️ Mullers Bilanz\nInterne, diagnostische Kennzahlen sind wertvoll – vor allem für Eingriffe, deren Ergebnis die Organisation weitgehend selbst in der Hand hat. Wo das Ergebnis von Faktoren außerhalb abhängt, sind Zuschreibungen schwierig. Bezahlung und öffentliche Ranglisten nach Kennzahlen sind deutlich problematischer.",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Keystone als Vorbild:** Checklisten, die Fachleute selbst entwickeln und intern auswerten – etwa für Inspektionen, Abnahmen oder Sicherungsplanung – entsprechen genau dem Muster, das in der Medizin funktioniert hat.\n- **Was liegt in deiner Hand?** Störungen hängen auch von Wetter, Fremdeinwirkung und Betriebslage ab – wie Wiederaufnahmen vom Verhalten der Patienten. Bewerte Bereiche nicht nach Ergebnissen, die sie nur teilweise beeinflussen.\n- **Umbuchen erkennen:** Wenn sich eine Störungsstatistik schnell verbessert, prüfe, ob sich die Einordnung von Fällen geändert hat.\n- **Ausreißer finden, dann ausdünnen:** Für dein Cockpit heißt das: Kennzahlen gezielt einsetzen, um Auffälliges zu finden – und regelmäßig prüfen, welche man wieder abschaffen kann.\n- **Einordnung:** Das Kapitel betrifft vor allem das US-Gesundheitssystem. Muller wählt Studien, die seine These stützen; das Geisinger-Beispiel zeigt aber selbst, dass ein Teil leistungsabhängiger Bezahlung funktionieren kann, wenn er in eine Kultur fachlicher Mitgestaltung eingebettet ist.",
+   "frage": "Welche Kennzahl in meinem künftigen Bereich bewertet Ergebnisse, die das Team nur zum Teil selbst beeinflussen kann?",
+   "experiment": "**Unterscheide „in unserer Hand“ von „nur teilweise in unserer Hand“.**\n1. Nimm die Kennzahlenliste aus den früheren Teilen dieser Reihe.\n2. Markiere jede Kennzahl: Ergebnis liegt weitgehend in unserer Hand – oder hängt stark von äußeren Faktoren ab.\n3. Überlege für eine Kennzahl der zweiten Gruppe, welche Begleitinformation man braucht, um sie fair zu deuten.\n4. Prüfe, ob es eine Keystone-artige Checkliste gibt, die das Team selbst entwickeln könnte.",
+   "karten": [
+    {
+     "frage": "Welche drei Rollen von Kennzahlen unterscheidet Muller in der Medizin?",
+     "antwort": "Diagnostisch (intern lernen), öffentliche Berichte (Transparenz, Wettbewerb) und Bezahlung nach Leistung."
+    },
+    {
+     "frage": "Warum war das Keystone-Projekt erfolgreich?",
+     "antwort": "Fachleute nutzten eine einfache Checkliste und besprachen monatliche Daten intern; der Antrieb kam aus Berufsethos, Kollegenvergleich und der Einsicht, dass Infektionen vermeidbar sind."
+    },
+    {
+     "frage": "Wie sanken die Wiederaufnahmen in US-Kliniken zum Teil, ohne dass die Versorgung besser wurde?",
+     "antwort": "Rückkehrer wurden als ambulante Beobachtungsfälle statt als Aufnahme verbucht – etwa die Hälfte des Rückgangs ging darauf zurück."
+    }
+   ]
+  },
   {
    "id": "drive-20261116-1",
    "date": "2026-11-16",
@@ -828,7 +900,7 @@
    "reihe": {
     "buch": "The Intelligence Trap",
     "teil": 1,
-    "von": 4
+    "von": 11
    },
    "titel": "Warum kluge Köpfe besonders sicher danebenliegen",
    "quelle": {
