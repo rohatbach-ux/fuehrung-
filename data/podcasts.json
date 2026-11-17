@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T05:42:29.138Z",
+ "updated": "2026-11-17T05:14:15.419Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-c00fb9354a",
+     "title": "Auto: Elon Musk sieht, was deutsche Autobauer nicht sehen",
+     "date": "2026-11-17T04:57:00.000Z",
+     "duration": 562,
+     "audio": "https://audio.podigee-cdn.net/2645669-m-2d5aba94412118b105dd612b93f467ee.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2244-auto-elon-musk-sieht-was-deutsche-autobauer-nicht-sehen",
+     "desc": "Wo andere Autokonzerne schrumpfen, kündigt der US-Unternehmer eine milliardenschwere Investition an. Sieht er was im Standort, was andere nicht sehen?"
+    },
+    {
      "id": "morningbriefing-bed243c7b7",
      "title": "Nvidia: Gerüchte über ein Comeback des Gründers / SPD: Vorwärts, Genossen, in die Vergangenheit",
      "date": "2026-11-16T04:52:54.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2640053-m-5e37c92d2644ddc7dd209c64b550a623.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2241-bundesregierung-grosser-kompromiss-bei-kleinen-steuern",
      "desc": "Die Stromsteuersenkung kommt nicht, dafür aber auch weder Zucker- noch Plastiksteuer: Die Koalition geht mit einem Kompromiss in den entscheidenden Haushaltstag. Ein Problem bleibt."
-    },
-    {
-     "id": "morningbriefing-b0e7266b8b",
-     "title": "Steuern: Vereinfachen statt senken ? / Anthropic: Der zweitgrößte Börsengang aller Zeiten",
-     "date": "2026-11-11T04:55:59.000Z",
-     "duration": 492,
-     "audio": "https://audio.podigee-cdn.net/2640052-m-f3c1b4bfafc873b121832583dd7d5e14.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2240-steuern-vereinfachen-statt-senken-anthropic-der-zweitgrosste-borsengang-aller-zeiten",
-     "desc": "Legt der Finanzminister die Axt ans Ehegattensplitting? Das ist die falsche Frage. Ein anderes Versäumnis des Vizekanzlers sollte viel eher für Unmut sorgen."
     }
    ]
   },
