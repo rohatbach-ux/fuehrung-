@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T05:14:15.419Z",
+ "updated": "2026-11-18T05:17:48.005Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-8687962691",
+     "title": "Nvidia: Wachstum ohne Ende? / Deutsche Bank: Reputationsrisiko für Deutschland .",
+     "date": "2026-11-18T04:59:12.000Z",
+     "duration": 534,
+     "audio": "https://audio.podigee-cdn.net/2645670-m-b63502d6d9145beeca46f32aef064a8f.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2245-nvidia-wachstum-ohne-ende-deutsche-bank-reputationsrisiko-fur-deutschland",
+     "desc": "Wenige Tage nach dem Abgang des CEOs legt der Chiphersteller überraschend überragende Zahlen vor. Gründer Jensen Huang erklärt derweil, er könne sich eine Rückkehr vorstellen."
+    },
+    {
      "id": "morningbriefing-c00fb9354a",
      "title": "Auto: Elon Musk sieht, was deutsche Autobauer nicht sehen",
      "date": "2026-11-17T04:57:00.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2640054-m-20cf733d19e634034c9c1ef3fbc380ff.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2242-warum-mercedes-nicht-mehr-an-deutschland-glaubt",
      "desc": "Der älteste Autokonzern der Welt gibt sein Heimatland auf – mit einem drastischen Schritt. Was ein wenig nach Erpressung klingt, hat gut durchgerechnete Gründe."
-    },
-    {
-     "id": "morningbriefing-50ebdae6ad",
-     "title": "Bundesregierung: Großer Kompromiss bei kleinen Steuern",
-     "date": "2026-11-12T04:58:40.000Z",
-     "duration": 565,
-     "audio": "https://audio.podigee-cdn.net/2640053-m-5e37c92d2644ddc7dd209c64b550a623.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2241-bundesregierung-grosser-kompromiss-bei-kleinen-steuern",
-     "desc": "Die Stromsteuersenkung kommt nicht, dafür aber auch weder Zucker- noch Plastiksteuer: Die Koalition geht mit einem Kompromiss in den entscheidenden Haushaltstag. Ein Problem bleibt."
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-a1668a45b7",
+     "title": "Who Will Make a Great Leader? There’s a Test for That.",
+     "date": "2026-11-17T11:04:51.000Z",
+     "duration": 1719,
+     "audio": "https://audio.hbr.org/ideacast/20261112081333_714194-WhoWillMakeaGreatLeader_There_saTestforThat.mp3",
+     "link": "https://hbr.org/podcast/2026/11/who-will-make-a-great-leader-theres-a-test-for-that",
+     "desc": "Whether businesses are promoting from within or bringing in somebody from the outside, leaders must make a bet: Is this person going to innovate? Are they going to get the best out of people? Will they be collaborative? Have vision? Our guest today is David Deming, a professor of economics at Harvard University and Dean of Harvard College. He and his colleagues have developed science-backed, rigorous measures of what he calls, “squishy soft skills” like leadership, teamwork, management, and decision-making. Deming shares what he’s learned about the qualities of good leaders, how businesses …"
+    },
     {
      "id": "ideacast-eb1565373d",
      "title": "What Customers Really Value—and Why Leaders Keep Getting It Wrong",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260904142646_136519-ALeadingRestaurateuronWhatItTakestoScaleaWinningCulture.mp3",
      "link": "https://hbr.org/podcast/2026/09/a-leading-restaurateur-on-what-it-takes-to-scale-a-winning-culture",
      "desc": "When a company is small, maintaining a strong culture can feel relatively easy. But as organizations grow, layers of management, geographic distance, and pressure for efficiency can make it much harder to preserve what made the company special in the first place. Restaurateur Danny Meyer has spent decades figuring out how to do just that. He founded Union Square Cafe and built Union Square Hospitality Group, then helped scale Shake Shack from a single location in New York City into a global restaurant chain. Along the way, he’s learned that culture isn’t what happens when the CEO is in the …"
-    },
-    {
-     "id": "ideacast-d3c5862bbe",
-     "title": "Are Great Leaders Truly Great—or Just Lucky?",
-     "date": "2026-09-01T11:09:06.000Z",
-     "duration": 1516,
-     "audio": "https://audio.hbr.org/ideacast/20260831131847-AreGreatLeadersTrulyGreatorJustLucky_.mp3",
-     "link": "https://hbr.org/podcast/2026/09/are-great-leaders-truly-great-or-just-lucky",
-     "desc": "How much does a leader actually matter to an organization’s success? We tend to credit CEOs, founders, and other powerful figures with shaping the institutions they lead, but historian Jared Diamond argues that we often underestimate the role of timing, circumstance, industry, and plain luck. Diamond explains his “Hamlet test,” which asks whether someone else could have achieved the same outcome or whether the leader was uniquely qualified to do it, and how it applies to many business leaders. He also explains why some leaders are able to seize a fleeting moment of opportunity, why founders…"
     }
    ]
   }
