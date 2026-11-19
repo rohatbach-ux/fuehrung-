@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T05:17:48.005Z",
+ "updated": "2026-11-19T05:21:51.275Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-2947514549",
+     "title": "IT: Wie ein hybrider Krieg ohne Krieger",
+     "date": "2026-11-19T04:55:22.000Z",
+     "duration": 547,
+     "audio": "https://audio.podigee-cdn.net/2645671-m-aa79639ac2693bd9ad561bc3461724f2.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2246-it-wie-ein-hybrider-krieg-ohne-krieger",
+     "desc": "Microsoft, Apple und die NSA in den USA, Supermärkte und Universitäten in Europa: Die Welt leidet unter einer Flut an IT-Ausfällen. Das KI-Zeitalter sorgt für eine neue Verwundbarkeit."
+    },
+    {
      "id": "morningbriefing-8687962691",
      "title": "Nvidia: Wachstum ohne Ende? / Deutsche Bank: Reputationsrisiko für Deutschland .",
      "date": "2026-11-18T04:59:12.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2649020-m-fccaba6734b795541a31f7ac1eb1986d.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2249-podcast-tipp-made-in-berlin-wirtschaftspolitik-und-was-sie-fur-euch-bedeutet",
      "desc": "Der neue Wirtschaftspolitik-Podcast vom Handelsblatt"
-    },
-    {
-     "id": "morningbriefing-d4ca6dbbbf",
-     "title": "Warum Mercedes nicht mehr an Deutschland glaubt",
-     "date": "2026-11-13T04:57:54.000Z",
-     "duration": 520,
-     "audio": "https://audio.podigee-cdn.net/2640054-m-20cf733d19e634034c9c1ef3fbc380ff.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2242-warum-mercedes-nicht-mehr-an-deutschland-glaubt",
-     "desc": "Der älteste Autokonzern der Welt gibt sein Heimatland auf – mit einem drastischen Schritt. Was ein wenig nach Erpressung klingt, hat gut durchgerechnete Gründe."
     }
    ]
   },
