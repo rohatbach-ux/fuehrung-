@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T05:21:51.275Z",
+ "updated": "2026-11-20T05:18:59.631Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-65c621b7bc",
+     "title": "Die drei Lehren aus dem größten Börsengang aller Zeiten",
+     "date": "2026-11-20T04:55:29.000Z",
+     "duration": 512,
+     "audio": "https://audio.podigee-cdn.net/2645672-m-807dee5f12bba485e95eb5e6bb5e7200.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2247-die-drei-lehren-aus-dem-grossten-borsengang-aller-zeiten",
+     "desc": "Anthropic startet mit einer Rekordbewertung. Doch die Börse zieht das nur bedingt mit. Und die größte Herausforderung ist nicht der erste Handelstag."
+    },
+    {
      "id": "morningbriefing-2947514549",
      "title": "IT: Wie ein hybrider Krieg ohne Krieger",
      "date": "2026-11-19T04:55:22.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2640055-m-24c2e48e2335b5a6cb45a7f71d653a17.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2243-nvidia-geruchte-uber-ein-comeback-des-grunders-spd-vorwarts-genossen-in-die-vergangenheit",
      "desc": "Plant der geschasste CEO seine Rückkehr an die Spitze des Chip-Konzerns? Während der politische Druck auf Nvidia wächst, formiert sich im Silicon Valley Unterstützung."
-    },
-    {
-     "id": "morningbriefing-d4c88233b4",
-     "title": "Podcast-Tipp: Made in Berlin – Wirtschaftspolitik und was sie für euch bedeutet",
-     "date": "2026-11-14T07:00:00.000Z",
-     "duration": 84,
-     "audio": "https://audio.podigee-cdn.net/2649020-m-fccaba6734b795541a31f7ac1eb1986d.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2249-podcast-tipp-made-in-berlin-wirtschaftspolitik-und-was-sie-fur-euch-bedeutet",
-     "desc": "Der neue Wirtschaftspolitik-Podcast vom Handelsblatt"
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-201068811c",
+     "title": "Innovation Summit 2026: Block’s Jack Dorsey on Building a Company Around Intelligence",
+     "date": "2026-11-19T11:09:30.000Z",
+     "duration": 2185,
+     "audio": "https://audio.hbr.org/ideacast/20261118072624_894716-InnovationSummit2026_Block_sJackDorseyonBuildingaCompanyAroundIntelligence.mp3",
+     "link": "https://hbr.org/podcast/2026/11/innovation-summit-2026-blocks-jack-dorsey-on-building-a-company-around-intelligence",
+     "desc": "The biggest obstacle to getting more value from AI may not be the technology, but the way your company is organized. Block Head, Chairman and Cofounder Jack Dorsey sat down with Executive Editor Alison Beard at HBR’s recent Innovation Summit event to explain how he's rethinking traditional hierarchies, redefining the role of managers, and using AI to help employees make faster, better-informed decisions. He shares his approach to leading disruptive organizational change, encouraging AI adoption, and developing the human judgment that becomes even more valuable as technology advances. Our ne…"
+    },
     {
      "id": "ideacast-a1668a45b7",
      "title": "Who Will Make a Great Leader? There’s a Test for That.",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260914123952_772802-WhatItTakestoMakeProgressWhentheFutureFeelsOutofControl.mp3",
      "link": "https://hbr.org/podcast/2026/09/what-it-takes-to-make-progress-when-the-future-feels-out-of-control",
      "desc": "When the future feels increasingly out of our control, how can leaders and organizations make progress? University of Pennsylvania psychologist Martin Seligman, a pioneer in the study of optimism, resilience, and human flourishing, argues that the answer is agency: the belief that we can influence outcomes and create positive change. He defines agency as a combination of three capabilities: efficacy—the belief that you can achieve a goal now; optimism—the belief that you can achieve it in the future; and imagination—the ability to envision possibilities that don't yet exist. And he explains…"
-    },
-    {
-     "id": "ideacast-fd19e03a9c",
-     "title": "A Leading Restaurateur on What It Takes to Scale a Winning Culture",
-     "date": "2026-09-08T11:03:19.000Z",
-     "duration": 1913,
-     "audio": "https://audio.hbr.org/ideacast/20260904142646_136519-ALeadingRestaurateuronWhatItTakestoScaleaWinningCulture.mp3",
-     "link": "https://hbr.org/podcast/2026/09/a-leading-restaurateur-on-what-it-takes-to-scale-a-winning-culture",
-     "desc": "When a company is small, maintaining a strong culture can feel relatively easy. But as organizations grow, layers of management, geographic distance, and pressure for efficiency can make it much harder to preserve what made the company special in the first place. Restaurateur Danny Meyer has spent decades figuring out how to do just that. He founded Union Square Cafe and built Union Square Hospitality Group, then helped scale Shake Shack from a single location in New York City into a global restaurant chain. Along the way, he’s learned that culture isn’t what happens when the CEO is in the …"
     }
    ]
   }
