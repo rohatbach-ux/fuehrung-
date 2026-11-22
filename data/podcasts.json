@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T05:18:59.631Z",
+ "updated": "2026-11-22T05:13:55.123Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-d0882953f9",
+     "title": "Podcast-Tipp: Wie sicher sind wir? Realitycheck zu Verteidigung, Rüstung und Sicherheit",
+     "date": "2026-11-21T07:00:00.000Z",
+     "duration": 88,
+     "audio": "https://audio.podigee-cdn.net/2649023-m-5eea5cd00cc97364f92c2cdc04944f4a.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2250-podcast-tipp-wie-sicher-sind-wir-realitycheck-zu-verteidigung-rustung-und-sicherheit",
+     "desc": "Neue Bedrohungen, alte Allianzen im Wandel: Was heißt das für Deutschland? Markus Fasse (Handelsblatt) und Nana Brink (Tagesspiegel Background) diskutieren jede Woche, wie gut Politik, Bundeswehr und Industrie gewappnet sind."
+    },
+    {
      "id": "morningbriefing-65c621b7bc",
      "title": "Die drei Lehren aus dem größten Börsengang aller Zeiten",
      "date": "2026-11-20T04:55:29.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2645669-m-2d5aba94412118b105dd612b93f467ee.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2244-auto-elon-musk-sieht-was-deutsche-autobauer-nicht-sehen",
      "desc": "Wo andere Autokonzerne schrumpfen, kündigt der US-Unternehmer eine milliardenschwere Investition an. Sieht er was im Standort, was andere nicht sehen?"
-    },
-    {
-     "id": "morningbriefing-bed243c7b7",
-     "title": "Nvidia: Gerüchte über ein Comeback des Gründers / SPD: Vorwärts, Genossen, in die Vergangenheit",
-     "date": "2026-11-16T04:52:54.000Z",
-     "duration": 515,
-     "audio": "https://audio.podigee-cdn.net/2640055-m-24c2e48e2335b5a6cb45a7f71d653a17.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2243-nvidia-geruchte-uber-ein-comeback-des-grunders-spd-vorwarts-genossen-in-die-vergangenheit",
-     "desc": "Plant der geschasste CEO seine Rückkehr an die Spitze des Chip-Konzerns? Während der politische Druck auf Nvidia wächst, formiert sich im Silicon Valley Unterstützung."
     }
    ]
   },
