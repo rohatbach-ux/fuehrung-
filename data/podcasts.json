@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T05:13:55.123Z",
+ "updated": "2026-11-23T05:33:51.402Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-d5f49a413c",
+     "title": "Der Panik-Index an der Börse steht auf neun von zehn",
+     "date": "2026-11-23T04:55:29.000Z",
+     "duration": 521,
+     "audio": "https://audio.podigee-cdn.net/2645673-m-9d453c6eee17860f825c5d5b83e299fd.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2248-der-panik-index-an-der-borse-steht-auf-neun-von-zehn",
+     "desc": "Nach dem schwarzen Freitag für Tech-Aktien spricht an den Märkten nur wenig für Besserung. Das liegt an der KI‑Delle – und einer verlockenden Alternative für viele Anleger."
+    },
+    {
      "id": "morningbriefing-d0882953f9",
      "title": "Podcast-Tipp: Wie sicher sind wir? Realitycheck zu Verteidigung, Rüstung und Sicherheit",
      "date": "2026-11-21T07:00:00.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2645670-m-b63502d6d9145beeca46f32aef064a8f.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2245-nvidia-wachstum-ohne-ende-deutsche-bank-reputationsrisiko-fur-deutschland",
      "desc": "Wenige Tage nach dem Abgang des CEOs legt der Chiphersteller überraschend überragende Zahlen vor. Gründer Jensen Huang erklärt derweil, er könne sich eine Rückkehr vorstellen."
-    },
-    {
-     "id": "morningbriefing-c00fb9354a",
-     "title": "Auto: Elon Musk sieht, was deutsche Autobauer nicht sehen",
-     "date": "2026-11-17T04:57:00.000Z",
-     "duration": 562,
-     "audio": "https://audio.podigee-cdn.net/2645669-m-2d5aba94412118b105dd612b93f467ee.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2244-auto-elon-musk-sieht-was-deutsche-autobauer-nicht-sehen",
-     "desc": "Wo andere Autokonzerne schrumpfen, kündigt der US-Unternehmer eine milliardenschwere Investition an. Sieht er was im Standort, was andere nicht sehen?"
     }
    ]
   },
