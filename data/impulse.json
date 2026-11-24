@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-23T04:08:20+00:00",
+ "updated": "2026-11-24T04:08:23+00:00",
  "items": [
+  {
+   "id": "drive-20261124-1",
+   "date": "2026-11-24",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 10,
+    "von": 11
+   },
+   "titel": "Führungskompetenz entwickeln: Feedback, Coaching, Selbststudium",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), Kapitel 3 und 4",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Führungskompetenz wächst über fünf Wege: Feedback, Seminare, Action Learning, Coaching und Selbststudium. Am schwersten ist Feedback – es muss das Verhalten treffen, nicht die Person, und darf Lob nicht im Nachsatz entwerten. Seminare scheitern oft am Transfer; Coaching und Lernen an echten Problemen wirken nachhaltiger.",
+   "deutsch": "> **„Wer zweimal zu spät kommt, ist noch nicht pauschal unzuverlässig.“** – nach Heiko Frerichs\n\n## 🔗 Anschluss an Teil 9\nIn Teil 9 ging es um Mikropolitik und Auftreten. Kapitel 3 und 4 fragen zum Schluss: Wie entwickelt man diese Kompetenzen weiter? Frerichs nennt fünf Wege – Feedbackinstrumente, Fort- und Weiterbildung, Action Learning, Coaching und informelles Lernen.\n\n## 🗣️ Feedback geben\nFür Frerichs eine der wichtigsten und schwierigsten Führungsaufgaben – zumal die mittlere Führungskraft oft nur Überbringerin schlechter Nachrichten ist und trotzdem den Ärger abbekommt.\n\n**Fehler 1 – die Person statt des Verhaltens bewerten:**\n- „Du bist vielleicht schlampig!“\n- „Schon wieder eine Reklamation! Du bist unmöglich!“\n- „Du bist total unzuverlässig!“\n\nWer einmal einen dummen Fehler macht oder vor Nervosität etwas nicht gleich versteht, ist nicht dumm. Auch Sarkasmus, Ironie und schwarzer Humor führen in der Praxis zu Missverständnissen bis hin zu schweren Konflikten.\n\n**Fehler 2 – Lob im Nachsatz entwerten:**\n- „Gut hinbekommen – hätte ich gar nicht von dir gedacht.“\n- „Nicht perfekt, aber besser als nichts.“\n- „Lief gut, aber da hattest du auch Glück.“\n- „Super Zahlen – dann schaffen Sie nächstes Quartal sicher das Doppelte.“\n\n**Zwei Techniken:**\n| Technik | Ablauf | Für wen |\n|---|---|---|\n| **Sandwich** | Positives → sachliche Kritik am konkreten Verhalten → Positives und Dank fürs Zuhören | allgemein; Kritiker halten sie für verwässernd, Frerichs für diplomatisch |\n| **Stufen-Technik** | Dank → konkret benennen, was schon sehr gut war → „Wenn du beim nächsten Mal noch X änderst, ist es perfekt.“ | kritikempfindliche, perfektionistische Menschen mit geringem Selbstwert |\n\n## 👂 Feedback empfangen\nFührungskräftebeurteilungen sind in Großunternehmen üblich, online oder auf Papier. Negative Ergebnisse tun weh; viele Führungskräfte reagieren gekränkt und enttäuscht statt lösungsorientiert. Besonders Sachorientierte verstehen nicht, warum die Beziehung so stark zählt: „Mein Team hatte doch alle Ressourcen!“ Frerichs' Rat: Kritik gilt meist der **Rolle**, nicht dem Menschen. Gibt das Team allen Grund zur Ablehnung, sollte man ernsthaft prüfen, ob die Aufgabe passt.\n\n## 🎓 Seminare, Action Learning, Coaching, Selbststudium\n- **Seminare** vermitteln Werkzeuge und ein Bewusstsein für die Rolle, haben aber ein **Transferproblem**. Danach muss man sortieren: Was übernehme ich? Was passt zu mir und zum Team? Was war neu? Was probiere ich ab jetzt aus? Meist bleibt wenig, weil Verhalten an Einstellungen hängt.\n- **Action Learning:** Einzelne oder Gruppen lernen an **echten Problemen** der Organisation; nebenbei entwickelt sich die Persönlichkeit, weil man sich mit Gruppendynamik und eigenem Erleben auseinandersetzen muss. In Deutschland wenig verbreitet.\n- **Coaching:** Der Coach ist kein Lösungslieferant, sondern Sparringspartner – Hilfe zur Selbsthilfe durch Methoden und kluge Fragen. Für erfahrene Führungskräfte oft wirksamer als Seminare: echte Fälle, geschützter Raum, Hausaufgaben. Den Coach nach Sympathie wählen.\n- **Selbstreflexion** als Voraussetzung: über Körpergefühl und bewusstes Nachdenken, als systematischer Abgleich von Selbst- und Fremdbild – bis gute Vorsätze zu Taten werden.\n- **Selbststudium:** E-Books, Onlinekurse, Podcasts, Hörbücher im Auto („fahrende Universität“), Spielfilme und Dokumentationen.\n\n## ❓ Zehn Fragen zur Selbstprüfung (Kapitel 4)\n1. Worin unterscheiden sich die Anforderungen an Topmanagement und mittlere Führung?\n2. Was bedeutet „Führen in der Sandwich-Position“?\n3. Was sind meine größten Herausforderungen im Tagesgeschäft – und welche Lösungen habe ich gefunden?\n4. Warum ist Beziehungsgestaltung so wichtig, und welche Rolle spielt Empathie?\n5. Welche Kernkompetenzen helfen mir in meiner Rolle?\n6. Wo habe ich Defizite, an denen ich dringend arbeiten sollte?\n7. Welche Stärken würden mir Team **und** Vorgesetzte bestätigen?\n8. Was sind meine größten Ängste als Führungskraft – und was habe ich dagegen unternommen?\n9. Warum hilft es, die Bedürfnisse und Werte meiner Mitarbeitenden zu kennen?\n10. Welche Entwicklungsmaßnahmen habe ich besucht – und welche hat mir am meisten gebracht?",
+   "modul": "selbst",
+   "bezug_ih": "- **Feedback in der IH:** Gerade unter Zeitdruck nach einer Störung rutschen Sätze wie „Schon wieder!“ heraus. Benenne das konkrete Verhalten und die Folge – „Die Sperrpause wurde um 40 Minuten überzogen, weil die Freigabe fehlte“ – statt die Person.\n- **Die zehn Fragen vor dem Antritt:** Beantworte sie schriftlich vor dem 01.01.2027 und noch einmal nach 100 Tagen. Frage 7 lässt sich nur mit Rückmeldungen beantworten – hol dir dafür bewusst zwei ehrliche Stimmen aus deinem jetzigen Bereich.\n- **Transfer statt Seminarsammlung:** Die vier Transferfragen passen auch auf das, was du hier im Führungskompass liest: Was übernehme ich? Was passt zu Hagen? Was probiere ich als Nächstes aus?\n- **Action Learning bei der DB:** Kollegiale Fallberatung unter Führungskräften und die Programme der Führungskräfteentwicklung arbeiten oft nach diesem Prinzip. Ein eigenes, echtes Problem einzubringen, bringt mehr als ein Seminar.\n- **Einordnung:** Für Coaching zeigen Metaanalysen mittlere positive Effekte auf Leistung und Wohlbefinden. Die Sandwich-Technik ist umstritten, weil Lob unglaubwürdig wird und die Kritik untergehen kann. Der Satz „dann ist es perfekt“ der Stufen-Technik kann Perfektionismus eher verstärken. Frerichs empfiehlt E-Books des Verlags, in dem sein eigenes Buch erschienen ist.",
+   "frage": "Welche der zehn Fragen fällt mir am schwersten – und was sagt das über mein nächstes Entwicklungsfeld?",
+   "experiment": "**Eine Woche Feedback ohne Etiketten.**\n1. Achte eine Woche lang auf jedes Feedback, das du gibst – auch beiläufig.\n2. Notiere jedes Mal: Habe ich Verhalten beschrieben oder die Person bewertet? Habe ich Lob im Nachsatz relativiert?\n3. Formuliere zwei misslungene Rückmeldungen nachträglich um: konkretes Verhalten, beobachtete Folge, Wunsch für das nächste Mal.\n4. Bitte am Ende eine Person, die du gut kennst, um ehrliches Feedback zu deiner Art, Rückmeldung zu geben.",
+   "karten": [
+    {
+     "frage": "Welche fünf Wege zur Entwicklung von Führungskompetenz nennt Frerichs?",
+     "antwort": "Feedbackinstrumente, Fort- und Weiterbildung, Action Learning, Coaching und informelles Lernen bzw. Selbststudium."
+    },
+    {
+     "frage": "Welche zwei typischen Feedbackfehler beschreibt Frerichs?",
+     "antwort": "Die Person statt des Verhaltens bewerten („Du bist unzuverlässig“) und Lob im Nachsatz entwerten oder sofort die Ziele erhöhen."
+    },
+    {
+     "frage": "Wie funktioniert die Stufen-Technik?",
+     "antwort": "Danken, konkret benennen, was schon sehr gut war, und dann sagen, welche Änderung beim nächsten Mal das Ergebnis perfekt macht – gedacht für kritikempfindliche, perfektionistische Menschen."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261124-2",
+   "date": "2026-11-24",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Intelligence Trap",
+    "teil": 7,
+    "von": 11
+   },
+   "titel": "Ein Werkzeugkasten gegen Unsinn: Warum Glattes glaubwürdig wirkt",
+   "quelle": {
+    "name": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019), Kapitel 6",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Wir halten für wahr, was vertraut klingt und sich leicht verarbeiten lässt – Reime, gut lesbare Schrift, Bilder und Wiederholung machen Aussagen glaubwürdiger, ohne etwas zu beweisen. Dagegen hilft nicht mehr Wissen, sondern kognitive Reflexion und eine gezielte „Impfung“ mit Beispielen für Täuschungstricks.",
+   "deutsch": "> **„Die Lüge fliegt, und die Wahrheit humpelt hinterher.“** – Jonathan Swift, zitiert bei Robson\n\n## 🔗 Anschluss an Teil 6\nIn Teil 6 ging es darum, Gefühle und Bauchgefühl zu prüfen. Kapitel 6 wendet dasselbe auf Informationen an: Warum fallen auch Gebildete auf Gerüchte und Falschmeldungen herein – und wie schützt man sich?\n\n## 🍌 Der Ausgangsfall\nUm 2000 verbreitete sich eine Kettenmail: Bananen aus Mittelamerika übertrügen eine fleischfressende Krankheit. Die Gesundheitsbehörde CDC dementierte – doch die Menschen vergaßen das Dementi und behielten das Schreckensbild. Die Behörde musste eine Bananen-Hotline einrichten. Unter den Ersten, die das Gerücht nach Kanada brachten, war eine Mitarbeiterin einer medizinischen Fakultät. Akademiker glauben zwar seltener an politische Verschwörungen, aber etwas häufiger an medizinische Falschinformation.\n\n## ✨ „Wahrheitsgefühl“: Vertrautheit und Leichtigkeit\nNorbert Schwarz und Eryn Newman zeigen: Unser Gefühl, etwas sei wahr, speist sich aus zwei Signalen – **Vertrautheit** (Habe ich das schon gehört?) und **Leichtigkeit** (Lässt es sich mühelos verarbeiten?). Beides merken wir meist nicht.\n\n**Was eine Aussage glaubwürdiger macht, ohne etwas zu beweisen:**\n| Trick | Befund im Buch |\n|---|---|\n| **Stimmiger Gesamteindruck** | „Wie viele Tiere nahm Moses mit auf die Arche?“ – nur 12 Prozent kluger Studierender bemerkten, dass es Noah war. |\n| **Gut lesbare Schrift** | In schöner Schrift fällt man eher auf die Moses-Frage herein als in schwer lesbarer. |\n| **Vertrauter Akzent, leicht aussprechbarer Name** | Wir glauben eher Menschen mit vertrautem Akzent und kaufen eher bei Händlern mit leicht aussprechbarem Namen – unabhängig von der Bewertung. |\n| **Reim** | „Woes unite foes“ wirkt wahrer als die inhaltsgleiche Fassung ohne Reim. |\n| **Bild oder Detail ohne Beweiskraft** | Die Aussage „Nick Cave ist tot“ wirkte mit einem beliebigen Foto des Sängers glaubwürdiger; ein Hirnscan macht Pseudowissenschaft überzeugender. |\n| **Wiederholung** | Dieselbe Aussage dreimal von derselben Person überzeugt fast so sehr wie von drei verschiedenen Personen – „man verfolgt nicht, wer was gesagt hat“. |\n\nDie Tabakindustrie nutzte das gezielt: Sie ließ Wissenschaftler immer wieder Zweifel säen, „ohne die Gesundheitsgefahr direkt zu bestreiten“. Eine kleine, laute Minderheit klingt so wie ein Chor.\n\n## 🔄 Warum Richtigstellungen oft scheitern\n- Ein Faltblatt der CDC, das Impfmythen widerlegte, führte dazu, dass Studierende nach 30 Minuten 15 Prozent der Mythen als Fakten erinnerten – und seltener impfen wollten.\n- Eine Richtigstellungskampagne für das Mundwasser Listerine über 16 Monate und 10 Millionen Dollar wirkte kaum.\n- **Was besser wirkt (nach John Cook und Stephan Lewandowsky):** die Tatsache in den Vordergrund stellen, den Mythos möglichst nicht wiederholen („Grippeimpfungen sind sicher und wirksam“ statt „Mythos: Impfungen machen krank“), wenige starke Belege statt vieler, und Begriffe wählen, die keine Identität angreifen. Die WHO übernahm diese Leitlinien 2017.\n\n## 🧮 Kognitive Reflexion\nDer Test hat drei Fragen mit verlockend falscher Antwort – etwa: Schläger und Ball kosten zusammen 1,10 Dollar, der Schläger 1 Dollar mehr als der Ball; was kostet der Ball? (Nicht 10, sondern 5 Cent.) Die meisten, auch an Eliteuniversitäten, lösen nur eine oder zwei.\n\nGordon Pennycook zeigte: Wer hier gut abschneidet, glaubt seltener an Magie und alternative Medizin, hält „pseudotiefsinnige“ Sätze („Verborgene Bedeutung verwandelt unvergleichliche abstrakte Schönheit“) seltener für tief und unterscheidet echte von falschen Schlagzeilen besser – **unabhängig von der eigenen politischen Haltung** und auch bei gleicher Intelligenz. Sein Satz: „Wer nicht bereit ist zu denken, ist praktisch gesprochen nicht intelligent.“\n\n## 💉 Die Impfung gegen Täuschung\nCook und Lewandowsky zeigten Teilnehmern zuerst, wie die Tabakindustrie mit **falschen Experten** arbeitete. Danach ließen sie sich von einer Petition angeblicher 31.000 Wissenschaftler gegen den menschengemachten Klimawandel nicht mehr beeindrucken – über alle politischen Lager hinweg. Eine Impfung in einem Feld schützte in einem anderen. Ein Semesterkurs mit echten Beispielen verringerte den Glauben an Pseudowissenschaft und verbesserte das kritische Denken allgemein.\n\n**Robsons Fragen:**\n1. Wer behauptet das, mit welcher Qualifikation und welchem Motiv?\n2. Auf welchen Annahmen beruht die Behauptung, und wo könnten sie falsch sein?\n3. Was sind meine eigenen Annahmen, und wo könnten sie falsch sein?\n4. Welche anderen Erklärungen gibt es?\n5. Was ist der Beleg, und wie schneidet er gegenüber der Alternative ab?\n6. Welche Information fehlt noch für ein Urteil?\n\nDazu: Prüfen, ob Bilder und Geschichten etwas belegen oder nur die Sache flüssiger machen, ob wirklich verschiedene Stimmen übereinstimmen und ob man jemandem nur wegen des vertrauten Tonfalls glaubt.\n\n**Michael Shermers Warnung vor „Anomalien als Beweis“:** Verschwörungsdenken stützt sich oft auf ein einzelnes Rätsel und will damit eine große Menge an Belegen umstoßen. Vor dem Umstoßen erst andere Erklärungen prüfen. Und: bei unstrittigen Themen üben, bevor man an tief verwurzelte Überzeugungen geht; wer kurz aufschreibt, was ihm wichtig ist, verteidigt seine Meinung weniger verbissen.",
+   "modul": "urteil",
+   "bezug_ih": "- **Gerüchte bei Veränderungen:** Bei Umorganisationen sind Gerüchte schneller als Fakten. Formuliere Klarstellungen so, dass die Tatsache vorne steht, und wiederhole das Gerücht möglichst nicht. Das passt zu Frerichs' Regel aus Teil 6, Gerüchte klar als Gerüchte zu kennzeichnen.\n- **Lautstärke ist keine Mehrheit:** Wenn in einer Runde dieselbe Person ein Argument dreimal bringt, wirkt es wie Konsens. Frag ausdrücklich, wer das noch so sieht.\n- **Glatte Folien prüfen:** Hochglanzpräsentationen von Auftragnehmern oder Projekten wirken überzeugend, auch wenn die Bilder nichts belegen. Robsons sechs Fragen passen gut auf Angebote, Gutachten und Statusberichte.\n- **Anomalie: prüfen, nicht verwerfen:** In der Instandhaltung kann ein einzelner auffälliger Messwert das erste Warnzeichen sein. Shermers Lehre heißt nicht „Ausreißer ignorieren“, sondern: Ein Ausreißer ist ein Anlass zu prüfen, kein Beweis, dass alle anderen Daten falsch sind.\n- **Einordnung:** Pennycooks Befunde und die Impf-Methode („Prebunking“) gelten als gut belegt. Die Warnung, schon das Erwähnen eines Mythos verstärke ihn, hat sich in neueren Studien als seltener erwiesen als befürchtet; das aktualisierte Handbuch von Cook und Lewandowsky (2020) empfiehlt deshalb, den Mythos einmal kurz zu nennen, aber in die Tatsachen einzubetten. Der Test zur kognitiven Reflexion ist so bekannt geworden, dass viele die Antworten kennen.",
+   "frage": "Welche Überzeugung über meinen künftigen Bereich habe ich so oft gehört, dass sie sich wahr anfühlt – ohne dass ich weiß, wer sie belegt hat?",
+   "experiment": "**Robsons sechs Fragen an einer echten Behauptung.**\n1. Wähle eine Aussage, die dir in den letzten Wochen mehrfach begegnet ist – über Hagen, eine Maßnahme oder eine Person.\n2. Geh die sechs Fragen schriftlich durch: Wer, welche Annahmen, meine Annahmen, Alternativen, Belege, fehlende Information.\n3. Notiere, wie viele verschiedene Quellen du wirklich hast – oder ob es dieselbe Stimme mehrfach war.\n4. Entscheide, was du glaubst, was du offen lässt und wen du fragst.",
+   "karten": [
+    {
+     "frage": "Aus welchen zwei Gefühlen entsteht laut Schwarz und Newman das „Wahrheitsgefühl“?",
+     "antwort": "Aus Vertrautheit (habe ich das schon gehört?) und Leichtigkeit (lässt es sich mühelos verarbeiten?)."
+    },
+    {
+     "frage": "Wie sollte man laut Cook und Lewandowsky einen Mythos richtigstellen?",
+     "antwort": "Die Tatsache in den Vordergrund stellen, den Mythos möglichst wenig wiederholen, wenige starke Belege nutzen und Begriffe wählen, die keine Identität angreifen."
+    },
+    {
+     "frage": "Was zeigte die „Impfung“ gegen falsche Experten?",
+     "antwort": "Wer zuerst die Tricks der Tabakindustrie kennenlernte, ließ sich danach von einer Petition angeblicher Klimaexperten nicht mehr täuschen – über alle politischen Lager hinweg."
+    }
+   ]
+  },
   {
    "id": "drive-20261123-1",
    "date": "2026-11-23",
@@ -116,7 +188,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 9,
-    "von": 10
+    "von": 11
    },
    "titel": "Mikropolitik: Macht oben, Kontakte unten, Selbstvermarktung",
    "quelle": {
@@ -152,7 +224,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 8,
-    "von": 10
+    "von": 11
    },
    "titel": "Delegieren, priorisieren, Vertrauen vorschießen",
    "quelle": {
@@ -332,7 +404,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 7,
-    "von": 10
+    "von": 11
    },
    "titel": "Entscheiden, konsequent handeln, Vorbild sein",
    "quelle": {
@@ -368,7 +440,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 6,
-    "von": 10
+    "von": 11
    },
    "titel": "Rituale der Wertschätzung und verbindliche Worte",
    "quelle": {
@@ -512,7 +584,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 5,
-    "von": 10
+    "von": 11
    },
    "titel": "Aufgabe oder Beziehung – und was man von Klopp lernen kann",
    "quelle": {
@@ -776,7 +848,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 4,
-    "von": 10
+    "von": 11
    },
    "titel": "Gefühle zeigen, was gebraucht wird",
    "quelle": {
@@ -896,7 +968,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 3,
-    "von": 10
+    "von": 11
    },
    "titel": "Sieben Tugenden als Kompass in der Mitte",
    "quelle": {
@@ -1212,7 +1284,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 2,
-    "von": 10
+    "von": 11
    },
    "titel": "Theorie X oder Y: Dein Menschenbild führt mit",
    "quelle": {
@@ -1570,7 +1642,7 @@
    "reihe": {
     "buch": "Führen in der Sandwich-Position",
     "teil": 1,
-    "von": 10
+    "von": 11
    }
   },
   {

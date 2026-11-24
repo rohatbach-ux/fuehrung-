@@ -119,10 +119,16 @@
      "teil": 10,
      "thema": "Führungskompetenz entwickeln: Feedback, Action Learning, Coaching, Selbststudium",
      "kapitel": "3, 4",
+     "impuls": "drive-20261124-1"
+    },
+    {
+     "teil": 11,
+     "thema": "Synthese: fünf Kernkompetenzen im Überblick, Transfer in die Führung der IH, offene Fragen",
+     "kapitel": "gesamt",
      "impuls": null
     }
    ],
-   "zuletzt": "2026-11-22"
+   "zuletzt": "2026-11-24"
   },
   {
    "h": "0698843d04db",
@@ -272,7 +278,7 @@
    "buch": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019)",
    "status": "in_arbeit",
    "begonnen": "2026-11-17",
-   "zuletzt": "2026-11-23",
+   "zuletzt": "2026-11-24",
    "plan": [
     {
      "teil": 1,
@@ -314,7 +320,7 @@
      "teil": 7,
      "thema": "Ein Werkzeugkasten gegen Unsinn: Flüssigkeit, Falschinformation, kognitive Impfung",
      "kapitel": "6",
-     "impuls": null
+     "impuls": "drive-20261124-2"
     },
     {
      "teil": 8,
