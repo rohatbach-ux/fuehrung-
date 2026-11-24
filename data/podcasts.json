@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T05:33:51.402Z",
+ "updated": "2026-11-24T05:23:22.872Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-32db820ad0",
+     "title": "Nvidia: Die wundersame Rückkehr des Gründers / Haushalt: Die Schuldentricks des Lars Klingbeil",
+     "date": "2026-11-24T04:50:19.000Z",
+     "duration": 536,
+     "audio": "https://audio.podigee-cdn.net/2652050-m-15f954832c8b85921869667967aae263.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2251-nvidia-die-wundersame-ruckkehr-des-grunders-haushalt-die-schuldentricks-des-lars-klingbeil",
+     "desc": "Die überraschende Rückkehr von Nvidia-Chef Jensen Huang zeigt die tiefen Philosophieunterschiede mit Blick auf den Fortschritt. Dennoch ist die Strategie von US-Präsident Donald Trump riskant"
+    },
+    {
      "id": "morningbriefing-d5f49a413c",
      "title": "Der Panik-Index an der Börse steht auf neun von zehn",
      "date": "2026-11-23T04:55:29.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2645671-m-aa79639ac2693bd9ad561bc3461724f2.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2246-it-wie-ein-hybrider-krieg-ohne-krieger",
      "desc": "Microsoft, Apple und die NSA in den USA, Supermärkte und Universitäten in Europa: Die Welt leidet unter einer Flut an IT-Ausfällen. Das KI-Zeitalter sorgt für eine neue Verwundbarkeit."
-    },
-    {
-     "id": "morningbriefing-8687962691",
-     "title": "Nvidia: Wachstum ohne Ende? / Deutsche Bank: Reputationsrisiko für Deutschland .",
-     "date": "2026-11-18T04:59:12.000Z",
-     "duration": 534,
-     "audio": "https://audio.podigee-cdn.net/2645670-m-b63502d6d9145beeca46f32aef064a8f.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2245-nvidia-wachstum-ohne-ende-deutsche-bank-reputationsrisiko-fur-deutschland",
-     "desc": "Wenige Tage nach dem Abgang des CEOs legt der Chiphersteller überraschend überragende Zahlen vor. Gründer Jensen Huang erklärt derweil, er könne sich eine Rückkehr vorstellen."
     }
    ]
   },
