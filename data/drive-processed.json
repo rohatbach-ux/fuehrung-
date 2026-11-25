@@ -58,7 +58,7 @@
    "h": "858870d4673c",
    "titel": "fhren-in-der-sandwich-position.pdf",
    "buch": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019)",
-   "status": "in_arbeit",
+   "status": "fertig",
    "begonnen": "2026-10-31",
    "plan": [
     {
@@ -125,10 +125,11 @@
      "teil": 11,
      "thema": "Synthese: fünf Kernkompetenzen im Überblick, Transfer in die Führung der IH, offene Fragen",
      "kapitel": "gesamt",
-     "impuls": null
+     "impuls": "drive-20261125-2"
     }
    ],
-   "zuletzt": "2026-11-24"
+   "zuletzt": "2026-11-25",
+   "abgeschlossen": "2026-11-25"
   },
   {
    "h": "0698843d04db",
@@ -136,7 +137,7 @@
    "buch": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018)",
    "status": "in_arbeit",
    "begonnen": "2026-11-01",
-   "zuletzt": "2026-11-23",
+   "zuletzt": "2026-11-25",
    "plan": [
     {
      "teil": 1,
@@ -196,7 +197,7 @@
      "teil": 10,
      "thema": "Unbeabsichtigte, aber vorhersehbare Folgen – und die Checkliste: wann und wie messen",
      "kapitel": "15–16",
-     "impuls": null
+     "impuls": "drive-20261125-1"
     },
     {
      "teil": 11,

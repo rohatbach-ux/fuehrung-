@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-24T04:08:23+00:00",
+ "updated": "2026-11-25T04:08:10+00:00",
  "items": [
+  {
+   "id": "drive-20261125-1",
+   "date": "2026-11-25",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 10,
+    "von": 11
+   },
+   "titel": "Vorhersehbare Nebenwirkungen und die Checkliste: wann und wie messen",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), Kapitel 15–16",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Die Schäden der Messfixierung sind nicht zufällig, sondern vorhersehbar – von verschobenen Zielen bis zur Verdrängung der Kreativsten. Mullers Checkliste fragt deshalb vor jeder Kennzahl: Was misst sie wirklich, wofür wird sie genutzt, was kostet sie und wer hat sie entwickelt? Kennzahlen sollen das Urteil informieren, nicht ersetzen.",
+   "deutsch": "> **„Messen ist keine Alternative zum Urteil – Messen verlangt Urteil.“** – Jerry Z. Muller\n\n## 🔗 Anschluss an Teil 9\nIn Teil 9 ging es um die Grenzen der Transparenz. Die beiden Schlusskapitel bündeln das ganze Buch: Kapitel 15 listet die wiederkehrenden Nebenwirkungen, Kapitel 16 gibt eine Checkliste für den klugen Einsatz. Muller zitiert Auguste Comte: Wissen, um vorherzusehen – vorhersehen, um vorzubeugen.\n\n## ⚠️ Elf vorhersehbare Nebenwirkungen (Kapitel 15)\n1. **Ziele werden verschoben:** Bei wenigen Kennzahlen und hohen Einsätzen konzentrieren sich alle auf das Gemessene – auf Kosten wichtigerer, ungemessener Ziele. Die Ökonomen Bengt Holmström und Paul Milgrom beschreiben das als fehlgeleitete Anreize: Belohnte Aufgaben verdrängen die anderen.\n2. **Kurzfristdenken:** Das unmittelbar Sichtbare verdrängt die langfristigen Folgen.\n3. **Arbeitszeit:** Daten sammeln, Berichte schreiben, Berichtsbesprechungen – oft auch, wenn gar nichts Wichtiges passiert ist („Berichtspflicht“).\n4. **Abnehmender Nutzen:** Neue Kennzahlen finden anfangs die schlimmsten Ausreißer. Danach werden weiter Daten von allen gesammelt, und die Kosten übersteigen bald den Nutzen.\n5. **Regelkaskaden:** Gegen Tricksen werden immer neue Regeln eingeführt, die alles weiter verlangsamen.\n6. **Glück wird belohnt:** Wer an Ergebnissen gemessen wird, die er kaum beeinflusst, wird für Zufall belohnt oder bestraft – und fühlt sich zu Recht ungerecht behandelt.\n7. **Risiko wird bestraft:** Die Analysten, die Bin Laden fanden, hätten jahrelang eine Erfolgsquote von null gehabt.\n8. **Innovation wird gebremst:** Gemessen wird das Etablierte; Neues bedeutet Versuch und Scheitern.\n9. **Zusammenarbeit leidet:** Individuelle Belohnung fördert Konkurrenz statt Hilfe. Ein Klinikchef antwortete auf die Frage, ob einer seiner Bereichsleiter Mittel an einen anderen Bereich abgeben würde, wenn es dem Haus nützt: „Ja – wenn er verrückt wäre.“\n10. **Arbeit verarmt:** Wer eng gesteckte Ziele anderer erfüllen muss, entscheidet weder, welche Probleme er löst, noch wie. Die Unternehmungslustigsten wandern ab – Lehrer an Privatschulen, Ingenieure in kleine Firmen, Beamte in die Beratung.\n11. **Produktivität sinkt womöglich:** Muller fragt, ob die Kennzahlenkultur selbst zur wirtschaftlichen Stagnation beiträgt.\n\n## ✅ Wo Kennzahlen funktioniert haben\nCompstat zur Lagebeurteilung, Publikations- und Lehrdaten als Ergänzung fachlicher Urteile, Tests als Rückmeldung an Lehrkräfte, Keystone und Geisinger in der Medizin, örtlich entwickelte Kennzahlen im Militär. Probleme entstanden jeweils erst, als Belohnung und Strafe daran hingen oder Fachfremde die Zahlen mechanisch anwendeten.\n\n## 📋 Die Checkliste (Kapitel 16)\n1. **Was soll gemessen werden?** Je mehr es unbelebter Materie ähnelt, desto besser messbar. Menschen reagieren auf Messung – umso stärker, je mehr Belohnung oder Strafe daran hängt.\n2. **Wie nützlich ist die Information?** Messbar heißt nicht messenswert. Ist die Zahl ein guter Stellvertreter für das, was man wirklich wissen will?\n3. **Wie nützlich sind mehr Kennzahlen?** Kennzahlen finden vor allem Ausreißer nach unten; in der Mitte und oben unterscheiden sie schlecht. Mehr ist nicht besser.\n4. **Was kostet es, auf Standardmessung zu verzichten?** Gibt es andere Quellen – das Urteil von Kunden, Patienten, Eltern? Wenn Eltern eine bestimmte Lehrerin verlangen, sagt das viel.\n5. **Wofür wird gemessen – und für wen transparent?** Der Schlüssel: interne Nutzung durch die Fachleute selbst oder externe Belohnung und Strafe? Kennzahlen mit geringem Einsatz wirken oft besser. Belohnung kann sogar inneren Antrieb stärken – wenn sie Ziele belohnt, die die Fachleute selbst teilen.\n6. **Was kostet die Erhebung?** Jede Minute für Kennzahlen fehlt bei der eigentlichen Arbeit.\n7. **Warum verlangt die Spitze Kennzahlen?** Oft aus Unkenntnis von Führungskräften, die von außen kommen. Muller rät deshalb, eher intern zu besetzen.\n8. **Wer entwickelt die Maße?** Von unten, mit dem stillen Wissen der Lehrerinnen, Pflegekräfte und Streifenpolizisten, und mit einer repräsentativen Gruppe der Betroffenen – auch bei der Auswertung. Messung wirkt nur, wenn die Gemessenen an ihren Wert glauben.\n   *Für das mittlere Management:* Teilt man die Ziele, die Daten genau und sparsam liefern. Hält man sie für fragwürdig, die Vorgesetzten überzeugen – und wenn das scheitert, mit geringstem Aufwand liefern, ohne der eigenen Einheit zu schaden.\n9. **Auch die besten Maße werden verzerrt:** Bezahlung nach Eingriffen führt zu zu vielen Eingriffen, nach Patientenzahl zu zu kurzen Behandlungen, nach Ergebnis zum Aussortieren schwieriger Fälle. Es bleibt eine Abwägung.\n10. **Grenzen anerkennen:** Nicht jedes Problem ist lösbar, und noch weniger durch Kennzahlen. Transparenz kann ein Problem sichtbarer machen, ohne es lösbarer zu machen.\n\n**Mullers Schlusssatz sinngemäß:** Es geht nicht um Kennzahlen gegen Urteil, sondern um Kennzahlen, die das Urteil informieren – einschließlich des Wissens, wie viel Gewicht man ihnen gibt, welche Verzerrungen sie haben und was sich nicht messen lässt.",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Die Checkliste für dein Cockpit:** Prüf jede Kennzahl, die du in Hagen übernimmst oder neu einführst, an den zehn Fragen. Besonders wichtig sind Frage 5 (intern zum Lernen oder für Belohnung und Strafe?) und Frage 8 (wer hat sie entwickelt?).\n- **Kennzahlen mit dem Team entwickeln:** Meister, Disponenten und Fachkräfte wissen, welche Zahl die Lage wirklich zeigt. Eine Kennzahl, an deren Wert sie glauben, wird ehrlicher gemeldet.\n- **Abnehmender Nutzen:** Neue Auswertungen zeigen anfangs die größten Probleme. Plane danach eine Überprüfung ein: Welche Zahlen können wieder wegfallen?\n- **Zusammenarbeit statt Bereichsdenken:** Wenn Bezirke oder Teams nur an eigenen Zahlen gemessen werden, hilft niemand dem Nachbarn. Achte darauf, dass auch gegenseitige Unterstützung gesehen wird.\n- **Einordnung:** Die Liste der Nebenwirkungen fasst gut belegte Forschung zusammen; das Modell von Holmström und Milgrom zu verdrängten Aufgaben ist in der Ökonomie anerkannt. Die These zur Produktivität ist eine offene Frage, kein Befund. Der Rat, eher intern zu besetzen, ist umstritten – Studien zeigen, dass Externe für Veränderungen oft nötig sind. Mullers Tipp, fragwürdige Daten „mit geringstem Aufwand“ zu liefern, gilt bei der DB nicht für vorgeschriebene Nachweise und sicherheitsrelevante Meldungen; die müssen vollständig und korrekt sein.",
+   "frage": "Welche Kennzahl würde mein künftiges Team selbst vorschlagen, wenn es um die Frage ginge: Woran merken wir, dass wir gute Arbeit machen?",
+   "experiment": "**Mullers Checkliste an drei Kennzahlen.**\n1. Wähle drei Kennzahlen, die dein künftiger Bereich berichtet.\n2. Geh für jede die zehn Fragen durch und notiere die Antworten in Stichworten.\n3. Markiere: behalten, verändern, mit dem Team neu entwickeln oder abschaffen.\n4. Bespreche eine davon mit zwei erfahrenen Kollegen: Was würden sie an ihrer Stelle messen?",
+   "karten": [
+    {
+     "frage": "Welche drei vorhersehbaren Nebenwirkungen von Kennzahlen betreffen Zusammenarbeit und Motivation besonders?",
+     "antwort": "Individuelle Belohnung fördert Konkurrenz statt Hilfe; die Arbeit verarmt, weil andere Ziele und Wege vorgeben; die Unternehmungslustigsten wandern ab."
+    },
+    {
+     "frage": "Was ist laut Mullers Checkliste die wichtigste Unterscheidung beim Einsatz von Kennzahlen?",
+     "antwort": "Ob die Daten intern von den Fachleuten selbst zum Lernen genutzt werden oder extern für Belohnung und Strafe – Kennzahlen mit geringem Einsatz wirken oft besser."
+    },
+    {
+     "frage": "Wie sollen Kennzahlen laut Muller entwickelt werden?",
+     "antwort": "Von unten, mit dem stillen Wissen der Fachleute vor Ort und einer repräsentativen Gruppe der Betroffenen, die auch an der Auswertung beteiligt bleibt."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261125-2",
+   "date": "2026-11-25",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Führen in der Sandwich-Position",
+    "teil": 11,
+    "von": 11
+   },
+   "titel": "Synthese: Fünf Kernkompetenzen für die Führung in der Mitte",
+   "quelle": {
+    "name": "Heiko Frerichs – Führen in der Sandwich-Position (bookboon, 2019), gesamt",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Frerichs' Buch läuft auf eine Formel hinaus: Führung in der Mitte beginnt mit Selbstführung und Menschenbild, trägt sich über Beziehungen und wird glaubwürdig durch Entscheiden, Delegieren und kluges Verhalten nach oben. Am stärksten ist das Buch dort, wo es konkret wird; am schwächsten bei seinen Belegen.",
+   "deutsch": "> **„Führung bedeutet im ersten Schritt Selbstführung.“** – Heiko Frerichs\n\n## 🔗 Rückblick auf die Reihe\nIn zehn Teilen ging es um das E-Book von Heiko Frerichs, von der Sandwich-Position bis zur eigenen Entwicklung. Dieser Schlussteil bündelt die Kernideen, überträgt sie auf die Führung in der Instandhaltung und benennt offene Fragen.\n\n## 🧭 Die Reihe in fünf Kernkompetenzen\n| Kompetenz | Kernidee | Teil |\n|---|---|---|\n| **1. Menschenbild und Haltung** | Theorie X oder Y wird zur sich selbst erfüllenden Prophezeiung; sieben Tugenden als Wertekompass; Gefühle zeigen unerfüllte Bedürfnisse | 2–4 |\n| **2. Beziehungen gestalten** | Störungen der Beziehung lassen sich nicht sachlich lösen; Aufgaben- und Beziehungsorientierte brauchen beide Raum; Wertschätzung wirkt nur bei Glaubwürdigkeit; Zusagen halten | 5–6 |\n| **3. Entscheiden und konsequent handeln** | Aussitzen schadet mehr als ein Fehlurteil; begründet nach oben nachhaken; folgenlose Regelverstöße demotivieren alle; Vorbild sein | 7 |\n| **4. Delegieren und Empowerment** | ganz abgeben, Erwartungen vorher sagen, Vertrauen vorschießen; offene Kritiker sind verlässlicher als stille Opportunisten | 8 |\n| **5. Mikropolitik** | gesehen werden, Tabus erkennen, Schlüsselpersonen pflegen, über Erfolge sprechen | 9 |\n| **Entwicklung** | Feedback ohne Etiketten, Transfer statt Seminarsammlung, Coaching, zehn Fragen zur Selbstprüfung | 10 |\n\n**Der rote Faden:** Fast jede Kompetenz beginnt bei der eigenen Person – beim Menschenbild, bei der eigenen Konfliktscheu, beim eigenen Wunsch, beliebt zu sein. Frerichs nennt das Selbstführung und verortet sein Ideal in der transformationalen Führung: inspirieren, individuell zuwenden, zum Denken anregen, Vorbild sein.\n\n## 🛤️ Transfer in die Führung der Instandhaltung\n- **Die Sandwich-Lage ist in der IH doppelt:** zwischen Netzleitung und Team, aber auch zwischen Betrieb, Bauprojekten und Instandhaltung. Frerichs' Regeln zum Nachhaken nach oben (Teil 7) und zur Mikropolitik (Teil 9) gelten für beide Achsen.\n- **Konsequenz ist Sicherheitskultur:** Folgenlos geduldete Regelverstöße (Teil 7) sind in der Instandhaltung nicht nur ein Motivationsproblem, sondern ein Risiko.\n- **Vertrauen braucht Spielraum-Klarheit:** Delegieren mit vorher gesagten Erwartungen (Teil 8) passt zu einer Organisation mit vielen Fachleuten, die selbst entscheiden können – wenn klar ist, wo das Regelwerk Grenzen setzt.\n- **Beziehung vor Ritual:** In einem neuen Bereich ist Zuhören die erste Wertschätzung (Teil 6); Rituale kommen, wenn die Beziehung trägt.\n\n## ⚖️ Was das Buch leistet – und was nicht\n**Stark** ist es, wo es konkret wird: die Fallbeispiele zur Inkonsequenz, das Nachhaken in drei Schritten, die Feedbackfehler, die zehn Fragen. **Schwach** ist es bei den Belegen: Die 55-38-7-Regel ist eine Fehldeutung, die Sandwich-Technik ist umstritten, das Reiss-Motivprofil wenig unabhängig geprüft, und einige Ratschläge zur Mikropolitik grenzen an Anbiederung. Arbeitsrecht, Mitbestimmung und Compliance kommen kaum vor – für die DB ein wichtiger blinder Fleck.\n\n## ❓ Offene Fragen\n1. Wie viel Nähe verträgt eine Führungsrolle in einem Bereich, in dem man viele Menschen schon aus früheren Funktionen kennt?\n2. Wann ist schnelles Entscheiden richtig – und wann verlangt eine schwer umkehrbare Frage Franklins Abwägen (Robson, Teil 5)?\n3. Wie sieht Mikropolitik aus, die nicht taktiert, sondern Interessen offen ausgleicht?\n4. Woran würde mein Team nach einem Jahr merken, dass ich die fünf Kompetenzen lebe – ohne dass ich es ihm sage?",
+   "modul": "fk",
+   "bezug_ih": "- **Selbsteinschätzung vor dem Antritt:** Bewerte dich in jeder der fünf Kompetenzen von 1 bis 5 und lass dieselbe Einschätzung von zwei Menschen machen, die dich führen gesehen haben. Die größte Abweichung ist dein erstes Entwicklungsfeld.\n- **Eine Kompetenz pro Quartal:** Statt alles gleichzeitig zu verbessern, nimm dir im ersten Jahr in Hagen je Quartal eine Kompetenz vor – mit einem konkreten Experiment aus der passenden Folge dieser Reihe.\n- **Verbindung zu den anderen Reihen:** Frerichs liefert die Haltung, De Micheli den Fahrplan für die ersten 100 Tage, Robson die Werkzeuge für bessere Urteile und Muller die Vorsicht beim Steuern mit Zahlen.\n- **Einordnung:** Die Gliederung in fünf Kompetenzen ist Frerichs' eigenes, erfahrungsbasiertes Modell, kein empirisch geprüftes Rahmenwerk. Die transformationale Führung, auf die er sich stützt, ist dagegen in der Forschung gut belegt.",
+   "frage": "Welche der fünf Kernkompetenzen ist meine stärkste – und welche würde mein künftiges Team als meine schwächste nennen?",
+   "experiment": "**Fünf-Kompetenzen-Abgleich.**\n1. Schreib die fünf Kernkompetenzen untereinander und bewerte dich jeweils von 1 bis 5, mit je einem Beispiel aus deinem Führungsalltag.\n2. Bitte zwei Menschen, die dich führen gesehen haben, um dieselbe Bewertung – ohne deine zu kennen.\n3. Vergleiche: Wo liegt ihr am weitesten auseinander?\n4. Wähle für diese Kompetenz das Experiment aus dem passenden Teil der Reihe und plane es für deine ersten Wochen in Hagen ein.",
+   "karten": [
+    {
+     "frage": "Welche fünf Kernkompetenzen bilden Frerichs' Modell?",
+     "antwort": "Positives Menschenbild und Haltung, Beziehungsgestaltung, Entscheiden und konsequent handeln, Delegieren und Empowerment sowie Mikropolitik verstehen."
+    },
+    {
+     "frage": "Was ist der rote Faden in Frerichs' Buch?",
+     "antwort": "Führung beginnt mit Selbstführung: Menschenbild, Konfliktscheu und der Wunsch, beliebt zu sein, entscheiden darüber, wie man die anderen Kompetenzen lebt."
+    },
+    {
+     "frage": "Wo liegt die größte Schwäche des Buchs?",
+     "antwort": "Bei den Belegen – etwa der falsch verstandenen 55-38-7-Regel – und darin, dass Arbeitsrecht, Mitbestimmung und Compliance kaum vorkommen."
+    }
+   ]
+  },
   {
    "id": "drive-20261124-1",
    "date": "2026-11-24",
