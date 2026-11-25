@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:23:22.872Z",
+ "updated": "2026-11-25T05:24:26.261Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-8752ec4f48",
+     "title": "Handel: Nach dem Deal ist vor dem Streit / Pharma: Bayer streicht neues Medikament für Deutschland",
+     "date": "2026-11-25T04:54:48.000Z",
+     "duration": 511,
+     "audio": "https://audio.podigee-cdn.net/2652051-m-b276b2ec62745918f43d8c3f1601f6e7.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2252-handel-nach-dem-deal-ist-vor-dem-streit-pharma-bayer-streicht-neues-medikament-fur-deutschland",
+     "desc": "Der US-Präsident könnte noch diese Woche neue Zölle gegen die EU und weitere Länder verkünden. Offiziell geht es ihm um Dumping-Importe. Auch der neue Kongress kann ihn nur schwer stoppen."
+    },
+    {
      "id": "morningbriefing-32db820ad0",
      "title": "Nvidia: Die wundersame Rückkehr des Gründers / Haushalt: Die Schuldentricks des Lars Klingbeil",
      "date": "2026-11-24T04:50:19.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2645672-m-807dee5f12bba485e95eb5e6bb5e7200.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2247-die-drei-lehren-aus-dem-grossten-borsengang-aller-zeiten",
      "desc": "Anthropic startet mit einer Rekordbewertung. Doch die Börse zieht das nur bedingt mit. Und die größte Herausforderung ist nicht der erste Handelstag."
-    },
-    {
-     "id": "morningbriefing-2947514549",
-     "title": "IT: Wie ein hybrider Krieg ohne Krieger",
-     "date": "2026-11-19T04:55:22.000Z",
-     "duration": 547,
-     "audio": "https://audio.podigee-cdn.net/2645671-m-aa79639ac2693bd9ad561bc3461724f2.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2246-it-wie-ein-hybrider-krieg-ohne-krieger",
-     "desc": "Microsoft, Apple und die NSA in den USA, Supermärkte und Universitäten in Europa: Die Welt leidet unter einer Flut an IT-Ausfällen. Das KI-Zeitalter sorgt für eine neue Verwundbarkeit."
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-4e5c7f9c3e",
+     "title": "The Subtle Marketing Tactics That Shape What We Buy",
+     "date": "2026-11-24T11:04:11.000Z",
+     "duration": 1558,
+     "audio": "https://audio.hbr.org/ideacast/20261120124023_745115-TheSubtleMarketingTacticsThatShapeWhatWeBuy.mp3",
+     "link": "https://hbr.org/podcast/2026/11/the-subtle-marketing-tactics-that-shape-what-we-buy",
+     "desc": "‘Tis the season of shopping. But when customers fill their carts, are they making rational decisions about what to purchase? Or have brands been tugging the strings, deploying sophisticated psychological tactics to influence customers to spend more money? Aarron Atkinson-Toal, assistant professor of marketing at Durham University, explains how companies catch our attention, how they keep it, and how we have less power over what we purchase than we think. Atkinson-Toal is the author of the book, Influenced: The Science of Why We Buy."
+    },
     {
      "id": "ideacast-201068811c",
      "title": "Innovation Summit 2026: Block’s Jack Dorsey on Building a Company Around Intelligence",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260916132643_129426-HowAIIsChangingTalentNotJustTasks_RethinkingWhereHumanJudgmentMattersMost.mp3",
      "link": "https://hbr.org/podcast/2026/09/how-ai-is-changing-talent-not-just-tasks-rethinking-where-human-judgment-matters-most",
      "desc": "The decisions leaders must make about AI today go far beyond what platforms to invest in: AI is changing organizational culture and leadership for good. In episode 1 of a special four-part series on how AI is changing leadership, we look at how the technology is changing how people interact at work, the new culture it is creating, and how leaders can get smart about talent management and strategy in this rapidly advancing world. Paula Goldman, Salesforce’s chief ethical and humane use officer, argues there's currently a big opportunity to redesign work around the complementary strengths of …"
-    },
-    {
-     "id": "ideacast-9e2ca39b91",
-     "title": "What It Takes to Make Progress When the Future Feels Out of Control",
-     "date": "2026-09-15T11:07:46.000Z",
-     "duration": 1502,
-     "audio": "https://audio.hbr.org/ideacast/20260914123952_772802-WhatItTakestoMakeProgressWhentheFutureFeelsOutofControl.mp3",
-     "link": "https://hbr.org/podcast/2026/09/what-it-takes-to-make-progress-when-the-future-feels-out-of-control",
-     "desc": "When the future feels increasingly out of our control, how can leaders and organizations make progress? University of Pennsylvania psychologist Martin Seligman, a pioneer in the study of optimism, resilience, and human flourishing, argues that the answer is agency: the belief that we can influence outcomes and create positive change. He defines agency as a combination of three capabilities: efficacy—the belief that you can achieve a goal now; optimism—the belief that you can achieve it in the future; and imagination—the ability to envision possibilities that don't yet exist. And he explains…"
     }
    ]
   }
