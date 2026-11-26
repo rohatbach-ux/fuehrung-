@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:24:26.261Z",
+ "updated": "2026-11-26T05:26:45.175Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-232d4a8993",
+     "title": "Regierung: Der große Reformbasar / Rüstung: Helsing greift nach dem Krimbrücken-Waffenbauer",
+     "date": "2026-11-26T04:48:08.000Z",
+     "duration": 462,
+     "audio": "https://audio.podigee-cdn.net/2652052-m-f2b0ca01f30585b01fc201c4c3ef2b1f.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2253-regierung-der-grosse-reformbasar-rustung-helsing-greift-nach-dem-krimbrucken-waffenbauer",
+     "desc": "Über der Generaldebatte des Bundestags schwebte gestern der Reformstreit der Regierung über Arbeitsmarkt und Steuern. Doch am Abend zeichnet sich ausgerechnet bei der Rente ein Kompromiss ab."
+    },
+    {
      "id": "morningbriefing-8752ec4f48",
      "title": "Handel: Nach dem Deal ist vor dem Streit / Pharma: Bayer streicht neues Medikament für Deutschland",
      "date": "2026-11-25T04:54:48.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2649023-m-5eea5cd00cc97364f92c2cdc04944f4a.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2250-podcast-tipp-wie-sicher-sind-wir-realitycheck-zu-verteidigung-rustung-und-sicherheit",
      "desc": "Neue Bedrohungen, alte Allianzen im Wandel: Was heißt das für Deutschland? Markus Fasse (Handelsblatt) und Nana Brink (Tagesspiegel Background) diskutieren jede Woche, wie gut Politik, Bundeswehr und Industrie gewappnet sind."
-    },
-    {
-     "id": "morningbriefing-65c621b7bc",
-     "title": "Die drei Lehren aus dem größten Börsengang aller Zeiten",
-     "date": "2026-11-20T04:55:29.000Z",
-     "duration": 512,
-     "audio": "https://audio.podigee-cdn.net/2645672-m-807dee5f12bba485e95eb5e6bb5e7200.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2247-die-drei-lehren-aus-dem-grossten-borsengang-aller-zeiten",
-     "desc": "Anthropic startet mit einer Rekordbewertung. Doch die Börse zieht das nur bedingt mit. Und die größte Herausforderung ist nicht der erste Handelstag."
     }
    ]
   },
@@ -1189,6 +1189,15 @@
    "link": "https://hbr.org/podcasts/ideacast",
    "feed": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
    "episodes": [
+    {
+     "id": "ideacast-e50c2fbe62",
+     "title": "Innovation Summit 2026: FedEx’s Raj Subramaniam on Innovating at the Speed of Global Commerce",
+     "date": "2026-11-25T11:06:22.000Z",
+     "duration": 1774,
+     "audio": "https://audio.hbr.org/ideacast/20261120131324_193061-InnovationSummit2026_FedEx_sRajSubramaniamonInnovatingattheSpeedofGlobalCommerce.mp3",
+     "link": "https://hbr.org/podcast/2026/11/innovation-summit-2026-fedexs-raj-subramaniam-on-innovating-at-the-speed-of-global-commerce",
+     "desc": "In this special bonus episode, recorded live at HBR’s Innovation Summit, Raj Subramaniam, CEO of FedEx, talks with Adi Ignatius about how FedEx uses AI at scale, stays customer focused during rapid shifts in global supply chains, and continues to innovate while sticking to the company’s founding principals and culture. The November 12 Innovation Summit brought together business leaders and leading thinkers to examine how companies can innovate at speed, rethink how their organizations work in the AI era, and translate new ideas and technologies into business results. Our next virtual event …"
+    },
     {
      "id": "ideacast-4e5c7f9c3e",
      "title": "The Subtle Marketing Tactics That Shape What We Buy",
@@ -1314,15 +1323,6 @@
      "audio": "https://audio.hbr.org/ideacast/20260921132656_495101-WhatNewCEOsGetWrongAbouttheJob.mp3",
      "link": "https://hbr.org/podcast/2026/09/what-new-ceos-get-wrong-about-the-job",
      "desc": "Becoming CEO can look like the culmination of a career. But the skills that help someone rise to the top job aren't necessarily the ones that make them successful once they get there. Nitin Nohria, former dean of Harvard Business School, has spent three decades studying CEOs and working with new leaders as they adjust to the demands of the role. He says one of the biggest surprises for new CEOs is realizing that they can't—and shouldn't—run the company themselves. Instead, their job is to create the conditions for their leadership team to run it well. He also explains how CEOs can stay conn…"
-    },
-    {
-     "id": "ideacast-f74b84c115",
-     "title": "How AI Is Changing Talent, Not Just Tasks: Rethinking Where Human Judgment Matters Most",
-     "date": "2026-09-17T13:54:17.000Z",
-     "duration": 1893,
-     "audio": "https://audio.hbr.org/ideacast/20260916132643_129426-HowAIIsChangingTalentNotJustTasks_RethinkingWhereHumanJudgmentMattersMost.mp3",
-     "link": "https://hbr.org/podcast/2026/09/how-ai-is-changing-talent-not-just-tasks-rethinking-where-human-judgment-matters-most",
-     "desc": "The decisions leaders must make about AI today go far beyond what platforms to invest in: AI is changing organizational culture and leadership for good. In episode 1 of a special four-part series on how AI is changing leadership, we look at how the technology is changing how people interact at work, the new culture it is creating, and how leaders can get smart about talent management and strategy in this rapidly advancing world. Paula Goldman, Salesforce’s chief ethical and humane use officer, argues there's currently a big opportunity to redesign work around the complementary strengths of …"
     }
    ]
   }
