@@ -279,7 +279,7 @@
    "buch": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019)",
    "status": "in_arbeit",
    "begonnen": "2026-11-17",
-   "zuletzt": "2026-11-24",
+   "zuletzt": "2026-11-26",
    "plan": [
     {
      "teil": 1,
@@ -327,7 +327,7 @@
      "teil": 8,
      "thema": "Lernen: Neugier, Wachstumshaltung, wünschenswerte Erschwernisse, produktive Verwirrung",
      "kapitel": "7–8",
-     "impuls": null
+     "impuls": "drive-20261126-2"
     },
     {
      "teil": 9,
@@ -345,6 +345,82 @@
      "teil": 11,
      "thema": "Synthese: Begriffe der Dummheit und der Weisheit (Anhang), Transfer in die Instandhaltung, offene Fragen",
      "kapitel": "Anhang, Synthese",
+     "impuls": null
+    }
+   ]
+  },
+  {
+   "h": "2fde8bb35b3d",
+   "titel": "neu-in-fhrung.pdf",
+   "buch": "Verena Voll – Neu in Führung: Praxisleitfaden für angehende Führungskräfte (bookboon, 2019)",
+   "status": "in_arbeit",
+   "begonnen": "2026-11-26",
+   "zuletzt": "2026-11-26",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Der Start: eigene Ziele in vier Bereichen, Top-5-Werte und ihre Schattenseiten",
+     "kapitel": "Vorwort, 1.1–1.2",
+     "impuls": "drive-20261126-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Erwartungen klären mit fünf Bezugsgruppen (selbst, Vorgesetzter, Team, Kollegen, Familie) und Umgang mit Erwartungen",
+     "kapitel": "1.3",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Sieben Stolpersteine am Anfang: erste Tage, Zeit für Führung, Rückdelegation, Lieblinge, fehlende Akzeptanz, zu schnelle Veränderung, Isolation",
+     "kapitel": "2",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Führungsstile I: Lewin, Weber und die Frage, wer was entscheidet",
+     "kapitel": "3 (1–2)",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Führungsstile II: Verhaltensgitter nach Blake und Mouton, situative Führung nach Reifegrad",
+     "kapitel": "3 (3–4)",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Transformationale Führung in sieben Handlungsfeldern nach Bass, Avolio und Pelz",
+     "kapitel": "3 (5)",
+     "impuls": null
+    },
+    {
+     "teil": 7,
+     "thema": "Persönlichkeit und Kompetenzen: Stärken ausbauen, Lücken schließen, Persönlichkeitsmodelle mit Vorsicht",
+     "kapitel": "4",
+     "impuls": null
+    },
+    {
+     "teil": 8,
+     "thema": "Unternehmensleitbild, Führungsgrundsätze und agile Mitarbeitergespräche in fünf Schritten",
+     "kapitel": "5.1–5.2",
+     "impuls": null
+    },
+    {
+     "teil": 9,
+     "thema": "Feedback nach zehn Regeln und in sieben Schritten, SMARTe Ziele",
+     "kapitel": "5.3–5.4",
+     "impuls": null
+    },
+    {
+     "teil": 10,
+     "thema": "Delegieren in sieben Schritten und Schlusswort",
+     "kapitel": "5.5, Schlusswort",
+     "impuls": null
+    },
+    {
+     "teil": 11,
+     "thema": "Synthese: der Leitfaden im Überblick, Transfer in den Antritt in Hagen, offene Fragen",
+     "kapitel": "gesamt",
      "impuls": null
     }
    ]
