@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T05:26:45.175Z",
+ "updated": "2026-11-27T05:26:02.701Z",
  "podcasts": [
   {
    "id": "souveraen",
@@ -1132,6 +1132,15 @@
    "feed": "https://handelsblatt-morningbriefing.podigee.io/feed/mp3",
    "episodes": [
     {
+     "id": "morningbriefing-180be11e30",
+     "title": "SAP: 10.000 Stellen weg – aber auch weniger?",
+     "date": "2026-11-27T04:56:57.000Z",
+     "duration": 536,
+     "audio": "https://audio.podigee-cdn.net/2652053-m-1a3f3a4d7e67e567db51520eb7e206ed.mp3?source=feed",
+     "link": "https://handelsblatt-morningbriefing.podigee.io/2254-sap-10-000-stellen-weg-aber-auch-weniger",
+     "desc": "Der Softwarekonzern steht unter Druck durch KI. Ein großes Jobabbau-Programm soll helfen – am Ende könnten dennoch mehr Menschen als bisher im Unternehmen arbeiten."
+    },
+    {
      "id": "morningbriefing-232d4a8993",
      "title": "Regierung: Der große Reformbasar / Rüstung: Helsing greift nach dem Krimbrücken-Waffenbauer",
      "date": "2026-11-26T04:48:08.000Z",
@@ -1166,15 +1175,6 @@
      "audio": "https://audio.podigee-cdn.net/2645673-m-9d453c6eee17860f825c5d5b83e299fd.mp3?source=feed",
      "link": "https://handelsblatt-morningbriefing.podigee.io/2248-der-panik-index-an-der-borse-steht-auf-neun-von-zehn",
      "desc": "Nach dem schwarzen Freitag für Tech-Aktien spricht an den Märkten nur wenig für Besserung. Das liegt an der KI‑Delle – und einer verlockenden Alternative für viele Anleger."
-    },
-    {
-     "id": "morningbriefing-d0882953f9",
-     "title": "Podcast-Tipp: Wie sicher sind wir? Realitycheck zu Verteidigung, Rüstung und Sicherheit",
-     "date": "2026-11-21T07:00:00.000Z",
-     "duration": 88,
-     "audio": "https://audio.podigee-cdn.net/2649023-m-5eea5cd00cc97364f92c2cdc04944f4a.mp3?source=feed",
-     "link": "https://handelsblatt-morningbriefing.podigee.io/2250-podcast-tipp-wie-sicher-sind-wir-realitycheck-zu-verteidigung-rustung-und-sicherheit",
-     "desc": "Neue Bedrohungen, alte Allianzen im Wandel: Was heißt das für Deutschland? Markus Fasse (Handelsblatt) und Nana Brink (Tagesspiegel Background) diskutieren jede Woche, wie gut Politik, Bundeswehr und Industrie gewappnet sind."
     }
    ]
   },
