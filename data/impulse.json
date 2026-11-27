@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-26T04:10:09+00:00",
+ "updated": "2026-11-27T04:07:35+00:00",
  "items": [
+  {
+   "id": "drive-20261127-1",
+   "date": "2026-11-27",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "The Tyranny of Metrics",
+    "teil": 11,
+    "von": 11
+   },
+   "titel": "Synthese: Kennzahlen im Netz Hagen klug nutzen",
+   "quelle": {
+    "name": "Jerry Z. Muller – The Tyranny of Metrics (Princeton University Press, 2018), gesamt",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Mullers Botschaft ist nicht „weniger messen“, sondern „anders messen“: Kennzahlen wirken, wenn Fachleute sie selbst entwickeln und intern zum Lernen nutzen. Sie schaden, wenn wenige Zahlen über Lohn, Ruf und Karriere entscheiden. Für ein Instandhaltungsnetz folgen daraus acht Regeln für das eigene Cockpit.",
+   "deutsch": "> **„Es geht nicht um Kennzahlen gegen Urteil, sondern um Kennzahlen, die das Urteil informieren.“** – nach Jerry Z. Muller\n\n## 🔗 Rückblick auf die Reihe\nIn zehn Teilen ging es um Mullers Kritik an der Messfixierung – vom Begriff bis zur Checkliste. Dieser Schlussteil bündelt die Kernideen, überträgt sie auf die Führung eines Instandhaltungsnetzes und nennt offene Fragen.\n\n## 🧭 Die Reihe in drei Gedanken\n**1. Messfixierung ist ein Glaube, kein Werkzeug (Teile 1–4).** Drei Überzeugungen tragen ihn: Urteil lasse sich durch standardisierte Zahlen ersetzen, Transparenz sichere Rechenschaft, und Menschen arbeiteten am besten für Belohnung nach Zahlen. Campbells und Goodharts Gesetz beschreiben, was folgt: Sobald eine Zahl zum Ziel wird, wird sie verzerrt – durch Herausrechnen, Herabstufen, Senken von Standards, Weglassen und Betrug. Der Ursprung liegt bei Taylor, im Leistungslohn und im New Public Management; Prämien können den inneren Antrieb verdrängen.\n\n**2. Dasselbe Muster in jedem Feld (Teile 5–8).** Medizin, Polizei, Militär, Wirtschaft, Hochschulen, Schulen und Hilfsorganisationen zeigen es gleich: Wo Fachleute Zahlen selbst entwickeln und intern nutzen, helfen sie – Keystone, Geisinger, Compstat als Lagebild, Lernzuwachs-Tests für Lehrkräfte. Wo Zahlen über Belohnung, Strafe und Rangplätze entscheiden, folgen Schönen, Kurzfristdenken und das Sparen an Instandhaltung und Weiterbildung.\n\n**3. Die Gegenmittel (Teile 6, 9, 10).** Eingabe, Ergebnis und Wirkung unterscheiden; Ergebnisse offenlegen, Beratungen schützen; vor jeder Kennzahl die zehn Fragen der Checkliste stellen – und anerkennen, dass manches sich nicht lösen und schon gar nicht durch Messen verbessern lässt.\n\n## 🛤️ Acht Regeln für dein Cockpit in Hagen\n| Regel | Herkunft in der Reihe |\n|---|---|\n| **1. Lernen vor Rangliste:** Kennzahlen zuerst intern zur Lagebeurteilung nutzen, nicht zur Belohnung oder Bloßstellung von Bezirken | Teile 5, 8, 10 |\n| **2. Mit dem Team entwickeln:** Meister, Disponenten und Fachkräfte fragen, woran sie gute Arbeit erkennen | Teile 5, 10 |\n| **3. Ebenen unterscheiden:** Eingabe (getauschte Meter), Ergebnis (wie lange es hält), Wirkung (Verfügbarkeit, Sicherheit) | Teil 6 |\n| **4. Wenige Zahlen, regelmäßig ausdünnen:** Neue Auswertungen finden die großen Ausreißer – danach prüfen, was wieder wegfällt | Teile 5, 10 |\n| **5. Umbuchen und Schönen erkennen:** Bei plötzlichen Verbesserungen erst die Einstufung prüfen; Stichproben gegen Originalbefunde | Teile 2, 6 |\n| **6. Unmessbares schützen:** Ausbildung, Planung, Arbeitsvorbereitung und Zusammenarbeit nicht als „Gemeinkosten“ kleinrechnen | Teile 7, 8 |\n| **7. Ergebnisse offen, Beratungen geschützt:** Entscheidungen und Ergebnisse transparent, das Abwägen davor im geschützten Raum | Teil 9 |\n| **8. Zahlen informieren das Urteil:** Jede Zahl braucht die Deutung von Menschen, die das Netz kennen | Teile 6, 10 |\n\n## ⚖️ Was das Buch leistet – und was nicht\n**Stark** ist Mullers Ordnung des Problems: Die wiederkehrenden Verzerrungen und die Checkliste sind präzise und sofort anwendbar, und seine Unterscheidung zwischen internem Lernen und externer Belohnung trifft den Kern. **Schwächer** ist die Beweisführung: Das Buch ist bewusst zugespitzt, stützt sich oft auf auffällige Einzelfälle und Insiderberichte und wählt Studien, die seine These stützen. Gegenbeispiele für gelungene Datenkulturen kommen nur am Rande vor, einige Aussagen – etwa zu Snowden oder zur Produktivität – sind eher Meinung als Befund.\n\n## ❓ Offene Fragen\n1. Wie gehe ich mit Kennzahlen um, die von außen vorgegeben sind und die ich nicht ändern kann – etwa aus Qualitätsvereinbarungen mit dem Bund oder aus Konzernvorgaben?\n2. Wie viel Vergleich zwischen Bezirken ist hilfreich, bevor er zur Rangliste mit Fehlanreizen wird?\n3. Woran erkenne ich, ob eine Kennzahl ehrlich gemeldet wird – ohne ein Kontrollsystem aufzubauen, das neue Regelkaskaden erzeugt?\n4. Wie mache ich sichtbar, was nicht messbar ist, aber zählt – Vertrauen, Meldekultur, das gemeinsame WHY?",
+   "modul": "umsetzung",
+   "bezug_ih": "- **Die acht Regeln als Prüfraster:** Nimm die Tabelle mit in die ersten Wochen in Hagen und lege jede bestehende Kennzahl daneben. Wo eine Regel verletzt ist, notiere es im Hypothesenbuch, statt sofort etwas zu ändern.\n- **Vorgegebene Kennzahlen:** Viele Zahlen in der Instandhaltung kommen von außen. Mullers Rat an das mittlere Management hilft: Ziele, die du teilst, genau und sparsam bedienen; über fragwürdige mit Belegen nach oben sprechen. Sicherheitsrelevante und vorgeschriebene Nachweise bleiben dabei vollständig und korrekt.\n- **Verbindung zu den anderen Reihen:** Robson liefert die Werkzeuge, um Zahlen kritisch zu lesen (Fluch des Wissens, Täuschungstricks); Frerichs und Voll liefern die Führungsseite – Kennzahlen werden nur ehrlich gemeldet, wo Vertrauen herrscht.\n- **Einordnung:** Die acht Regeln sind eine Übertragung dieser Reihe auf die Instandhaltung, keine Vorgabe Mullers. Sie ersetzen nicht die Regeln des DB-Controllings, sondern helfen, eigene Kennzahlen im Cockpit sinnvoll auszuwählen und zu deuten.",
+   "frage": "Welche der acht Regeln würde mein heutiges Kennzahlen-Cockpit am deutlichsten verletzen?",
+   "experiment": "**Das Cockpit gegen die acht Regeln prüfen.**\n1. Liste die Kennzahlen, die du heute regelmäßig ansiehst oder berichtest.\n2. Prüfe jede gegen die acht Regeln und markiere Verstöße.\n3. Wähle die Kennzahl mit den meisten Verstößen und überlege: ändern, ergänzen oder weglassen?\n4. Formuliere für Hagen drei Kennzahlen, die Rang 1 und 2 erfüllen – intern, mit dem Team entwickelt.",
+   "karten": [
+    {
+     "frage": "Welche drei Überzeugungen tragen laut Muller die Messfixierung?",
+     "antwort": "Dass standardisierte Zahlen Urteil ersetzen können, dass Transparenz Rechenschaft sichert und dass Menschen am besten für Belohnung nach Zahlen arbeiten."
+    },
+    {
+     "frage": "Wann helfen Kennzahlen laut Muller – und wann schaden sie?",
+     "antwort": "Sie helfen, wenn Fachleute sie selbst entwickeln und intern zum Lernen nutzen; sie schaden, wenn wenige Zahlen über Belohnung, Strafe und Rangplätze entscheiden."
+    },
+    {
+     "frage": "Was ist die größte Schwäche des Buchs?",
+     "antwort": "Die Beweisführung: Es ist bewusst zugespitzt, stützt sich oft auf Einzelfälle und Insiderberichte und behandelt Gegenbeispiele gelungener Datenkulturen nur am Rande."
+    }
+   ]
+  },
+  {
+   "id": "drive-20261127-2",
+   "date": "2026-11-27",
+   "herkunft": "drive",
+   "reihe": {
+    "buch": "Neu in Führung",
+    "teil": 2,
+    "von": 11
+   },
+   "titel": "Erwartungen klären: fünf Bezugsgruppen und was man nicht erfüllt",
+   "quelle": {
+    "name": "Verena Voll – Neu in Führung: Praxisleitfaden für angehende Führungskräfte (bookboon, 2019), Kapitel 1.3",
+    "url": ""
+   },
+   "sprache": "de",
+   "kernaussage": "Erwartungen werden vor allem enttäuscht, wenn sie zu hoch sind oder niemand sie kennt. Deshalb: herausfinden, wer was erwartet, bewerten, was man erfüllen will, und die Entscheidung mit Gründen mitteilen – bei sich selbst, beim Vorgesetzten, im Team, bei Kollegen und in der Familie.",
+   "deutsch": "> **„Erwartungen werden vor allem dann enttäuscht, wenn sie zu hoch sind oder keiner sie kennt.“** – Motto des Kapitels\n\n## 🔗 Anschluss an Teil 1\nIn Teil 1 ging es um die eigenen Ziele und Werte. Jetzt kommt die Außensicht: Was erwarten andere von mir als Führungskraft – und wie gehe ich damit um?\n\n## 🔄 Erwartungen klären in drei Schritten\n1. **Herausfinden**, welche Erwartungen von wem gestellt werden.\n2. **Bewerten** und entscheiden, wie man mit ihnen umgeht.\n3. **Mitteilen**, wie man entschieden hat – an alle Beteiligten.\n\nViele haben Erwartungen: Vorgesetzte und Geschäftsleitung, Team, Kollegen, Betriebsrat, Kunden, Lieferanten, Familie. Voll empfiehlt, mit den fünf engsten Gruppen zu beginnen: **ich selbst, mein Vorgesetzter, meine Mitarbeitenden, meine Kollegen, Familie und Freunde.**\n\n**Häufigster Fehler:** zu glauben, man kenne die Erwartungen schon. Deshalb im persönlichen Gespräch unvoreingenommen fragen, die Antworten nicht in eine Richtung lenken, die eigene Erwartung ebenfalls nennen und abgleichen. Bei Abweichungen keinen faulen Kompromiss suchen, sondern eine Lösung, die für beide trägt – notfalls mit einem zweiten Termin.\n\n## 👤 Die fünf Bezugsgruppen\n**1. Ich selbst.** Was man von sich erwartet, hängt von Persönlichkeit, Erfahrungen, Prägung und Vorbildern ab – auch von Ängsten (etwa vor Misserfolg) und Bedürfnissen (etwa nach Anerkennung). Ein hoher Anspruch hilft, erhöht aber Druck und Fallhöhe. Voll rät: großzügig mit sich sein, Misserfolge mit Humor nehmen, aus Fehlern lernen, kleine Erfolge feiern.\n*Übung:* An einen Vorgesetzten denken, der einen besonders beeindruckt oder abgestoßen hat. Was hat er getan? Daraus Erwartungen an die eigene Rolle ableiten und mit den Zielen aus Teil 1 abgleichen.\n\n**2. Der Vorgesetzte.** Neben den Unternehmensinteressen – Qualität, Kosten, Mitarbeiterbindung, Kundenorientierung – hat er eigene Vorstellungen, etwa wie viel Detail er sehen will. **Fragen an ihn:**\n- Was ist Ihnen in Bezug auf Führung besonders wichtig?\n- Gibt es Führungsleitsätze oder Unternehmenswerte?\n- Wie wurde das Team bisher geführt? Was war gut, was soll anders laufen?\n- Worüber, wie und wie oft wollen Sie informiert werden?\n- Welche Entscheidungen soll ich selbst treffen, bei welchen wollen Sie einbezogen werden?\n- Was sehen Sie als meine größten Herausforderungen?\n- Welche Tipps haben Sie für mich?\n- Welche konkreten Ziele sehen Sie für mein erstes Jahr?\n\n**3. Die Mitarbeitenden.** Viele Vorgesetzte unterschätzen den Wunsch, **„spürbar geführt“** zu werden. Als kompetent gilt, wer gut kommuniziert und entscheiden kann, echtes Interesse zeigt, zuhört und unterstützt. Erwartungen in Einzelgesprächen und in einer Teamrunde abfragen – am Anfang nicht zu viel versprechen. **Fragen:**\n- Was ist euch in Bezug auf Führung besonders wichtig?\n- Welche Freiräume wünscht ihr euch?\n- Wie wurde das Team bisher geführt? Was war gut, was soll anders laufen?\n- Was ist für euch gelungene Kommunikation?\n- Welchen Abstimmungsrhythmus schlagt ihr vor?\n- Welche Veränderungen könnt ihr euch vorstellen?\n\n*Tipp:* Erwartungen am Flipchart sichtbar machen, nicht sofort zusagen, in späteren Gesprächen sichtbar darauf eingehen. Sind Mitarbeitende frühere Kollegen – oder hat sich jemand selbst auf die Stelle beworben –, behutsam vorgehen: fragen, wie es der Person mit der Situation geht, Verständnis zeigen, ihre Bedeutung für das Team betonen, dann nach vorne schauen.\n\n**4. Die Kollegen auf gleicher Ebene.** Die neue Rolle als Anlass für ein Gespräch nur über Führung und Zusammenarbeit nutzen: Wo gibt es fachliche Überschneidungen? Wie können wir uns unterstützen? Wie wollen wir zusammenarbeiten? Welche Erwartungen habt ihr an mich?\n\n**5. Familie und Freunde.** Gerade am Anfang wird die Arbeitszeit oft länger, und der Kopf ist auch in der Freizeit bei der Firma – manche wirken abwesend, andere reden nur noch vom Job. Früh sprechen und wichtige Punkte als **Leitlinien** festhalten; das private Umfeld ist oft der stärkste Rückhalt. **Fragen an den Partner:** Was ist dir in Bezug auf meine neue Aufgabe wichtig? Worauf soll ich privat achten? Welche Arbeitszeiten sind in Ordnung? Was sollten wir noch besprechen?\n\n## 📋 Umgang mit Erwartungen\nKeine Führungskraft kann alle Erwartungen erfüllen. Entscheidend ist, die Gründe so mitzuteilen, dass der andere sie versteht und annehmen kann. Voll schlägt eine Übersicht in drei Spalten vor:\n| Spalte | Beispiel aus dem Buch |\n|---|---|\n| **Erwartungen, die ich erfülle – mit Maßnahmen** | Regelmäßiges Feedback: monatliche Abstimmungsgespräche mit Feedbackteil und ein Jahresgespräch |\n| **Erwartungen, die ich nicht erfülle – mit Gründen** | Bei allen Verhandlungen mit Schlüsselkunden dabei sein: keine Zeit, ich traue es dem Mitarbeiter zu; zur Sicherheit ein Verhandlungsseminar im nächsten Jahr |\n| **Erwartungen, die ich noch nicht bewerten kann – mit Gründen** | Eine teure Zusatzausbildung: erst Budget und Nutzen prüfen |",
+   "modul": "uebergang",
+   "bezug_ih": "- **Erwartungsgespräch mit der Netzleitung:** Volls acht Fragen an den Vorgesetzten passen direkt zu deinem Einstiegspunkt „Erwartungsbild Netzleitung“. Besonders wichtig für die Instandhaltung: Welche Entscheidungen triffst du selbst, und worüber will die Netzleitung wie oft informiert werden – auch nachts bei Störungen?\n- **Der Betriebsrat gehört dazu:** Voll nennt den Betriebsrat als Bezugsgruppe, behandelt ihn aber nicht unter den fünf engsten. Bei der DB gehört er früh dazu – ein eigenes Kennenlerngespräch über Erwartungen an die Zusammenarbeit.\n- **Kollegen sind in der IH breiter:** Neben den anderen Leitern Instandhaltung zählen dazu Bauprojekte, Betrieb und Fahrplan. Volls vier Fragen eignen sich für alle.\n- **Wer wollte die Stelle?** Wenn sich in Hagen jemand selbst auf deine Position beworben hat, gehört das Gespräch mit dieser Person in die ersten Tage.\n- **Einordnung:** Erfahrungswissen ohne Studienbelege. Die Idee deckt sich mit Michael Watkins' Klassiker „The First 90 Days“, der eigene Gespräche über Lage, Erwartungen, Ressourcen, Arbeitsstil und Entwicklung mit dem neuen Vorgesetzten empfiehlt. Volls Frage „Wie wurde das Team bisher geführt?“ kann heikel sein – in Gesprächen mit dem Team besser nach dem fragen, was gut lief und beibehalten werden soll, statt den Vorgänger bewerten zu lassen.",
+   "frage": "Welche Erwartung an mich in Hagen glaube ich zu kennen, ohne sie je erfragt zu haben?",
+   "experiment": "**Die Drei-Spalten-Übersicht vor dem Antritt.**\n1. Lege eine Tabelle mit drei Spalten an: erfülle ich (mit Maßnahme) – erfülle ich nicht (mit Grund) – kann ich noch nicht bewerten (mit Grund).\n2. Trage alle Erwartungen ein, die du schon kennst oder vermutest – von Netzleitung, Team, Kollegen, Betriebsrat und Familie.\n3. Markiere jede Vermutung, die noch nicht erfragt ist.\n4. Plane für die drei wichtigsten Vermutungen ein Gespräch vor oder kurz nach dem 01.01.2027.",
+   "karten": [
+    {
+     "frage": "Welche drei Schritte gehören laut Voll zum Klären von Erwartungen?",
+     "antwort": "Herausfinden, wer was erwartet; bewerten und entscheiden, wie man damit umgeht; die Entscheidung allen Beteiligten mitteilen."
+    },
+    {
+     "frage": "Welche fünf Bezugsgruppen nennt Voll für den Anfang?",
+     "antwort": "Ich selbst, mein Vorgesetzter, meine Mitarbeitenden, meine Kollegen auf gleicher Ebene sowie Familie und Freunde."
+    },
+    {
+     "frage": "Welchen Wunsch der Mitarbeitenden unterschätzen viele Führungskräfte laut Voll?",
+     "antwort": "Den Wunsch, „spürbar geführt“ zu werden – durch gute Kommunikation, Entscheidungen, echtes Interesse und Unterstützung."
+    }
+   ]
+  },
   {
    "id": "drive-20261126-1",
    "date": "2026-11-26",
