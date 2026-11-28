@@ -280,7 +280,7 @@
    "buch": "David Robson – The Intelligence Trap (Hodder & Stoughton, 2019)",
    "status": "in_arbeit",
    "begonnen": "2026-11-17",
-   "zuletzt": "2026-11-26",
+   "zuletzt": "2026-11-28",
    "plan": [
     {
      "teil": 1,
@@ -334,7 +334,7 @@
      "teil": 9,
      "thema": "Das Dream Team: kollektive Intelligenz, Zu-viel-Talent-Effekt, Hierarchie und Widerspruch",
      "kapitel": "9",
-     "impuls": null
+     "impuls": "drive-20261128-2"
     },
     {
      "teil": 10,
@@ -421,6 +421,52 @@
     {
      "teil": 11,
      "thema": "Synthese: der Leitfaden im Überblick, Transfer in den Antritt in Hagen, offene Fragen",
+     "kapitel": "gesamt",
+     "impuls": null
+    }
+   ]
+  },
+  {
+   "h": "63dab5759d4f",
+   "titel": "werteorientierte-fuhrung.pdf",
+   "buch": "Andreas Welther – Werteorientierte Führung (bookboon, 2020)",
+   "status": "in_arbeit",
+   "begonnen": "2026-11-28",
+   "zuletzt": "2026-11-28",
+   "plan": [
+    {
+     "teil": 1,
+     "thema": "Was werteorientierte Führung ist: drei Funktionen von Werten, Verhalten besprechbar machen, innerer Antrieb, Ertragswippe, Werte als Gravitationskern",
+     "kapitel": "Vorwort, 2",
+     "impuls": "drive-20261128-1"
+    },
+    {
+     "teil": 2,
+     "thema": "Projektstruktur in acht Schritten: Ziele, Kultur messen, 5–10 Werte formulieren, Darstellung, Schulung, Verantwortliche Person, QM-Überwachung, Monitoring",
+     "kapitel": "3",
+     "impuls": null
+    },
+    {
+     "teil": 3,
+     "thema": "Kultur messen nach dem Barrett-Modell: drei Fragen, sieben Bewusstseinsebenen, kulturelle Entropie, Wertesprünge, Business Needs Scorecard",
+     "kapitel": "4, Anhang",
+     "impuls": null
+    },
+    {
+     "teil": 4,
+     "thema": "Fünf Herangehensweisen (unternehmensweit, international, Bereich oder Pilot, entlang der Hierarchie, personenbezogen) und werteorientiertes Coaching mit Wertekärtchen",
+     "kapitel": "5, 6",
+     "impuls": null
+    },
+    {
+     "teil": 5,
+     "thema": "Dauerhaft verankern über Qualitätsmanagement: Audits in drei Stufen, Mitarbeitergespräch, Entropie, Balanced Scorecard – und der Nutzen",
+     "kapitel": "7, Nutzen",
+     "impuls": null
+    },
+    {
+     "teil": 6,
+     "thema": "Synthese: Werte für das Netz Hagen, Spannungen zu Muller und Robson, offene Fragen",
      "kapitel": "gesamt",
      "impuls": null
     }
